@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'charifund';
-  src: url('../webfonts/charifund.eot?76699682');
-  src: url('../webfonts/charifund.eot?76699682#iefix') format('embedded-opentype'),
-       url('../webfonts/charifund.woff2?76699682') format('woff2'),
-       url('../webfonts/charifund.woff?76699682') format('woff'),
-       url('../webfonts/charifund.ttf?76699682') format('truetype'),
-       url('../webfonts/charifund.svg?76699682#charifund') format('svg');
+  font-family: 'ppsi';
+  src: url('../webfonts/ppsi.eot?76699682');
+  src: url('../webfonts/ppsi.eot?76699682#iefix') format('embedded-opentype'),
+       url('../webfonts/ppsi.woff2?76699682') format('woff2'),
+       url('../webfonts/ppsi.woff?76699682') format('woff'),
+       url('../webfonts/ppsi.ttf?76699682') format('truetype'),
+       url('../webfonts/ppsi.svg?76699682#ppsi') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "charifund";
+  font-family: "ppsi";
   font-style: normal;
   font-weight: normal;
   speak: never;

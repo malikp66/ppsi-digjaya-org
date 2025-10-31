@@ -193,7 +193,7 @@ const FooterTwo = () => {
                           <p>
                             Copyright © <span id='copyrightYear' />{" "}
                             <Link href='/' target='_blank'>
-                              charifund
+                              ppsi
                             </Link>
                             . All rights reserved.
                           </p>

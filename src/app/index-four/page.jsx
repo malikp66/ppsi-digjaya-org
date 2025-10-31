@@ -19,7 +19,7 @@ import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
 
 export const metadata = {
-  title: "charifund | Nonprofit & Fundraising Charity NEXT JS Template",
+  title: "ppsi | Nonprofit & Fundraising Charity NEXT JS Template",
   description: "Nonprofit & Fundraising Charity NEXT JS Template.",
 };
 

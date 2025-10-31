@@ -3,8 +3,8 @@
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>Copyright (C) 2024 by original authors @ fontello.com</metadata>
 <defs>
-<font id="charifund" horiz-adv-x="1000" >
-<font-face font-family="charifund" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<font id="ppsi" horiz-adv-x="1000" >
+<font-face font-family="ppsi" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
 <missing-glyph horiz-adv-x="1000" />
 <glyph glyph-name="share" unicode="&#xe800;" d="M665 221c101 0 182-81 182-181 0-101-81-182-182-182-100 0-181 81-181 182 0 17 2 35 7 52l-185 118c-34-31-77-49-124-49-101 0-182 81-182 181 0 100 81 181 182 181 47 0 90-18 124-51l185 118c-5 17-7 36-7 54 0 101 81 182 181 182 101 0 182-81 182-182 0-100-81-181-182-181-49 0-92 19-126 49l-185-117c11-34 11-74 0-108l185-117c34 32 77 51 126 51z m0 514c-51 0-90-41-90-91 0-51 39-90 90-90 50 0 91 39 91 90 0 50-41 91-91 91z m-483-484c49 0 90 40 90 91 0 49-41 91-90 91-52 0-91-42-91-91 0-51 39-91 91-91z m483-302c50 0 91 39 91 91 0 49-41 90-91 90-51 0-90-41-90-90 0-52 39-91 90-91z" horiz-adv-x="871" />
 

@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
 
         <link rel="stylesheet" href="/assets/fonts/css/all.min.css" />
         <link rel="stylesheet" href="/assets/fonts/css/flag-icons.min.css" />
-        <link rel="stylesheet" href="/assets/fonts/css/charifund.css" />
+        <link rel="stylesheet" href="/assets/fonts/css/ppsi.css" />
         <link rel="stylesheet" href="/assets/css/nice-select.css" />
         <link rel="stylesheet" href="/assets/css/default-theme.css" id="switch-color" />
         <link rel="stylesheet" href="/assets/css/sticky-header.css" />

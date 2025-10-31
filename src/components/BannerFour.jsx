@@ -13,7 +13,7 @@ const BannerFour = () => {
                 to poverties &amp; Old non profit Care
               </h2>
               <p>
-                charifund is the world's driving worldwide coordinations
+                ppsi is the world's driving worldwide coordinations
                 supplier — we uphold industry and exchange the worldwide trade
                 of mercha
               </p>

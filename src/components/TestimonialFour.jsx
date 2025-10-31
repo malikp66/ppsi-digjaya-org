@@ -61,7 +61,7 @@ const TestimonialFour = () => {
                         <div className='author-content'>
                           <h6>Michel Smith</h6>
                           <p>
-                            Founder of <span>charifund</span>
+                            Founder of <span>ppsi</span>
                           </p>
                         </div>
                       </div>
@@ -87,7 +87,7 @@ const TestimonialFour = () => {
                         <div className='author-content'>
                           <h6>Michel Smith</h6>
                           <p>
-                            Founder of <span>charifund</span>
+                            Founder of <span>ppsi</span>
                           </p>
                         </div>
                       </div>
@@ -113,7 +113,7 @@ const TestimonialFour = () => {
                         <div className='author-content'>
                           <h6>Michel Smith</h6>
                           <p>
-                            Founder of <span>charifund</span>
+                            Founder of <span>ppsi</span>
                           </p>
                         </div>
                       </div>
