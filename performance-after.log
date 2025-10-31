@@ -1,0 +1,53 @@
+
+> ppsi-digjaya@0.1.0 build C:\Users\malik\Documents\ppsi_ref\ppsi-digjaya-org
+> next build
+
+   Γû▓ Next.js 15.3.2
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully in 4.0s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/28) ...
+   Generating static pages (7/28) 
+   Generating static pages (14/28) 
+   Generating static pages (21/28) 
+ Γ£ô Generating static pages (28/28)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+Γöî Γùï /                                    4.27 kB         142 kB
+Γö£ Γùï /_not-found                            142 B         102 kB
+Γö£ Γùï /about-us                              244 B         138 kB
+Γö£ Γùï /become-volunteer                      229 B         118 kB
+Γö£ Γùï /blog-details                          242 B         118 kB
+Γö£ Γùï /blog-grid                             242 B         118 kB
+Γö£ Γùï /blog-list                             242 B         118 kB
+Γö£ Γùï /cart                                1.37 kB         119 kB
+Γö£ Γùï /cause-details                         242 B         118 kB
+Γö£ Γùï /checkout                              229 B         118 kB
+Γö£ Γùï /coming-soon                         2.94 kB         113 kB
+Γö£ Γùï /contact-us                            229 B         118 kB
+Γö£ Γùï /donate-us                           2.68 kB         121 kB
+Γö£ Γùï /event-details                         242 B         118 kB
+Γö£ Γùï /events                                242 B         118 kB
+Γö£ Γùï /faq                                   947 B         136 kB
+Γö£ Γùï /icon.ico                                0 B            0 B
+Γö£ Γùï /index-five                          7.84 kB         146 kB
+Γö£ Γùï /index-four                          14.1 kB         152 kB
+Γö£ Γùï /index-three                         8.21 kB         148 kB
+Γö£ Γùï /index-two                           6.73 kB         127 kB
+Γö£ Γùï /our-causes                            236 B         120 kB
+Γö£ Γùï /our-team                              242 B         118 kB
+Γö£ Γùï /product-details                     2.83 kB         121 kB
+Γö£ Γùï /shop                                2.17 kB         120 kB
+Γöö Γùï /team-details                          242 B         118 kB
++ First Load JS shared by all             102 kB
+  Γö£ chunks/7908-01f5e12bbac695f2.js      46.8 kB
+  Γö£ chunks/fae62438-9592d12d629c0b9a.js  53.2 kB
+  Γöö other shared chunks (total)          2.07 kB
+
+
+Γùï  (Static)  prerendered as static content
+
