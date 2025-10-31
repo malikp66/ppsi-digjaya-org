@@ -9,7 +9,7 @@ const TopBarThree = () => {
                 <div className='col-12 col-lg-7'>
                   <div className='topbar__list-wrapper'>
                     <ul className='topbar__list'>
-                      <li>
+                      {/* <li>
                         <a
                           href='https://maps.app.goo.gl/Gr9pTNqz5FRNrjQw8'
                           target='_blank'
@@ -18,7 +18,7 @@ const TopBarThree = () => {
                           <i className='fa-solid fa-location-dot' />
                           Jl. Cijagra III No. 12, Turangga, Lengkong, Kota Bandung
                         </a>
-                      </li>
+                      </li> */}
                       <li>
                         <a href='mailto:dpdppsikotabandungofficial@gmail.com'>
                           <i className='fa-regular fa-envelope' />
