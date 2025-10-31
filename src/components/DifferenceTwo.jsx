@@ -3,7 +3,7 @@ import { useState } from "react";
 import ModalVideo from "react-modal-video";
 const DifferenceTwo = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("mission");
+  const [activeTab, setActiveTab] = useState("visi");
   return (
     <>
       <section className='difference-two'>
@@ -56,16 +56,16 @@ const DifferenceTwo = () => {
                 <div className='difference-two__content'>
                   <span className='sub-title'>
                     <i className='icon-donation' />
-                    Start donating poor people
+                    Visi, Misi, dan Nilai PPSI Digjaya
                   </span>
                   <h2 className='title-animation_inner'>
-                    Donate <span>Support</span> to Make Difference way
+                    Menjaga <span>warisan</span> dan membina generasi penerus
                   </h2>
                   <p>
-                    Charity is the voluntary act of giving help, typically in
-                    the form of money, time, or resources, to those in need.
-                    Charitable organizations aim to solve social, environmental,
-                    and economic challenges by addressing issues like poverty,
+                    Sejak dibentuk 17 Agustus 1957 oleh Kol. R.A. Kosasi, PPSI Digjaya menjadi
+                    wadah resmi pendekar Jawa Barat untuk mempersatukan perguruan, menjaga keamanan,
+                    dan mengembangkan pencak silat tradisional melalui pendidikan, kejuaraan, dan
+                    dukungan sosial bagi anggota.
                   </p>
 
                   <div className='difference-two__inner cta'>
@@ -75,96 +75,99 @@ const DifferenceTwo = () => {
                         <div className='difference-two__tab-btns'>
                           <button
                             className={`difference-two__tab-btn ${
-                              activeTab === "mission" ? "active" : ""
+                              activeTab === "visi" ? "active" : ""
                             }`}
-                            onClick={() => setActiveTab("mission")}
-                            aria-label='mission'
-                            title='mission'
+                            onClick={() => setActiveTab("visi")}
+                            aria-label='visi'
+                            title='visi'
                           >
-                            Our Mission
+                            Visi
                           </button>
                           <button
                             className={`difference-two__tab-btn ${
-                              activeTab === "vision" ? "active" : ""
+                              activeTab === "misi" ? "active" : ""
                             }`}
-                            onClick={() => setActiveTab("vision")}
-                            aria-label='vision'
-                            title='vision'
+                            onClick={() => setActiveTab("misi")}
+                            aria-label='misi'
+                            title='misi'
                           >
-                            Our Vision
+                            Misi
                           </button>
                           <button
                             className={`difference-two__tab-btn ${
-                              activeTab === "excellence" ? "active" : ""
+                              activeTab === "nilai" ? "active" : ""
                             }`}
-                            onClick={() => setActiveTab("excellence")}
-                            aria-label='excellence'
-                            title='excellence'
+                            onClick={() => setActiveTab("nilai")}
+                            aria-label='nilai'
+                            title='nilai'
                           >
-                            Excellence
+                            Nilai Utama
                           </button>
                         </div>
 
                         <div className='difference-two__tab-content'>
-                          {activeTab === "mission" && (
+                          {activeTab === "visi" && (
                             <div
                               className='difference-two__content-single'
-                              id='mission'
+                              id='visi'
+                            >
+                              <p>
+                                Menjadi organisasi pencak silat tradisional yang profesional dalam
+                                melestarikan, mengembangkan, dan mempromosikan nilai-nilai budaya
+                                bangsa serta membentuk generasi berkarakter, budi bakti, sakti.
+                              </p>
+                            </div>
+                          )}
+                          {activeTab === "misi" && (
+                            <div
+                              className='difference-two__content-single'
+                              id='misi'
                             >
                               <ul>
                                 <li>
-                                  <i className='fa-solid fa-check' /> We help
-                                  companies develop powerful corporate social
+                                  <i className='fa-solid fa-check' /> Membangun struktur organisasi
+                                  yang profesional dan akuntabel.
                                 </li>
                                 <li>
-                                  <i className='fa-solid fa-check' /> Helped
-                                  fund 3,265 Project powerful corporate poor
+                                  <i className='fa-solid fa-check' /> Meningkatkan kualitas
+                                  pembinaan dan pelatihan pencak silat.
                                 </li>
                                 <li>
-                                  <i className='fa-solid fa-check' /> Dedicated
-                                  Tech Services
+                                  <i className='fa-solid fa-check' /> Memperkenalkan pencak silat di
+                                  tingkat nasional dan internasional.
+                                </li>
+                                <li>
+                                  <i className='fa-solid fa-check' /> Menjalin kerja sama dengan
+                                  lembaga dan komunitas strategis.
+                                </li>
+                                <li>
+                                  <i className='fa-solid fa-check' /> Mencetak generasi berkarakter
+                                  dan berdedikasi bagi bangsa.
+                                </li>
+                                <li>
+                                  <i className='fa-solid fa-check' /> Memberikan penghargaan serta
+                                  dukungan bagi atlet berprestasi.
                                 </li>
                               </ul>
                             </div>
                           )}
-                          {activeTab === "vision" && (
+                          {activeTab === "nilai" && (
                             <div
                               className='difference-two__content-single'
-                              id='vision'
+                              id='nilai'
                             >
                               <ul>
                                 <li>
-                                  <i className='fa-solid fa-check' /> We help
-                                  companies develop powerful corporate social
+                                  <i className='fa-solid fa-check' /> Pelestarian budaya dan
+                                  kearifan lokal Sunda.
                                 </li>
                                 <li>
-                                  <i className='fa-solid fa-check' /> Helped
-                                  fund 3,265 Project powerful corporate poor
+                                  <i className='fa-solid fa-check' /> Kebersamaan, persaudaraan, dan
+                                  sportifitas antar perguruan.
                                 </li>
                                 <li>
-                                  <i className='fa-solid fa-check' /> Dedicated
-                                  Tech Services
-                                </li>
-                              </ul>
-                            </div>
-                          )}
-                          {activeTab === "excellence" && (
-                            <div
-                              className='difference-two__content-single'
-                              id='excellence'
-                            >
-                              <ul>
-                                <li>
-                                  <i className='fa-solid fa-check' /> We help
-                                  companies develop powerful corporate social
-                                </li>
-                                <li>
-                                  <i className='fa-solid fa-check' /> Helped
-                                  fund 3,265 Project powerful corporate poor
-                                </li>
-                                <li>
-                                  <i className='fa-solid fa-check' /> Dedicated
-                                  Tech Services
+                                  <i className='fa-solid fa-check' /> Profesionalisme dan integritas
+                                  dalam pengabdian.
                                 </li>
                               </ul>
                             </div>
@@ -177,10 +180,10 @@ const DifferenceTwo = () => {
                         <div className='difference-progress-single'>
                           <div
                             className='progress-bar-single'
-                            data-percent='75%'
+                            data-percent='68%'
                           >
                             <div className='circular-progress'>
-                              <div className='percent-value'>55%</div>
+                              <div className='percent-value'>68%</div>
                               <svg
                                 className='progress-circle'
                                 viewBox='0 0 36 36'
@@ -192,7 +195,7 @@ const DifferenceTwo = () => {
                          a 15.9155 15.9155 0 0 1 0 -31.831'
                                 />
                                 <path
-                                  style={{ strokeDasharray: 55 }}
+                                  style={{ strokeDasharray: 68 }}
                                   className='circle-progress'
                                   d='M18 2.0845
                          a 15.9155 15.9155 0 0 1 0 31.831
@@ -203,15 +206,15 @@ const DifferenceTwo = () => {
                           </div>
                           <div className='content'>
                             <p>
-                              Treatment <br />
-                              Helping
+                              Perguruan <br />
+                              Terdaftar
                             </p>
                           </div>
                         </div>
                         <div className='difference-progress-single'>
                           <div
                             className='progress-bar-single'
-                            data-percent='92%'
+                            data-percent='85%'
                           >
                             <div className='circular-progress'>
                               <div className='percent-value'>85%</div>
@@ -226,7 +229,7 @@ const DifferenceTwo = () => {
                          a 15.9155 15.9155 0 0 1 0 -31.831'
                                 />
                                 <path
-                                  style={{ strokeDasharray: 60 }}
+                                  style={{ strokeDasharray: 85 }}
                                   className='circle-progress'
                                   d='M18 2.0845
                          a 15.9155 15.9155 0 0 1 0 31.831
@@ -237,8 +240,8 @@ const DifferenceTwo = () => {
                           </div>
                           <div className='content'>
                             <p>
-                              Highest <br />
-                              Fund Raised
+                              Atlet <br />
+                              Terfasilitasi
                             </p>
                           </div>
                         </div>
@@ -252,7 +255,7 @@ const DifferenceTwo = () => {
                           <i className='icon-donation-card' />
                         </div>
                         <div className='content'>
-                          <h6>Donate Now</h6>
+                          <h6>Program Aktif</h6>
                           <p>$40,456</p>
                         </div>
                       </div>
@@ -262,7 +265,7 @@ const DifferenceTwo = () => {
                           <i className='icon-fund' />
                         </div>
                         <div className='content'>
-                          <h6>Total Fundraised</h6>
+                          <h6>Dana Sosial Tersalur</h6>
                           <p>$1,540,456</p>
                         </div>
                       </div>

@@ -20,7 +20,7 @@ const CartInner = () => {
                       <th>Product</th>
                       <th>Price</th>
                       <th>Quantity</th>
-                      <th>Subtotal</th>
+                      <th>SubTotal</th>
                     </tr>
                     <tr className='cart-item-single'>
                       <td className='cart-product'>
@@ -41,19 +41,19 @@ const CartInner = () => {
                           </div>
                           <div className='content'>
                             <p>
-                              <Link href='/product-details'>Apple Watch</Link>
+                              <Link href='/product-details'>Seragam Latihan PPSI</Link>
                             </p>
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p className='price'>$12.00</p>
+                        <p className='price'>$12Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
                       </td>
                       <td>
                         <QTY />
                       </td>
                       <td>
-                        <p className='sub'>$60.00</p>
+                        <p className='sub'>$60Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
                       </td>
                     </tr>
                     <tr className='cart-item-single'>
@@ -76,20 +76,20 @@ const CartInner = () => {
                           <div className='content'>
                             <p>
                               <Link href='/product-details'>
-                                Sumsang Hand Set
+                                Sabuk Hitam Bordir
                               </Link>
                             </p>
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p className='price'>$67.00</p>
+                        <p className='price'>$67Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
                       </td>
                       <td>
                         <QTY />
                       </td>
                       <td>
-                        <p className='sub'>$67.00</p>
+                        <p className='sub'>$67Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
                       </td>
                     </tr>
                     <tr className='cart-item-single'>
@@ -112,20 +112,20 @@ const CartInner = () => {
                           <div className='content'>
                             <p>
                               <Link href='/product-details'>
-                                Tata Brand Car
+                                Jaket Resmi PPSI
                               </Link>
                             </p>
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p className='price'>$87.00</p>
+                        <p className='price'>$87Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
                       </td>
                       <td>
                         <QTY />
                       </td>
                       <td>
-                        <p className='sub'>$87.00</p>
+                        <p className='sub'>$87Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
                       </td>
                     </tr>
                     <tr className='cart-item-single'>
@@ -148,20 +148,20 @@ const CartInner = () => {
                           <div className='content'>
                             <p>
                               <Link href='/product-details'>
-                                Sumsang Hand Set
+                                Sabuk Hitam Bordir
                               </Link>
                             </p>
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p className='price'>$99.00</p>
+                        <p className='price'>$99Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
                       </td>
                       <td>
                         <QTY />
                       </td>
                       <td>
-                        <p className='sub'>$99.00</p>
+                        <p className='sub'>$99Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
                       </td>
                     </tr>
                   </tbody>
@@ -173,7 +173,7 @@ const CartInner = () => {
               </div>
               <div className='coupon-wrapper'>
                 <div className='left-c'>
-                  <h6>Coupon Code</h6>
+                  <h6>Kode Promo</h6>
                 </div>
                 <div className='right-c'>
                   <form action='#' method='post'>
@@ -192,7 +192,7 @@ const CartInner = () => {
                       title='subscribe to our newsletter'
                       className='btn--primary'
                     >
-                      Apply Coupon
+                      Gunakan Kode
                     </button>
                   </form>
                 </div>
@@ -208,23 +208,23 @@ const CartInner = () => {
                 data-aos-delay={100}
               >
                 <div className='intro'>
-                  <h6>Calculate Shipping</h6>
+                  <h6>Lokasi Pengambilan</h6>
                 </div>
                 <div className='content'>
                   <div className='content-single'>
                     <p>Country</p>
-                    <p>Australia</p>
+                    <p>Sekretariat PPSI Digjaya</p>
                   </div>
                   <div className='content-single'>
                     <p>Street</p>
-                    <p>#67, Chunkook Street</p>
+                    <p>Jl. Cijagra III No. 12</p>
                   </div>
                   <div className='content-single'>
-                    <p>Zip Code</p>
-                    <p>49870</p>
+                    <p>Kontak</p>
+                    <p>082129251959</p>
                   </div>
                   <Link href='/checkout' aria-label='Shipping' title='Shipping'>
-                    Calculate Shiping
+                    Lihat Rute
                   </Link>
                 </div>
               </div>
@@ -239,20 +239,20 @@ const CartInner = () => {
                 </div>
                 <div className='content'>
                   <div className='content-single'>
-                    <p>Subtotal</p>
-                    <p>$345.00</p>
+                    <p>SubTotal</p>
+                    <p>$345Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
                   </div>
                   <div className='content-single'>
                     <p>Total</p>
-                    <p>$450.00</p>
+                    <p>$450Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
                   </div>
                   <Link
                     href='/checkout'
                     aria-label='Shipping'
                     title='Shipping'
-                    className='total'
+                    className='Total'
                   >
-                    Procced to checkout
+                    Lanjut ke Pembayaran
                   </Link>
                 </div>
               </div>
@@ -297,3 +297,6 @@ const QTY = () => {
 };
 
 export default CartInner;
+
+
+

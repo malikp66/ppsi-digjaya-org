@@ -3,6 +3,41 @@
 import { useRef } from "react";
 import Slider from "@/components/ClientSlider";
 
+const testimonials = [
+  {
+    id: "perguruan",
+    quote:
+      "PPSI Digjaya mampu menyatukan perguruan tradisi dalam satu visi. Pasanggiri dan pelatihan bersama menumbuhkan regenerasi pendekar muda yang berkarakter.",
+    name: "Eka Pratama",
+    role: "Ketua Perguruan Tjimande Kota Bandung",
+    avatar: "assets/images/author.png",
+  },
+  {
+    id: "pelatih",
+    quote:
+      "Program sertifikasi pelatih memperkuat disiplin, etika, dan metodologi latihan. Kami dibekali materi keselamatan serta dukungan dana pembinaan atlet.",
+    name: "Siti Rahmawati",
+    role: "Pelatih Senior PPSI Digjaya",
+    avatar: "assets/images/author.png",
+  },
+  {
+    id: "atlet",
+    quote:
+      "Dukungan dana sosial membuat kami fokus berlatih menuju kejuaraan nasional. Marketplace PPSI juga membantu memenuhi kebutuhan atribut latihan resmi.",
+    name: "Galih Siliwangi",
+    role: "Atlet Pasanggiri Jawa Barat",
+    avatar: "assets/images/author.png",
+  },
+  {
+    id: "mitra",
+    quote:
+      "Kolaborasi dengan PPSI Digjaya membuka ruang edukasi pencak silat di sekolah. Materi budaya dan karakter diterima baik oleh guru dan siswa.",
+    name: "Yudha Ramdhan",
+    role: "Kepala Bidang Olahraga Disbudpar Kota Bandung",
+    avatar: "assets/images/author.png",
+  },
+];
+
 const TestimonialOne = () => {
   const sliderRef = useRef(null);
 
@@ -56,11 +91,10 @@ const TestimonialOne = () => {
               >
                 <span className='sub-title'>
                   <i className='icon-donation' />
-                  Start donating poor people
+                  Suara Anggota &amp; Mitra
                 </span>
                 <h2 className='title-animation_inner'>
-                  Our valueable <span>customer</span>
-                  Awesome Feedback
+                  Testimoni <span>sinergi</span> PPSI Digjaya
                 </h2>
               </div>
             </div>
@@ -76,252 +110,42 @@ const TestimonialOne = () => {
                     ref={sliderRef}
                     className='swiper-wrapper'
                   >
-                    <div className='swiper-slide'>
-                      <div className='testimonial__slider-single'>
-                        <div className='review'>
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                        </div>
-                        <div className='content'>
-                          <blockquote>
-                            <q>
-                              Charity is the voluntary act of giving help,
-                              typically in the form of money, time, or
-                              resources, to those in need. Charitable
-                              organizations aim to solve social, environmental,
-                              and economic challenges by addressing issues like
-                              poverty
-                            </q>
-                          </blockquote>
-                        </div>
-                        <div className='author-info'>
-                          <div className='author-thumb'>
+                    {testimonials.map((testimonial) => (
+                      <div className='swiper-slide' key={testimonial.id}>
+                        <div className='testimonial__slider-single'>
+                          <div className='review'>
+                            <i className='icon-star' />
+                            <i className='icon-star' />
+                            <i className='icon-star' />
+                            <i className='icon-star' />
+                            <i className='icon-star' />
+                          </div>
+                          <div className='content'>
+                            <blockquote>
+                              <q>{testimonial.quote}</q>
+                            </blockquote>
+                          </div>
+                          <div className='author-info'>
+                            <div className='author-thumb'>
+                              <img
+                                src={testimonial.avatar}
+                                alt='Image_inner'
+                              />
+                            </div>
+                            <div className='author-content'>
+                              <h6>{testimonial.name}</h6>
+                              <p>{testimonial.role}</p>
+                            </div>
+                          </div>
+                          <div className='quote'>
                             <img
-                              src='assets/images/author.png'
+                              src='assets/images/quote.png'
                               alt='Image_inner'
                             />
                           </div>
-                          <div className='author-content'>
-                            <h6>Michel Smith</h6>
-                            <p>Cloth Store Inc.</p>
-                          </div>
-                        </div>
-                        <div className='quote'>
-                          <img
-                            src='assets/images/quote.png'
-                            alt='Image_inner'
-                          />
                         </div>
                       </div>
-                    </div>
-                    <div className='swiper-slide'>
-                      <div className='testimonial__slider-single'>
-                        <div className='review'>
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                        </div>
-                        <div className='content'>
-                          <blockquote>
-                            <q>
-                              Charity is the voluntary act of giving help,
-                              typically in the form of money, time, or
-                              resources, to those in need. Charitable
-                              organizations aim to solve social, environmental,
-                              and economic challenges by addressing issues like
-                              poverty
-                            </q>
-                          </blockquote>
-                        </div>
-                        <div className='author-info'>
-                          <div className='author-thumb'>
-                            <img
-                              src='assets/images/author.png'
-                              alt='Image_inner'
-                            />
-                          </div>
-                          <div className='author-content'>
-                            <h6>Ruby Klara</h6>
-                            <p>Cloth Store Inc.</p>
-                          </div>
-                        </div>
-                        <div className='quote'>
-                          <img
-                            src='assets/images/quote.png'
-                            alt='Image_inner'
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='swiper-slide'>
-                      <div className='testimonial__slider-single'>
-                        <div className='review'>
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                        </div>
-                        <div className='content'>
-                          <blockquote>
-                            <q>
-                              Charity is the voluntary act of giving help,
-                              typically in the form of money, time, or
-                              resources, to those in need. Charitable
-                              organizations aim to solve social, environmental,
-                              and economic challenges by addressing issues like
-                              poverty
-                            </q>
-                          </blockquote>
-                        </div>
-                        <div className='author-info'>
-                          <div className='author-thumb'>
-                            <img
-                              src='assets/images/author.png'
-                              alt='Image_inner'
-                            />
-                          </div>
-                          <div className='author-content'>
-                            <h6>Bishu Kiev</h6>
-                            <p>Cloth Store Inc.</p>
-                          </div>
-                        </div>
-                        <div className='quote'>
-                          <img
-                            src='assets/images/quote.png'
-                            alt='Image_inner'
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='swiper-slide'>
-                      <div className='testimonial__slider-single'>
-                        <div className='review'>
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                        </div>
-                        <div className='content'>
-                          <blockquote>
-                            <q>
-                              Charity is the voluntary act of giving help,
-                              typically in the form of money, time, or
-                              resources, to those in need. Charitable
-                              organizations aim to solve social, environmental,
-                              and economic challenges by addressing issues like
-                              poverty
-                            </q>
-                          </blockquote>
-                        </div>
-                        <div className='author-info'>
-                          <div className='author-thumb'>
-                            <img
-                              src='assets/images/author.png'
-                              alt='Image_inner'
-                            />
-                          </div>
-                          <div className='author-content'>
-                            <h6>Michel Smith</h6>
-                            <p>Cloth Store Inc.</p>
-                          </div>
-                        </div>
-                        <div className='quote'>
-                          <img
-                            src='assets/images/quote.png'
-                            alt='Image_inner'
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='swiper-slide'>
-                      <div className='testimonial__slider-single'>
-                        <div className='review'>
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                        </div>
-                        <div className='content'>
-                          <blockquote>
-                            <q>
-                              Charity is the voluntary act of giving help,
-                              typically in the form of money, time, or
-                              resources, to those in need. Charitable
-                              organizations aim to solve social, environmental,
-                              and economic challenges by addressing issues like
-                              poverty
-                            </q>
-                          </blockquote>
-                        </div>
-                        <div className='author-info'>
-                          <div className='author-thumb'>
-                            <img
-                              src='assets/images/author.png'
-                              alt='Image_inner'
-                            />
-                          </div>
-                          <div className='author-content'>
-                            <h6>Ruby Klara</h6>
-                            <p>Cloth Store Inc.</p>
-                          </div>
-                        </div>
-                        <div className='quote'>
-                          <img
-                            src='assets/images/quote.png'
-                            alt='Image_inner'
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='swiper-slide'>
-                      <div className='testimonial__slider-single'>
-                        <div className='review'>
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                        </div>
-                        <div className='content'>
-                          <blockquote>
-                            <q>
-                              Charity is the voluntary act of giving help,
-                              typically in the form of money, time, or
-                              resources, to those in need. Charitable
-                              organizations aim to solve social, environmental,
-                              and economic challenges by addressing issues like
-                              poverty
-                            </q>
-                          </blockquote>
-                        </div>
-                        <div className='author-info'>
-                          <div className='author-thumb'>
-                            <img
-                              src='assets/images/author.png'
-                              alt='Image_inner'
-                            />
-                          </div>
-                          <div className='author-content'>
-                            <h6>Bishu Kiev</h6>
-                            <p>Cloth Store Inc.</p>
-                          </div>
-                        </div>
-                        <div className='quote'>
-                          <img
-                            src='assets/images/quote.png'
-                            alt='Image_inner'
-                          />
-                        </div>
-                      </div>
-                    </div>
+                    ))}
                   </Slider>
                 </div>
               </div>
@@ -331,8 +155,8 @@ const TestimonialOne = () => {
             <button
               onClick={() => sliderRef.current.slickPrev()}
               type='button'
-              aria-label='prev slide'
-              title='prev slide'
+              aria-label='prev testimonial'
+              title='Testimoni sebelumnya'
               className='prev-testimonial slider-btn'
             >
               <i className='fa-solid fa-arrow-left' />
@@ -340,8 +164,8 @@ const TestimonialOne = () => {
             <button
               onClick={() => sliderRef.current.slickNext()}
               type='button'
-              aria-label='next slide'
-              title='next slide'
+              aria-label='next testimonial'
+              title='Testimoni selanjutnya'
               className='next-testimonial slider-btn slider-btn-next'
             >
               <i className='fa-solid fa-arrow-right' />

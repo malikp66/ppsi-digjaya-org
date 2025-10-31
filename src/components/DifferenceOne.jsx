@@ -34,6 +34,40 @@ const DifferenceOne = () => {
       },
     ],
   };
+  const focusAreas = [
+    {
+      id: "budaya",
+      title: "Program Budaya & Pasanggiri",
+      description:
+        "Menghadirkan festival tradisi, kurikulum silat sekolah, dan pasanggiri tingkat Jawa Barat.",
+      href: "/our-causes",
+      wrapperClass: "difference__single-first",
+      icon: "icon-education",
+      background: "url(/assets/images/difference/bg-one.png)",
+    },
+    {
+      id: "pembinaan",
+      title: "Pembinaan Atlet & Pelatih",
+      description:
+        "Pelatihan terstruktur, mentoring pelatih senior, dan pendampingan prestasi atlet muda.",
+      href: "/pelatihan-atlet",
+      wrapperClass: "difference__single-second",
+      icon: "icon-support-heart",
+      background: "url(/assets/images/difference/bg-two.png)",
+    },
+    {
+      id: "ekonomi",
+      title: "Ekonomi & Marketplace Anggota",
+      description:
+        "Mengembangkan pemasaran atribut resmi, UMKM anggota, serta dana sosial berkelanjutan.",
+      href: "/shop",
+      wrapperClass: "difference__single-third",
+      icon: "icon-fund",
+      background: "url(/assets/images/difference/bg-three.png)",
+    },
+  ];
+  const sliderItems = [...focusAreas, ...focusAreas];
+
   return (
     <>
       <section className='difference'>
@@ -47,15 +81,14 @@ const DifferenceOne = () => {
               >
                 <span className='sub-title'>
                   <i className='icon-donation' />
-                  Start donating poor people
+                  Pilar Strategis PPSI Digjaya
                 </span>
                 <h2 className='title-animation_inner'>
-                  Charity With Difference
+                  Menjaga warisan <span>silat</span> dan memberdayakan anggota
                 </h2>
                 <p>
-                  Join our monthly giving program to provide consistent support
-                  to our initiatives. Regular contributions, no matter the size,
-                  help us plan and sustain long-term projects.
+                  PPSI Digjaya hadir sebagai wadah resmi yang memadukan pelestarian tradisi,
+                  pembinaan prestasi, serta penguatan ekonomi komunitas pencak silat Jawa Barat.
                 </p>
               </div>
             </div>
@@ -71,150 +104,26 @@ const DifferenceOne = () => {
                     ref={sliderRef}
                     className='swiper-wrapper'
                   >
-                    <div className='swiper-slide px-2'>
-                      <div className='difference__single-wrapper'>
-                        <div
-                          className='difference__single difference__single-first'
-                          style={{
-                            backgroundImage:
-                              "url(/assets/images/difference/bg-one.png)",
-                          }}
-                        >
-                          <div className='difference__single-thumb'>
-                            <i className='icon-education' />
-                          </div>
-                          <div className='difference__single-content'>
-                            <h5>
-                              <Link href='/cause-details'>Child Education</Link>
-                            </h5>
-                            <p>
-                              Set up a secure and user-friendly online donation
-                              platform that accepts multiple
-                            </p>
+                    {sliderItems.map((item, index) => (
+                      <div className='swiper-slide px-2' key={`${item.id}-${index}`}>
+                        <div className='difference__single-wrapper'>
+                          <div
+                            className={`difference__single ${item.wrapperClass}`}
+                            style={{ backgroundImage: item.background }}
+                          >
+                            <div className='difference__single-thumb'>
+                              <i className={item.icon} />
+                            </div>
+                            <div className='difference__single-content'>
+                              <h5>
+                                <Link href={item.href}>{item.title}</Link>
+                              </h5>
+                              <p>{item.description}</p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div className='swiper-slide px-2'>
-                      <div className='difference__single-wrapper'>
-                        <div
-                          className='difference__single difference__single-second'
-                          style={{
-                            backgroundImage:
-                              "url(/assets/images/difference/bg-two.png)",
-                          }}
-                        >
-                          <div className='difference__single-thumb'>
-                            <i className='icon-food' />
-                          </div>
-                          <div className='difference__single-content'>
-                            <h5>
-                              <Link href='/cause-details'>Healthy Food</Link>
-                            </h5>
-                            <p>
-                              Set up a secure and user-friendly online donation
-                              platform that accepts multiple
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className='swiper-slide px-2'>
-                      <div className='difference__single-wrapper'>
-                        <div
-                          className='difference__single difference__single-third '
-                          style={{
-                            backgroundImage:
-                              "url(/assets/images/difference/bg-three.png)",
-                          }}
-                        >
-                          <div className='difference__single-thumb'>
-                            <i className='icon-health' />
-                          </div>
-                          <div className='difference__single-content'>
-                            <h5>
-                              <Link href='/cause-details'>Medical Care</Link>
-                            </h5>
-                            <p>
-                              Set up a secure and user-friendly online donation
-                              platform that accepts multiple
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className='swiper-slide px-2'>
-                      <div className='difference__single-wrapper'>
-                        <div
-                          className='difference__single difference__single-first'
-                          style={{
-                            backgroundImage:
-                              "url(/assets/images/difference/bg-one.png)",
-                          }}
-                        >
-                          <div className='difference__single-thumb'>
-                            <i className='icon-education' />
-                          </div>
-                          <div className='difference__single-content'>
-                            <h5>
-                              <Link href='/cause-details'>Child Education</Link>
-                            </h5>
-                            <p>
-                              Set up a secure and user-friendly online donation
-                              platform that accepts multiple
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className='swiper-slide px-2'>
-                      <div className='difference__single-wrapper'>
-                        <div
-                          className='difference__single difference__single-second'
-                          style={{
-                            backgroundImage:
-                              "url(/assets/images/difference/bg-two.png)",
-                          }}
-                        >
-                          <div className='difference__single-thumb'>
-                            <i className='icon-food' />
-                          </div>
-                          <div className='difference__single-content'>
-                            <h5>
-                              <Link href='/cause-details'>Healthy Food</Link>
-                            </h5>
-                            <p>
-                              Set up a secure and user-friendly online donation
-                              platform that accepts multiple
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className='swiper-slide px-2'>
-                      <div className='difference__single-wrapper'>
-                        <div
-                          className='difference__single difference__single-third '
-                          style={{
-                            backgroundImage:
-                              "url(/assets/images/difference/bg-three.png)",
-                          }}
-                        >
-                          <div className='difference__single-thumb'>
-                            <i className='icon-health' />
-                          </div>
-                          <div className='difference__single-content'>
-                            <h5>
-                              <Link href='/cause-details'>Medical Care</Link>
-                            </h5>
-                            <p>
-                              Set up a secure and user-friendly online donation
-                              platform that accepts multiple
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    ))}
                   </Slider>
                 </div>
               </div>

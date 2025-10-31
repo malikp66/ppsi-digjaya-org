@@ -55,7 +55,7 @@ const HelpOne = () => {
                   </div>
                   <div className='vertical-text'>
                     <h5>
-                      We Give <span>Donations</span> to Poor People{" "}
+                      PPSI <span>Digjaya</span> Menjaga Tradisi{" "}
                     </h5>
                   </div>
                 </div>
@@ -65,15 +65,16 @@ const HelpOne = () => {
               <div className='help__content'>
                 <span className='sub-title'>
                   <i className='icon-donation' />
-                  Start donating poor people
+                  Profil PPSI Digjaya
                 </span>
                 <h2 className='title-animation_inner'>
-                  Helping each other can make <span>world</span> better
+                  Pelestarian silat tradisi melalui <span>pembinaan</span> dan sinergi
                 </h2>
                 <p>
-                  Volunteering offers opportunities to develop new skills and
-                  gain valuable experience. This can include leadership,
-                  communication, project management, and teamwork skills.
+                  PPSI dibentuk 17 Agustus 1957 oleh Kol. R.A. Kosasi bersama para pendekar
+                  Jawa Barat untuk mempersatukan perguruan dan menjaga keamanan masyarakat.
+                  Kini DPW Jawa Barat terus memperkuat pelestarian budaya, pembinaan atlet,
+                  dan pengembangan ekonomi anggota melalui jaringan perguruan di Kota Bandung.
                 </p>
                 <div className='help__content-icon-group'>
                   <div className='help__content-icon'>
@@ -81,10 +82,8 @@ const HelpOne = () => {
                       <i className='icon-make-donation' />
                     </div>
                     <div className='content'>
-                      <h6>Start helping them</h6>
-                      <p>
-                        Raising awareness about the charity's mission and cause.
-                      </p>
+                      <h6>Struktur Profesional</h6>
+                      <p>Perencanaan, pelaksanaan, dan evaluasi organisasi yang akuntabel.</p>
                     </div>
                   </div>
                   <div className='help__content-icon'>
@@ -92,38 +91,35 @@ const HelpOne = () => {
                       <i className='icon-support-heart' />
                     </div>
                     <div className='content'>
-                      <h6>Make Donations</h6>
-                      <p>
-                        Raising awareness about the charity's mission and cause.
-                      </p>
+                      <h6>Pembinaan Berkarakter</h6>
+                      <p>Disiplin, integritas, dan etika dijunjung dalam setiap pelatihan.</p>
                     </div>
                   </div>
                 </div>
                 <div className='help__content-list'>
                   <ul>
                     <li>
-                      <i className='fa-solid fa-circle-check' /> Helped fund
-                      3,265 Project powerful corporate poor.
+                      <i className='fa-solid fa-circle-check' /> Mendorong PPSI menjadi induk pencak
+                      silat tradisi nasional bersama KORMI.
                     </li>
                     <li>
-                      <i className='fa-solid fa-circle-check' /> We give child a
-                      gift of a education
+                      <i className='fa-solid fa-circle-check' /> Menyediakan wadah pasanggiri, festival,
+                      dan kurikulum silat di sekolah.
                     </li>
                     <li>
-                      <i className='fa-solid fa-circle-check' /> We help
-                      companies develop powerful corporate social
-                      Responsibility,
+                      <i className='fa-solid fa-circle-check' /> Menjaga identitas bangsa melalui regenerasi
+                      pendekar dan pelatih muda.
                     </li>
                   </ul>
                 </div>
                 <div className='help__content-cta cta'>
                   <Link
                     href='/about-us'
-                    aria-label='more about us'
-                    title='about us'
+                    aria-label='profil ppsi digjaya'
+                    title='Profil PPSI Digjaya'
                     className='btn--primary'
                   >
-                    More About Us
+                    Profil Organisasi
                   </Link>
                   <div className='contact-btn'>
                     <div className='contact-icon'>

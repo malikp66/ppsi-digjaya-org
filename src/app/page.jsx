@@ -18,8 +18,9 @@ import Preloader from "@/components/Preloader";
 import CustomCursor from "@/helper/CustomCursor";
 
 export const metadata = {
-  title: "charifund | Nonprofit & Fundraising Charity NEXT JS Template",
-  description: "Nonprofit & Fundraising Charity NEXT JS Template.",
+  title: "PPSI Digjaya | Pelestari Pencak Silat Tradisi Jawa Barat",
+  description:
+    "Beranda resmi PPSI Digjaya dengan program budaya, pasanggiri, dukungan atlet, dan marketplace anggota pencak silat Jawa Barat.",
 };
 
 const page = () => {

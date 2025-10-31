@@ -8,8 +8,8 @@ import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
 
 export const metadata = {
-  title: "charifund | Nonprofit & Fundraising Charity NEXT JS Template",
-  description: "Nonprofit & Fundraising Charity NEXT JS Template.",
+  title: "PPSI Digjaya | Kalender Budaya & Kegiatan",
+  description: "Daftar agenda pelestarian budaya, latihan gabungan, dan kegiatan organisasi PPSI Digjaya sepanjang tahun.",
 };
 
 const page = () => {
@@ -29,7 +29,7 @@ const page = () => {
         <HeaderFour />
 
         {/* BreadcrumbOne */}
-        <BreadcrumbOne title='Our Events' />
+        <BreadcrumbOne title='Kegiatan & Kalender Budaya' />
 
         {/* EventInner */}
         <EventInner />
@@ -42,3 +42,4 @@ const page = () => {
 };
 
 export default page;
+

@@ -8,11 +8,11 @@ import Script from "next/script";
 
 import InitializeAOS from "@/helper/InitializeAOS";
 import RouteScrollToTop from "@/helper/RouteScrollToTop";
-import ColorPalate from "@/helper/ColorPalate";
 
 export const metadata = {
-  title: "charifund | Nonprofit & Fundraising Charity NEXT JS Template",
-  description: "Nonprofit & Fundraising Charity NEXT JS Template.",
+  title: "PPSI Digjaya | Persatuan Pencak Silat Indonesia DPW Jawa Barat",
+  description:
+    "Website resmi PPSI Digjaya untuk pelestarian pencak silat tradisional, program budaya, keanggotaan, dan dukungan atlet Jawa Barat.",
 };
 
 export default function RootLayout({ children }) {
@@ -37,12 +37,10 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="/assets/css/default-theme.css" id="switch-color" />
         <link rel="stylesheet" href="/assets/css/sticky-header.css" />
         <link rel="stylesheet" href="/assets/css/box-layout.css" />
-        <link rel="stylesheet" href="/assets/css/dark-mode.css" />
       </head>
       <body suppressHydrationWarning={true}>
         <InitializeAOS />
         <RouteScrollToTop />
-        <ColorPalate />
 
         {children}
 

@@ -12,11 +12,10 @@ const FaqOne = () => {
               >
                 <span className='sub-title'>
                   <i className='icon-donation' />
-                  Start donating poor people
+                  Pertanyaan Umum PPSI Digjaya
                 </span>
                 <h2 className='title-animation_inner'>
-                  Frequently <span>Asked</span>
-                  Questions
+                  Tanya <span>Jawab</span> Organisasi
                 </h2>
               </div>
               <div
@@ -36,7 +35,7 @@ const FaqOne = () => {
                         aria-expanded='true'
                         aria-controls='collapseOne'
                       >
-                        What kind of recipes can I find on your website?
+                        Bagaimana proses registrasi keanggotaan PPSI Digjaya?
                       </button>
                     </h6>
                     <div
@@ -47,10 +46,7 @@ const FaqOne = () => {
                     >
                       <div className='accordion-body'>
                         <p>
-                          It is a long established fact that a reader will be
-                          distracted by the readable the a content of a page
-                          when looking at its layout. Many desktop publishing
-                          packages and web page editors.
+                          Calon anggota mengisi formulir keanggotaan daring PPSI Digjaya. Setelah verifikasi data dan pembayaran iuran, kartu anggota akan diterbitkan serta akun akses materi siap digunakan.
                         </p>
                       </div>
                     </div>
@@ -65,7 +61,7 @@ const FaqOne = () => {
                         aria-expanded='false'
                         aria-controls='collapseTwo'
                       >
-                        Are the recipes suitable for beginners?
+                        Apa syarat perguruan bergabung dengan PPSI?
                       </button>
                     </h6>
                     <div
@@ -76,11 +72,9 @@ const FaqOne = () => {
                     >
                       <div className='accordion-body'>
                         <p>
-                          It is a long established fact that a reader will be
-                          distracted by the readable the a content of a page
-                          when looking at its layout. Many desktop publishing
-                          packages and web page editors.
+                          Calon anggota mengisi formulir keanggotaan daring PPSI Digjaya. Setelah verifikasi data dan pembayaran iuran, kartu anggota akan diterbitkan serta akun akses materi siap digunakan.
                         </p>
+                        <p>Perguruan mengajukan surat rekomendasi dari pengurus daerah, melampirkan data anggota, dan mengikuti orientasi kode etik PPSI Digjaya.</p>
                       </div>
                     </div>
                   </div>
@@ -94,7 +88,7 @@ const FaqOne = () => {
                         aria-expanded='false'
                         aria-controls='collapseThree'
                       >
-                        Do you offer cooking tips and techniques?
+                        Bagaimana mekanisme penyaluran dana sosial PPSI?
                       </button>
                     </h6>
                     <div
@@ -104,12 +98,7 @@ const FaqOne = () => {
                       data-bs-parent='#accordion'
                     >
                       <div className='accordion-body'>
-                        <p>
-                          It is a long established fact that a reader will be
-                          distracted by the readable the a content of a page
-                          when looking at its layout. Many desktop publishing
-                          packages and web page editors.
-                        </p>
+                        <p>Dana disalurkan melalui rekening resmi PPSI Digjaya dengan pengesahan pengurus. Setiap penyaluran disertai berita acara dan laporan penggunaan dari perguruan penerima.</p>
                       </div>
                     </div>
                   </div>
@@ -123,7 +112,7 @@ const FaqOne = () => {
                         aria-expanded='false'
                         aria-controls='collapseFour'
                       >
-                        How frequently do you update your recipe collection?
+                        Bagaimana pelaporan kegiatan dan program ke sekretariat?
                       </button>
                     </h6>
                     <div
@@ -133,12 +122,7 @@ const FaqOne = () => {
                       data-bs-parent='#accordion'
                     >
                       <div className='accordion-body'>
-                        <p>
-                          It is a long established fact that a reader will be
-                          distracted by the readable the a content of a page
-                          when looking at its layout. Many desktop publishing
-                          packages and web page editors.
-                        </p>
+                        <p>Setiap perguruan menyampaikan laporan kegiatan dan keuangan melalui email sekretariat dan dashboard organisasi setiap triwulan.</p>
                       </div>
                     </div>
                   </div>
@@ -178,3 +162,5 @@ const FaqOne = () => {
 };
 
 export default FaqOne;
+
+

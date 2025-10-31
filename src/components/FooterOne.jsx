@@ -9,9 +9,9 @@ const FooterOne = () => {
             <div className='col-12 col-lg-7 col-xxl-6'>
               <div className='footer-two__newsletter-content'>
                 <h3 className='title-animation_inner'>
-                  Subscribe to Our Newsletter
+                  Berlangganan Warta PPSI Digjaya
                 </h3>
-                <p>Regular inspections and feedback mechanisms</p>
+                <p>Dapatkan kabar pelestarian pencak silat, agenda, dan program anggota.</p>
               </div>
             </div>
             <div className='col-12 col-lg-5 col-xxl-5 offset-xxl-1'>
@@ -22,7 +22,7 @@ const FooterOne = () => {
                     required=''
                     name='subscribe-email'
                     id='subscribeEmail'
-                    placeholder='Enter Email'
+                    placeholder='Masukkan Email'
                   />
                   <button
                     type='submit'
@@ -56,8 +56,8 @@ const FooterOne = () => {
                 </div>
                 <div className='footer-two__widget-content'>
                   <p>
-                    Our secure online donation platform allows you to make
-                    contributions quickly and safely. Choose from various.
+                    PPSI Digjaya menguatkan ekosistem pencak silat tradisi melalui pembinaan,
+                    sinergi perguruan, dan dukungan ekonomi-kerakyatan bagi atlet serta pelatih.
                   </p>
                   <div className='social'>
                     <Link
@@ -114,33 +114,39 @@ const FooterOne = () => {
                 <div className='footer-two__widget-content'>
                   <ul>
                     <li>
+                      <Link href='/'>
+                        <i className='fa-solid fa-arrow-right' />
+                        Beranda
+                      </Link>
+                    </li>
+                    <li>
                       <Link href='/about-us'>
                         <i className='fa-solid fa-arrow-right' />
-                        About Us
+                        Tentang PPSI
                       </Link>
                     </li>
                     <li>
-                      <Link href='/blog-list'>
+                      <Link href='/keanggotaan'>
                         <i className='fa-solid fa-arrow-right' />
-                        Our News
+                        Keanggotaan
                       </Link>
                     </li>
                     <li>
-                      <Link href='/our-causes'>
+                      <Link href='/pelestarian-budaya'>
                         <i className='fa-solid fa-arrow-right' />
-                        Our Campaign
+                        Pelestarian Budaya
                       </Link>
                     </li>
                     <li>
-                      <Link href='/faq'>
+                      <Link href='/events'>
                         <i className='fa-solid fa-arrow-right' />
-                        FAQ
+                        Kalender Budaya
                       </Link>
                     </li>
                     <li>
                       <Link href='/contact-us'>
                         <i className='fa-solid fa-arrow-right' />
-                        Get A Quote
+                        Kontak &amp; Aspirasi
                       </Link>
                     </li>
                   </ul>
@@ -155,7 +161,7 @@ const FooterOne = () => {
                 data-aos-delay={400}
               >
                 <div className='footer-two__widget-intro'>
-                  <h5>Our Services</h5>
+                  <h5>Program Prioritas</h5>
                   <div className='line'>
                     <span className='large-line' />
                     <span className='small-line' />
@@ -167,31 +173,31 @@ const FooterOne = () => {
                     <li>
                       <Link href='/our-causes'>
                         <i className='fa-solid fa-arrow-right' />
-                        Our Causes
+                        Program &amp; Kegiatan PPSI
                       </Link>
                     </li>
                     <li>
-                      <Link href='/events'>
+                      <Link href='/donate-us'>
                         <i className='fa-solid fa-arrow-right' />
-                        Education Support
+                        Dana Sosial &amp; Dukungan Atlet
                       </Link>
                     </li>
                     <li>
-                      <Link href='/our-causes'>
+                      <Link href='/pelatihan-atlet'>
                         <i className='fa-solid fa-arrow-right' />
-                        Our Campaign
+                        Pelatihan &amp; Atlet
                       </Link>
                     </li>
                     <li>
-                      <Link href='/our-causes'>
+                      <Link href='/shop'>
                         <i className='fa-solid fa-arrow-right' />
-                        Food Support
+                        Marketplace Anggota
                       </Link>
                     </li>
                     <li>
-                      <Link href='/our-causes'>
+                      <Link href='/sertifikat-online'>
                         <i className='fa-solid fa-arrow-right' />
-                        Health Support
+                        Sertifikat Online
                       </Link>
                     </li>
                   </ul>
@@ -206,7 +212,7 @@ const FooterOne = () => {
                 data-aos-delay={600}
               >
                 <div className='footer-two__widget-intro'>
-                  <h5>Get In Touch</h5>
+                  <h5>Hubungi Kami</h5>
                   <div className='line'>
                     <span className='large-line' />
                     <span className='small-line' />
@@ -217,23 +223,23 @@ const FooterOne = () => {
                   <ul>
                     <li>
                       <Link
-                        href='/https://maps.app.goo.gl/Gr9pTNqz5FRNrjQw8'
+                        href='https://maps.app.goo.gl/Gr9pTNqz5FRNrjQw8'
                         target='_blank'
                       >
                         <i className='fa-solid fa-location-dot' />
-                        455 West Orchard Street Kings Mountain, NC 280867
+                        Jl. Cijagra III No. 12, Turangga, Lengkong, Kota Bandung
                       </Link>
                     </li>
                     <li>
-                      <Link href='/tel:2305-587-3407'>
+                      <Link href='tel:6282129251959'>
                         <i className='fa-solid fa-phone' />
-                        +088 (246) 642-27-10
+                        0821-2925-1959
                       </Link>
                     </li>
                     <li>
-                      <Link href='/mailto:dpdppsikotabandungofficial@gmail.com'>
+                      <Link href='mailto:dpdppsikotabandungofficial@gmail.com'>
                         <i className='fa-regular fa-envelope' />
-                        example@email.com
+                        dpdppsikotabandungofficial@gmail.com
                       </Link>
                     </li>
                   </ul>
@@ -249,7 +255,7 @@ const FooterOne = () => {
                 <div className='footer-two__copyright-inner text-center text-lg-start'>
                   <p>
                     Copyright © <span id='copyrightYear' />{" "}
-                    <Link href='/'>charifund</Link>. All rights reserved.
+                    <Link href='/'>PPSI Digjaya</Link>. Hak cipta dilindungi.
                   </p>
                 </div>
               </div>
@@ -257,15 +263,13 @@ const FooterOne = () => {
                 <div className='footer__bottom-left'>
                   <ul className='footer__bottom-list justify-content-center justify-content-lg-end'>
                     <li>
-                      <Link href='/terms-conditions'>
-                        Terms &amp; Conditions
-                      </Link>
+                      <Link href='/about-us'>Pedoman Organisasi</Link>
                     </li>
                     <li>
-                      <Link href='/privacy-policy'>Privacy Policy</Link>
+                      <Link href='/faq'>Kode Etik &amp; FAQ</Link>
                     </li>
                     <li>
-                      <Link href='/privacy-policy'>Cookie Settings</Link>
+                      <Link href='/contact-us'>Kontak Dukungan</Link>
                     </li>
                   </ul>
                 </div>

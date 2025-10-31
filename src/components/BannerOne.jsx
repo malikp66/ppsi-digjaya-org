@@ -16,203 +16,137 @@ const BannerOne = () => {
     pauseOnHover: true,
     arrows: false,
   };
+  const slides = [
+    {
+      id: "pelestarian",
+      background: "url(/assets/images/banner/banner-two-bg.png)",
+      icon: "icon-donation",
+      subtitle: "PPSI Digjaya – Pelestari Silat Tradisi Jawa Barat",
+      titleLine1: "Menyatukan Perguruan",
+      titleLine2Prefix: "dan membentuk ",
+      titleHighlight: "generasi berkarakter",
+      titleLine2Suffix: " pencak silat.",
+      description:
+        "Menyatukan perguruan, membina atlet, dan menguatkan ekonomi anggota.",
+      primaryCta: {
+        href: "/keanggotaan",
+        label: "Daftar Anggota PPSI",
+        aria: "daftar anggota",
+        className: "btn--primary",
+      },
+      secondaryCta: {
+        href: "/our-causes",
+        label: "Lihat Program & Kegiatan",
+        aria: "program dan kegiatan",
+        className: "btn--tertiary",
+      },
+    },
+    {
+      id: "program-budaya",
+      background: "url(/assets/images/banner/banner-one-bg.png)",
+      icon: "icon-donation",
+      subtitle: "Program budaya, pasanggiri, dan edukasi silat tradisi",
+      titleLine1: "Menggerakkan Kegiatan",
+      titleLine2Prefix: "melalui ",
+      titleHighlight: "pasanggiri & pelestarian",
+      titleLine2Suffix: " warisan leluhur.",
+      description:
+        "Dukung agenda budaya, pasanggiri sekolah, dan regenerasi pendekar muda.",
+      primaryCta: {
+        href: "/events",
+        label: "Kalender Budaya",
+        aria: "kalender budaya",
+        className: "btn--primary",
+      },
+      secondaryCta: {
+        href: "/pelestarian-budaya",
+        label: "Pelestarian Silat",
+        aria: "pelestarian pencak silat",
+        className: "btn--tertiary",
+      },
+    },
+    {
+      id: "ekonomi",
+      background: "url(/assets/images/banner/banner-two-bg.png)",
+      icon: "icon-donation",
+      subtitle: "Ekonomi kreatif & dukungan atlet PPSI Digjaya",
+      titleLine1: "Marketplace Anggota",
+      titleLine2Prefix: "serta ",
+      titleHighlight: "dana sosial",
+      titleLine2Suffix: " untuk pelatih dan atlet.",
+      description:
+        "Belanja atribut resmi, dukung dana sosial, dan perkuat kemandirian ekonomi anggota.",
+      primaryCta: {
+        href: "/shop",
+        label: "Toko Atribut PPSI",
+        aria: "toko atribut ppsi",
+        className: "btn--primary",
+      },
+      secondaryCta: {
+        href: "/donate-us",
+        label: "Dukung Atlet & Pelatih",
+        aria: "dana sosial ppsi",
+        className: "btn--tertiary",
+      },
+    },
+  ];
+
   return (
     <>
       <section className='banner-two'>
         <div className='banner-two__slider swiper'>
           <Slider {...settings} ref={sliderRef} className='swiper-wrapper'>
-            <div className='swiper-slide'>
-              <div className='banner-two__slider-single'>
-                <div
-                  className='banner-two__slider-bg'
-                  style={{
-                    backgroundImage:
-                      "url(/assets/images/banner/banner-two-bg.png)",
-                  }}
-                ></div>
-                <div className='container'>
-                  <div className='row'>
-                    <div className='col-12 col-md-9 col-lg-7 col-xxl-6'>
-                      <div className='banner-two__slider-content'>
-                        <span className='sub-title'>
-                          <i className='icon-donation' />
-                          Start donating poor people
-                        </span>
-                        <h1>
-                          Giving help <br />
-                          To Those <span className='bottom-line'>peoples</span>
-                          Who Need It.
-                        </h1>
-                        <div className='banner__content-cta cta'>
-                          <Link
-                            href='/our-causes'
-                            aria-label='about us'
-                            title='about us'
-                            className='btn--tertiary'
-                          >
-                            Discover More{" "}
-                            <i className='fa-solid fa-arrow-right' />
-                          </Link>
-                          <Link
-                            href='/contact-us'
-                            aria-label='contact us'
-                            title='contact us'
-                            className='btn--primary'
-                          >
-                            Get A Quote{" "}
-                            <i className='fa-solid fa-arrow-right' />
-                          </Link>
+            {slides.map((slide) => (
+              <div className='swiper-slide' key={slide.id}>
+                <div className='banner-two__slider-single'>
+                  <div
+                    className='banner-two__slider-bg'
+                    style={{ backgroundImage: slide.background }}
+                  ></div>
+                  <div className='container'>
+                    <div className='row'>
+                      <div className='col-12 col-md-9 col-lg-7 col-xxl-6'>
+                        <div className='banner-two__slider-content'>
+                          <span className='sub-title'>
+                            <i className={slide.icon} />
+                            {slide.subtitle}
+                          </span>
+                          <h1>
+                            {slide.titleLine1} <br />
+                            {slide.titleLine2Prefix}
+                            <span className='bottom-line'>
+                              {slide.titleHighlight}
+                            </span>
+                            {slide.titleLine2Suffix}
+                          </h1>
+                          {slide.description && <p>{slide.description}</p>}
+                          <div className='banner__content-cta cta'>
+                            <Link
+                              href={slide.primaryCta.href}
+                              aria-label={slide.primaryCta.aria}
+                              title={slide.primaryCta.label}
+                              className={slide.primaryCta.className}
+                            >
+                              {slide.primaryCta.label}{" "}
+                              <i className='fa-solid fa-arrow-right' />
+                            </Link>
+                            <Link
+                              href={slide.secondaryCta.href}
+                              aria-label={slide.secondaryCta.aria}
+                              title={slide.secondaryCta.label}
+                              className={slide.secondaryCta.className}
+                            >
+                              {slide.secondaryCta.label}{" "}
+                              <i className='fa-solid fa-arrow-right' />
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className='swiper-slide'>
-              <div className='banner-two__slider-single'>
-                <div
-                  className='banner-two__slider-bg'
-                  style={{
-                    backgroundImage:
-                      "url(/assets/images/banner/banner-one-bg.png)",
-                  }}
-                ></div>
-                <div className='container'>
-                  <div className='row'>
-                    <div className='col-12 col-md-9  col-lg-7 col-xxl-6'>
-                      <div className='banner-two__slider-content'>
-                        <span className='sub-title'>
-                          <i className='icon-donation' />
-                          Start donating poor people
-                        </span>
-                        <h1>
-                          Giving help <br />
-                          To Those <span className='bottom-line'>peoples</span>
-                          Who Need It.
-                        </h1>
-                        <div className='banner__content-cta cta'>
-                          <Link
-                            href='/our-causes'
-                            aria-label='about us'
-                            title='about us'
-                            className='btn--tertiary'
-                          >
-                            Discover More{" "}
-                            <i className='fa-solid fa-arrow-right' />
-                          </Link>
-                          <Link
-                            href='/contact-us'
-                            aria-label='contact us'
-                            title='contact us'
-                            className='btn--primary'
-                          >
-                            Get A Quote{" "}
-                            <i className='fa-solid fa-arrow-right' />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='swiper-slide'>
-              <div className='banner-two__slider-single'>
-                <div
-                  className='banner-two__slider-bg'
-                  style={{
-                    backgroundImage:
-                      "url(/assets/images/banner/banner-two-bg.png)",
-                  }}
-                ></div>
-                <div className='container'>
-                  <div className='row'>
-                    <div className='col-12 col-md-9 col-lg-7 col-xxl-6'>
-                      <div className='banner-two__slider-content'>
-                        <span className='sub-title'>
-                          <i className='icon-donation' />
-                          Start donating poor people
-                        </span>
-                        <h1>
-                          Giving help <br />
-                          To Those <span className='bottom-line'>peoples</span>
-                          Who Need It.
-                        </h1>
-                        <div className='banner__content-cta cta'>
-                          <Link
-                            href='/our-causes'
-                            aria-label='about us'
-                            title='about us'
-                            className='btn--tertiary'
-                          >
-                            Discover More{" "}
-                            <i className='fa-solid fa-arrow-right' />
-                          </Link>
-                          <Link
-                            href='/contact-us'
-                            aria-label='contact us'
-                            title='contact us'
-                            className='btn--primary'
-                          >
-                            Get A Quote{" "}
-                            <i className='fa-solid fa-arrow-right' />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='swiper-slide'>
-              <div className='banner-two__slider-single'>
-                <div
-                  className='banner-two__slider-bg'
-                  style={{
-                    backgroundImage:
-                      "url(/assets/images/banner/banner-one-bg.png)",
-                  }}
-                ></div>
-                <div className='container'>
-                  <div className='row'>
-                    <div className='col-12 col-md-9 col-lg-7 col-xxl-6'>
-                      <div className='banner-two__slider-content'>
-                        <span className='sub-title'>
-                          <i className='icon-donation' />
-                          Start donating poor people
-                        </span>
-                        <h1>
-                          Giving help <br />
-                          To Those <span className='bottom-line'>peoples</span>
-                          Who Need It.
-                        </h1>
-                        <div className='banner__content-cta cta'>
-                          <Link
-                            href='/our-causes'
-                            aria-label='about us'
-                            title='about us'
-                            className='btn--tertiary'
-                          >
-                            Discover More{" "}
-                            <i className='fa-solid fa-arrow-right' />
-                          </Link>
-                          <Link
-                            href='/contact-us'
-                            aria-label='contact us'
-                            title='contact us'
-                            className='btn--primary'
-                          >
-                            Get A Quote{" "}
-                            <i className='fa-solid fa-arrow-right' />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </Slider>
         </div>
         <div className='slider-navigation d-none d-md-flex'>

@@ -11,13 +11,11 @@ const ContactUsInner = () => {
                 data-aos-duration={1000}
               >
                 <span className='sub-title'>
-                  <i className='icon-donation' /> Get In Touch
+                  <i className='icon-donation' /> Kontak & Pengajuan Aspirasi
                 </span>
-                <h2 className='title-animation_inner'>Contact Us</h2>
+                <h2 className='title-animation_inner'>Hubungi PPSI Digjaya</h2>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  inventore
+                  Sampaikan aspirasi, kemitraan, atau kebutuhan perguruan Anda melalui formulir ini. Tim PPSI Digjaya akan merespons maksimal 2x24 jam kerja.
                 </p>
               </div>
               <div className='contact-main__inner cta'>
@@ -33,7 +31,7 @@ const ContactUsInner = () => {
                         target='_blank'
                         rel='noreferrer'
                       >
-                        55 Main street, 2nd block, Melbourne, Australia
+                        Jl. Cijagra III No. 12, Kel. Turangga, Kec. Lengkong, Kota Bandung
                       </a>
                     </p>
                   </div>
@@ -56,7 +54,7 @@ const ContactUsInner = () => {
                   <div className='content'>
                     <h6>Email</h6>
                     <p>
-                      <a href='mailto:dpdppsikotabandungofficial@gmail.com'>example@email.com</a>
+                      <a href='mailto:dpdppsikotabandungofficial@gmail.com'>dpdppsikotabandungofficial@gmail.com</a>
                     </p>
                     <p>
                       <a href='mailto:dpdppsikotabandungofficial@gmail.com'>
@@ -125,10 +123,9 @@ const ContactUsInner = () => {
               data-aos-delay={100}
             >
               <div className='volunteer__form-content'>
-                <h4 className='title-animation_inner'>Fill Up The Form</h4>
+                <h4 className='title-animation_inner'>Form Pengajuan & Aspirasi</h4>
                 <p>
-                  Your email address will not be published. Required fields are
-                  marked *
+                  Pilih jenis pengajuan dan tuliskan aspirasi Anda. Tim PPSI akan merespons maksimal 2x24 jam kerja.
                 </p>
               </div>
               <form action='#' method='post' className='cta'>
@@ -160,6 +157,17 @@ const ContactUsInner = () => {
                     placeholder='Phone Number'
                     required=''
                   />
+                <div className='input-single'>
+                  <select name='jenis-pengajuan' id='jenisPengajuan' required defaultValue=''>
+                    <option value='' disabled>Jenis Pengajuan</option>
+                    <option value='keanggotaan'>Keanggotaan Anggota</option>
+                    <option value='perguruan'>Registrasi Perguruan</option>
+                    <option value='dana-sosial'>Dana Sosial / Bantuan Atlet</option>
+                    <option value='sponsor'>Sponsor / Kemitraan</option>
+                    <option value='kolaborasi'>Kolaborasi Program Budaya</option>
+                  </select>
+                  <i className='fa-solid fa-list' />
+                </div>
                   <i className='fa-solid fa-phone' />
                 </div>
                 <div className='input-single alter-input'>
@@ -178,7 +186,7 @@ const ContactUsInner = () => {
                     title='submit message'
                     className='btn--primary'
                   >
-                    Get A Quote <i className='fa-solid fa-arrow-right' />
+                    Kirim Pesan <i className='fa-solid fa-arrow-right' />
                   </button>
                 </div>
               </form>
@@ -191,3 +199,8 @@ const ContactUsInner = () => {
 };
 
 export default ContactUsInner;
+
+
+
+
+

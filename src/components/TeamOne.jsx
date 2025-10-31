@@ -14,11 +14,10 @@ const TeamOne = () => {
               >
                 <span className='sub-title'>
                   <i className='icon-donation' />
-                  Start donating poor people
+                  Pendekar & Pelatih Utama PPSI
                 </span>
                 <h2 className='title-animation_inner'>
-                  Meet Our Volunteer
-                  <span>Team</span> members
+                  Pendekar &amp; Pelatih <span>PPSI Digjaya</span>
                 </h2>
               </div>
             </div>
@@ -67,9 +66,9 @@ const TeamOne = () => {
                   </div>
                   <div className='team__single-content'>
                     <h6>
-                      <Link href='/team-details'>Michel Fokluz</Link>
+                      <Link href='/team-details'>R. Satia Nugraha</Link>
                     </h6>
-                    <p>Volunteer</p>
+                    <p>Pelatih Kepala DPW</p>
                   </div>
                 </div>
               </div>
@@ -118,9 +117,9 @@ const TeamOne = () => {
                   </div>
                   <div className='team__single-content'>
                     <h6>
-                      <Link href='/team-details'>Arian Drobloas</Link>
+                      <Link href='/team-details'>Iis Herlina</Link>
                     </h6>
-                    <p>Volunteer</p>
+                    <p>Koordinator Perguruan</p>
                   </div>
                 </div>
               </div>
@@ -172,9 +171,9 @@ const TeamOne = () => {
                   </div>
                   <div className='team__single-content'>
                     <h6>
-                      <Link href='/team-details'>Jara Klintof</Link>
+                      <Link href='/team-details'>Dadan Wirawan</Link>
                     </h6>
-                    <p>Volunteer</p>
+                    <p>Pembina Tradisi</p>
                   </div>
                 </div>
               </div>
@@ -226,9 +225,9 @@ const TeamOne = () => {
                   </div>
                   <div className='team__single-content'>
                     <h6>
-                      <Link href='/team-details'>Aiden Markram</Link>
+                      <Link href='/team-details'>Alya Putri Siliwangi</Link>
                     </h6>
-                    <p>Volunteer</p>
+                    <p>Atlet Prestasi Nasional</p>
                   </div>
                 </div>
               </div>
@@ -239,11 +238,11 @@ const TeamOne = () => {
               <div className='section__cta cta text-center'>
                 <Link
                   href='/our-team'
-                  aria-label='our team'
-                  title='our team'
+                  aria-label='seluruh pendekar ppsi'
+                  title='Seluruh Pendekar PPSI'
                   className='btn--primary'
                 >
-                  View All
+                  Lihat Seluruh Pendekar
                   <i className='fa-solid fa-arrow-right' />
                 </Link>
               </div>

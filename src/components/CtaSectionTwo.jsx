@@ -14,27 +14,27 @@ const CtaSectionTwo = () => {
               >
                 <span className='sub-title'>
                   <i className='icon-donation' />
-                  Start donating poor people
+                  Sinergi Perguruan dan Atlet
                 </span>
                 <h2 className='title-animation_inner'>
-                  children need your help by donating today
+                  Mari bergabung menjaga warisan pencak silat tradisional bersama PPSI Digjaya
                 </h2>
                 <div className='banner__content-cta cta'>
                   <Link
                     href='/our-causes'
-                    aria-label='about us'
-                    title='about us'
+                    aria-label='program ppsi'
+                    title='Program PPSI'
                     className='btn--tertiary'
                   >
-                    Discover More <i className='fa-solid fa-arrow-right' />
+                    Program PPSI <i className='fa-solid fa-arrow-right' />
                   </Link>
                   <Link
-                    href='/contact-us'
-                    aria-label='contact us'
-                    title='contact us'
+                    href='/keanggotaan'
+                    aria-label='keanggotaan ppsi'
+                    title='Keanggotaan PPSI'
                     className='btn--primary'
                   >
-                    Get A Quote <i className='fa-solid fa-arrow-right' />
+                    Gabung Keanggotaan <i className='fa-solid fa-arrow-right' />
                   </Link>
                 </div>
               </div>
@@ -65,3 +65,5 @@ const CtaSectionTwo = () => {
 };
 
 export default CtaSectionTwo;
+
+

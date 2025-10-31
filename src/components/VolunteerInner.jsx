@@ -7,15 +7,13 @@ const VolunteerInner = () => {
             <div className='volunteer__content'>
               <div className='section__content'>
                 <span className='sub-title'>
-                  <i className='icon-donation' /> Become A Volunteer
+                  <i className='icon-donation' /> Forum Kolaborasi PPSI
                 </span>
                 <h2 className='title-animation_inner'>
-                  Volunteer Requirements
+                  Kolaborasi Program
                 </h2>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  inventore
+                  Kolaborasi ini ditujukan bagi perguruan, komunitas budaya, dan mitra yang ingin mengintegrasikan program bersama PPSI Digjaya.
                 </p>
               </div>
               <div className='warning'>
@@ -23,14 +21,13 @@ const VolunteerInner = () => {
                   <i className='fa-solid fa-triangle-exclamation' />
                 </div>
                 <p>
-                  <strong>Notice:</strong> Test mode is enabled. While in test
-                  mode no live donations are processed.
+                  <strong>Informasi:</strong> Form ini simulasi frontend. Tim PPSI akan menghubungi Anda untuk penjadwalan pertemuan tindak lanjut.
                 </p>
               </div>
               <div className='progress-wrapper'>
                 <div className='cause__progress progress-bar-single'>
                   <div className='cause-progress__bar'>
-                    <p>Donation Collect</p>
+                    <p>Agenda Terlaksana</p>
                     <div className='progress-bar-wrapper' data-percent='70%'>
                       <div className='progress-bar'>
                         <div
@@ -45,7 +42,7 @@ const VolunteerInner = () => {
                 </div>
                 <div className='cause__progress progress-bar-single'>
                   <div className='cause-progress__bar'>
-                    <p>Successful Events</p>
+                    <p>Kolaborasi Aktif</p>
                     <div className='progress-bar-wrapper' data-percent='85%'>
                       <div className='progress-bar'>
                         <div
@@ -63,19 +60,19 @@ const VolunteerInner = () => {
                 <ul>
                   <li>
                     <i className='icon-circle-check' />
-                    Best Quality Services
+                    Pendampingan desain program
                   </li>
                   <li>
                     <i className='icon-circle-check' />
-                    Time Saving
+                    Sumber daya pelatih dan narasumber
                   </li>
                   <li>
                     <i className='icon-circle-check' />
-                    Meet the Deadlines
+                    Sinergi promosi bersama
                   </li>
                   <li>
                     <i className='icon-circle-check' />
-                    24/7 Customer Support
+                    Monitoring & evaluasi berkala
                   </li>
                 </ul>
               </div>
@@ -89,10 +86,9 @@ const VolunteerInner = () => {
               data-aos-delay={100}
             >
               <div className='volunteer__form-content'>
-                <h4 className='title-animation_inner'>Fill Up The Form</h4>
+                <h4 className='title-animation_inner'>Ajukan Kolaborasi</h4>
                 <p>
-                  Your email address will not be published. Required fields are
-                  marked *
+                  Lengkapi data berikut agar kami dapat menghubungi Anda dan merancang kolaborasi.
                 </p>
               </div>
               <form action='#' method='post' className='cta'>
@@ -102,7 +98,7 @@ const VolunteerInner = () => {
                       type='text'
                       name='c-name'
                       id='cName'
-                      placeholder='First Name'
+                      placeholder='Nama Lengkap'
                       required=''
                     />
                     <i className='fa-solid fa-user' />
@@ -112,7 +108,7 @@ const VolunteerInner = () => {
                       type='text'
                       name='c-lastname'
                       id='clastName'
-                      placeholder='Last Name'
+                      placeholder='Nama Perguruan / Instansi'
                       required=''
                     />
                     <i className='fa-solid fa-user' />
@@ -144,7 +140,7 @@ const VolunteerInner = () => {
                       type='text'
                       name='profession'
                       id='profession'
-                      placeholder='Occupation'
+                      placeholder='Bidang Kolaborasi'
                       required=''
                     />
                     <i className='fa-solid fa-user-tie' />
@@ -154,7 +150,7 @@ const VolunteerInner = () => {
                   <textarea
                     name='contact-message'
                     id='contactMessage'
-                    placeholder='your message...'
+                    placeholder='Deskripsi singkat kolaborasi yang diusulkan'
                     defaultValue={""}
                   />
                   <i className='fa-solid fa-comments' />
@@ -166,7 +162,7 @@ const VolunteerInner = () => {
                     title='submit message'
                     className='btn--primary'
                   >
-                    Submit Now <i className='fa-solid fa-arrow-right' />
+                    Kirim Pengajuan <i className='fa-solid fa-arrow-right' />
                   </button>
                 </div>
               </form>
@@ -179,3 +175,4 @@ const VolunteerInner = () => {
 };
 
 export default VolunteerInner;
+

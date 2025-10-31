@@ -18,11 +18,10 @@ const TeamTwo = () => {
             >
               <span className='sub-title'>
                 <i className='icon-donation' />
-                Start donating poor people
+                Pengurus PPSI Digjaya
               </span>
               <h2 className='title-animation_inner'>
-                Meet Our Volunteer
-                <span>Team</span> members
+                Pengurus <span>DPW Jawa Barat</span>
               </h2>
             </div>
           </div>
@@ -71,9 +70,9 @@ const TeamTwo = () => {
                 </div>
                 <div className='team__single-content'>
                   <h6>
-                    <Link href='/team-details'>Michel Fokluz</Link>
+                    <Link href='/team-details'>R. Satia Nugraha</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Ketua DPW PPSI Digjaya</p>
                 </div>
               </div>
             </div>
@@ -122,9 +121,9 @@ const TeamTwo = () => {
                 </div>
                 <div className='team__single-content'>
                   <h6>
-                    <Link href='/team-details'>Arian Drobloas</Link>
+                    <Link href='/team-details'>Iis Herlina</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Ketua DPW PPSI Digjaya</p>
                 </div>
               </div>
             </div>
@@ -173,9 +172,9 @@ const TeamTwo = () => {
                 </div>
                 <div className='team__single-content'>
                   <h6>
-                    <Link href='/team-details'>Jara Klintof</Link>
+                    <Link href='/team-details'>Dadan Wirawan</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Ketua DPW PPSI Digjaya</p>
                 </div>
               </div>
             </div>
@@ -224,9 +223,9 @@ const TeamTwo = () => {
                 </div>
                 <div className='team__single-content'>
                   <h6>
-                    <Link href='/team-details'>Aiden Markram</Link>
+                    <Link href='/team-details'>Sari Puspita</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Ketua DPW PPSI Digjaya</p>
                 </div>
               </div>
             </div>
@@ -236,12 +235,12 @@ const TeamTwo = () => {
           <div className='col-12'>
             <div className='section__cta cta text-center'>
               <Link
-                href='/our-team'
-                aria-label='our team'
-                title='our team'
+                href='/manajemen-organisasi'
+                aria-label='struktur ppsi'
+                title='Struktur PPSI'
                 className='btn--primary'
               >
-                View All
+                Lihat Struktur Lengkap
                 <i className='fa-solid fa-arrow-right' />
               </Link>
             </div>
@@ -256,3 +255,6 @@ const TeamTwo = () => {
 };
 
 export default TeamTwo;
+
+
+

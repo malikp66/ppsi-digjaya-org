@@ -8,8 +8,8 @@ import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
 
 export const metadata = {
-  title: "charifund | Nonprofit & Fundraising Charity NEXT JS Template",
-  description: "Nonprofit & Fundraising Charity NEXT JS Template.",
+  title: "Forum Kolaborasi | PPSI Digjaya",
+  description: "Ajukan kolaborasi program budaya, pelatihan, dan dukungan sosial bersama PPSI Digjaya.",
 };
 
 const page = () => {
@@ -29,7 +29,7 @@ const page = () => {
         <HeaderFour />
 
         {/* BreadcrumbOne */}
-        <BreadcrumbOne title='Become A Volunteer' />
+        <BreadcrumbOne title='Forum Kolaborasi PPSI' />
 
         {/* VolunteerInner */}
         <VolunteerInner />
@@ -42,3 +42,4 @@ const page = () => {
 };
 
 export default page;
+

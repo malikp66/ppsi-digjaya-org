@@ -12,11 +12,10 @@ const ContactOne = () => {
               >
                 <span className='sub-title'>
                   <i className='icon-donation' />
-                  Start donating poor people
+                  Hubungi Sekretariat PPSI
                 </span>
                 <h2 className='title-animation_inner'>
-                  Send Us <span>message</span>
-                  For donation!
+                  Sampaikan <span>aspirasi</span> untuk sinergi program
                 </h2>
               </div>
               <div
@@ -71,7 +70,7 @@ const ContactOne = () => {
                       title='submit message'
                       className='btn--primary'
                     >
-                      Get A Quote <i className='fa-solid fa-arrow-right' />
+                      Kirim Pesan <i className='fa-solid fa-arrow-right' />
                     </button>
                   </div>
                 </form>
@@ -104,3 +103,4 @@ const ContactOne = () => {
 };
 
 export default ContactOne;
+

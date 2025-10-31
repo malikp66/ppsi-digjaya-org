@@ -3,22 +3,31 @@ import Link from "next/link";
 import React, { useRef, useState, useEffect } from "react";
 import Slider from "@/components/ClientSlider";
 
-const images = [
-  "assets/images/cause/five.png",
-  "assets/images/cause/six.png",
-  "assets/images/cause/seven.png",
-  "assets/images/cause/five.png",
-  "assets/images/cause/six.png",
-  "assets/images/cause/seven.png",
-];
-
-const texts = [
-  "Child & old care",
-  "Child & old care",
-  "Child & old care",
-  "Child & old care",
-  "Child & old care",
-  "Child & old care",
+const programs = [
+  {
+    id: "dana-darurat",
+    image: "assets/images/cause/five.png",
+    title: "Dana Darurat Atlet & Pelatih",
+    description:
+      "Bantuan biaya transportasi, perawatan cedera, dan kebutuhan latihan mendesak bagi atlet PPSI.",
+    href: "/donate-us",
+  },
+  {
+    id: "beasiswa",
+    image: "assets/images/cause/six.png",
+    title: "Beasiswa Pelatih Muda",
+    description:
+      "Beasiswa sertifikasi dan mentoring pelatih muda untuk memastikan regenerasi kompeten dan beretika.",
+    href: "/pelatihan-atlet",
+  },
+  {
+    id: "santunan",
+    image: "assets/images/cause/seven.png",
+    title: "Santunan Kesehatan Anggota",
+    description:
+      "Program jaring pengaman kesehatan bagi anggota dan keluarga yang terdampak kondisi kritis.",
+    href: "/donate-us",
+  },
 ];
 
 const CauseSliderTwo = () => {
@@ -85,11 +94,11 @@ const CauseSliderTwo = () => {
 
             {/* Thumbnail Slider */}
             <Slider {...imageSettings} className='cause-two__slider'>
-              {images.map((img, index) => (
-                <div key={index} className='cause-two__slider-single'>
+              {programs.map((program, index) => (
+                <div key={program.id} className='cause-two__slider-single'>
                   <div className='cause-thumb'>
-                    <img src={img} alt={`Slide ${index}`} />
-                    <Link href='/cause-details'>
+                    <img src={program.image} alt={program.title} />
+                    <Link href={program.href} aria-label={program.title}>
                       <i className='fa-solid fa-arrow-right'></i>
                     </Link>
                   </div>
@@ -99,10 +108,10 @@ const CauseSliderTwo = () => {
 
             {/* Content Slider */}
             <Slider {...contentSettings} className='cause-two__content-slider'>
-              {texts.map((text, index) => (
-                <div key={index} className='cause-content'>
-                  <h4>Old People & Child Trouble</h4>
-                  <p>{text}</p>
+              {programs.map((program) => (
+                <div key={`${program.id}-content`} className='cause-content'>
+                  <h4>{program.title}</h4>
+                  <p>{program.description}</p>
                 </div>
               ))}
             </Slider>

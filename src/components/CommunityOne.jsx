@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const CommunityOne = () => {
-  let [amount, setAmount] = useState(50);
+  let [amount, setAmount] = useState(500000);
   return (
     <>
       <section className='community'>
@@ -17,10 +17,10 @@ const CommunityOne = () => {
               >
                 <span className='sub-title'>
                   <i className='icon-donation' />
-                  Start donating poor people
+                  Dana Sosial &amp; Dukungan Atlet
                 </span>
                 <h2 className='title-animation_inner'>
-                  Join The <span>Community</span> To Give Education For Children
+                  Salurkan <span>dana sosial</span> untuk atlet &amp; pelatih
                 </h2>
               </div>
             </div>
@@ -33,63 +33,63 @@ const CommunityOne = () => {
                 data-aos-duration={1000}
               >
                 <div className='community-donation__inner'>
-                  <h4>Support Where It Counts.</h4>
+                  <h4>Dukungan Dana Sosial PPSI Digjaya</h4>
                   <div className='warning'>
                     <div className='line'>
                       <i className='fa-solid fa-triangle-exclamation' />
                     </div>
                     <p>
-                      <strong>Notice:</strong> Test mode is enabled. While in
-                      test mode no live donations are processed.
+                      <strong>Informasi:</strong> Form ini simulasi frontend.
+                      Transaksi riil dilakukan melalui sekretariat PPSI Digjaya.
                     </p>
                   </div>
                   <div className='donation-form'>
                     <div className='donation-form__single'>
-                      <h5>Your Donation:</h5>
+                      <h5>Nominal Kontribusi (Rp)</h5>
                       <div className='input-group-icon'>
                         <div className='thumb'>
                           <i className='fa-solid fa-dollar-sign' />
                         </div>
                         <input
-                          type='text'
+                          type='number'
                           name='donation-amount'
                           id='donationAmount'
                           value={amount}
-                          onChange={(e) => setAmount(e.target.value)}
+                          onChange={(e) => setAmount(Number(e.target.value))}
                         />
                       </div>
                       <div className='made-amount'>
                         <span
                           className={`donation-amount ${
-                            amount === 20 && "active"
+                            amount === 250000 && "active"
                           }`}
-                          onClick={() => setAmount(20)}
+                          onClick={() => setAmount(250000)}
                         >
-                          20
+                          250K
                         </span>
                         <span
                           className={`donation-amount ${
-                            amount === 50 && "active"
+                            amount === 500000 && "active"
                           }`}
-                          onClick={() => setAmount(50)}
+                          onClick={() => setAmount(500000)}
                         >
-                          50
+                          500K
                         </span>
                         <span
                           className={`donation-amount ${
-                            amount === 100 && "active"
+                            amount === 1000000 && "active"
                           }`}
-                          onClick={() => setAmount(100)}
+                          onClick={() => setAmount(1000000)}
                         >
-                          100
+                          1Jt
                         </span>
                         <span
                           className={`donation-amount ${
-                            amount === 200 && "active"
+                            amount === 2000000 && "active"
                           }`}
-                          onClick={() => setAmount(200)}
+                          onClick={() => setAmount(2000000)}
                         >
-                          200
+                          2Jt
                         </span>
                         <span
                           className={`donation-amount custom-amount ${
@@ -102,47 +102,50 @@ const CommunityOne = () => {
                       </div>
                     </div>
                     <div className='donation-form__single'>
-                      <h5>Select Payment Method</h5>
+                      <h5>Pilih Skema Dukungan</h5>
                       <div className='radio-wrapper'>
                         <div className='radio-single'>
                           <input
                             type='radio'
-                            id='testDonation'
+                            id='bankDonation'
                             name='donation-payment'
                             defaultChecked=''
                           />
-                          <label htmlFor='testDonation'>Test Donation</label>
+                          <label htmlFor='bankDonation'>Transfer Bank PPSI</label>
                         </div>
                         <div className='radio-single'>
                           <input
                             type='radio'
-                            id='offlineDonation'
+                            id='membershipDonation'
                             name='donation-payment'
                             defaultChecked=''
                           />
-                          <label htmlFor='offlineDonation'>
-                            Offline Donation
+                          <label htmlFor='membershipDonation'>
+                            Iuran Perguruan
                           </label>
                         </div>
                         <div className='radio-single'>
                           <input
                             type='radio'
-                            id='cardDonation'
+                            id='sponsorDonation'
                             name='donation-payment'
                             defaultChecked=''
                           />
-                          <label htmlFor='cardDonation'>Credit Card</label>
+                          <label htmlFor='sponsorDonation'>
+                            Sponsor Korporasi
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div className='cta'>
                       <Link
                         href='/donate-us'
-                        aria-label='donate us'
-                        title='donate us'
+                        aria-label='dana sosial ppsi digjaya'
+                        title='Dana Sosial PPSI Digjaya'
                         className='btn--primary'
                       >
-                        Donate Now <i className='fa-solid fa-arrow-right' />
+                        Salurkan Dana Sosial{" "}
+                        <i className='fa-solid fa-arrow-right' />
                       </Link>
                     </div>
                   </div>

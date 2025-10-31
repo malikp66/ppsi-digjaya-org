@@ -1,494 +1,130 @@
+"use client";
 import Link from "next/link";
 import ProgressBar from "../helper/ProgressBar";
+import { programBudaya, danaSosialPrograms } from "@/data/programs";
 
 const CauseInner = () => {
   return (
     <section className='cause cause-three-alt'>
       <div className='container'>
         <div className='row justify-content-center'>
-          <div className='col-12 col-md-8 col-xl-7'>
-            <div
-              className='section__header mb-60 text-center'
-              data-aos='fade-up'
-              data-aos-duration={1000}
-            >
+          <div className='col-12 col-md-8 col-xl-6'>
+            <div className='section__header mb-60 text-center'>
               <span className='sub-title'>
                 <i className='icon-donation' />
-                Start donating poor people
+                Program &amp; Kegiatan PPSI Digjaya
               </span>
               <h2 className='title-animation_inner'>
-                Be the reason of someone
-                <span>smiles</span> Causes
+                Pelestarian <span>budaya</span> dan pembinaan prestasi
               </h2>
             </div>
           </div>
         </div>
+
         <div className='row gutter-30'>
-          <div className='col-12 col-md-6 col-xl-4 col-xxl-3'>
-            <div
-              className='cause__slider-inner'
-              data-aos='fade-up'
-              data-aos-duration={1000}
-            >
-              <div className='cause__slider-single van-tilt'>
-                <div className='thumb'>
-                  <Link href='/cause-details'>
-                    <img src='assets/images/cause/one.png' alt='Image_inner' />
-                  </Link>
-                  <div className='tag'>
-                    <Link href='/our-causes'>Health</Link>
-                  </div>
-                </div>
-                <div className='content'>
-                  <h6>
-                    <Link href='/cause-details'>Children we work with</Link>
-                  </h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, consete sadipscing elitr, sed
-                    diam nonum
-                  </p>
-                </div>
-                <div className='cause__slider-cta'>
-                  <div className='cause__progress progress-bar-single'>
-                    {/* ProgressBar */}
-                    <ProgressBar percent={85} />
-                    {/* ProgressBar */}
-                    <div className='cause-progress__goal'>
-                      <p>
-                        Raised: <span className='raised'>$8500</span>
-                      </p>
-                      <p>
-                        Goal: <span className='goal'>$1,0000</span>
-                      </p>
+          {programBudaya.map((program, index) => (
+            <div className='col-12 col-md-6 col-xl-4' key={program.id}>
+              <div
+                className='cause__slider-inner'
+                data-aos='fade-up'
+                data-aos-duration={1000}
+                data-aos-delay={index * 150}
+              >
+                <div className='cause__slider-single van-tilt'>
+                  <div className='thumb'>
+                    <Link href='/cause-details'>
+                      <img src={`/assets/images/cause/${index + 1}.png`} alt='Image_inner' />
+                    </Link>
+                    <div className='tag'>
+                      <Link href='/our-causes'>{program.kategori[0]}</Link>
                     </div>
                   </div>
-                  <div className='cause__cta'>
-                    <Link
-                      href='/donate-us'
-                      aria-label='donate now'
-                      title='donate now'
-                      className='btn--secondary'
-                    >
-                      Donate Now
-                    </Link>
+                  <div className='content'>
+                    <h6>
+                      <Link href='/cause-details'>{program.title}</Link>
+                    </h6>
+                    <p>{program.description}</p>
+                    <p className='event-meta'>
+                      <i className='fa-solid fa-location-dot' /> {program.lokasi}
+                    </p>
+                    <p className='event-meta'>
+                      <i className='fa-solid fa-calendar-days' /> {program.jadwal}
+                    </p>
+                  </div>
+                  <div className='cause__slider-cta'>
+                    <div className='cause__cta'>
+                      <Link href='/events' className='btn--secondary'>
+                        Lihat Agenda
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className='col-12 col-md-6 col-xl-4 col-xxl-3'>
-            <div
-              className='cause__slider-inner'
-              data-aos='fade-up'
-              data-aos-duration={1000}
-              data-aos-delay={300}
-            >
-              <div className='cause__slider-single van-tilt'>
-                <div className='thumb'>
-                  <Link href='/cause-details'>
-                    <img src='assets/images/cause/two.png' alt='Image_inner' />
-                  </Link>
-                  <div className='tag'>
-                    <Link href='/our-causes'>Food</Link>
-                  </div>
-                </div>
-                <div className='content'>
-                  <h6>
-                    <Link href='/cause-details'>Help For Education</Link>
-                  </h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, consete sadipscing elitr, sed
-                    diam nonum
-                  </p>
-                </div>
-                <div className='cause__slider-cta'>
-                  <div className='cause__progress progress-bar-single'>
-                    {/* ProgressBar */}
-                    <ProgressBar percent={70} />
-                    {/* ProgressBar */}
-                    <div className='cause-progress__goal'>
-                      <p>
-                        Raised: <span className='raised'>$8500</span>
-                      </p>
-                      <p>
-                        Goal: <span className='goal'>$1,0000</span>
-                      </p>
-                    </div>
-                  </div>
-                  <div className='cause__cta'>
-                    <Link
-                      href='/donate-us'
-                      aria-label='donate now'
-                      title='donate now'
-                      className='btn--secondary'
-                    >
-                      Donate Now
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='col-12 col-md-6 col-xl-4 col-xxl-3'>
-            <div
-              className='cause__slider-inner'
-              data-aos='fade-up'
-              data-aos-duration={1000}
-              data-aos-delay={600}
-            >
-              <div className='cause__slider-single van-tilt'>
-                <div className='thumb'>
-                  <Link href='/cause-details'>
-                    <img
-                      src='assets/images/cause/three.png'
-                      alt='Image_inner'
-                    />
-                  </Link>
-                  <div className='tag'>
-                    <Link href='/our-causes'>Health</Link>
-                  </div>
-                </div>
-                <div className='content'>
-                  <h6>
-                    <Link href='/cause-details'>Help For Food</Link>
-                  </h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, consete sadipscing elitr, sed
-                    diam nonum
-                  </p>
-                </div>
-                <div className='cause__slider-cta'>
-                  <div className='cause__progress progress-bar-single'>
-                    {/* ProgressBar */}
-                    <ProgressBar percent={65} />
-                    {/* ProgressBar */}
-                    <div className='cause-progress__goal'>
-                      <p>
-                        Raised: <span className='raised'>$8500</span>
-                      </p>
-                      <p>
-                        Goal: <span className='goal'>$1,0000</span>
-                      </p>
-                    </div>
-                  </div>
-                  <div className='cause__cta'>
-                    <Link
-                      href='/donate-us'
-                      aria-label='donate now'
-                      title='donate now'
-                      className='btn--secondary'
-                    >
-                      Donate Now
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='col-12 col-md-6 col-xl-4 col-xxl-3'>
-            <div
-              className='cause__slider-inner'
-              data-aos='fade-up'
-              data-aos-duration={1000}
-              data-aos-delay={900}
-            >
-              <div className='cause__slider-single van-tilt'>
-                <div className='thumb'>
-                  <Link href='/cause-details'>
-                    <img src='assets/images/cause/four.png' alt='Image_inner' />
-                  </Link>
-                  <div className='tag'>
-                    <Link href='/our-causes'>Food</Link>
-                  </div>
-                </div>
-                <div className='content'>
-                  <h6>
-                    <Link href='/cause-details'>Give health support</Link>
-                  </h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, consete sadipscing elitr, sed
-                    diam nonum
-                  </p>
-                </div>
-                <div className='cause__slider-cta'>
-                  <div className='cause__progress progress-bar-single'>
-                    {/* ProgressBar */}
-                    <ProgressBar percent={90} />
-                    {/* ProgressBar */}
-                    <div className='cause-progress__goal'>
-                      <p>
-                        Raised: <span className='raised'>$8500</span>
-                      </p>
-                      <p>
-                        Goal: <span className='goal'>$1,0000</span>
-                      </p>
-                    </div>
-                  </div>
-                  <div className='cause__cta'>
-                    <Link
-                      href='/donate-us'
-                      aria-label='donate now'
-                      title='donate now'
-                      className='btn--secondary'
-                    >
-                      Donate Now
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='col-12 col-md-6 col-xl-4 col-xxl-3'>
-            <div
-              className='cause__slider-inner'
-              data-aos='fade-up'
-              data-aos-duration={1000}
-            >
-              <div className='cause__slider-single van-tilt'>
-                <div className='thumb'>
-                  <Link href='/cause-details'>
-                    <img src='assets/images/cause/one.png' alt='Image_inner' />
-                  </Link>
-                  <div className='tag'>
-                    <Link href='/our-causes'>Health</Link>
-                  </div>
-                </div>
-                <div className='content'>
-                  <h6>
-                    <Link href='/cause-details'>Children we work with</Link>
-                  </h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, consete sadipscing elitr, sed
-                    diam nonum
-                  </p>
-                </div>
-                <div className='cause__slider-cta'>
-                  <div className='cause__progress progress-bar-single'>
-                    {/* ProgressBar */}
-                    <ProgressBar percent={75} />
-                    {/* ProgressBar */}
-                    <div className='cause-progress__goal'>
-                      <p>
-                        Raised: <span className='raised'>$8500</span>
-                      </p>
-                      <p>
-                        Goal: <span className='goal'>$1,0000</span>
-                      </p>
-                    </div>
-                  </div>
-                  <div className='cause__cta'>
-                    <Link
-                      href='/donate-us'
-                      aria-label='donate now'
-                      title='donate now'
-                      className='btn--secondary'
-                    >
-                      Donate Now
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='col-12 col-md-6 col-xl-4 col-xxl-3'>
-            <div
-              className='cause__slider-inner'
-              data-aos='fade-up'
-              data-aos-duration={1000}
-              data-aos-delay={300}
-            >
-              <div className='cause__slider-single van-tilt'>
-                <div className='thumb'>
-                  <Link href='/cause-details'>
-                    <img src='assets/images/cause/two.png' alt='Image_inner' />
-                  </Link>
-                  <div className='tag'>
-                    <Link href='/our-causes'>Food</Link>
-                  </div>
-                </div>
-                <div className='content'>
-                  <h6>
-                    <Link href='/cause-details'>Help For Education</Link>
-                  </h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, consete sadipscing elitr, sed
-                    diam nonum
-                  </p>
-                </div>
-                <div className='cause__slider-cta'>
-                  <div className='cause__progress progress-bar-single'>
-                    {/* ProgressBar */}
-                    <ProgressBar percent={65} />
-                    {/* ProgressBar */}
-                    <div className='cause-progress__goal'>
-                      <p>
-                        Raised: <span className='raised'>$8500</span>
-                      </p>
-                      <p>
-                        Goal: <span className='goal'>$1,0000</span>
-                      </p>
-                    </div>
-                  </div>
-                  <div className='cause__cta'>
-                    <Link
-                      href='/donate-us'
-                      aria-label='donate now'
-                      title='donate now'
-                      className='btn--secondary'
-                    >
-                      Donate Now
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='col-12 col-md-6 col-xl-4 col-xxl-3'>
-            <div
-              className='cause__slider-inner'
-              data-aos='fade-up'
-              data-aos-duration={1000}
-              data-aos-delay={600}
-            >
-              <div className='cause__slider-single van-tilt'>
-                <div className='thumb'>
-                  <Link href='/cause-details'>
-                    <img
-                      src='assets/images/cause/three.png'
-                      alt='Image_inner'
-                    />
-                  </Link>
-                  <div className='tag'>
-                    <Link href='/our-causes'>Health</Link>
-                  </div>
-                </div>
-                <div className='content'>
-                  <h6>
-                    <Link href='/cause-details'>Help For Food</Link>
-                  </h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, consete sadipscing elitr, sed
-                    diam nonum
-                  </p>
-                </div>
-                <div className='cause__slider-cta'>
-                  <div className='cause__progress progress-bar-single'>
-                    {/* ProgressBar */}
-                    <ProgressBar percent={90} />
-                    {/* ProgressBar */}
-                    <div className='cause-progress__goal'>
-                      <p>
-                        Raised: <span className='raised'>$8500</span>
-                      </p>
-                      <p>
-                        Goal: <span className='goal'>$1,0000</span>
-                      </p>
-                    </div>
-                  </div>
-                  <div className='cause__cta'>
-                    <Link
-                      href='/donate-us'
-                      aria-label='donate now'
-                      title='donate now'
-                      className='btn--secondary'
-                    >
-                      Donate Now
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='col-12 col-md-6 col-xl-4 col-xxl-3'>
-            <div
-              className='cause__slider-inner'
-              data-aos='fade-up'
-              data-aos-duration={1000}
-              data-aos-delay={900}
-            >
-              <div className='cause__slider-single van-tilt'>
-                <div className='thumb'>
-                  <Link href='/cause-details'>
-                    <img src='assets/images/cause/four.png' alt='Image_inner' />
-                  </Link>
-                  <div className='tag'>
-                    <Link href='/our-causes'>Food</Link>
-                  </div>
-                </div>
-                <div className='content'>
-                  <h6>
-                    <Link href='/cause-details'>Give health support</Link>
-                  </h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, consete sadipscing elitr, sed
-                    diam nonum
-                  </p>
-                </div>
-                <div className='cause__slider-cta'>
-                  <div className='cause__progress progress-bar-single'>
-                    {/* ProgressBar */}
-                    <ProgressBar percent={55} />
-                    {/* ProgressBar */}
-                    <div className='cause-progress__goal'>
-                      <p>
-                        Raised: <span className='raised'>$8500</span>
-                      </p>
-                      <p>
-                        Goal: <span className='goal'>$1,0000</span>
-                      </p>
-                    </div>
-                  </div>
-                  <div className='cause__cta'>
-                    <Link
-                      href='/donate-us'
-                      aria-label='donate now'
-                      title='donate now'
-                      className='btn--secondary'
-                    >
-                      Donate Now
-                    </Link>
-                  </div>
-                </div>
-              </div>
+          ))}
+        </div>
+
+        <div className='row justify-content-center mt-60'>
+          <div className='col-12 col-md-8 col-xl-6'>
+            <div className='section__header text-center'>
+              <span className='sub-title'>
+                <i className='icon-donation' />
+                Dana Sosial &amp; Dukungan Atlet
+              </span>
+              <h2 className='title-animation_inner'>
+                Wujudkan <span>kemandirian</span> atlet dan pelatih
+              </h2>
             </div>
           </div>
         </div>
-        <div className='row'>
-          <div className='col-12'>
-            <div
-              className='pagination-wrapper'
-              data-aos='fade-up'
-              data-aos-duration={1000}
-            >
-              <ul className='pagination main-pagination'>
-                <li>
-                  <button>
-                    <i className='fa-solid fa-angles-left' />
-                  </button>
-                </li>
-                <li>
-                  <Link href='/blog-list'>1</Link>
-                </li>
-                <li>
-                  <Link href='/blog-list' className='active'>
-                    2
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/blog-list'>3</Link>
-                </li>
-                <li>
-                  <button>
-                    <i className='fa-solid fa-angles-right' />
-                  </button>
-                </li>
-              </ul>
+
+        <div className='row gutter-30'>
+          {danaSosialPrograms.map((program, index) => (
+            <div className='col-12 col-lg-4' key={program.id}>
+              <div
+                className='cause__slider-inner'
+                data-aos='fade-up'
+                data-aos-duration={1000}
+                data-aos-delay={index * 150}
+              >
+                <div className='cause__slider-single van-tilt'>
+                  <div className='thumb'>
+                    <Link href='/donate-us'>
+                      <img src={`/assets/images/cause/${index + 1}.png`} alt='Image_inner' />
+                    </Link>
+                    <div className='tag'>
+                      <Link href='/donate-us'>Dana Sosial</Link>
+                    </div>
+                  </div>
+                  <div className='content'>
+                    <h6>
+                      <Link href='/donate-us'>{program.title}</Link>
+                    </h6>
+                    <p>{program.description}</p>
+                    <p className='event-meta'>
+                      <i className='fa-solid fa-user' /> Penanggung jawab: {program.penanggungJawab}
+                    </p>
+                  </div>
+                  <div className='cause__slider-cta'>
+                    <div className='cause__progress progress-bar-single'>
+                      <ProgressBar percent={program.progress} />
+                      <div className='cause-progress__goal'>
+                        <p>
+                          Target: <span className='goal'>{program.target}</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div className='cause__cta'>
+                      <Link href='/donate-us' className='btn--secondary'>
+                        Dukung Program
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
-      </div>
-      <div className='spade'>
-        <img src='assets/images/help/spade.png' alt='Image_inner' />
       </div>
     </section>
   );

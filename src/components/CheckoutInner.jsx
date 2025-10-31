@@ -11,7 +11,7 @@ const CheckoutInner = () => {
               data-aos-delay={100}
             >
               <div className='intro'>
-                <h5>Delivery Information</h5>
+                <h5>Informasi Pengambilan</h5>
               </div>
               <form action='#' method='post'>
                 <div className='input-group'>
@@ -20,7 +20,7 @@ const CheckoutInner = () => {
                       type='text'
                       name='c-name'
                       id='cName'
-                      placeholder='First Name'
+                      placeholder='Nama Lengkap'
                       required=''
                     />
                     <i className='fa-solid fa-user' />
@@ -30,7 +30,7 @@ const CheckoutInner = () => {
                       type='text'
                       name='c-lastname'
                       id='clastName'
-                      placeholder='Last Name'
+                      placeholder='Perguruan / Instansi'
                       required=''
                     />
                     <i className='fa-solid fa-user' />
@@ -42,7 +42,7 @@ const CheckoutInner = () => {
                       type='text'
                       name='c-address'
                       id='cAddress'
-                      placeholder='Your Address'
+                      placeholder='Alamat Lengkap'
                       required=''
                     />
                     <i className='fa-solid fa-location-dot' />
@@ -50,9 +50,9 @@ const CheckoutInner = () => {
                   <div className='input-single'>
                     <input
                       type='text'
-                      name='c-country'
-                      id='ccountry'
-                      placeholder='Country'
+                      name='c-Kota / Kabupaten'
+                      id='cKota / Kabupaten'
+                      placeholder='Kota / Kabupaten'
                       required=''
                     />
                     <i className='fa-solid fa-location-dot' />
@@ -63,7 +63,7 @@ const CheckoutInner = () => {
                     type='text'
                     name='c-address-two'
                     id='cAddressTwo'
-                    placeholder='House Number & street number'
+                    placeholder='Catatan Lokasi (opsional)'
                     required=''
                   />
                   <i className='fa-solid fa-location-dot' />
@@ -73,7 +73,7 @@ const CheckoutInner = () => {
                     type='text'
                     name='c-address-three'
                     id='cAddressThree'
-                    placeholder='Apartment, suit, Unit etc'
+                    placeholder='Kontak Darurat'
                     required=''
                   />
                   <i className='fa-solid fa-location-dot' />
@@ -84,7 +84,7 @@ const CheckoutInner = () => {
                       type='number'
                       name='c-zip'
                       id='cZip'
-                      placeholder='Zip Code'
+                      placeholder='Kode Pos'
                       required=''
                     />
                     <i className='fa-solid fa-location-dot' />
@@ -94,7 +94,7 @@ const CheckoutInner = () => {
                       type='text'
                       name='contact-number'
                       id='contactNumber'
-                      placeholder='Phone Number'
+                      placeholder='Nomor WhatsApp'
                       required=''
                     />
                     <i className='fa-solid fa-user' />
@@ -104,7 +104,7 @@ const CheckoutInner = () => {
                   <textarea
                     name='contact-message'
                     id='contactMessage'
-                    placeholder='your message...'
+                    placeholder='Kebutuhan tambahan (opsional)'
                     defaultValue={""}
                   />
                   <i className='fa-solid fa-envelope' />
@@ -116,7 +116,7 @@ const CheckoutInner = () => {
                     title='submit message'
                     className='btn--primary'
                   >
-                    Save Informations <i className='fa-solid fa-arrow-right' />
+                    Simpan Data <i className='fa-solid fa-arrow-right' />
                   </button>
                 </div>
               </form>
@@ -130,17 +130,17 @@ const CheckoutInner = () => {
               data-aos-delay={100}
             >
               <div className='intro'>
-                <h5>Order Summary</h5>
+                <h5>Ringkasan Pembayaran</h5>
               </div>
               <form action='#' method='post'>
                 <div className='content'>
                   <div className='content-single'>
-                    <p>Subtotal</p>
-                    <p>$345.00</p>
+                    <p>SubTotal</p>
+                    <p>$345Rp750Rp25Rp775.00000</p>
                   </div>
                   <div className='content-single'>
-                    <p>Shipping Fee</p>
-                    <p>$34.00</p>
+                    <p>Biaya Admin</p>
+                    <p>$34Rp750Rp25Rp775.00000</p>
                   </div>
                   <div className='content-single content-single-alt'>
                     <input
@@ -148,7 +148,7 @@ const CheckoutInner = () => {
                       required=''
                       name='promo-code'
                       id='promoCode'
-                      placeholder='Enter Promo Code'
+                      placeholder='Masukkan Kode Promo'
                     />
                     <button
                       type='submit'
@@ -156,13 +156,13 @@ const CheckoutInner = () => {
                       title='promo code'
                       className='btn--primary'
                     >
-                      Apply Code
+                      Gunakan Kode
                     </button>
                   </div>
                   <div className='content-inner'>
-                    <div className='total'>
+                    <div className='Total'>
                       <h6>Total</h6>
-                      <h6>$379.00</h6>
+                      <h6>$379Rp750Rp25Rp775.00000</h6>
                     </div>
                     <div className='radio-wrapper inner'>
                       <div className='radio-single'>
@@ -172,7 +172,7 @@ const CheckoutInner = () => {
                           name='donation-payment'
                           defaultChecked=''
                         />
-                        <label htmlFor='testDonation'>Bank Transfer</label>
+                        <label htmlFor='testDonation'>Transfer Bank PPSI</label>
                       </div>
                       <div className='radio-single'>
                         <input
@@ -181,7 +181,7 @@ const CheckoutInner = () => {
                           name='donation-payment'
                           defaultChecked=''
                         />
-                        <label htmlFor='cardDonation'>Credit Card</label>
+                        <label htmlFor='cardDonation'>Virtual Account</label>
                       </div>
                       <div className='radio-single'>
                         <input
@@ -191,7 +191,7 @@ const CheckoutInner = () => {
                           defaultChecked=''
                         />
                         <label htmlFor='offlineDonation'>
-                          Cash On Delivery
+                          Pembayaran di Sekretariat
                         </label>
                       </div>
                     </div>
@@ -202,7 +202,7 @@ const CheckoutInner = () => {
                         title='submit message'
                         className='btn--primary'
                       >
-                        Proceed To Pay <i className='fa-solid fa-arrow-right' />
+                        Konfirmasi Pembayaran <i className='fa-solid fa-arrow-right' />
                       </button>
                     </div>
                   </div>
@@ -217,3 +217,4 @@ const CheckoutInner = () => {
 };
 
 export default CheckoutInner;
+

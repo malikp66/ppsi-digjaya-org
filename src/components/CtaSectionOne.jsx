@@ -20,19 +20,19 @@ const CtaSectionOne = () => {
                     <i className='icon-spread-love' />
                   </div>
                   <div className='content'>
-                    <span>We give child a gift of a education</span>
+                    <span>Anggota aktif berjejaring dan dibina terstruktur</span>
                     <h3 className='title-animation_inner'>
-                      Become a volunteer?
+                      Daftar Anggota PPSI Digjaya
                     </h3>
                   </div>
                   <div className='cta-s'>
                     <Link
-                      href='/become-volunteer'
-                      aria-label='become a volunteer'
-                      title='become a volunteer'
+                      href='/keanggotaan'
+                      aria-label='daftar anggota ppsi'
+                      title='Daftar Anggota PPSI Digjaya'
                       className='btn--tertiary'
                     >
-                      Contact Now
+                      Daftar Sekarang
                     </Link>
                   </div>
                 </div>
@@ -73,19 +73,19 @@ const CtaSectionOne = () => {
                     <i className='icon-spread-love' />
                   </div>
                   <div className='content'>
-                    <span>We give child a gift of a education</span>
+                    <span>Dana sosial &amp; dukungan atlet dan pelatih</span>
                     <h3 className='title-animation_inner'>
-                      Make donation to us?
+                      Salurkan dukungan terbaik
                     </h3>
                   </div>
                   <div className='cta-s'>
                     <Link
                       href='/donate-us'
-                      aria-label='make a donation'
-                      title='make a donation'
+                      aria-label='dana sosial ppsi'
+                      title='Dana Sosial & Dukungan Atlet'
                       className='btn--primary'
                     >
-                      Donate Now
+                      Salurkan Dana
                     </Link>
                   </div>
                 </div>
