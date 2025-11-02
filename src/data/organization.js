@@ -30,12 +30,12 @@ export const kepengurusanDPW = [
     jabatan: "Ketua Umum DPW P.P.S.I Jawa Barat",
     nama: "H. Dadang Hermansyah, SE., AK., MM., CA., CLA.",
   },
-  { jabatan: "Ketua DPW PPSI Digjaya", nama: "R. Satia Nugraha" },
-  { jabatan: "Sekretaris", nama: "Iis Herlina" },
-  { jabatan: "Bendahara", nama: "Dadan Wirawan" },
-  { jabatan: "Bidang Pembinaan Prestasi", nama: "Alya Putri Siliwangi" },
-  { jabatan: "Bidang Pelestarian Budaya", nama: "Yudha Ramdhan" },
-  { jabatan: "Bidang Sosial & Dana", nama: "Sari Puspita" },
+  // { jabatan: "Ketua DPW PPSI Digjaya", nama: "R. Satia Nugraha" },
+  // { jabatan: "Sekretaris", nama: "Iis Herlina" },
+  // { jabatan: "Bendahara", nama: "Dadan Wirawan" },
+  // { jabatan: "Bidang Pembinaan Prestasi", nama: "Alya Putri Siliwangi" },
+  // { jabatan: "Bidang Pelestarian Budaya", nama: "Yudha Ramdhan" },
+  // { jabatan: "Bidang Sosial & Dana", nama: "Sari Puspita" },
 ];
 
 export const announcements = [

@@ -3,7 +3,7 @@ import { kepengurusanDPW } from "@/data/organization";
 
 const TeamTwo = () => {
   const pengurusImages = [
-    "assets/images/team/one.png",
+    "assets/images/team/Ketua_Umum.jpg",
     "assets/images/team/two.png",
     "assets/images/team/three.png",
     "assets/images/team/four.png",
