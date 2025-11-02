@@ -75,9 +75,9 @@ const CommunityTwo = () => {
                     </Link>
                   </div>
                 </div>
-                {/* <div className='unity'>
+                <div className='unity'>
                   <img src='assets/images/unit.png' alt='Image_inner' />
-                </div> */}
+                </div>
               </div>
             </div>
           </div>

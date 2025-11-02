@@ -164,12 +164,12 @@ const CommunityOne = () => {
             </div>
           </div>
         </div>
-        {/* <div className='community-bg'>
+        <div className='community-bg'>
           <img
             src='/assets/images/community/community-bg.png'
             alt='Image_inner'
           />
-        </div> */}
+        </div>
         {/* <div
           className='gift'
           data-aos='fade-up'
