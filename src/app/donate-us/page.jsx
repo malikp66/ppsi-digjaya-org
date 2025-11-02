@@ -1,9 +1,9 @@
 import BreadcrumbOne from "@/components/BreadcrumbOne";
 import DonateInner from "@/components/DonateInner";
 import FooterOne from "@/components/FooterOne";
- import HeaderFour from "@/components/HeaderFour";
+import HeaderFour from "@/components/HeaderFour";
 import Preloader from "@/components/Preloader";
- import TopBarThree from "@/components/TopBarThree";
+import TopBarThree from "@/components/TopBarThree";
 import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
 
@@ -22,10 +22,8 @@ const page = () => {
         {/* CustomCursor  */}
         <CustomCursor />
 
-         
         <TopBarThree />
 
-         
         <HeaderFour />
 
         {/* BreadcrumbOne */}

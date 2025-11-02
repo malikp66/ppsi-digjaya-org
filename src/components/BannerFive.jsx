@@ -55,9 +55,9 @@ const BannerFive = () => {
           </div>
         </div>
       </div>
-      <div className='spade'>
+      {/* <div className='spade'>
         <img src='assets/images/spade-green-two.png' alt='Image_inner' />
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -7,39 +7,45 @@ const CauseTwo = () => {
         <div className='row justify-content-center'>
           <div className='col-12 col-md-8 col-xl-7'>
             <div className='section__header text-center'>
-              <span className='sub-title'>We are always open for children</span>
-              <h2 className='title-animation_inner mt-0'>Our Recent Causes</h2>
+              <span className='sub-title'>
+                Persatuan Pencak Silat Indonesia (PPSI) – Jawa Barat
+              </span>
+              <h2 className='title-animation_inner mt-0'>
+                Program & Kegiatan Terbaru
+              </h2>
             </div>
           </div>
         </div>
+
         <div className='row gutter-30 mt-60'>
+          {/* 1. Dana Sosial Anggota */}
           <div className='col-12 col-lg-6 col-xl-4'>
             <div className='cause__slider-single'>
               <div className='thumb'>
                 <Link href='/cause-details'>
-                  <img src='assets/images/cause/eight.png' alt='Image_inner' />
+                  <img src='assets/images/cause/eight.png' alt='dana sosial anggota ppsi' />
                 </Link>
                 <div className='tag'>
-                  <Link href='/cause-details'>Health</Link>
+                  <Link href='/cause-details'>Dana Sosial</Link>
                 </div>
               </div>
               <div className='content'>
                 <h6 className='fw-7'>
                   <Link href='/cause-details'>
-                    It is a long established fact that a reader
+                    Dukungan Dana Sosial untuk Anggota & Pelatih
                   </Link>
                 </h6>
                 <p>
-                  Business is the activity of making one's buying and selling
-                  product
+                  Bantuan bagi anggota, pelatih, atau atlet PPSI yang sedang membutuhkan
+                  dukungan kesejahteraan.
                 </p>
               </div>
               <div className='cause__slider-cta'>
                 <div className='cause__progress progress-bar-single'>
                   <div className='cause-progress__intro'>
                     <p>
-                      <span className='raised'>$25,294</span> raised of{" "}
-                      <span className='goal'>$100,000</span> goal
+                      <span className='raised'>Rp 70.000.000</span> terkumpul dari{" "}
+                      <span className='goal'>Rp 100.000.000</span>
                       <span className='percent-value'>70%</span>
                     </p>
                   </div>
@@ -57,43 +63,45 @@ const CauseTwo = () => {
                 <div className='cause__cta'>
                   <Link
                     href='/donate-us'
-                    aria-label='donate now'
-                    title='donate now'
+                    aria-label='dukung sekarang'
+                    title='Dukung sekarang'
                     className='btn--secondary'
                   >
-                    Donate Now
+                    Dukung Sekarang
                   </Link>
                 </div>
               </div>
             </div>
           </div>
+
+          {/* 2. Pembinaan & Pasanggiri */}
           <div className='col-12 col-lg-6 col-xl-4'>
             <div className='cause__slider-single'>
               <div className='thumb'>
                 <Link href='/cause-details'>
-                  <img src='assets/images/cause/nine.png' alt='Image_inner' />
+                  <img src='assets/images/cause/nine.png' alt='pembinaan atlet ppsi' />
                 </Link>
                 <div className='tag'>
-                  <Link href='/cause-details'>Food</Link>
+                  <Link href='/cause-details'>Pembinaan</Link>
                 </div>
               </div>
               <div className='content'>
                 <h6>
                   <Link href='/cause-details'>
-                    It is a long established fact that a reader
+                    Pembinaan Atlet & Pasanggiri Pencak Silat
                   </Link>
                 </h6>
                 <p>
-                  Business is the activity of making one's buying and selling
-                  product
+                  Peningkatan kualitas latihan, teknik jurus, dan etika pesilat untuk
+                  mengikuti event PPSI tingkat Jawa Barat.
                 </p>
               </div>
               <div className='cause__slider-cta'>
                 <div className='cause__progress progress-bar-single'>
                   <div className='cause-progress__intro'>
                     <p>
-                      <span className='raised'>$25,294</span> raised of{" "}
-                      <span className='goal'>$100,000</span> goal
+                      <span className='raised'>Rp 80.000.000</span> terkumpul dari{" "}
+                      <span className='goal'>Rp 100.000.000</span>
                       <span className='percent-value'>80%</span>
                     </p>
                   </div>
@@ -111,43 +119,45 @@ const CauseTwo = () => {
                 <div className='cause__cta'>
                   <Link
                     href='/donate-us'
-                    aria-label='donate now'
-                    title='donate now'
+                    aria-label='dukung sekarang'
+                    title='Dukung sekarang'
                     className='btn--secondary'
                   >
-                    Donate Now
+                    Dukung Sekarang
                   </Link>
                 </div>
               </div>
             </div>
           </div>
+
+          {/* 3. Digitalisasi Sertifikat & Keanggotaan */}
           <div className='col-12 col-lg-6 col-xl-4'>
             <div className='cause__slider-single'>
               <div className='thumb'>
                 <Link href='/cause-details'>
-                  <img src='assets/images/cause/ten.png' alt='Image_inner' />
+                  <img src='assets/images/cause/ten.png' alt='digitalisasi sertifikat ppsi' />
                 </Link>
                 <div className='tag'>
-                  <Link href='/cause-details'>Health</Link>
+                  <Link href='/cause-details'>Administrasi</Link>
                 </div>
               </div>
               <div className='content'>
                 <h6>
                   <Link href='/cause-details'>
-                    It is a long established fact that a reader
+                    Digitalisasi Sertifikat, Arsip & Keanggotaan PPSI
                   </Link>
                 </h6>
                 <p>
-                  Business is the activity of making one's buying and selling
-                  product
+                  Pencatatan kenaikan sabuk, lisensi pelatih, dan keanggotaan secara online
+                  agar mudah diverifikasi.
                 </p>
               </div>
               <div className='cause__slider-cta'>
                 <div className='cause__progress progress-bar-single'>
                   <div className='cause-progress__intro'>
                     <p>
-                      <span className='raised'>$25,294</span> raised of{" "}
-                      <span className='goal'>$100,000</span> goal
+                      <span className='raised'>Rp 90.000.000</span> terkumpul dari{" "}
+                      <span className='goal'>Rp 100.000.000</span>
                       <span className='percent-value'>90%</span>
                     </p>
                   </div>
@@ -165,11 +175,11 @@ const CauseTwo = () => {
                 <div className='cause__cta'>
                   <Link
                     href='/donate-us'
-                    aria-label='donate now'
-                    title='donate now'
+                    aria-label='dukung sekarang'
+                    title='Dukung sekarang'
                     className='btn--secondary'
                   >
-                    Donate Now
+                    Dukung Sekarang
                   </Link>
                 </div>
               </div>

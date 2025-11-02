@@ -140,18 +140,18 @@ const TestimonialFive = () => {
         </Slider>
       </div>
       <div className='ff-test-pagination pagination-one mt-40' />
-      <div className='th-right'>
+      {/* <div className='th-right'>
         <img src='assets/images/community/gift.png' alt='Image_inner' />
-      </div>
-      <div className='th-left'>
+      </div> */}
+      {/* <div className='th-left'>
         <img src='assets/images/fc-nine.png' alt='Image_inner' />
-      </div>
-      <div className='th-top'>
+      </div> */}
+      {/* <div className='th-top'>
         <img src='assets/images/hand.png' alt='Image_inner' />
-      </div>
-      <div className='th-top-r'>
+      </div> */}
+      {/* <div className='th-top-r'>
         <img src='assets/images/fc-eleven.png' alt='Image_inner' />
-      </div>
+      </div> */}
     </section>
   );
 };

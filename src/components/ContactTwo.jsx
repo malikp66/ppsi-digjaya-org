@@ -78,14 +78,14 @@ const ContactTwo = () => {
           </div>
         </div>
       </div>
-      <div className='contact-bg'>
+      {/* <div className='contact-bg'>
         <img
           src='assets/images/contact/contact-bg.png'
           alt='Image_inner'
           className='parallax-image'
         />
-      </div>
-      <div
+      </div> */}
+      {/* <div
         className='shape-left'
         data-aos='fade-down'
         data-aos-duration={1000}
@@ -96,7 +96,7 @@ const ContactTwo = () => {
           alt='Image_inner'
           className='base-img'
         />
-      </div>
+      </div> */}
     </section>
   );
 };

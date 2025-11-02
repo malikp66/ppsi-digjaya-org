@@ -87,7 +87,7 @@ const DonationFutureOne = () => {
             </div>
           </div>
         </div>
-        <div className='donation-bg'>
+        {/* <div className='donation-bg'>
           <img
             src='/assets/images/donation/bg.png'
             alt='Image_inner'
@@ -98,7 +98,7 @@ const DonationFutureOne = () => {
             alt='Image_inner'
             className='shape'
           />
-        </div>
+        </div> */}
       </section>
       <ModalVideo
         channel='youtube'

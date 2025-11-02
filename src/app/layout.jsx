@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
           href='https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap'
           rel='stylesheet'
         />
+        <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
 
         <link rel="stylesheet" href="/assets/fonts/css/all.min.css" />
         <link rel="stylesheet" href="/assets/fonts/css/flag-icons.min.css" />

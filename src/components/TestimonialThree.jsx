@@ -235,16 +235,16 @@ const TestimonialThree = () => {
           </div>
         </div>
       </div>
-      <div className='spade'>
+      {/* <div className='spade'>
         <img
           src='/assets/images/community/spade.png'
           alt='Image_inner'
           className='base-img'
         />
-      </div>
-      <div className='spade-green'>
+      </div> */}
+      {/* <div className='spade-green'>
         <img src='/assets/images/sprade-green.png' alt='Image_inner' />
-      </div>
+      </div> */}
     </section>
   );
 };

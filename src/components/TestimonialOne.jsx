@@ -172,7 +172,7 @@ const TestimonialOne = () => {
             </button>
           </div>
         </div>
-        <div
+        {/* <div
           className='shape'
           data-aos='fade-right'
           data-aos-duration={1000}
@@ -183,7 +183,7 @@ const TestimonialOne = () => {
             alt='Image_inner'
             className='base-img'
           />
-        </div>
+        </div> */}
       </section>
     </>
   );

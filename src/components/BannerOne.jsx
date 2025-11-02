@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Slider from "@/components/ClientSlider";
 
 const BannerOne = () => {
   const sliderRef = useRef(null);
+  const [activeSlide, setActiveSlide] = useState(0);
   const settings = {
     infinite: true,
     speed: 2000,
@@ -15,6 +16,8 @@ const BannerOne = () => {
     autoplaySpeed: 6000,
     pauseOnHover: true,
     arrows: false,
+    beforeChange: (_, next) => setActiveSlide(next),
+    afterChange: (current) => setActiveSlide(current),
   };
   const slides = [
     {
@@ -96,13 +99,19 @@ const BannerOne = () => {
       <section className='banner-two'>
         <div className='banner-two__slider swiper'>
           <Slider {...settings} ref={sliderRef} className='swiper-wrapper'>
-            {slides.map((slide) => (
-              <div className='swiper-slide' key={slide.id}>
-                <div className='banner-two__slider-single'>
-                  <div
-                    className='banner-two__slider-bg'
-                    style={{ backgroundImage: slide.background }}
-                  ></div>
+            {slides.map((slide, index) => {
+              const isActive = index === activeSlide;
+              const slideClassName = `swiper-slide${
+                isActive ? " swiper-slide-active" : ""
+              }`;
+
+              return (
+                <div className={slideClassName} key={slide.id}>
+                  <div className='banner-two__slider-single'>
+                    <div
+                      className='banner-two__slider-bg'
+                      style={{ backgroundImage: slide.background }}
+                    ></div>
                   <div className='container'>
                     <div className='row'>
                       <div className='col-12 col-md-9 col-lg-7 col-xxl-6'>
@@ -145,8 +154,9 @@ const BannerOne = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+                </div>
+              );
+            })}
           </Slider>
         </div>
         <div className='slider-navigation d-none d-md-flex'>
@@ -169,7 +179,7 @@ const BannerOne = () => {
             <i className='fa-solid fa-arrow-right' />
           </button>
         </div>
-        <div
+        {/* <div
           className='shape-left'
           data-aos='fade-right'
           data-aos-duration={1000}
@@ -179,8 +189,8 @@ const BannerOne = () => {
             src='/assets/images/banner/banner-two-shape.png'
             alt='Image_inner'
           />
-        </div>
-        <div className='sprade-shape'>
+        </div> */}
+        {/* <div className='sprade-shape'>
           <img
             src='assets/images/sprade-base.png'
             alt='Image_inner'
@@ -188,10 +198,10 @@ const BannerOne = () => {
             data-aos='zoom-in'
             data-aos-duration={1000}
           />
-        </div>
-        <div className='unity'>
+        </div> */}
+        {/* <div className='unity'>
           <img src='/assets/images/unity.png' alt='Image_inner' />
-        </div>
+        </div> */}
       </section>
     </>
   );

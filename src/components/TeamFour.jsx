@@ -213,16 +213,16 @@ const TeamFour = () => {
           </div>
         </div>
       </div>
-      <div className='spade'>
+      {/* <div className='spade'>
         <img src='assets/images/sprade-green.png' alt='Image_inner' />
-      </div>
-      <div className='spade-two'>
+      </div> */}
+      {/* <div className='spade-two'>
         <img
           src='assets/images/blog/spade-base.png'
           alt='Image_inner'
           className='base-img'
         />
-      </div>
+      </div> */}
     </section>
   );
 };

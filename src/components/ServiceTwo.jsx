@@ -237,9 +237,9 @@ const ServiceTwo = () => {
           </div>
         </div>
       </div>
-      <div className='th-t'>
+      {/* <div className='th-t'>
         <img src='assets/images/hand-light.png' alt='Image_inner' />
-      </div>
+      </div> */}
     </section>
   );
 };

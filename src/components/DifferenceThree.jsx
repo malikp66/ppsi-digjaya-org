@@ -18,13 +18,13 @@ const DifferenceThree = () => {
                     alt='Image_inner'
                   />
                 </div>
-                <div className='spade'>
+                {/* <div className='spade'>
                   <img
                     src='assets/images/difference/spade.png'
                     alt='Image_inner'
                     className='base-img'
                   />
-                </div>
+                </div> */}
                 <div
                   className='thumb-sm'
                   data-aos='fade-up'
@@ -36,12 +36,12 @@ const DifferenceThree = () => {
                     alt='Image_inner'
                   />
                 </div>
-                <div className='line'>
+                {/* <div className='line'>
                   <img
                     src='assets/images/difference/line.png'
                     alt='Image_inner'
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

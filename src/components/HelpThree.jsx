@@ -164,15 +164,15 @@ const HelpThree = () => {
             alt='Image_inner'
             className='poor'
           />
-          <img
+          {/* <img
             src='assets/images/shape-three.png'
             alt='Image_inner'
             className='shape'
-          />
+          /> */}
         </div>
-        <div className='parasuit'>
+        {/* <div className='parasuit'>
           <img src='assets/images/parasuit.png' alt='Image_inner' />
-        </div>
+        </div> */}
       </div>
     </section>
   );

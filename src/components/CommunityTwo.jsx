@@ -75,20 +75,20 @@ const CommunityTwo = () => {
                     </Link>
                   </div>
                 </div>
-                <div className='unity'>
+                {/* <div className='unity'>
                   <img src='assets/images/unit.png' alt='Image_inner' />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className='parasuit'>
+      {/* <div className='parasuit'>
         <img src='assets/images/parasuit.png' alt='Image_inner' />
-      </div>
-      <div className='spade'>
+      </div> */}
+      {/* <div className='spade'>
         <img src='assets/images/fc-twelve.png' alt='Image_inner' />
-      </div>
+      </div> */}
       <span className='dn-now'>Donate Now</span>
     </section>
   );

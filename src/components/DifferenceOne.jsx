@@ -150,7 +150,7 @@ const DifferenceOne = () => {
             </button>
           </div>
         </div>
-        <div
+        {/* <div
           className='shape-hand'
           data-aos='fade-right'
           data-aos-duration={1000}
@@ -160,7 +160,7 @@ const DifferenceOne = () => {
             src='/assets/images/difference/shape-hand.png'
             alt='Image_inner'
           />
-        </div>
+        </div> */}
       </section>
     </>
   );

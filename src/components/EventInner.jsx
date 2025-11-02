@@ -135,9 +135,9 @@ const EventInner = () => {
           </div>
         </div>
       </div>
-      <div className='spade'>
+      {/* <div className='spade'>
         <img src='assets/images/blog/spade-base.png' alt='Image_inner' className='base-img' />
-      </div>
+      </div> */}
     </section>
   );
 };

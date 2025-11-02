@@ -191,15 +191,15 @@ const BannerThree = () => {
           </div>
         </div>
       </div>
-      <div className='shape-lg'>
+      {/* <div className='shape-lg'>
         <img
           src='/assets/images/banner/banner-three-bg.png'
           alt='Image_inner'
           data-aos='zoom-in'
           data-aos-duration={1000}
         />
-      </div>
-      <div className='sprade-shape'>
+      </div> */}
+      {/* <div className='sprade-shape'>
         <img
           src='/assets/images/sprade-base.png'
           alt='Image_inner'
@@ -207,10 +207,10 @@ const BannerThree = () => {
           data-aos='zoom-in'
           data-aos-duration={1000}
         />
-      </div>
-      <div className='parasuit'>
+      </div> */}
+      {/* <div className='parasuit'>
         <img src='/assets/images/parasuit.png' alt='Image_inner' />
-      </div>
+      </div> */}
     </section>
   );
 };

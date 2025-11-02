@@ -228,7 +228,7 @@ const ProfitOne = () => {
             </div>
           </div>
         </div>
-        <div
+        {/* <div
           className='shape-left'
           data-aos='fade-right'
           data-aos-duration={1000}
@@ -239,15 +239,15 @@ const ProfitOne = () => {
             alt='Image_inner'
             className='base-img'
           />
-        </div>
-        <div
+        </div> */}
+        {/* <div
           className='shape-right'
           data-aos='zoom-in'
           data-aos-duration={1000}
           data-aos-delay={300}
         >
           <img src='assets/images/fc-eleven.png' alt='Image_inner' />
-        </div>
+        </div> */}
       </section>
       <ModalVideo
         channel='youtube'

@@ -169,13 +169,13 @@ const ComingSoonInner = () => {
           </div>
         </div>
       </div>
-      <div className='soon-bg'>
+      {/* <div className='soon-bg'>
         <img
           src='assets/images/banner/banner-one-bg.png'
           alt='Image_inner'
           className='parallax-image'
         />
-      </div>
+      </div> */}
     </section>
   );
 };

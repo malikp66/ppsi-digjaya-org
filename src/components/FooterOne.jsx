@@ -51,7 +51,7 @@ const FooterOne = () => {
               >
                 <div className='footer-two__widget-logo'>
                   <Link href='/'>
-                    <img src='assets/images/logo-light.png' alt='Image_inner' />
+                    <img src="/assets/images/logo-light.png" style={{ maxWidth: "100px" }} alt="Image_inner" />
                   </Link>
                 </div>
                 <div className='footer-two__widget-content'>
@@ -277,20 +277,20 @@ const FooterOne = () => {
             </div>
           </div>
         </div>
-        <div className='sprade' data-aos='zoom-in' data-aos-duration={1000}>
+        {/* <div className='sprade' data-aos='zoom-in' data-aos-duration={1000}>
           <img
             src='assets/images/sprade.png'
             alt='Image_inner'
             className='base-img'
           />
-        </div>
-        <div
+        </div> */}
+        {/* <div
           className='sprade-light'
           data-aos='zoom-in'
           data-aos-duration={1000}
         >
           <img src='assets/images/sprade-light.png' alt='Image_inner' />
-        </div>
+        </div> */}
       </footer>
     </>
   );

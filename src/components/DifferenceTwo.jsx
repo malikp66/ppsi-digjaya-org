@@ -21,13 +21,13 @@ const DifferenceTwo = () => {
                       src='assets/images/difference/thumb-sm.png'
                       alt='Image_inner'
                     />
-                    <div className='grid-line'>
+                    {/* <div className='grid-line'>
                       <img
                         src='assets/images/help/grid.png'
                         alt='Image_inner'
                         className='base-img'
                       />
-                    </div>
+                    </div> */}
                     <div className='video-btn-wrapper'>
                       <button
                         onClick={() => setIsOpen(true)}
@@ -276,9 +276,9 @@ const DifferenceTwo = () => {
             </div>
           </div>
         </div>
-        <div className='spade'>
+        {/* <div className='spade'>
           <img src='assets/images/spade-green-two.png' alt='Image_inner' />
-        </div>
+        </div> */}
       </section>
       <ModalVideo
         channel='youtube'

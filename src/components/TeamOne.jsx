@@ -249,9 +249,9 @@ const TeamOne = () => {
             </div>
           </div>
         </div>
-        <div className='spade'>
+        {/* <div className='spade'>
           <img src='assets/images/sprade-green.png' alt='Image_inner' />
-        </div>
+        </div> */}
       </section>
     </>
   );

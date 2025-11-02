@@ -121,10 +121,10 @@ const CauseSliderOne = () => {
                               {/* ProgressBar */}
                               <div className='cause-progress__goal'>
                                 <p>
-                                  Raised: <span className='raised'>$8500</span>
+                                  Raised: <span className='raised'>Rp8.500.000</span>
                                 </p>
                                 <p>
-                                  Goal: <span className='goal'>$1,0000</span>
+                                  Goal: <span className='goal'>Rp100.000.000</span>
                                 </p>
                               </div>
                             </div>
@@ -536,9 +536,9 @@ const CauseSliderOne = () => {
           </button>
         </div>
       </div>
-      <div className='spade'>
+      {/* <div className='spade'>
         <img src='assets/images/help/spade.png' alt='Image_inner' />
-      </div>
+      </div> */}
     </section>
   );
 };

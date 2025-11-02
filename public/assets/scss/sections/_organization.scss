@@ -1,0 +1,467 @@
+/* ====
+ --------- (5.23) organization section styles start ---------
+ ==== */
+
+.organization {
+  position: relative;
+  padding: 100px 0;
+  background: linear-gradient(180deg, rgba(4, 106, 88, 0.04) 0%, rgba(4, 106, 88, 0) 55%, #ffffff 100%);
+
+  &__lead {
+    max-width: 780px;
+    margin: 18px auto 0;
+    color: rgba(18, 47, 42, 0.7);
+    line-height: 1.6;
+  }
+
+  &__highlights {
+    margin-top: 42px;
+    margin-bottom: 48px;
+  }
+
+  &__highlight {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 26px 28px;
+    border-radius: 24px;
+    border: 1px solid rgba(6, 20, 8, 0.1);
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: var(--shadow-tertiary);
+    height: 100%;
+    transition: var(--transition);
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    &-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 18px;
+      font-size: 20px;
+      color: var(--secondary-color);
+      background: rgba(4, 106, 88, 0.14);
+      flex-shrink: 0;
+    }
+
+    &-label {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(18, 47, 42, 0.6);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    &-value {
+      display: block;
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--secondary-color);
+      margin-bottom: 6px;
+    }
+
+    &-helper {
+      margin: 0;
+      color: rgba(18, 47, 42, 0.65);
+      line-height: 1.55;
+      font-size: 14px;
+    }
+  }
+
+  &__highlight--emerald .organization__highlight-icon {
+    background: rgba(4, 106, 88, 0.18);
+    color: var(--primary-color);
+  }
+
+  &__highlight--teal .organization__highlight-icon {
+    background: rgba(0, 113, 93, 0.16);
+    color: var(--quaternary-color);
+  }
+
+  &__highlight--amber .organization__highlight-icon {
+    background: rgba(107, 81, 3, 0.18);
+    color: var(--hover-color);
+  }
+
+  &__highlight--indigo .organization__highlight-icon {
+    background: rgba(12, 20, 31, 0.16);
+    color: var(--septenary-color);
+  }
+
+  &__card {
+    padding: 32px 30px;
+    border-radius: 24px;
+    border: 1px solid rgba(6, 20, 8, 0.08);
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: var(--shadow-tertiary);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__card--table {
+    gap: 20px;
+  }
+
+  &__card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+
+    h5 {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__card-subtitle {
+    margin: 0;
+    color: rgba(18, 47, 42, 0.68);
+    line-height: 1.55;
+  }
+
+  &__meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(18, 47, 42, 0.8);
+    background: rgba(4, 106, 88, 0.12);
+    border: 1px solid rgba(4, 106, 88, 0.16);
+  }
+
+  &__meta--soft {
+    background: rgba(4, 106, 88, 0.08);
+    border-color: rgba(4, 106, 88, 0.2);
+  }
+
+  &__table {
+    overflow-x: auto;
+
+    table {
+      width: 100%;
+      min-width: 680px;
+      border-collapse: collapse;
+    }
+
+    thead tr {
+      border-bottom: 1px solid rgba(6, 20, 8, 0.08);
+    }
+
+    th {
+      padding: 14px 16px;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: rgba(18, 47, 42, 0.6);
+      text-align: left;
+    }
+
+    td {
+      padding: 18px 16px;
+      border-bottom: 1px solid rgba(6, 20, 8, 0.06);
+      vertical-align: top;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+  }
+
+  &__entity-name {
+    display: inline-block;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 6px;
+  }
+
+  &__entity-text {
+    display: block;
+    color: rgba(18, 47, 42, 0.7);
+    line-height: 1.55;
+  }
+
+  &__entity-number {
+    font-weight: 800;
+    color: var(--primary-color);
+  }
+
+  &__status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    background: rgba(4, 106, 88, 0.14);
+    color: var(--secondary-color);
+    border: 1px solid rgba(4, 106, 88, 0.22);
+  }
+
+  &__status--aktif {
+    background: rgba(0, 113, 93, 0.18);
+    border-color: rgba(0, 113, 93, 0.35);
+  }
+
+  &__status--non-aktif,
+  &__status--nonaktif {
+    background: rgba(197, 70, 58, 0.14);
+    border-color: rgba(197, 70, 58, 0.32);
+    color: #c5463a;
+  }
+
+  &__contact-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--hover-color);
+    }
+  }
+
+  &__table-footer {
+    margin-top: -4px;
+
+    p {
+      margin: 0;
+      color: rgba(18, 47, 42, 0.68);
+      line-height: 1.55;
+      font-size: 14px;
+    }
+  }
+
+  &__sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__card--stack {
+    gap: 20px;
+  }
+
+  &__team {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    li {
+      padding: 0;
+    }
+  }
+
+  &__team-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    h6 {
+      margin: 0;
+      font-weight: 700;
+      color: var(--secondary-color);
+    }
+
+    span {
+      font-size: 14px;
+      color: rgba(18, 47, 42, 0.65);
+      font-weight: 600;
+    }
+  }
+
+  &__timeline {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    li {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 10px 18px;
+      align-items: flex-start;
+    }
+  }
+
+  &__timeline-date {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--primary-color);
+    background: rgba(4, 106, 88, 0.1);
+  }
+
+  &__timeline-content {
+    h6 {
+      margin: 0 0 6px;
+      font-size: 16px;
+      color: var(--secondary-color);
+    }
+
+    p {
+      margin: 0;
+      color: rgba(18, 47, 42, 0.7);
+      line-height: 1.55;
+    }
+  }
+
+  &__card--cta {
+    background: linear-gradient(180deg, rgba(4, 106, 88, 0.18) 0%, rgba(4, 106, 88, 0.08) 100%);
+    border-color: rgba(4, 106, 88, 0.26);
+  }
+
+  &__summary {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 600;
+      color: rgba(18, 47, 42, 0.7);
+
+      span {
+        font-size: 14px;
+      }
+
+      strong {
+        font-size: 18px;
+        color: var(--secondary-color);
+      }
+    }
+  }
+
+  &__cta-contact {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    span {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(18, 47, 42, 0.58);
+    }
+
+    a {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--secondary-color);
+      text-decoration: none;
+      transition: var(--transition);
+
+      &:hover {
+        color: var(--hover-color);
+      }
+    }
+  }
+
+  &__cta-note {
+    margin: 4px 0 0;
+    color: rgba(18, 47, 42, 0.7);
+    line-height: 1.55;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .organization {
+    padding: 90px 0;
+
+    &__card-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__meta {
+      align-self: flex-start;
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .organization {
+    &__card {
+      padding: 28px 24px;
+    }
+
+    &__table table {
+      min-width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .organization {
+    padding: 80px 0;
+
+    &__highlight {
+      padding: 22px 24px;
+    }
+
+    &__card {
+      padding: 24px 22px;
+    }
+
+    &__summary li {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+    }
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .organization {
+    padding: 70px 0;
+
+    &__lead {
+      margin-top: 16px;
+    }
+
+    &__highlight {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__timeline li {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+/* ====
+ --------- (5.23) organization section styles end ---------
+ ==== */

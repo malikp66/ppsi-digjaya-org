@@ -121,7 +121,7 @@ const CounterOne = () => {
           className='parallax-image'
         />
       </div>
-      <div
+      {/* <div
         className='shape-left'
         data-aos='fade-down'
         data-aos-duration={1000}
@@ -132,7 +132,7 @@ const CounterOne = () => {
           alt='Image_inner'
           className='base-img'
         />
-      </div>
+      </div> */}
     </section>
   );
 };

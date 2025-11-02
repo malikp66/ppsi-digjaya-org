@@ -1,5 +1,54 @@
 import Link from "next/link";
 
+const author = {
+  name: "Galih Suryana",
+  role: "Koordinator Media PPSI Digjaya",
+  bio: "Galih mendokumentasikan perkembangan pencak silat tradisional Jawa Barat dan menghubungkan padepokan dari Sabang sampai Merauke.",
+  photo: "assets/images/author-two.png",
+  alt: "Potret Galih Suryana",
+};
+
+const recentPosts = [
+  {
+    image: "assets/images/blog/ph-one.png",
+    alt: "Latihan gabungan pesilat remaja PPSI Digjaya",
+    date: "12 Januari 2025",
+    title: "Latihan Gabungan Pesilat Remaja di Padepokan Digjaya",
+    href: "/blog-details",
+  },
+  {
+    image: "assets/images/blog/ph-two.png",
+    alt: "Pesilat tradisional melakukan jurus di Cirebon",
+    date: "28 Desember 2024",
+    title: "Ekspedisi Jurus Pusaka ke Padepokan Cirebon Girang",
+    href: "/blog-details",
+  },
+  {
+    image: "assets/images/blog/three.png",
+    alt: "Delegasi PPSI Digjaya menerima piagam warisan budaya",
+    date: "20 November 2024",
+    title: "PPSI Digjaya Dukung Pencak Silat Masuk Agenda UNESCO",
+    href: "/blog-details",
+  },
+];
+
+const categories = [
+  { label: "Festival & Kejuaraan", total: 12 },
+  { label: "Pelatihan", total: 8 },
+  { label: "Budaya", total: 6 },
+  { label: "Komunitas", total: 9 },
+  { label: "Heritage", total: 4 },
+];
+
+const tags = [
+  "festival",
+  "pencak silat",
+  "cimande",
+  "tradisi sunda",
+  "warisan budaya",
+  "ppsi digjaya",
+];
+
 const BlogDetailsInner = () => {
   return (
     <section className='blog-main cm-details'>
@@ -13,121 +62,138 @@ const BlogDetailsInner = () => {
                 data-aos-duration={1000}
                 data-aos-delay={100}
               >
-                <img src='assets/images/event/poster.png' alt='Image_inner' />
+                <img
+                  src='assets/images/event/poster.png'
+                  alt='Poster Festival Pencak Silat Tradisional Priangan 2024'
+                />
               </div>
               <div className='cm-details-meta'>
                 <p>
                   <i className='fa-solid fa-calendar-days' />
-                  02 Apr 2021
+                  12 Januari 2025
                 </p>
                 <p>
                   <i className='fa-solid fa-location-dot' />
-                  684 West College St. Sun City, USA
+                  Padepokan PPSI Digjaya, Bandung, Jawa Barat
                 </p>
               </div>
               <div className='cm-group cta'>
                 <h3 className='title-animation_inner'>
-                  Give african childrens a good education
+                  Festival Pencak Silat Tradisional Priangan 2024: Merawat
+                  Warisan dari Tanah Sunda
                 </h3>
                 <p>
-                  Charity and Donation is a categorys that involves giving
-                  financial category that involves giving financial or material
-                  support various causes organizations. It allows individuals
-                  towards the a addressing social category that involves giving
-                  financial or material support various causes of organizations.
-                  It allows individuals towards addressing social
+                  Lebih dari 5.000 penonton memenuhi Padepokan PPSI Digjaya
+                  ketika gong pembuka festival dipukul oleh para sesepuh
+                  Cimande. Festival ini menghadirkan 32 padepokan dari seluruh
+                  Jawa Barat dengan ragam aliran seperti Cimande, Cikalong,
+                  Sera, dan Syahbandar yang menampilkan jurus khas disertai
+                  iringan musik tradisional.
                 </p>
                 <p>
-                  Charity and Donation is a categorys that involves giving
-                  financial category that involves giving financial or material
-                  support various causes organizations. It allows individuals
-                  towards the a addressing social category
+                  Agenda utama festival meliputi gelaran jurus tunggal tradisi,
+                  rampak gendang, hingga workshop pembuatan iket tilu. Peserta
+                  termuda berasal dari Kabupaten Tasikmalaya berusia 9 tahun,
+                  sementara peserta tertua adalah Abah Anom Sukarja, maestro
+                  berusia 78 tahun yang masih aktif mengajar jurus pamacan.
                 </p>
                 <p>
-                  Charity and Donation is a categorys that involves giving
-                  financial category that involves giving financial or material
-                  support various causes organizations.
+                  Selain pertunjukan, festival juga menjadi ruang diskusi
+                  lintas padepokan untuk menyepakati standar dokumentasi jurus
+                  tradisi yang akan diajukan ke Direktorat Warisan Budaya. PPSI
+                  Digjaya memfasilitasi pendataan naskah jurus dan arsip audio
+                  untuk memastikan warisan ini tetap lestari di tengah arus
+                  modernisasi.
                 </p>
               </div>
               <div className='cm-group cta'>
                 <div className='blockquote-wrapper'>
                   <blockquote>
-                    "Enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat duis aute
-                    irure dolor in reprehen derit in voluptate velit esse."
+                    "Pencak silat bukan sekadar bela diri, melainkan bahasa jiwa
+                    urang Sunda yang menuntun kita untuk silih asah, silih asih,
+                    jeung silih asuh."
                   </blockquote>
                   <p>
                     <span className='line' />
-                    <span className='quote-owner'>Christian Bale</span>
+                    <span className='quote-owner'>Maestro Iyan Sutyana</span>
                   </p>
                 </div>
               </div>
               <div className='cm-group cta'>
-                <h3 className='title-animation_inner'>Summary</h3>
+                <h3 className='title-animation_inner'>Sorotan Penting</h3>
                 <p>
-                  Charity and Donation is a categorys that involves giving
-                  financial category that involves giving financial or material
-                  support various causes organizations. It allows individuals
-                  towards the a addressing social category that involves giving
-                  financial or material support various causes of organizations.
-                  It allows individuals towards addressing social
+                  Festival tahun ini menandai babak baru upaya pelestarian
+                  pencak silat tradisional di Jawa Barat dengan kolaborasi
+                  lintas pemangku kepentingan.
                 </p>
                 <div className='cm-details__list'>
                   <ul>
                     <li>
                       <i className='icon-circle-check' />
-                      Empower Through Charity
+                      Penandatanganan pakta bersama 32 padepokan untuk berbagi
+                      arsip jurus klasik.
                     </li>
                     <li>
                       <i className='icon-circle-check' />
-                      Giving Hope, Changing Lives
+                      Peluncuran pusat data digital PPSI Digjaya mengenai
+                      silsilah guru-guru besar pencak silat.
                     </li>
                     <li>
                       <i className='icon-circle-check' />
-                      Healing Communities
+                      Workshop dokumentasi gerak menggunakan teknologi motion
+                      capture sederhana.
                     </li>
                     <li>
                       <i className='icon-circle-check' />
-                      Together We Can
+                      Penyerahan piagam penghargaan kepada empat maestro atas
+                      dedikasi lebih dari 40 tahun.
                     </li>
                     <li>
                       <i className='icon-circle-check' />
-                      Compassion in Action
+                      Deklarasi regenerasi pesilat perempuan melalui program
+                      "Srikandi Lagar".
                     </li>
                     <li>
                       <i className='icon-circle-check' />
-                      Every Act Counts
+                      Penggalangan dana untuk renovasi padepokan tua di
+                      Sumedang.
                     </li>
                   </ul>
                 </div>
               </div>
               <div className='cm-img-group cta'>
                 <div className='cm-img-single'>
-                  <img src='assets/images/event/pp-one.png' alt='Image_inner' />
+                  <img
+                    src='assets/images/event/pp-one.png'
+                    alt='Pesilat menampilkan jurus Cimande di panggung utama'
+                  />
                 </div>
                 <div className='cm-img-single'>
-                  <img src='assets/images/event/pp-two.png' alt='Image_inner' />
+                  <img
+                    src='assets/images/event/pp-two.png'
+                    alt='Sesepuh dan pesilat muda berfoto bersama usai festival'
+                  />
                 </div>
               </div>
               <div className='details-footer cta'>
                 <div className='details-tag'>
                   <div className='tag-header'>
-                    <h6>Tags:</h6>
+                    <h6>Tag:</h6>
                   </div>
                   <div className='tag-wrapper'>
-                    <Link href='/blog-list'>Donation</Link>
-                    <Link href='/blog-list'>Charity</Link>
+                    <Link href='/blog-grid'>Festival</Link>
+                    <Link href='/blog-grid'>Budaya</Link>
                   </div>
                 </div>
                 <div className='details-tag'>
                   <div className='tag-header'>
-                    <h6>Share:</h6>
+                    <h6>Bagikan:</h6>
                   </div>
                   <div className='social'>
                     <a
                       href='https://www.facebook.com/'
                       target='_blank'
-                      aria-label='share us on facebook'
+                      aria-label='Bagikan ke Facebook'
                       title='facebook'
                       rel='noreferrer'
                     >
@@ -136,7 +202,7 @@ const BlogDetailsInner = () => {
                     <a
                       href='https://vimeo.com/'
                       target='_blank'
-                      aria-label='share us on vimeo'
+                      aria-label='Bagikan ke Vimeo'
                       title='vimeo'
                       rel='noreferrer'
                     >
@@ -145,7 +211,7 @@ const BlogDetailsInner = () => {
                     <a
                       href='https://x.com/'
                       target='_blank'
-                      aria-label='share us on twitter'
+                      aria-label='Bagikan ke X'
                       title='twitter'
                       rel='noreferrer'
                     >
@@ -154,7 +220,7 @@ const BlogDetailsInner = () => {
                     <a
                       href='https://www.linkedin.com/'
                       target='_blank'
-                      aria-label='share us on linkedin'
+                      aria-label='Bagikan ke LinkedIn'
                       title='linkedin'
                       rel='noreferrer'
                     >
@@ -170,88 +236,47 @@ const BlogDetailsInner = () => {
                 data-aos-delay={100}
               >
                 <div className='comment-header mb-40'>
-                  <h4 className='mt-8 title-animation_inner'>03 Comments</h4>
+                  <h4 className='mt-8 title-animation_inner'>03 Komentar</h4>
                 </div>
                 <div className='comment-single'>
                   <div className='thumb'>
                     <img
                       src='assets/images/author-four.png'
-                      alt='Image_inner'
+                      alt='Potret Rina Mulyani'
                     />
                   </div>
                   <div className='comment-single__content'>
-                    <h5>Martha Grey</h5>
+                    <h5>Rina Mulyani</h5>
                     <p>
-                      Ut sint posse sit, eum sumo diam ea. Liber consectetuer in
-                      mei, sea in imperdiet assueverit contentiones, an his cib.
+                      Salut untuk PPSI Digjaya yang konsisten mengangkat
+                      padepokan kecil. Anak-anak di Majalengka jadi punya ruang
+                      tampil dan percaya diri melestarian jurus keluarga.
                     </p>
                     <div className='comment-single__meta'>
-                      <button title='like' className='single'>
-                        <i className='icon-heart' /> Like
+                      <button title='suka' className='single'>
+                        <i className='icon-heart' /> Suka
                       </button>
                       <div className='reply-button'>
-                        <button aria-label='reply'>
+                        <button aria-label='Balas komentar'>
                           <i className='fa-solid fa-reply' />
-                          Reply
+                          Balas
                         </button>
                       </div>
-                      <p>2 min ago</p>
+                      <p>2 jam lalu</p>
                     </div>
                     <div className='reply-comment'>
                       <form action='#' method='post'>
                         <div className='input-group'>
                           <div className='input-single'>
                             <textarea
-                              placeholder='Join the discussion...'
+                              placeholder='Tulis balasan Anda...'
                               required=''
-                              defaultValue={""}
+                              defaultValue=''
                             />
                           </div>
                           <div className='btn-wrapper'>
                             <button type='submit' className='btn--secondary'>
-                              Reply
-                            </button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-                <div className='comment-single comment-single-reply'>
-                  <div className='thumb'>
-                    <img src='assets/images/team/one.png' alt='Image_inner' />
-                  </div>
-                  <div className='comment-single__content'>
-                    <h5>Jackie Dawson</h5>
-                    <p>
-                      Ut sint posse sit, eum sumo diam ea. Liber consectetuer in
-                      mei, sea in imperdiet assueverit contentiones, an his cib.
-                    </p>
-                    <div className='comment-single__meta'>
-                      <button title='like' className='single'>
-                        <i className='icon-heart' /> Like
-                      </button>
-                      <div className='reply-button'>
-                        <button aria-label='reply'>
-                          <i className='fa-solid fa-reply' />
-                          Reply
-                        </button>
-                      </div>
-                      <p>2 min ago</p>
-                    </div>
-                    <div className='reply-comment'>
-                      <form action='#' method='post'>
-                        <div className='input-group'>
-                          <div className='input-single'>
-                            <textarea
-                              placeholder='Join the discussion...'
-                              required=''
-                              defaultValue={""}
-                            />
-                          </div>
-                          <div className='btn-wrapper'>
-                            <button type='submit' className='btn--secondary'>
-                              Reply
+                              Balas
                             </button>
                           </div>
                         </div>
@@ -261,39 +286,89 @@ const BlogDetailsInner = () => {
                 </div>
                 <div className='comment-single'>
                   <div className='thumb'>
-                    <img src='assets/images/author-two.png' alt='Image_inner' />
+                    <img
+                      src='assets/images/author-two.png'
+                      alt='Potret Wahyu Sasmita'
+                    />
                   </div>
                   <div className='comment-single__content'>
-                    <h5>Hesia Lara</h5>
+                    <h5>Wahyu Sasmita</h5>
                     <p>
-                      Ut sint posse sit, eum sumo diam ea. Liber consectetuer in
-                      mei, sea in imperdiet assueverit contentiones, an his cib.
+                      Dokumentasi gerak dengan motion capture itu ide brilian.
+                      Semoga bisa jadi bahan ajar digital supaya generasi Z
+                      semakin dekat dengan pencak silat tradisi.
                     </p>
                     <div className='comment-single__meta'>
-                      <button title='like' className='single'>
-                        <i className='icon-heart' /> Like
+                      <button title='suka' className='single'>
+                        <i className='icon-heart' /> Suka
                       </button>
                       <div className='reply-button'>
-                        <button aria-label='reply'>
+                        <button aria-label='Balas komentar'>
                           <i className='fa-solid fa-reply' />
-                          Reply
+                          Balas
                         </button>
                       </div>
-                      <p>2 min ago</p>
+                      <p>5 jam lalu</p>
                     </div>
                     <div className='reply-comment'>
                       <form action='#' method='post'>
                         <div className='input-group'>
                           <div className='input-single'>
                             <textarea
-                              placeholder='Join the discussion...'
+                              placeholder='Tulis balasan Anda...'
                               required=''
-                              defaultValue={""}
+                              defaultValue=''
                             />
                           </div>
                           <div className='btn-wrapper'>
                             <button type='submit' className='btn--secondary'>
-                              Reply
+                              Balas
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div className='comment-single'>
+                  <div className='thumb'>
+                    <img
+                      src='assets/images/author-three.png'
+                      alt='Potret Adi Prakoso'
+                    />
+                  </div>
+                  <div className='comment-single__content'>
+                    <h5>Adi Prakoso</h5>
+                    <p>
+                      Mohon teruskan program regenerasi pesilat perempuan.
+                      Banyak siswi di sekolah saya yang tertarik, kami siap jadi
+                      tuan rumah klinik singkat.
+                    </p>
+                    <div className='comment-single__meta'>
+                      <button title='suka' className='single'>
+                        <i className='icon-heart' /> Suka
+                      </button>
+                      <div className='reply-button'>
+                        <button aria-label='Balas komentar'>
+                          <i className='fa-solid fa-reply' />
+                          Balas
+                        </button>
+                      </div>
+                      <p>1 hari lalu</p>
+                    </div>
+                    <div className='reply-comment'>
+                      <form action='#' method='post'>
+                        <div className='input-group'>
+                          <div className='input-single'>
+                            <textarea
+                              placeholder='Tulis balasan Anda...'
+                              required=''
+                              defaultValue=''
+                            />
+                          </div>
+                          <div className='btn-wrapper'>
+                            <button type='submit' className='btn--secondary'>
+                              Balas
                             </button>
                           </div>
                         </div>
@@ -309,7 +384,7 @@ const BlogDetailsInner = () => {
                 >
                   <div className='comment-header mb-40'>
                     <h4 className='mt-8 fw-6 title-animation_inner'>
-                      Leave A Comment
+                      Tinggalkan Komentar
                     </h4>
                   </div>
                   <form action='#' method='post'>
@@ -320,7 +395,7 @@ const BlogDetailsInner = () => {
                           required=''
                           name='comment-name'
                           id='commentName'
-                          placeholder='Your Name'
+                          placeholder='Nama Anda'
                         />
                         <i className='fa-solid fa-user' />
                       </div>
@@ -330,7 +405,7 @@ const BlogDetailsInner = () => {
                           required=''
                           name='comment-email'
                           id='commentEmail'
-                          placeholder='Enter Email'
+                          placeholder='Alamat Email'
                         />
                         <i className='fa-regular fa-envelope' />
                       </div>
@@ -341,15 +416,15 @@ const BlogDetailsInner = () => {
                         id='commentMessage'
                         cols={30}
                         rows={10}
-                        placeholder='Type Your Comments...'
-                        defaultValue={""}
+                        placeholder='Tulis komentar Anda...'
+                        defaultValue=''
                       />
                       <i className='fa-regular fa-comments' />
                     </div>
                     <div className='cta mt-40'>
                       <div className='btn-wrapper'>
                         <button type='submit' className='btn--secondary'>
-                          Submit Comment
+                          Kirim Komentar
                         </button>
                       </div>
                     </div>
@@ -367,21 +442,18 @@ const BlogDetailsInner = () => {
                 data-aos-delay={100}
               >
                 <div className='author-thumb'>
-                  <img src='assets/images/author-two.png' alt='Image_inner' />
+                  <img src={author.photo} alt={author.alt} />
                 </div>
                 <div className='author-meta'>
-                  <h6>Rosalina Willaim</h6>
-                  <p>Front End Developer</p>
-                  <p>
-                    he whimsically named Egg Canvas is the design director and
-                    photographer in New York.
-                  </p>
+                  <h6>{author.name}</h6>
+                  <p>{author.role}</p>
+                  <p>{author.bio}</p>
                 </div>
                 <div className='social'>
                   <a
                     href='https://www.facebook.com/'
                     target='_blank'
-                    aria-label='share us on facebook'
+                    aria-label='Bagikan ke Facebook'
                     title='facebook'
                     rel='noreferrer'
                   >
@@ -390,7 +462,7 @@ const BlogDetailsInner = () => {
                   <a
                     href='https://vimeo.com/'
                     target='_blank'
-                    aria-label='share us on vimeo'
+                    aria-label='Bagikan ke Vimeo'
                     title='vimeo'
                     rel='noreferrer'
                   >
@@ -399,7 +471,7 @@ const BlogDetailsInner = () => {
                   <a
                     href='https://x.com/'
                     target='_blank'
-                    aria-label='share us on twitter'
+                    aria-label='Bagikan ke X'
                     title='twitter'
                     rel='noreferrer'
                   >
@@ -408,7 +480,7 @@ const BlogDetailsInner = () => {
                   <a
                     href='https://www.linkedin.com/'
                     target='_blank'
-                    aria-label='share us on linkedin'
+                    aria-label='Bagikan ke LinkedIn'
                     title='linkedin'
                     rel='noreferrer'
                   >
@@ -424,17 +496,17 @@ const BlogDetailsInner = () => {
                   data-aos-delay={100}
                 >
                   <div className='intro'>
-                    <h5>search here</h5>
+                    <h5>Cari Berita</h5>
                   </div>
                   <form action='#' method='post'>
                     <input
                       type='text'
                       name='search-product'
                       id='searchProduct'
-                      placeholder='Search Here...'
+                      placeholder='Cari berita pencak silat...'
                       required=''
                     />
-                    <button type='submit'>
+                    <button type='submit' aria-label='Cari berita'>
                       <i className='fa-solid fa-magnifying-glass' />
                     </button>
                   </form>
@@ -446,72 +518,27 @@ const BlogDetailsInner = () => {
                   data-aos-delay={100}
                 >
                   <div className='intro'>
-                    <h5>Recent Posts</h5>
+                    <h5>Berita Terkini</h5>
                   </div>
                   <div className='cm-sidebar-post'>
-                    <div className='single-item'>
-                      <div className='thumb'>
-                        <Link href='/blog-details'>
-                          <img
-                            src='assets/images/blog/ph-one.png'
-                            alt='Image_inner'
-                          />
-                        </Link>
-                      </div>
-                      <div className='content'>
-                        <p>
-                          <i className='fa-solid fa-calendar-days' />{" "}
-                          <span>November 19, 2024</span>
-                        </p>
-                        <p>
-                          <Link href='/blog-details'>
-                            Where Innovation Meets Foundation
+                    {recentPosts.map((post) => (
+                      <div className='single-item' key={post.title}>
+                        <div className='thumb'>
+                          <Link href={post.href}>
+                            <img src={post.image} alt={post.alt} />
                           </Link>
-                        </p>
+                        </div>
+                        <div className='content'>
+                          <p>
+                            <i className='fa-solid fa-calendar-days' />{" "}
+                            <span>{post.date}</span>
+                          </p>
+                          <p>
+                            <Link href={post.href}>{post.title}</Link>
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                    <div className='single-item'>
-                      <div className='thumb'>
-                        <Link href='/blog-details'>
-                          <img
-                            src='assets/images/blog/ph-two.png'
-                            alt='Image_inner'
-                          />
-                        </Link>
-                      </div>
-                      <div className='content'>
-                        <p>
-                          <i className='fa-solid fa-calendar-days' />{" "}
-                          <span>November 19, 2024</span>
-                        </p>
-                        <p>
-                          <Link href='/blog-details'>
-                            Where Innovation Meets Foundation
-                          </Link>
-                        </p>
-                      </div>
-                    </div>
-                    <div className='single-item'>
-                      <div className='thumb'>
-                        <Link href='/blog-details'>
-                          <img
-                            src='assets/images/blog/three.png'
-                            alt='Image_inner'
-                          />
-                        </Link>
-                      </div>
-                      <div className='content'>
-                        <p>
-                          <i className='fa-solid fa-calendar-days' />{" "}
-                          <span>November 22, 2024</span>
-                        </p>
-                        <p>
-                          <Link href='/blog-details'>
-                            Structures That Stand, Dreams That Soar
-                          </Link>
-                        </p>
-                      </div>
-                    </div>
+                    ))}
                   </div>
                 </div>
                 <div
@@ -521,29 +548,15 @@ const BlogDetailsInner = () => {
                   data-aos-delay={100}
                 >
                   <div className='intro'>
-                    <h5>Categories</h5>
+                    <h5>Kategori</h5>
                   </div>
                   <div className='cm-categories'>
-                    <Link href='/blog-list'>
-                      <span>Donation</span>
-                      <span>05</span>
-                    </Link>
-                    <Link href='/blog-list'>
-                      <span>Charity</span>
-                      <span>02</span>
-                    </Link>
-                    <Link href='/blog-list'>
-                      <span>Volunteer</span>
-                      <span>09</span>
-                    </Link>
-                    <Link href='/blog-list'>
-                      <span>Health</span>
-                      <span>07</span>
-                    </Link>
-                    <Link href='/blog-list'>
-                      <span>Education</span>
-                      <span>04</span>
-                    </Link>
+                    {categories.map((item) => (
+                      <Link href='/blog-grid' key={item.label}>
+                        <span>{item.label}</span>
+                        <span>{String(item.total).padStart(2, "0")}</span>
+                      </Link>
+                    ))}
                   </div>
                 </div>
                 <div
@@ -553,15 +566,14 @@ const BlogDetailsInner = () => {
                   data-aos-delay={100}
                 >
                   <div className='intro'>
-                    <h5>Popular Tags</h5>
+                    <h5>Tag Populer</h5>
                   </div>
                   <div className='tag-wrapper'>
-                    <Link href='/shop'>t-shirt</Link>
-                    <Link href='/shop'>Banner Design</Link>
-                    <Link href='/shop'>Brochures</Link>
-                    <Link href='/shop'>Landing</Link>
-                    <Link href='/shop'>Print</Link>
-                    <Link href='/shop'>Business Card</Link>
+                    {tags.map((tag) => (
+                      <Link href='/blog-grid' key={tag}>
+                        {tag}
+                      </Link>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -574,3 +586,4 @@ const BlogDetailsInner = () => {
 };
 
 export default BlogDetailsInner;
+

@@ -43,16 +43,16 @@ const HelpOne = () => {
                       alt='Image_inner'
                     />
                   </div>
-                  <div className='line'>
+                  {/* <div className='line'>
                     <img src='/assets/images/help/line.png' alt='Image_inner' />
-                  </div>
-                  <div className='grid-line'>
+                  </div> */}
+                  {/* <div className='grid-line'>
                     <img
                       src='/assets/images/help/grid.png'
                       alt='Image_inner'
                       className='base-img'
                     />
-                  </div>
+                  </div> */}
                   <div className='vertical-text'>
                     <h5>
                       PPSI <span>Digjaya</span> Menjaga Tradisi{" "}
@@ -135,15 +135,15 @@ const HelpOne = () => {
             </div>
           </div>
         </div>
-        <div className='hand'>
+        {/* <div className='hand'>
           <img src='/assets/images/help/hand.png' alt='Image_inner' />
-        </div>
-        <div className='parasuit'>
+        </div> */}
+        {/* <div className='parasuit'>
           <img src='/assets/images/parasuit.png' alt='Image_inner' />
-        </div>
-        <div className='spade'>
+        </div> */}
+        {/* <div className='spade'>
           <img src='/assets/images/help/spade.png' alt='Image_inner' />
-        </div>
+        </div> */}
 
         <ModalVideo
           channel='youtube'

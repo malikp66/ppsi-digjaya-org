@@ -1,18 +1,19 @@
 import BlogListInner from "@/components/BlogListInner";
 import BreadcrumbOne from "@/components/BreadcrumbOne";
 import FooterOne from "@/components/FooterOne";
- import HeaderFour from "@/components/HeaderFour";
+import HeaderFour from "@/components/HeaderFour";
 import Preloader from "@/components/Preloader";
- import TopBarThree from "@/components/TopBarThree";
+import TopBarThree from "@/components/TopBarThree";
 import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
 
 export const metadata = {
-  title: "ppsi | Nonprofit & Fundraising Charity NEXT JS Template",
-  description: "Nonprofit & Fundraising Charity NEXT JS Template.",
+  title: "PPSI Digjaya | Berita & Artikel",
+  description:
+    "Artikel pilihan mengenai pencak silat tradisional dari padepokan anggota PPSI Digjaya di Jawa Barat dan Indonesia.",
 };
 
-const page = () => {
+const Page = () => {
   return (
     <AOSWrap>
       <section className='page-wrapper'>
@@ -22,14 +23,12 @@ const page = () => {
         {/* CustomCursor  */}
         <CustomCursor />
 
-         
         <TopBarThree />
 
-         
         <HeaderFour />
 
         {/* BreadcrumbOne */}
-        <BreadcrumbOne title='Latest News' />
+        <BreadcrumbOne title='Berita & Artikel' />
 
         {/* BlogListInner */}
         <BlogListInner />
@@ -41,4 +40,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

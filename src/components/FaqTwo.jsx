@@ -170,9 +170,9 @@ const FaqTwo = () => {
           </div>
         </div>
       </div>
-      <div className='shape d-none d-lg-block'>
+      {/* <div className='shape d-none d-lg-block'>
         <img src='assets/images/faq/shape.png' alt='Image_inner' />
-      </div>
+      </div> */}
     </section>
   );
 };

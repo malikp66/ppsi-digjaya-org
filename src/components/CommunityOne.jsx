@@ -164,27 +164,27 @@ const CommunityOne = () => {
             </div>
           </div>
         </div>
-        <div className='community-bg'>
+        {/* <div className='community-bg'>
           <img
             src='/assets/images/community/community-bg.png'
             alt='Image_inner'
           />
-        </div>
-        <div
+        </div> */}
+        {/* <div
           className='gift'
           data-aos='fade-up'
           data-aos-duration={1000}
           data-aos-delay={200}
         >
           <img src='/assets/images/community/gift.png' alt='Image_inner' />
-        </div>
-        <div className='spade'>
+        </div> */}
+        {/* <div className='spade'>
           <img
             src='/assets/images/community/spade.png'
             alt='Image_inner'
             className='base-img'
           />
-        </div>
+        </div> */}
       </section>
     </>
   );

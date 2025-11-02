@@ -54,23 +54,23 @@ const VolunteerTwo = () => {
                     </div>
                   </div>
                 </div>
-                <div className='th-right'>
+                {/* <div className='th-right'>
                   <img
                     src='assets/images/ff-testimonial.png'
                     alt='Image_inner'
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
-        <div className='th-top'>
+        {/* <div className='th-top'>
           <img
             src='assets/images/heart.png'
             alt='Image_inner'
             className='base-img'
           />
-        </div>
+        </div> */}
       </section>
       <ModalVideo
         channel='youtube'

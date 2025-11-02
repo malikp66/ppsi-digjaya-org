@@ -1,6 +1,16 @@
 import Link from "next/link";
+import { kepengurusanDPW } from "@/data/organization";
 
 const TeamTwo = () => {
+  const pengurusImages = [
+    "assets/images/team/one.png",
+    "assets/images/team/two.png",
+    "assets/images/team/three.png",
+    "assets/images/team/four.png",
+  ];
+
+  const cards = kepengurusanDPW.slice(0, 4);
+
   return (
     <section
       className='team'
@@ -27,209 +37,59 @@ const TeamTwo = () => {
           </div>
         </div>
         <div className='row gutter-40'>
-          <div className='col-12 col-sm-6 col-xl-3'>
-            <div
-              className='team__single-wrapper'
-              data-aos='fade-up'
-              data-aos-duration={1000}
-            >
-              <div className='team__single van-tilt'>
-                <div className='team__single-thumb'>
-                  <Link href='/team-details'>
-                    <img src='assets/images/team/one.png' alt='Image_inner' />
-                  </Link>
-                  <div className='team__icons'>
-                    <div className='team__single-content__icon'>
-                      <i className='fa-solid fa-plus' />
-                    </div>
-                    <div className='team__single__thumb-social'>
-                      <ul>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-facebook-f' />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-twitter' />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-instagram' />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-behance' />
-                          </Link>
-                        </li>
-                      </ul>
+          {cards.map((pengurus, index) => (
+            <div className='col-12 col-sm-6 col-xl-3' key={pengurus.nama}>
+              <div
+                className='team__single-wrapper'
+                data-aos='fade-up'
+                data-aos-duration={1000}
+                data-aos-delay={index ? index * 300 : undefined}
+              >
+                <div className='team__single van-tilt'>
+                  <div className='team__single-thumb'>
+                    <Link href='/team-details'>
+                      <img src={pengurusImages[index % pengurusImages.length]} alt='Image_inner' />
+                    </Link>
+                    <div className='team__icons'>
+                      <div className='team__single-content__icon'>
+                        <i className='fa-solid fa-plus' />
+                      </div>
+                      <div className='team__single__thumb-social'>
+                        <ul>
+                          <li>
+                            <Link href='/'>
+                              <i className='fa-brands fa-facebook-f' />
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href='/'>
+                              <i className='fa-brands fa-twitter' />
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href='/'>
+                              <i className='fa-brands fa-instagram' />
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href='/'>
+                              <i className='fa-brands fa-behance' />
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className='team__single-content'>
-                  <h6>
-                    <Link href='/team-details'>R. Satia Nugraha</Link>
-                  </h6>
-                  <p>Ketua DPW PPSI Digjaya</p>
+                  <div className='team__single-content'>
+                    <h6>
+                      <Link href='/team-details'>{pengurus.nama}</Link>
+                    </h6>
+                    <p>{pengurus.jabatan}</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className='col-12 col-sm-6 col-xl-3'>
-            <div
-              className='team__single-wrapper'
-              data-aos='fade-up'
-              data-aos-duration={1000}
-              data-aos-delay={300}
-            >
-              <div className='team__single van-tilt'>
-                <div className='team__single-thumb'>
-                  <Link href='/team-details'>
-                    <img src='assets/images/team/two.png' alt='Image_inner' />
-                  </Link>
-                  <div className='team__icons'>
-                    <div className='team__single-content__icon'>
-                      <i className='fa-solid fa-plus' />
-                    </div>
-                    <div className='team__single__thumb-social'>
-                      <ul>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-facebook-f' />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-twitter' />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-instagram' />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-behance' />
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className='team__single-content'>
-                  <h6>
-                    <Link href='/team-details'>Iis Herlina</Link>
-                  </h6>
-                  <p>Ketua DPW PPSI Digjaya</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='col-12 col-sm-6 col-xl-3'>
-            <div
-              className='team__single-wrapper'
-              data-aos='fade-up'
-              data-aos-duration={1000}
-              data-aos-delay={600}
-            >
-              <div className='team__single van-tilt'>
-                <div className='team__single-thumb'>
-                  <Link href='/team-details'>
-                    <img src='assets/images/team/three.png' alt='Image_inner' />
-                  </Link>
-                  <div className='team__icons'>
-                    <div className='team__single-content__icon'>
-                      <i className='fa-solid fa-plus' />
-                    </div>
-                    <div className='team__single__thumb-social'>
-                      <ul>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-facebook-f' />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-twitter' />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-instagram' />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-behance' />
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className='team__single-content'>
-                  <h6>
-                    <Link href='/team-details'>Dadan Wirawan</Link>
-                  </h6>
-                  <p>Ketua DPW PPSI Digjaya</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='col-12 col-sm-6 col-xl-3'>
-            <div
-              className='team__single-wrapper'
-              data-aos='fade-up'
-              data-aos-duration={1000}
-              data-aos-delay={900}
-            >
-              <div className='team__single van-tilt'>
-                <div className='team__single-thumb'>
-                  <Link href='/team-details'>
-                    <img src='assets/images/team/four.png' alt='Image_inner' />
-                  </Link>
-                  <div className='team__icons'>
-                    <div className='team__single-content__icon'>
-                      <i className='fa-solid fa-plus' />
-                    </div>
-                    <div className='team__single__thumb-social'>
-                      <ul>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-facebook-f' />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-twitter' />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-instagram' />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-behance' />
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className='team__single-content'>
-                  <h6>
-                    <Link href='/team-details'>Sari Puspita</Link>
-                  </h6>
-                  <p>Ketua DPW PPSI Digjaya</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
         <div className='row'>
           <div className='col-12'>
@@ -247,9 +107,9 @@ const TeamTwo = () => {
           </div>
         </div>
       </div>
-      <div className='spade'>
+      {/* <div className='spade'>
         <img src='assets/images/sprade-green.png' alt='Image_inner' />
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -146,9 +146,9 @@ const PartnerFive = () => {
           </div>
         </div>
       </div>
-      <div className='th-t'>
+      {/* <div className='th-t'>
         <img src='assets/images/leaf.png' alt='Image_inner' />
-      </div>
+      </div> */}
     </div>
   );
 };

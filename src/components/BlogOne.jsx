@@ -127,16 +127,16 @@ const BlogOne = () => {
           </div>
         </div>
       </div>
-      <div className='blog-bg'>
+      {/* <div className='blog-bg'>
         <img src='assets/images/blog/blog-bg.png' alt='Image_inner' />
-      </div>
-      <div className='spade'>
+      </div> */}
+      {/* <div className='spade'>
         <img
           src='assets/images/blog/spade-base.png'
           alt='Image_inner'
           className='base-img'
         />
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -136,26 +136,26 @@ const BannerTwo = () => {
           </div>
         </div>
       </div>
-      <div className='banner-bg'>
+      {/* <div className='banner-bg'>
         <img
           src='/assets/images/banner/banner-one-bg.png'
           alt='Image_inner'
           className='parallax-image'
         />
-      </div>
-      <div className='bottom-shape'>
+      </div> */}
+      {/* <div className='bottom-shape'>
         <img
           src='/assets/images/banner/banner-one-shape.png'
           alt='Image_inner'
         />
-      </div>
-      <div
+      </div> */}
+      {/* <div
         className='alter-shape'
         data-aos='zoom-in'
         data-aos-duration={1000}
         data-aos-delay={300}
-      />
-      <div className='circle-shape' />
+      /> */}
+      {/* <div className='circle-shape' /> */}
     </section>
   );
 };

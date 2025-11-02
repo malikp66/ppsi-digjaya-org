@@ -129,12 +129,12 @@ const VolunteerOne = () => {
           </div>
         </div>
       </div>
-      <div className='parasuit'>
+      {/* <div className='parasuit'>
         <img src='assets/images/parasuit.png' alt='Image_inner' />
-      </div>
-      <div className='th-b'>
+      </div> */}
+      {/* <div className='th-b'>
         <img src='assets/images/fc-four.png' alt='Image_inner' />
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -106,9 +106,9 @@ const CauseSliderThree = () => {
           </div>
         </div>
       </div>
-      <div className='spade'>
+      {/* <div className='spade'>
         <img src='/assets/images/help/spade.png' alt='Image_inner' />
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -47,13 +47,13 @@ const CartInner = () => {
                         </div>
                       </td>
                       <td>
-                        <p className='price'>$12Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
+                        <p className='price'>Rp250.000</p>
                       </td>
                       <td>
                         <QTY />
                       </td>
                       <td>
-                        <p className='sub'>$60Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
+                        <p className='sub'>Rp500.000</p>
                       </td>
                     </tr>
                     <tr className='cart-item-single'>
@@ -83,13 +83,13 @@ const CartInner = () => {
                         </div>
                       </td>
                       <td>
-                        <p className='price'>$67Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
+                        <p className='price'>Rp120.000</p>
                       </td>
                       <td>
                         <QTY />
                       </td>
                       <td>
-                        <p className='sub'>$67Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
+                        <p className='sub'>Rp380.000</p>
                       </td>
                     </tr>
                     <tr className='cart-item-single'>
@@ -119,13 +119,13 @@ const CartInner = () => {
                         </div>
                       </td>
                       <td>
-                        <p className='price'>$87Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
+                        <p className='price'>Rp750.000</p>
                       </td>
                       <td>
                         <QTY />
                       </td>
                       <td>
-                        <p className='sub'>$87Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
+                        <p className='sub'>Rp750.000</p>
                       </td>
                     </tr>
                     <tr className='cart-item-single'>
@@ -155,13 +155,13 @@ const CartInner = () => {
                         </div>
                       </td>
                       <td>
-                        <p className='price'>$99Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
+                        <p className='price'>Rp870.000</p>
                       </td>
                       <td>
                         <QTY />
                       </td>
                       <td>
-                        <p className='sub'>$99Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
+                        <p className='sub'>Rp870.000</p>
                       </td>
                     </tr>
                   </tbody>
@@ -240,11 +240,11 @@ const CartInner = () => {
                 <div className='content'>
                   <div className='content-single'>
                     <p>SubTotal</p>
-                    <p>$345Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
+                    <p>Rp345.000</p>
                   </div>
                   <div className='content-single'>
                     <p>Total</p>
-                    <p>$450Rp250Rp500Rp120Rp380Rp750Rp870.00000000</p>
+                    <p>Rp450.000</p>
                   </div>
                   <Link
                     href='/checkout'

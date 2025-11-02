@@ -26,6 +26,10 @@ export const perguruanList = [
 ];
 
 export const kepengurusanDPW = [
+  {
+    jabatan: "Ketua Umum DPW P.P.S.I Jawa Barat",
+    nama: "H. Dadang Hermansyah, SE., AK., MM., CA., CLA.",
+  },
   { jabatan: "Ketua DPW PPSI Digjaya", nama: "R. Satia Nugraha" },
   { jabatan: "Sekretaris", nama: "Iis Herlina" },
   { jabatan: "Bendahara", nama: "Dadan Wirawan" },
