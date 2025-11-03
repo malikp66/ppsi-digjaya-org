@@ -167,7 +167,7 @@ const CertificateCenter = () => {
                 Temukan dan pastikan keaslian sertifikat siswa, pelatih, atau atlet dengan memasukkan nomor
                 sertifikat atau nama pemegang.
               </p>
-              <form className='certificate__form' onSubmit={handleSubmit}>
+              <form className='certificate__form checkout__form' onSubmit={handleSubmit}>
                 <div className='input-single'>
                   <input
                     type='text'

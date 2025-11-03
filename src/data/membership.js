@@ -66,6 +66,15 @@ export const riwayatIuranDummy = [
   { tanggal: "05 Mei 2024", jenis: "Dana Sosial Atlet", status: "Pending" },
 ];
 
+export const paymentMethodOptions = [
+  "Transfer Bank",
+  "Virtual Account",
+  "QRIS",
+  "Setoran Tunai Sekretariat",
+];
+
+export const billingFrequencyOptions = ["Bulanan", "Triwulanan", "Tahunan"];
+
 export const provinsiOptions = ["Jawa Barat", "DKI Jakarta", "Banten"];
 export const kotaOptions = [
   "Kota Bandung",

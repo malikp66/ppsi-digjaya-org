@@ -18,7 +18,7 @@ const ContactTwo = () => {
                 </h2>
               </div>
               <div
-                className='contact__form cta'
+                className='contact__form volunteer__form checkout__form cta'
                 data-aos='fade-up'
                 data-aos-duration={1000}
                 data-aos-delay={100}

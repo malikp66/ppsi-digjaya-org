@@ -1,5 +1,16 @@
 "use client";
-import { sabukOptions, jenisKeanggotaan, statusKeaktifan, membershipPlans, riwayatIuranDummy, provinsiOptions, kotaOptions, kecamatanOptions } from "@/data/membership";
+import {
+  sabukOptions,
+  jenisKeanggotaan,
+  statusKeaktifan,
+  membershipPlans,
+  riwayatIuranDummy,
+  provinsiOptions,
+  kotaOptions,
+  kecamatanOptions,
+  paymentMethodOptions,
+  billingFrequencyOptions,
+} from "@/data/membership";
 import { contactInfo } from "@/data/contact";
 
 const MembershipForm = () => {
@@ -57,24 +68,10 @@ const MembershipForm = () => {
                       </select>
                     </div>
                   </div>
-                  <div className='input-group'>
-                    <div className='input-single'>
-                      <input type='text' name='perguruan' placeholder='Perguruan Asal' required />
-                      <i className='fa-solid fa-building-columns' />
-                    </div>
-                    <div className='input-single'>
-                      <select name='sabuk' required defaultValue=''>
-                        <option value='' disabled>
-                          Sabuk Saat Ini
-                        </option>
-                        {sabukOptions.map((item) => (
-                          <option key={item} value={item}>
-                            {item}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
-                  </div>
+                </div>
+
+                <div className='form-section'>
+                  <h5>2. Kontak &amp; Domisili</h5>
                   <div className='input-group'>
                     <div className='input-single'>
                       <input type='email' name='email' placeholder='Email Aktif' required />
@@ -85,11 +82,7 @@ const MembershipForm = () => {
                       <i className='fa-solid fa-phone' />
                     </div>
                   </div>
-                </div>
-
-                <div className='form-section'>
-                  <h5>2. Alamat &amp; Geografi</h5>
-                  <div className='input-single'>
+                  <div className='input-single alter-input'>
                     <textarea name='alamat-lengkap' placeholder='Alamat Lengkap' required />
                     <i className='fa-solid fa-map-location-dot' />
                   </div>
@@ -134,15 +127,25 @@ const MembershipForm = () => {
                 </div>
 
                 <div className='form-section'>
-                  <h5>3. Data Profesi</h5>
-                  <div className='input-single'>
-                    <input type='text' name='pekerjaan' placeholder='Pekerjaan / Latar Profesi' />
-                    <i className='fa-solid fa-user-tie' />
+                  <h5>3. Keahlian &amp; Peran</h5>
+                  <div className='input-group'>
+                    <div className='input-single'>
+                      <input type='text' name='perguruan' placeholder='Perguruan Asal' required />
+                      <i className='fa-solid fa-building-columns' />
+                    </div>
+                    <div className='input-single'>
+                      <select name='sabuk' required defaultValue=''>
+                        <option value='' disabled>
+                          Sabuk Saat Ini
+                        </option>
+                        {sabukOptions.map((item) => (
+                          <option key={item} value={item}>
+                            {item}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
                   </div>
-                </div>
-
-                <div className='form-section'>
-                  <h5>4. Keanggotaan &amp; Peran</h5>
                   <div className='input-group'>
                     <div className='input-single'>
                       <select name='jenis-keanggotaan' required defaultValue=''>
@@ -173,12 +176,81 @@ const MembershipForm = () => {
                     </div>
                   </div>
                   <div className='input-single'>
+                    <input type='text' name='pekerjaan' placeholder='Pekerjaan / Latar Profesi' />
+                    <i className='fa-solid fa-user-tie' />
+                  </div>
+                  <div className='input-single'>
                     <input type='text' name='referensi' placeholder='Referensi Perguruan / Pelatih' />
                     <i className='fa-solid fa-people-group' />
                   </div>
                   <div className='input-single alter-input'>
-                    <textarea name='riwayat-prestasi' placeholder='Riwayat Prestasi / Kegiatan PPSI' />
+                    <textarea name='riwayat-prestasi' placeholder='Riwayat Prestasi / Keikutsertaan Program PPSI' />
                     <i className='fa-solid fa-trophy' />
+                  </div>
+                </div>
+
+                <div className='form-section'>
+                  <h5>4. Pembayaran Iuran</h5>
+                  <div className='input-group'>
+                    <div className='input-single'>
+                      <select name='paket-keanggotaan' required defaultValue=''>
+                        <option value='' disabled>
+                          Pilihan Paket Keanggotaan
+                        </option>
+                        {membershipPlans.map((plan) => (
+                          <option key={plan.id} value={plan.id}>
+                            {plan.name} • {plan.fee}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                    <div className='input-single'>
+                      <input type='number' name='biaya-iuran' placeholder='Nominal Iuran (Rp)' min='0' step='1000' required />
+                      <i className='fa-solid fa-coins' />
+                    </div>
+                  </div>
+                  <div className='input-group'>
+                    <div className='input-single'>
+                      <select name='metode-pembayaran' required defaultValue=''>
+                        <option value='' disabled>
+                          Metode Pembayaran
+                        </option>
+                        {paymentMethodOptions.map((item) => (
+                          <option key={item} value={item}>
+                            {item}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                    <div className='input-single'>
+                      <select name='frekuensi-penagihan' required defaultValue=''>
+                        <option value='' disabled>
+                          Frekuensi Penagihan
+                        </option>
+                        {billingFrequencyOptions.map((item) => (
+                          <option key={item} value={item}>
+                            {item}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                  </div>
+                  <div className='input-group'>
+                    <div className='input-single upload-input'>
+                      <input type='file' name='bukti-pembayaran' accept='.jpg,.jpeg,.png,.pdf' />
+                      <i className='fa-solid fa-file-invoice-dollar' />
+                      <span>Unggah Bukti Pembayaran (opsional)</span>
+                    </div>
+                    <div className='input-single alter-input'>
+                      <textarea name='catatan-iuran' placeholder='Catatan tambahan (misal rekening tujuan, instruksi khusus)' />
+                      <i className='fa-solid fa-clipboard-list' />
+                    </div>
+                  </div>
+                  <div className='checkbox-single'>
+                    <input type='checkbox' id='penagihan-otomatis' name='penagihan-otomatis' />
+                    <label htmlFor='penagihan-otomatis'>
+                      Saya menyetujui pengingat penagihan iuran otomatis melalui email atau WhatsApp.
+                    </label>
                   </div>
                 </div>
 
@@ -209,6 +281,12 @@ const MembershipForm = () => {
                       Saya menyatakan data yang diberikan benar serta bersedia mematuhi kode etik PPSI Digjaya.
                     </label>
                   </div>
+                  <div className='checkbox-single'>
+                    <input type='checkbox' id='syarat' required />
+                    <label htmlFor='syarat'>
+                      Saya telah membaca dan menyetujui syarat, ketentuan, serta kebijakan perlindungan data PPSI Digjaya.
+                    </label>
+                  </div>
                 </div>
 
                 <div className='form-cta'>
@@ -222,6 +300,25 @@ const MembershipForm = () => {
 
           <div className='col-12 col-xl-5'>
             <aside className='membership-sidebar' data-aos='fade-up' data-aos-duration={1000} data-aos-delay={150}>
+              <div className='membership-card membership-guide'>
+                <h5>Panduan Keanggotaan</h5>
+                <ul>
+                  <li>
+                    <i className='icon-circle-check' /> Pastikan data identitas sesuai dengan KTP atau kartu anggota perguruan.
+                  </li>
+                  <li>
+                    <i className='icon-circle-check' /> Siapkan kontak darurat dan riwayat kesehatan untuk kebutuhan monitoring latihan.
+                  </li>
+                  <li>
+                    <i className='icon-circle-check' /> Pilih paket iuran yang sesuai peran Anda dan unggah bukti pembayaran jika sudah transfer.
+                  </li>
+                </ul>
+                <p>
+                  Info lengkap persyaratan dan fasilitas tiap kategori keanggotaan tersedia di bawah ini atau hubungi tim kami melalui{" "}
+                  <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>.
+                </p>
+              </div>
+
               <div className='volunteer__content membership-card'>
                 <div className='section__content'>
                   <h5>Informasi Biaya Keanggotaan</h5>

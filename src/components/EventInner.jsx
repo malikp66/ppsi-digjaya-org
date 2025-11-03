@@ -92,7 +92,7 @@ const EventInner = () => {
               <p>
                 Isi formulir berikut untuk mendaftarkan perguruan atau komunitas Anda pada agenda PPSI Digjaya.
               </p>
-              <form className='event-register cta' onSubmit={(event) => event.preventDefault()}>
+              <form className='event-register cta checkout__form' onSubmit={(event) => event.preventDefault()}>
                 <div className='input-group'>
                   <div className='input-single'>
                     <input type='text' name='nama' placeholder='Nama Lengkap' required />

@@ -370,10 +370,10 @@ const HeaderFour = () => {
                         </button>
                       </div>
                       <Link
-                        href='/donate-us'
+                        href='/keanggotaan'
                         className='btn--secondary d-none d-md-flex'
                       >
-                        Dukung Atlet <i className='fa-solid fa-arrow-right' />
+                        Masuk <i className='fa-solid fa-arrow-right' />
                       </Link>
                     </div>
                     <button
@@ -450,8 +450,8 @@ const HeaderFour = () => {
           <div className='mobile-menu__list' ref={mobileMenuListRef}></div>
 
           <div className='mobile-menu__cta nav-fade d-block d-md-none'>
-            <Link href='/donate-us' className='btn--primary '>
-              Dukung Atlet <i className='fa-solid fa-arrow-right' />
+            <Link href='/keanggotaan' className='btn--primary '>
+              Masuk <i className='fa-solid fa-arrow-right' />
             </Link>
           </div>
           <div className='mobile-menu__social social nav-fade'>
