@@ -29,7 +29,7 @@ const TestimonialTwo = () => {
             >
               <span className='sub-title'>
                 <i className='icon-donation' />
-                Start donating poor people
+                Mulai berdonasi untuk masyarakat rentan
               </span>
               <h2 className='title-animation_inner'>
                 What People Say

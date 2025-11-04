@@ -27,17 +27,17 @@ const BannerThree = () => {
                   <div className='banner-three__content'>
                     <span className='sub-title'>
                       <i className='icon-donation' />
-                      Start donating poor people
+                      PPSI Digjaya Jawa Barat
                     </span>
                     <h1 className='title-animation_inner'>
-                      We Are non <br />
-                      profit charity <span className='bottom-line'>World</span>
-                      Organization
+                      Kami <br />
+                      Pelestari <span className='bottom-line'>Pencak</span>{" "}
+                      Silat Tradisi
                     </h1>
                     <p>
-                      Denouncing pleasure and praising pain was born and will
-                      give you saidul complete great explorer of the truth the
-                      master-builder.
+                      PPSI Digjaya menjaga warisan jurus asli sambil membuka
+                      ruang kolaborasi bagi perguruan dan komunitas silat di
+                      Jawa Barat.
                     </p>
                     <div className='banner__content-cta cta'>
                       <Link
@@ -63,17 +63,17 @@ const BannerThree = () => {
                   <div className='banner-three__content'>
                     <span className='sub-title'>
                       <i className='icon-donation' />
-                      Start donating poor people
+                      Komunitas Pesilat PPSI
                     </span>
                     <h1 className='title-animation_inner'>
-                      We Are non <br />
-                      profit charity <span className='bottom-line'>World</span>
-                      Organization
+                      Menguatkan <br />
+                      Jejaring <span className='bottom-line'>PPSI</span>{" "}
+                      Nusantara
                     </h1>
                     <p>
-                      Denouncing pleasure and praising pain was born and will
-                      give you saidul complete great explorer of the truth the
-                      master-builder.
+                      Kami memfasilitasi program pengkaderan, pengabdian sosial,
+                      dan penguatan organisasi agar setiap pendekar tumbuh
+                      bersama.
                     </p>
                     <div className='banner__content-cta cta'>
                       <Link
@@ -99,17 +99,17 @@ const BannerThree = () => {
                   <div className='banner-three__content'>
                     <span className='sub-title'>
                       <i className='icon-donation' />
-                      Start donating poor people
+                      Atlet & Pelatih PPSI
                     </span>
                     <h1 className='title-animation_inner'>
-                      We Are non <br />
-                      profit charity <span className='bottom-line'>World</span>
-                      Organization
+                      Mendampingi <br />
+                      Prestasi <span className='bottom-line'>PPSI</span>{" "}
+                      Digjaya
                     </h1>
                     <p>
-                      Denouncing pleasure and praising pain was born and will
-                      give you saidul complete great explorer of the truth the
-                      master-builder.
+                      Dari pembinaan atlet sampai sertifikasi pelatih, PPSI
+                      Digjaya hadir memastikan prestasi lahir dari akar budaya
+                      yang kuat.
                     </p>
                     <div className='banner__content-cta cta'>
                       <Link

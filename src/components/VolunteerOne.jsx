@@ -13,10 +13,10 @@ const VolunteerOne = () => {
                 data-aos-duration={1000}
               >
                 <span className='sub-title'>
-                  We are always open for children
+                  Kami selalu hadir untuk generasi muda
                 </span>
                 <h2 className='title-animation_inner fw-6 mt-0'>
-                  Helping each other can make world better
+                  Saling membantu membuat dunia lebih baik
                 </h2>
               </div>
               <div className='thumb'>
@@ -46,7 +46,7 @@ const VolunteerOne = () => {
                     </div>
                     <div className='content'>
                       <p className='text-lg fw-7'>
-                        Fund Raised &amp; Donation Treat raised
+                        Dana sosial yang telah tersalurkan
                       </p>
                     </div>
                   </div>
@@ -64,19 +64,18 @@ const VolunteerOne = () => {
                     </div>
                     <div className='content'>
                       <p className='text-lg fw-6'>
-                        We Helping People &amp; Donation pik
+                        Pendampingan anggota &amp; layanan donasi
                       </p>
                     </div>
                   </div>
                 </div>
                 <ul className='mt-40'>
                   <li className='txt-lg'>
-                    <i className='fa-solid fa-check' /> Dedicated Team &amp;
-                    volunteer
+                    <i className='fa-solid fa-check' /> Tim relawan berdedikasi
                   </li>
                   <li className='txt-lg'>
-                    <i className='fa-solid fa-check' /> Domestics &amp;
-                    Logistics
+                    <i className='fa-solid fa-check' /> Dukungan logistik dan
+                    distribusi
                   </li>
                 </ul>
               </div>
@@ -89,7 +88,7 @@ const VolunteerOne = () => {
               data-aos-duration={1000}
               data-aos-delay={300}
             >
-              <h5 className='fw-7'>Support for eating funds</h5>
+              <h5 className='fw-7'>Dukungan biaya konsumsi</h5>
               <div className='cause__progress progress-bar-single'>
                 <div className='cause-progress__bar'>
                   <div className='progress-bar-wrapper' data-percent='60%'>
@@ -106,23 +105,28 @@ const VolunteerOne = () => {
               </div>
               <div className='cause-progress__goal'>
                 <p>
-                  Raised: <span className='raised'>$8500</span>
+                  Terkumpul: <span className='raised'>Rp85.000.000</span>
                 </p>
                 <p>
-                  Goal: <span className='goal'>$1,00,000</span>
+                  Target: <span className='goal'>Rp150.000.000</span>
                 </p>
               </div>
               <hr />
               <div className='made-amount'>
-                <span className='donation-amount'>$100</span>
-                <span className='donation-amount'>$200</span>
-                <span className='donation-amount'>$500</span>
-                <span className='donation-amount'>$1000</span>
-                <span className='donation-amount'>$10000</span>
+                <span className='donation-amount'>Rp250.000</span>
+                <span className='donation-amount'>Rp500.000</span>
+                <span className='donation-amount'>Rp1.000.000</span>
+                <span className='donation-amount'>Rp2.000.000</span>
+                <span className='donation-amount'>Rp5.000.000</span>
               </div>
               <div className='mt-60'>
-                <Link href='/donate-us' className='btn--primary'>
-                  Donate Now <i className='icon-heart' />
+                <Link
+                  href='/donate-us'
+                  className='btn--primary'
+                  aria-label='donasi sekarang'
+                  title='Donasi Sekarang'
+                >
+                  Donasi Sekarang <i className='icon-heart' />
                 </Link>
               </div>
             </div>

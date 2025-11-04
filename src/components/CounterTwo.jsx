@@ -13,10 +13,10 @@ const CounterTwo = () => {
               data-aos='fade-up'
               data-aos-duration={1000}
             >
-              <span className='sub-title'>We are always open for children</span>
+              <span className='sub-title'>Kami selalu terbuka untuk generasi muda</span>
               <h3 className='title-animation_inner fw-5'>
-                Join Our Community of Donors and Volunteers: Be Part of Positive
-                Change in the World
+                Bergabunglah bersama donatur dan relawan: wujudkan perubahan positif
+                bagi dunia
               </h3>
             </div>
           </div>
@@ -37,16 +37,16 @@ const CounterTwo = () => {
                 </TrackVisibility>
               </h2>
               <p className='text-xl'>
-                Join the Many Who Already Support Our Mission
+                Bergabung dengan para pendukung misi sosial PPSI Digjaya
               </p>
               <div className='cta'>
                 <Link
                   href='/become-volunteer'
-                  aria-label='join our community'
-                  title='join our community'
+                  aria-label='bergabung dengan komunitas ppsi'
+                  title='Bergabung dengan Komunitas PPSI'
                   className='btn--primary'
                 >
-                  Join Our Community
+                  Gabung Komunitas Kami
                 </Link>
               </div>
             </div>

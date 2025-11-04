@@ -1,4 +1,6 @@
-const BreadcrumbOne = ({ title }) => {
+import Link from "next/link";
+
+const BreadcrumbOne = ({ title, ctaLabel, ctaHref }) => {
   return (
     <section className='common-banner'>
       <div className='container'>
@@ -9,6 +11,14 @@ const BreadcrumbOne = ({ title }) => {
               Persatuan Pencak Silat Indonesia - PPSI Digjaya
             </span>
             <h2 className='title-animation_inner'>{title}</h2>
+            {ctaLabel && ctaHref && (
+              <div className='common-banner__cta'>
+                <Link href={ctaHref} className='btn--primary btn--banner-cta'>
+                  {ctaLabel}
+                  <i className='fa-solid fa-arrow-down-long' />
+                </Link>
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -61,15 +61,15 @@ const HelpTwo = () => {
               <div className='section__content'>
                 <span className='sub-title'>
                   <i className='icon-donation' />
-                  Start donating poor people
+                  PPSI Digjaya Peduli Budaya
                 </span>
                 <h2 className='title-animation_inner'>
-                  Helping each other can make <span>world</span> better
+                  Bergerak bersama membuat <span>PPSI</span> semakin kuat
                 </h2>
                 <p>
-                  Volunteering offers opportunities to develop new skills and
-                  gain valuable experience. This can include leadership,
-                  communication, project
+                  Program PPSI membuka ruang belajar kepemimpinan, pelatihan
+                  wasit-juri, hingga pengabdian komunitas agar nilai pencak
+                  silat tetap hidup.
                 </p>
               </div>
               <div className='help-two__inner cta'>
@@ -80,10 +80,10 @@ const HelpTwo = () => {
                         <i className='icon-make-donation' />
                       </div>
                       <div className='content'>
-                        <h6>Start helping them</h6>
+                        <h6>Bergabung dan terlibat</h6>
                         <p>
-                          Raising awareness about the charity's mission and
-                          cause.
+                          Menguatkan pemahaman tentang visi PPSI dalam menjaga
+                          tradisi dan prestasi pencak silat.
                         </p>
                       </div>
                     </div>
@@ -93,10 +93,10 @@ const HelpTwo = () => {
                         <i className='icon-support-heart' />
                       </div>
                       <div className='content'>
-                        <h6>Make Donations</h6>
+                        <h6>Salurkan dukungan</h6>
                         <p>
-                          Raising awareness about the charity's mission and
-                          cause.
+                          Mengawal dukungan untuk kegiatan pelestarian budaya,
+                          pelatihan atlet, dan riset keilmuan PPSI.
                         </p>
                       </div>
                     </div>

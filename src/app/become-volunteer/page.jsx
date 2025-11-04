@@ -19,8 +19,8 @@ const page = () => {
         {/* Preloader */}
         <Preloader />
 
-        {/* CustomCursor  */}
-        <CustomCursor />
+         
+         
 
          
         <TopBarThree />

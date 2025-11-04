@@ -13,10 +13,10 @@ const EventOne = () => {
             >
               <span className='sub-title'>
                 <i className='icon-donation' />
-                Start donating poor people
+                Agenda Resmi PPSI Digjaya
               </span>
               <h2 className='title-animation_inner'>
-                Checkout our upcoming full <span>event</span> list
+                Simak agenda <span>PPSI</span> dalam waktu dekat
               </h2>
             </div>
           </div>
@@ -36,8 +36,7 @@ const EventOne = () => {
                   <span>October 19, 2025</span>
                   <h4>
                     <Link href='/event-details'>
-                      Transforming Lives Charity Golf Tournam Entdges Charity
-                      Networking Event
+                      Festival Pasanggiri PPSI & Gelar Budaya 2025
                     </Link>
                   </h4>
                   <p>
@@ -62,7 +61,7 @@ const EventOne = () => {
                   <span>October 19, 2025</span>
                   <h4>
                     <Link href='/event-details'>
-                      Unity in Giving Community Charity Event
+                      Rakor Pengurus Cabang & Komda PPSI
                     </Link>
                   </h4>
                   <p>
@@ -86,7 +85,7 @@ const EventOne = () => {
                   <span>October 19, 2025</span>
                   <h4>
                     <Link href='/event-details'>
-                      Unity in Giving Community Charity Event
+                      Pelatihan Wasit-Juri Pencak Silat PPSI
                     </Link>
                   </h4>
                   <p>

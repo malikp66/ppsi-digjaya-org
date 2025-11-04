@@ -1,9 +1,9 @@
 import BreadcrumbOne from "@/components/BreadcrumbOne";
 import EventInner from "@/components/EventInner";
 import FooterOne from "@/components/FooterOne";
- import HeaderFour from "@/components/HeaderFour";
+import HeaderFour from "@/components/HeaderFour";
 import Preloader from "@/components/Preloader";
- import TopBarThree from "@/components/TopBarThree";
+import TopBarThree from "@/components/TopBarThree";
 import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
 
@@ -19,17 +19,20 @@ const page = () => {
         {/* Preloader */}
         <Preloader />
 
-        {/* CustomCursor  */}
-        <CustomCursor />
+         
+         
 
          
         <TopBarThree />
 
-         
         <HeaderFour />
 
         {/* BreadcrumbOne */}
-        <BreadcrumbOne title='Kegiatan & Kalender Budaya' />
+        <BreadcrumbOne
+          title='Kegiatan & Kalender Budaya'
+          ctaLabel='Daftar Event'
+          ctaHref='#event-register'
+        />
 
         {/* EventInner */}
         <EventInner />

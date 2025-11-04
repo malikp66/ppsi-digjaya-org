@@ -80,6 +80,116 @@
     flex-wrap: wrap;
   }
 
+  &__pricing {
+    margin-top: 24px;
+    padding: 24px 22px;
+    border-radius: 20px;
+    border: 1px solid rgba(6, 20, 8, 0.08);
+    background: linear-gradient(140deg, rgba(4, 106, 88, 0.12) 0%, rgba(4, 106, 88, 0.04) 62%, #ffffff 100%);
+    box-shadow: var(--shadow-secondary);
+
+    &-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 18px;
+
+      h4 {
+        margin-top: 6px;
+        font-size: 24px;
+        color: var(--secondary-color);
+      }
+    }
+
+    &-eyebrow {
+      margin: 0;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(18, 47, 42, 0.6);
+    }
+
+    &-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(4, 106, 88, 0.18);
+      color: var(--primary-color);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+    }
+
+    &-description {
+      margin: 18px 0 20px;
+      color: rgba(18, 47, 42, 0.75);
+      line-height: 1.6;
+    }
+
+    &-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+
+      li {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        padding: 14px 16px;
+        border-radius: 16px;
+        border: 1px solid rgba(6, 20, 8, 0.08);
+        background: rgba(255, 255, 255, 0.96);
+
+        i {
+          margin-top: 3px;
+          font-size: 16px;
+          color: var(--primary-color);
+        }
+
+        p {
+          margin: 0;
+          color: rgba(18, 47, 42, 0.75);
+        }
+      }
+    }
+
+    &-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--secondary-color);
+      margin-bottom: 2px;
+    }
+
+    &-notes {
+      margin-top: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      p {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 13px;
+        color: rgba(18, 47, 42, 0.7);
+
+        i {
+          font-size: 10px;
+          color: rgba(4, 106, 88, 0.6);
+        }
+      }
+    }
+  }
+
   .status-badge {
     display: inline-flex;
     align-items: center;
@@ -514,6 +624,14 @@
       padding: 32px 24px;
     }
 
+    &__pricing {
+      padding: 20px;
+
+      &-badge {
+        align-self: flex-start;
+      }
+    }
+
     &__actions {
       flex-direction: column;
     }
@@ -537,6 +655,15 @@
 
     &__result {
       flex-direction: column;
+    }
+
+    &__pricing {
+      padding: 20px;
+
+      &-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
 
     &__legend {

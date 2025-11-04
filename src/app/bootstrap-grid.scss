@@ -1,0 +1,313 @@
+@use "sass:map";
+@use "sass:math";
+
+$grid-breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+@function span-percent($span) {
+  @return math.percentage(math.div($span, 12));
+}
+
+@mixin media-up($name) {
+  $size: map.get($grid-breakpoints, $name);
+
+  @if $size {
+    @media (min-width: $size) {
+      @content;
+    }
+  }
+}
+
+@mixin make-cols($prefix: "") {
+  @for $i from 1 through 12 {
+    $selector: if($prefix == "", ".col-#{$i}", ".col-#{$prefix}-#{$i}");
+
+    #{$selector} {
+      flex: 0 0 auto !important;
+      width: span-percent($i) !important;
+      max-width: span-percent($i) !important;
+    }
+  }
+}
+
+@mixin make-offsets($prefix: "") {
+  @for $i from 0 through 11 {
+    $selector: if($prefix == "", ".offset-#{$i}", ".offset-#{$prefix}-#{$i}");
+
+    #{$selector} {
+      margin-left: span-percent($i) !important;
+    }
+  }
+}
+
+@layer utilities {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .container-fluid {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .row {
+    --grid-gutter-x: 1.5rem;
+    --grid-gutter-y: 1.5rem;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin-left: calc(var(--grid-gutter-x) * -0.5);
+    margin-right: calc(var(--grid-gutter-x) * -0.5);
+    row-gap: var(--grid-gutter-y);
+  }
+
+  .row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-left: calc(var(--grid-gutter-x) * 0.5);
+    padding-right: calc(var(--grid-gutter-x) * 0.5);
+  }
+
+  $gutter-map: (
+    0: 0px,
+    1: 0.25rem,
+    2: 0.5rem,
+    3: 1rem,
+    4: 1.5rem,
+    5: 3rem,
+    6: 2rem,
+    7: 2.5rem,
+    8: 3rem,
+    9: 3.5rem,
+    10: 4rem
+  );
+
+  @each $key, $value in $gutter-map {
+    .g-#{$key} {
+      --grid-gutter-x: $value;
+      --grid-gutter-y: $value;
+    }
+  }
+
+  $gutter-y-map: (
+    12: 12px,
+    24: 24px,
+    30: 30px,
+    40: 40px,
+    60: 60px,
+    80: 80px
+  );
+
+  @each $key, $value in $gutter-y-map {
+    .gutter-#{$key} {
+      --grid-gutter-y: $value;
+    }
+  }
+
+  .d-flex {
+    display: flex !important;
+  }
+
+  .d-grid {
+    display: grid !important;
+  }
+
+  .d-block {
+    display: block !important;
+  }
+
+  .d-inline-block {
+    display: inline-block !important;
+  }
+
+  .d-inline-flex {
+    display: inline-flex !important;
+  }
+
+  .d-none {
+    display: none !important;
+  }
+
+  .justify-content-start {
+    justify-content: flex-start !important;
+  }
+
+  .justify-content-center {
+    justify-content: center !important;
+  }
+
+  .justify-content-end {
+    justify-content: flex-end !important;
+  }
+
+  .justify-content-between {
+    justify-content: space-between !important;
+  }
+
+  .align-items-start {
+    align-items: flex-start !important;
+  }
+
+  .align-items-center {
+    align-items: center !important;
+  }
+
+  .align-items-end {
+    align-items: flex-end !important;
+  }
+
+  .text-start {
+    text-align: left !important;
+  }
+
+  .text-center {
+    text-align: center !important;
+  }
+
+  .text-end {
+    text-align: right !important;
+  }
+
+  .collapse {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s ease;
+  }
+
+  .collapse:not(.show) {
+    display: none !important;
+    height: 0 !important;
+  }
+
+  .collapse.show {
+    display: block !important;
+    height: auto !important;
+  }
+
+  .accordion {
+    width: 100%;
+  }
+
+  .accordion-item {
+    width: 100%;
+  }
+
+  .accordion-button {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    text-align: left;
+    gap: 0.75rem;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+  }
+
+  .accordion-button::after {
+    margin-left: auto;
+    transition: transform 0.2s ease;
+  }
+
+  @include make-cols("");
+  @include make-offsets("");
+}
+
+@each $break, $size in $grid-breakpoints {
+  @include media-up($break) {
+    @layer utilities {
+      @if map.has-key($container-max-widths, $break) {
+        .container {
+          max-width: map.get($container-max-widths, $break);
+        }
+      }
+
+      @include make-cols($break);
+      @include make-offsets($break);
+
+      .d-#{$break}-flex {
+        display: flex !important;
+      }
+
+      .d-#{$break}-grid {
+        display: grid !important;
+      }
+
+      .d-#{$break}-block {
+        display: block !important;
+      }
+
+      .d-#{$break}-inline-block {
+        display: inline-block !important;
+      }
+
+      .d-#{$break}-inline-flex {
+        display: inline-flex !important;
+      }
+
+      .d-#{$break}-none {
+        display: none !important;
+      }
+
+      .justify-content-#{$break}-start {
+        justify-content: flex-start !important;
+      }
+
+      .justify-content-#{$break}-center {
+        justify-content: center !important;
+      }
+
+      .justify-content-#{$break}-end {
+        justify-content: flex-end !important;
+      }
+
+      .justify-content-#{$break}-between {
+        justify-content: space-between !important;
+      }
+
+      .align-items-#{$break}-start {
+        align-items: flex-start !important;
+      }
+
+      .align-items-#{$break}-center {
+        align-items: center !important;
+      }
+
+      .align-items-#{$break}-end {
+        align-items: flex-end !important;
+      }
+
+      .text-#{$break}-start {
+        text-align: left !important;
+      }
+
+      .text-#{$break}-center {
+        text-align: center !important;
+      }
+
+      .text-#{$break}-end {
+        text-align: right !important;
+      }
+    }
+  }
+}

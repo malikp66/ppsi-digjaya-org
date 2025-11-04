@@ -10,6 +10,7 @@ const EventInner = () => {
     if (selectedFilter === "Semua") return eventsData;
     return eventsData.filter((event) => event.kategori === selectedFilter);
   }, [selectedFilter]);
+  const filteredCount = filteredEvents.length;
 
   return (
     <section className='event event-alt'>
@@ -29,20 +30,33 @@ const EventInner = () => {
                 Sinergi agenda <span>pelestarian</span> dan pembinaan
               </h2>
             </div>
-            <div className='event__filter' data-aos='fade-up' data-aos-duration={1000} data-aos-delay={100}>
-              <ul>
-                {eventFilters.map((filter) => (
-                  <li key={filter}>
-                    <button
-                      type='button'
-                      className={filter === selectedFilter ? "active" : ""}
-                      onClick={() => setSelectedFilter(filter)}
-                    >
-                      {filter}
-                    </button>
-                  </li>
-                ))}
-              </ul>
+            <div
+              className='event__filter'
+              data-aos='fade-up'
+              data-aos-duration={1000}
+              data-aos-delay={100}
+            >
+              <div className='event__filter-meta'>
+                <p>Pilih kategori kegiatan yang ingin ditampilkan.</p>
+                <span>{filteredCount} agenda aktif</span>
+              </div>
+              <div className='event__filter-scroll'>
+                <ul>
+                  {eventFilters.map((filter) => (
+                    <li key={filter}>
+                      <button
+                        type='button'
+                        aria-pressed={filter === selectedFilter}
+                        className={filter === selectedFilter ? "active" : ""}
+                        onClick={() => setSelectedFilter(filter)}
+                      >
+                        <i className='fa-solid fa-filter' />
+                        {filter}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -83,16 +97,22 @@ const EventInner = () => {
         <div className='row gutter-30 mt-40'>
           <div className='col-12'>
             <div
-              className='volunteer__content membership-card'
+              className='event-register-card volunteer__form checkout__form'
+              id='event-register'
               data-aos='fade-up'
               data-aos-duration={1000}
               data-aos-delay={200}
             >
-              <h5>Daftar Kegiatan</h5>
-              <p>
-                Isi formulir berikut untuk mendaftarkan perguruan atau komunitas Anda pada agenda PPSI Digjaya.
-              </p>
-              <form className='event-register cta checkout__form' onSubmit={(event) => event.preventDefault()}>
+              <div className='volunteer__form-content'>
+                <h4 className='title-animation_inner'>Daftar Kegiatan</h4>
+                <p>
+                  Isi formulir berikut untuk mendaftarkan perguruan atau komunitas Anda pada agenda PPSI Digjaya.
+                </p>
+              </div>
+              <form
+                className='cta event-register__form'
+                onSubmit={(event) => event.preventDefault()}
+              >
                 <div className='input-group'>
                   <div className='input-single'>
                     <input type='text' name='nama' placeholder='Nama Lengkap' required />
@@ -108,7 +128,7 @@ const EventInner = () => {
                     <input type='tel' name='kontak' placeholder='Kontak WhatsApp' required />
                     <i className='fa-solid fa-phone' />
                   </div>
-                  <div className='input-single'>
+                  <div className='input-single select-single'>
                     <select name='agenda' required defaultValue=''>
                       <option value='' disabled>
                         Pilih Agenda
@@ -119,6 +139,7 @@ const EventInner = () => {
                         </option>
                       ))}
                     </select>
+                    <i className='fa-solid fa-calendar-days' />
                   </div>
                 </div>
                 <div className='input-single alter-input'>

@@ -18,7 +18,7 @@ const MembershipPage = () => {
     <AOSWrap>
       <section className='page-wrapper'>
         <Preloader />
-        <CustomCursor />
+         
         <TopBarThree />
         <HeaderFour />
 

@@ -4,7 +4,7 @@ import CauseOne from "@/components/CauseOne";
 import CauseSliderTwo from "@/components/CauseSliderTwo";
 import CommunityOne from "@/components/CommunityOne";
 import CtaSectionOne from "@/components/CtaSectionOne";
-import DifferenceOne from "@/components/DifferenceOne";
+import DifferenceThree from "@/components/DifferenceThree";
 import DifferenceTwo from "@/components/DifferenceTwo";
 import FooterOne from "@/components/FooterOne";
  import HeaderFour from "@/components/HeaderFour";
@@ -29,13 +29,8 @@ const page = () => {
       <section className='page-wrapper pg-four'>
         {/* Preloader */}
         <Preloader />
-
-        {/* CustomCursor  */}
-        <CustomCursor />
-
          
         <TopBarThree />
-
          
         <HeaderFour />
 
@@ -45,8 +40,8 @@ const page = () => {
         {/* PartnerOne */}
         <PartnerOne />
 
-        {/* DifferenceOne */}
-        <DifferenceOne />
+        {/* DifferenceThree */}
+        <DifferenceThree />
 
         {/* HelpOne */}
         <HelpOne />

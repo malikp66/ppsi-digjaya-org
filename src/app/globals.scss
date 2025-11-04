@@ -1,9 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "/public/assets/scss/main.scss";
+@import "./bootstrap-grid.scss";
 
 :root {
+  --background: 0 0% 100%;
+  --foreground: 156 43% 12%;
+  --muted: 160 21% 94%;
+  --muted-foreground: 156 12% 36%;
+  --card: 0 0% 100%;
+  --card-foreground: 156 43% 12%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 156 43% 12%;
+  --primary: 156 48% 36%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 140 35% 94%;
+  --secondary-foreground: 156 43% 20%;
+  --accent: 156 43% 92%;
+  --accent-foreground: 156 43% 18%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 160 16% 88%;
+  --input: 160 16% 88%;
+  --ring: 156 48% 36%;
   --radius-lg: 24px;
+  --radius: 18px;
   --shadow-soft: 0 24px 60px rgba(8, 32, 28, 0.12);
   --shadow-card: 0 16px 40px rgba(10, 40, 32, 0.08);
+}
+
+.dark {
+  --background: 156 45% 10%;
+  --foreground: 0 0% 98%;
+  --muted: 156 24% 18%;
+  --muted-foreground: 160 12% 72%;
+  --card: 156 46% 14%;
+  --card-foreground: 0 0% 98%;
+  --popover: 156 46% 14%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 140 56% 45%;
+  --primary-foreground: 156 45% 10%;
+  --secondary: 156 24% 18%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 156 24% 18%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 156 34% 24%;
+  --input: 156 34% 24%;
+  --ring: 140 56% 45%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
 }
 
 .navbar-logo {

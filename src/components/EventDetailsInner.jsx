@@ -27,52 +27,49 @@ function EventDetailsInner() {
               </div>
               <div className='cm-group cta'>
                 <h3 className='title-animation_inner'>
-                  Give african childrens a good education
+                  Festival Pasanggiri PPSI Digjaya
                 </h3>
                 <p>
-                  Charity and Donation is a categorys that involves giving
-                  financial category that involves giving financial or material
-                  support various causes organizations. It allows individuals
-                  towards the a addressing social category that involves giving
-                  financial or material support various causes of organizations.
-                  It allows individuals towards addressing social
+                  Event ini mempertemukan padepokan anggota PPSI se-Jawa Barat
+                  untuk merayakan jurus tradisi, memperkuat persaudaraan, dan
+                  membangun kolaborasi dengan pemangku kebijakan daerah.
+                  Rangakaian diskusi, lokakarya, serta gelaran budaya memastikan
+                  nilai pencak silat dikenal generasi milenial.
                 </p>
               </div>
               <div className='cm-group cta'>
                 <h3 className='title-animation_inner'>Summary</h3>
                 <p>
-                  Charity and Donation is a categorys that involves giving
-                  financial category that involves giving financial or material
-                  support various causes organizations. It allows individuals
-                  towards the a addressing social category that involves giving
-                  financial or material support various causes of organizations.
-                  It allows individuals towards addressing social
+                  PPSI menyiapkan sesi sertifikasi pelatih, temu pengurus, hingga
+                  ekshibisi atlet sebagai bagian dari agenda besar ini. Setiap
+                  kontribusi peserta akan kembali ke program pembinaan dan
+                  pelestarian yang dijalankan sepanjang tahun.
                 </p>
                 <div className='cm-details__list'>
                   <ul>
                     <li>
                       <i className='icon-circle-check' />
-                      Empower Through Charity
+                      Workshop jurus & teknik PPSI
                     </li>
                     <li>
                       <i className='icon-circle-check' />
-                      Giving Hope, Changing Lives
+                      Forum koordinasi pengurus cabang
                     </li>
                     <li>
                       <i className='icon-circle-check' />
-                      Healing Communities
+                      Ekshibisi atlet prestasi PPSI
                     </li>
                     <li>
                       <i className='icon-circle-check' />
-                      Together We Can
+                      Gelar budaya kolaborasi komunitas
                     </li>
                     <li>
                       <i className='icon-circle-check' />
-                      Compassion in Action
+                      Sertifikasi pelatih & wasit-juri
                     </li>
                     <li>
                       <i className='icon-circle-check' />
-                      Every Act Counts
+                      Kampanye pelestarian pencak silat
                     </li>
                   </ul>
                 </div>

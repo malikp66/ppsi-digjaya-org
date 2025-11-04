@@ -16,24 +16,24 @@ const CommunityTwo = () => {
                   <div className='col-12 col-md-8 col-xl-8'>
                     <div className='section__header mb-0'>
                       <span className='sub-title'>
-                        We are always open for children
+                        Kami selalu siap mendampingi generasi muda
                       </span>
                       <h2 className='title-animation_inner mt-0 hb'>
-                        Support for eating funds for hungry people
+                        Dukungan dana makan untuk warga yang membutuhkan
                       </h2>
                     </div>
                   </div>
                   <div className='col-12 col-md-4 col-xl-4'>
                     <div className='text-start text-xl-end'>
-                      <span className='tag-c'>Donate Now 24/7 Support</span>
+                      <span className='tag-c'>Donasi Sekarang Dukungan 24/7</span>
                     </div>
                   </div>
                 </div>
                 <div className='donation-form mt-60'>
                   <div className='donation-form__single'>
                     <div className='donation-form__single-intro'>
-                      <p className='text-xl fw-6'>$7,560.00 Raised</p>
-                      <p className='text-xl fw-6'>$10,000.00 Goal</p>
+                      <p className='text-xl fw-6'>Rp120.000.000 Terkumpul</p>
+                      <p className='text-xl fw-6'>Rp160.000.000 Target</p>
                     </div>
                     <div className='cause__progress progress-bar-single'>
                       <span className='percent-value pcr text-xl fw-7'>
@@ -54,24 +54,24 @@ const CommunityTwo = () => {
                       </div>
                     </div>
                     <div className='made-amount mt-60'>
-                      <span className='donation-amount'>$20</span>
-                      <span className='donation-amount'>$50</span>
-                      <span className='donation-amount'>$100</span>
-                      <span className='donation-amount'>$200</span>
-                      <span className='donation-amount'>$500</span>
+                      <span className='donation-amount'>Rp250.000</span>
+                      <span className='donation-amount'>Rp500.000</span>
+                      <span className='donation-amount'>Rp1.000.000</span>
+                      <span className='donation-amount'>Rp2.000.000</span>
+                      <span className='donation-amount'>Rp5.000.000</span>
                       <span className='donation-amount custom-amount'>
-                        Custom
+                        Nominal Lain
                       </span>
                     </div>
                   </div>
                   <div className='mt-60'>
                     <Link
                       href='/donate-us'
-                      aria-label='donate us'
-                      title='donate us'
+                      aria-label='donasi ppsi digjaya'
+                      title='Donasi PPSI Digjaya'
                       className='btn--primary'
                     >
-                      Donate Now <i className='icon-heart' />
+                      Donasi Sekarang <i className='icon-heart' />
                     </Link>
                   </div>
                 </div>
@@ -89,7 +89,7 @@ const CommunityTwo = () => {
       {/* <div className='spade'>
         <img src='assets/images/fc-twelve.png' alt='Image_inner' />
       </div> */}
-      <span className='dn-now'>Donate Now</span>
+      <span className='dn-now'>Donasi Sekarang</span>
     </section>
   );
 };

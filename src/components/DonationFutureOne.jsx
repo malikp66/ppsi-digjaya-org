@@ -20,11 +20,10 @@ const DonationFutureOne = () => {
                 >
                   <span className='sub-title'>
                     <i className='icon-donation' />
-                    Start donating poor people
+                    Mulai berdonasi untuk masyarakat rentan
                   </span>
                   <h2 className='title-animation_inner'>
-                    Building A Better <span>Future</span>
-                    Together By Donations
+                    Membangun <span>masa depan</span> lebih baik lewat donasi
                   </h2>
                   <div className='video-btn-wrapper'>
                     <button
@@ -47,7 +46,7 @@ const DonationFutureOne = () => {
                 data-aos-duration={1000}
                 data-aos-delay={300}
               >
-                <h4>Support for Food Expenses</h4>
+                <h4>Dukungan biaya konsumsi</h4>
                 <div className='cause__progress progress-bar-single'>
                   <div className='cause-progress__bar'>
                     <div className='progress-bar-wrapper' data-percent='60%'>
@@ -64,23 +63,28 @@ const DonationFutureOne = () => {
                 </div>
                 <div className='cause-progress__goal'>
                   <p>
-                    Raised: <span className='raised'>$8500</span>
+                    Terkumpul: <span className='raised'>Rp85.000.000</span>
                   </p>
                   <p>
-                    Goal: <span className='goal'>$1,00,000</span>
+                    Target: <span className='goal'>Rp150.000.000</span>
                   </p>
                 </div>
                 <hr />
                 <div className='made-amount'>
-                  <span className='donation-amount'>$100</span>
-                  <span className='donation-amount'>$200</span>
-                  <span className='donation-amount active'>$500</span>
-                  <span className='donation-amount'>$1000</span>
-                  <span className='donation-amount'>$10000</span>
+                  <span className='donation-amount'>Rp250.000</span>
+                  <span className='donation-amount'>Rp500.000</span>
+                  <span className='donation-amount active'>Rp1.000.000</span>
+                  <span className='donation-amount'>Rp2.000.000</span>
+                  <span className='donation-amount'>Rp5.000.000</span>
                 </div>
                 <div className='cta'>
-                  <Link href='/donate-us' className='btn--primary'>
-                    Donate Now <i className='icon-heart' />
+                  <Link
+                    href='/donate-us'
+                    className='btn--primary'
+                    aria-label='donasi sekarang'
+                    title='Donasi Sekarang'
+                  >
+                    Donasi Sekarang <i className='icon-heart' />
                   </Link>
                 </div>
               </div>

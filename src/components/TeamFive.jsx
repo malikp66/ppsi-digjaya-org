@@ -11,7 +11,7 @@ const TeamFive = () => {
               data-aos='fade-up'
               data-aos-duration={1000}
             >
-              <span className='sub-title'>We are always open for children</span>
+              <span className='sub-title'>Kami selalu terbuka untuk generasi muda</span>
               <h2 className='title-animation_inner mt-0 fw-7'>
                 Meat the Team <span>member</span>
               </h2>
@@ -64,7 +64,7 @@ const TeamFive = () => {
                   <h6>
                     <Link href='/team-details'>Michel Fokluz</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Relawan</p>
                 </div>
               </div>
             </div>
@@ -115,7 +115,7 @@ const TeamFive = () => {
                   <h6>
                     <Link href='/team-details'>Arian Drobloas</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Relawan</p>
                 </div>
               </div>
             </div>
@@ -166,7 +166,7 @@ const TeamFive = () => {
                   <h6>
                     <Link href='/team-details'>Jara Klintof</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Relawan</p>
                 </div>
               </div>
             </div>
@@ -217,7 +217,7 @@ const TeamFive = () => {
                   <h6>
                     <Link href='/team-details'>Aiden Markram</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Relawan</p>
                 </div>
               </div>
             </div>

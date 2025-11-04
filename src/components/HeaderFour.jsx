@@ -3,19 +3,36 @@ import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import NiceSelect from "nice-select2";
+import { ArrowRight, X } from "lucide-react";
+
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import AddToCart from "../helper/AddToCart";
 const HeaderFour = () => {
   const countryRef = useRef(null);
+  const userMenuRef = useRef(null);
+  const mobileMenuListRef = useRef(null);
   let pathname = usePathname();
   let [search, setSearch] = useState(false);
   let [backdrop, setBackdrop] = useState(false);
   let [mobileMenu, setMobileMenu] = useState(false);
   const [scroll, setScroll] = useState(false);
+  const [showProfileDropdown, setShowProfileDropdown] = useState(false);
+  const [accountMode, setAccountMode] = useState("anggota");
+  const [user] = useState({
+    isLoggedIn: true,
+    name: "Rahmat Saputra",
+    membership: "Anggota Aktif",
+  });
   const handleSearch = () => {
     setSearch(!search);
   };
   const handleMobileMenu = () => {
     setMobileMenu(!mobileMenu);
+  };
+  const handleUserMenuToggle = () => {
+    setShowProfileDropdown((prevState) => !prevState);
   };
 
   const handleBackdrop = () => {
@@ -33,7 +50,19 @@ const HeaderFour = () => {
     };
   }, []);
 
-  const mobileMenuListRef = useRef(null);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        userMenuRef.current &&
+        !userMenuRef.current.contains(event.target)
+      ) {
+        setShowProfileDropdown(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   useEffect(() => {
     const desktopMenu = document.querySelector(".navbar__menu");
@@ -96,11 +125,53 @@ const HeaderFour = () => {
     }
   }, []);
 
+  const handleAccountModeToggle = () => {
+    setAccountMode((prev) => (prev === "anggota" ? "pengurus" : "anggota"));
+  };
+
   useEffect(() => {
     if (countryRef.current) {
       new NiceSelect(countryRef.current);
     }
   }, []);
+
+  const memberLinks = [
+    {
+      href: "/keanggotaan",
+      label: "Keanggotaan Saya",
+      icon: "fa-solid fa-id-badge",
+    },
+    {
+      href: "/donate-us",
+      label: "Riwayat Donasi",
+      icon: "fa-solid fa-hand-holding-heart",
+    },
+    {
+      href: "/sertifikat-online",
+      label: "Cetak Sertifikat",
+      icon: "fa-regular fa-file-lines",
+    },
+  ];
+
+  const pengurusLinks = [
+    {
+      href: "/manajemen-organisasi",
+      label: "Dashboard Pengurus",
+      icon: "fa-solid fa-gauge-high",
+    },
+    {
+      href: "/manajemen-organisasi",
+      label: "Kelola Program",
+      icon: "fa-solid fa-list-check",
+    },
+    {
+      href: "/keanggotaan",
+      label: "Data Anggota",
+      icon: "fa-solid fa-people-group",
+    },
+  ];
+
+  const activeLinks = accountMode === "pengurus" ? pengurusLinks : memberLinks;
 
   return (
     <>
@@ -118,7 +189,7 @@ const HeaderFour = () => {
                     <Link href='/'>
                       <img src='/assets/images/logo.png' alt='Image_inner' />
                     </Link>
-                    <h3 className='font-normal'>PPSI Digjaya</h3>
+                    <h3 className='font-normal'>PPSI</h3>
                   </div>
 
                   <div className='navbar__menu d-none d-xl-block'>
@@ -369,12 +440,74 @@ const HeaderFour = () => {
                           </svg>
                         </button>
                       </div>
-                      <Link
-                        href='/keanggotaan'
-                        className='btn--secondary d-none d-md-flex'
-                      >
-                        Masuk <i className='fa-solid fa-arrow-right' />
-                      </Link>
+                      {user?.isLoggedIn ? (
+                        <div
+                          className={`user-menu d-none d-md-flex ${
+                            showProfileDropdown ? "user-menu--open" : ""
+                          }`}
+                          ref={userMenuRef}
+                        >
+                          <button
+                            type='button'
+                            className='user-menu__toggle'
+                            onClick={handleUserMenuToggle}
+                            aria-haspopup='true'
+                            aria-expanded={showProfileDropdown}
+                            aria-label='Menu profil pengguna'
+                          >
+                            <span className='user-menu__avatar'>
+                              <i className='fa-regular fa-user' />
+                            </span>
+                            <span className='user-menu__text'>
+                              <span className='user-menu__welcome'>Halo,</span>
+                              <span className='user-menu__name'>
+                                {user.name}
+                              </span>
+                            </span>
+                            <i className='fa-solid fa-chevron-down user-menu__chevron' />
+                          </button>
+                          <div className='user-menu__dropdown' role='menu'>
+                            <div className='user-menu__mode'>
+                              <span>Mode Akun</span>
+                              <button
+                                type='button'
+                                className='user-menu__switch'
+                                onClick={handleAccountModeToggle}
+                                aria-pressed={accountMode === "pengurus"}
+                              >
+                                <i className='fa-solid fa-arrows-rotate' />
+                                {accountMode === "pengurus"
+                                  ? "Pengurus"
+                                  : "Anggota"}
+                              </button>
+                            </div>
+                            {activeLinks.map(({ href, label, icon }) => (
+                              <Link
+                                href={href}
+                                className='user-menu__link'
+                                key={label}
+                              >
+                                <i className={icon} />
+                                {label}
+                              </Link>
+                            ))}
+                            <button
+                              type='button'
+                              className='user-menu__link user-menu__logout'
+                            >
+                              <i className='fa-solid fa-arrow-right-from-bracket' />
+                              Keluar
+                            </button>
+                          </div>
+                        </div>
+                      ) : (
+                        <Link
+                          href='/keanggotaan'
+                          className='btn--secondary d-none d-md-flex'
+                        >
+                          Masuk <i className='fa-solid fa-arrow-right' />
+                        </Link>
+                      )}
                     </div>
                     <button
                       onClick={handleMobileMenu}
@@ -450,9 +583,47 @@ const HeaderFour = () => {
           <div className='mobile-menu__list' ref={mobileMenuListRef}></div>
 
           <div className='mobile-menu__cta nav-fade d-block d-md-none'>
-            <Link href='/keanggotaan' className='btn--primary '>
-              Masuk <i className='fa-solid fa-arrow-right' />
-            </Link>
+            {user?.isLoggedIn ? (
+              <div className='mobile-user-menu'>
+                <div className='mobile-user-menu__header'>
+                  <span className='mobile-user-menu__icon'>
+                    <i className='fa-regular fa-user' />
+                  </span>
+                  <div>
+                    <p className='mobile-user-menu__welcome'>Halo,</p>
+                    <p className='mobile-user-menu__name'>{user.name}</p>
+                  </div>
+                </div>
+                <div className='mobile-user-menu__body'>
+                  <button
+                    type='button'
+                    className='mobile-user-menu__switch'
+                    onClick={handleAccountModeToggle}
+                  >
+                    <i className='fa-solid fa-arrows-rotate' />
+                    Mode:{" "}
+                    <span>
+                      {accountMode === "pengurus" ? "Pengurus" : "Anggota"}
+                    </span>
+                  </button>
+                  {activeLinks.map(({ href, label }) => (
+                    <Link href={href} key={label}>
+                      {label}
+                    </Link>
+                  ))}
+                  <button
+                    type='button'
+                    className='mobile-user-menu__logout'
+                  >
+                    Keluar
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <Link href='/keanggotaan' className='btn--primary '>
+                Masuk <i className='fa-solid fa-arrow-right' />
+              </Link>
+            )}
           </div>
           <div className='mobile-menu__social social nav-fade'>
             <Link
@@ -498,51 +669,79 @@ const HeaderFour = () => {
       ></div>
 
       <>
-        {/* ==== sidebar cart start ==== */}
-        <div className={`sidebar-cart ${backdrop && "sidebar-cart-active"} `}>
-          <div className='der'>
-            <button onClick={handleBackdrop} className='close-cart'>
-              <span className='close-icon'>X</span>
-            </button>
-            <h2>
-              Keranjang Belanja
-              <span className='count'>2</span>
-            </h2>
-            <div className='cart-items'>
-              <AddToCart />
-              <AddToCart />
-            </div>
-            <div className='totals'>
-              <div className='subtotal'>
-                <span className='label'>Subtotal:</span>
-                <span className='amount '>
-                  $<span className='total-price'>0.00</span>
+        <div
+          className={cn(
+            "fixed inset-0 z-[100] bg-foreground/60 backdrop-blur-md transition-opacity duration-300",
+            backdrop ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
+          )}
+          onClick={handleBackdrop}
+          aria-hidden='true'
+        />
+
+        <aside
+          className={cn(
+            "fixed inset-y-0 right-0 z-[101] flex h-full w-full max-w-md flex-col bg-background shadow-soft transition-transform duration-300 sm:max-w-lg",
+            backdrop ? "translate-x-0" : "translate-x-full"
+          )}
+          role='dialog'
+          aria-modal='true'
+          aria-label='Keranjang Belanja'
+        >
+          <header className='flex items-start justify-between border-b border-border/60 px-6 py-5'>
+            <div>
+              <p className='text-xs font-semibold uppercase tracking-[0.35em] text-muted-foreground'>
+                Keranjang Belanja
+              </p>
+              <div className='mt-2 flex items-center gap-2 text-base font-semibold text-foreground'>
+                Pesanan Anda
+                <span className='flex h-6 w-6 items-center justify-center rounded-full bg-secondary text-xs font-bold text-secondary-foreground'>
+                  2
                 </span>
               </div>
             </div>
-            <div className='action-buttons'>
-              <Link
-                className='view-cart-button'
-                href='/cart'
-                aria-label='go to cart'
-              >
-                Lihat Keranjang
-              </Link>
-              <Link
-                className='checkout-button'
-                href='/checkout'
-                aria-label='go to checkout'
-              >
-                Proses Pembayaran
-                <i className='fa-solid fa-arrow-right-long' />
-              </Link>
+            <Button
+              type='button'
+              variant='ghost'
+              size='icon'
+              onClick={handleBackdrop}
+              className='rounded-full border border-border/60 text-muted-foreground hover:text-foreground'
+              aria-label='Tutup keranjang'
+            >
+              <X className='h-5 w-5' />
+            </Button>
+          </header>
+
+          <ScrollArea className='flex-1 px-6 py-6'>
+            <div className='space-y-4'>
+              <AddToCart />
+              <AddToCart />
+            </div>
+          </ScrollArea>
+
+          <div className='border-t border-border/60 px-6 py-5'>
+            <div className='flex items-center justify-between text-sm'>
+              <span className='font-semibold uppercase tracking-[0.3em] text-muted-foreground'>
+                Subtotal
+              </span>
+              <span className='text-lg font-semibold text-foreground'>
+                $<span className='total-price'>0.00</span>
+              </span>
+            </div>
+            <div className='mt-4 grid gap-3 sm:grid-cols-2'>
+              <Button variant='secondary' className='w-full rounded-full' asChild>
+                <Link href='/cart' aria-label='Lihat keranjang'>
+                  Lihat Keranjang
+                </Link>
+              </Button>
+              <Button className='w-full rounded-full' asChild>
+                <Link href='/checkout' aria-label='Proses pembayaran'>
+                  Proses Pembayaran
+                  <ArrowRight className='ml-2 h-4 w-4' />
+                </Link>
+              </Button>
             </div>
           </div>
-        </div>
-        <div
-          className={`cart-backdrop ${backdrop && "cart-backdrop-active"} `}
-        />
-        {/* ==== / sidebar cart end ==== */}
+        </aside>
       </>
     </>
   );

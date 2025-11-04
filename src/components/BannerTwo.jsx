@@ -27,7 +27,7 @@ const BannerTwo = () => {
                   <div className='banner__content text-center'>
                     <span className='sub-title'>
                       <i className='icon-donation' />
-                      Start donating poor people
+                      Mulai berdonasi untuk masyarakat rentan
                     </span>
                     <h1>
                       Helping Each Other Make
@@ -63,7 +63,7 @@ const BannerTwo = () => {
                   <div className='banner__content text-center'>
                     <span className='sub-title'>
                       <i className='icon-donation' />
-                      Start donating poor people
+                      Mulai berdonasi untuk masyarakat rentan
                     </span>
                     <h1>
                       Helping Each Other Make
@@ -99,7 +99,7 @@ const BannerTwo = () => {
                   <div className='banner__content text-center'>
                     <span className='sub-title'>
                       <i className='icon-donation' />
-                      Start donating poor people
+                      Mulai berdonasi untuk masyarakat rentan
                     </span>
                     <h1>
                       Helping Each Other Make

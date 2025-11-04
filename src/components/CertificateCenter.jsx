@@ -1,6 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
-import { certificateArchive, expiringCertificates } from "@/data/certificates";
+import { certificateArchive, certificatePricing, expiringCertificates } from "@/data/certificates";
 
 const MONTH_MAP = {
   Januari: 0,
@@ -229,8 +229,38 @@ const CertificateCenter = () => {
                 </span>
               </div>
 
+              <div className='certificate__pricing'>
+                <div className='certificate__pricing-header'>
+                  <div>
+                    <p className='certificate__pricing-eyebrow'>Biaya Sertifikat Digital</p>
+                    <h4>{certificatePricing.range} / sertifikat</h4>
+                  </div>
+                  <span className='certificate__pricing-badge'>Termasuk hosting & dukungan</span>
+                </div>
+                <p className='certificate__pricing-description'>{certificatePricing.description}</p>
+                <ul className='certificate__pricing-list'>
+                  {certificatePricing.features.map((feature) => (
+                    <li key={feature.id}>
+                      <i className='fa-solid fa-circle-check' />
+                      <div>
+                        <p className='certificate__pricing-title'>{feature.title}</p>
+                        <p>{feature.detail}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+                <div className='certificate__pricing-notes'>
+                  {certificatePricing.notes.map((note, index) => (
+                    <p key={index}>
+                      <i className='fa-solid fa-circle-dot' />
+                      {note}
+                    </p>
+                  ))}
+                </div>
+              </div>
+
               <p className='info'>
-                Perlu bantuan? Kirimkan bukti sertifikat ke{" "}
+                Perlu bantuan administrasi atau penawaran paket? Kirimkan permintaan ke{" "}
                 <a href='mailto:dpdppsikotabandungofficial@gmail.com'>dpdppsikotabandungofficial@gmail.com</a>{" "}
                 untuk validasi cepat.
               </p>

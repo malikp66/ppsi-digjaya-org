@@ -28,11 +28,11 @@ const CommitTwo = () => {
                     }
                   </TrackVisibility>
                 </h4>
-                <p className='text-black'>People have donated here</p>
+                <p className='text-black'>Anggota aktif PPSI Digjaya</p>
               </div>
               <div className='vertical-text'>
                 <h5>
-                  We Give <span>Donations</span> to Poor People{" "}
+                  Menjaga <span>Warisan</span> Pencak Silat{" "}
                 </h5>
               </div>
             </div>
@@ -40,16 +40,14 @@ const CommitTwo = () => {
           <div className='col-12 col-lg-7 col-xl-7'>
             <div className='help-two__content'>
               <div className='section__content'>
-                <span className='sub-title'>
-                  We are always open for children
-                </span>
+                <span className='sub-title'>PPSI selalu terbuka</span>
                 <h2 className='title-animation_inner mt-0'>
-                  Helping each other can make world better
+                  Kolaborasi pesilat menjadikan komunitas lebih kuat
                 </h2>
                 <p className='text-gr-2'>
-                  Volunteering offers opportunities to develop new skills and
-                  gain valuable experience. This can include leadership,
-                  communication, project
+                  PPSI Digjaya menumbuhkan kepemimpinan, komunikasi, dan
+                  pengabdian melalui program pelatihan, pasanggiri, serta
+                  kegiatan sosial lintas perguruan.
                 </p>
               </div>
               <div className='help-two__inner cta'>
@@ -60,10 +58,10 @@ const CommitTwo = () => {
                         <i className='icon-make-donation' />
                       </div>
                       <div className='content'>
-                        <h6 className='fw-5'>Start helping them</h6>
+                        <h6 className='fw-5'>Mulai berkontribusi</h6>
                         <p>
-                          Raising awareness about the charity's mission and
-                          cause.
+                          Menyebarkan nilai PPSI tentang pelestarian pencak
+                          silat dan penguatan komunitas.
                         </p>
                       </div>
                     </div>
@@ -73,10 +71,10 @@ const CommitTwo = () => {
                         <i className='icon-support-heart' />
                       </div>
                       <div className='content'>
-                        <h6 className='fw-5'>Make Donations</h6>
+                        <h6 className='fw-5'>Dukung program PPSI</h6>
                         <p>
-                          Raising awareness about the charity's mission and
-                          cause.
+                          Menggerakkan dukungan untuk pelatihan, event budaya,
+                          dan pemberdayaan pelatih PPSI.
                         </p>
                       </div>
                     </div>

@@ -15,7 +15,7 @@ const GalleryTwo = () => {
                 data-aos-duration={1000}
               >
                 <span className='sub-title'>
-                  We are always open for children
+                  Kami selalu terbuka untuk generasi muda
                 </span>
                 <h2 className='title-animation_inner mt-0 fw-6'>
                   Recent Causes gallery

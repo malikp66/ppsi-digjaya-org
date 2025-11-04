@@ -17,8 +17,9 @@ import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
 
 export const metadata = {
-  title: "ppsi | Nonprofit & Fundraising Charity NEXT JS Template",
-  description: "Nonprofit & Fundraising Charity NEXT JS Template.",
+  title: "PPSI Digjaya | Showcase Program",
+  description:
+    "Tampilan alternatif situs PPSI Digjaya yang menyorot kolaborasi komunitas, penghargaan, dan cerita inspiratif pesilat.",
 };
 
 const page = () => {
@@ -27,9 +28,6 @@ const page = () => {
       <section className='page-wrapper pg-four'>
         {/* Preloader */}
         <Preloader />
-
-        {/* CustomCursor  */}
-        <CustomCursor />
 
         <TopBarThree />
 

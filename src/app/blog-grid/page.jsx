@@ -20,8 +20,8 @@ const Page = () => {
         {/* Preloader */}
         <Preloader />
 
-        {/* CustomCursor  */}
-        <CustomCursor />
+         
+         
 
         <TopBarThree />
 

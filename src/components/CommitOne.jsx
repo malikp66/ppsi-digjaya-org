@@ -36,7 +36,7 @@ const CommitOne = () => {
           </div>
           <div className='col-12 col-lg-7 col-xl-6 offset-xl-1'>
             <div className='commit__content'>
-              <span className='sub-title'>We are always open for children</span>
+              <span className='sub-title'>Kami selalu terbuka untuk generasi muda</span>
               <h2 className='title-animation_inner fw-7'>
                 We're Committed to Help those less fortuness.
               </h2>
@@ -130,29 +130,29 @@ const CommitOne = () => {
                     onClick={() => setActive(1)}
                     className={`commit__tab-btn ${active === 1 && "active"} `}
                     data-target='#commit-one'
-                    aria-label='Check Your Causes'
-                    title='Check Your Causes'
-                  >
-                    Check Your Causes
-                  </button>
-                  <button
-                    onClick={() => setActive(2)}
-                    className={`commit__tab-btn ${active === 2 && "active"} `}
-                    data-target='#commit-two'
-                    aria-label='Charity For Foods'
-                    title='Charity For Foods'
-                  >
-                    Charity For Foods
-                  </button>
-                  <button
-                    onClick={() => setActive(3)}
-                    className={`commit__tab-btn ${active === 3 && "active"} `}
-                    data-target='#commit-three'
-                    aria-label='Charity FOr Water'
-                    title='Charity FOr Water'
-                  >
-                    Charity For Water
-                  </button>
+                  aria-label='Check Your Causes'
+                  title='Check Your Causes'
+                >
+                  Check Your Causes
+                </button>
+                <button
+                  onClick={() => setActive(2)}
+                  className={`commit__tab-btn ${active === 2 && "active"} `}
+                  data-target='#commit-two'
+                  aria-label='Program Pemberdayaan PPSI'
+                  title='Program Pemberdayaan PPSI'
+                >
+                  Program Pemberdayaan
+                </button>
+                <button
+                  onClick={() => setActive(3)}
+                  className={`commit__tab-btn ${active === 3 && "active"} `}
+                  data-target='#commit-three'
+                  aria-label='Pelatihan & Sertifikasi PPSI'
+                  title='Pelatihan & Sertifikasi PPSI'
+                >
+                  Pelatihan & Sertifikasi
+                </button>
                 </div>
               </div>
             </div>

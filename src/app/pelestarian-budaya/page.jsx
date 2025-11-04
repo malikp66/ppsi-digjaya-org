@@ -18,7 +18,7 @@ const CulturalPage = () => {
     <AOSWrap>
       <section className='page-wrapper'>
         <Preloader />
-        <CustomCursor />
+         
         <TopBarThree />
         <HeaderFour />
 

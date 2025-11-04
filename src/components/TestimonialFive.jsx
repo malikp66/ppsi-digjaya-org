@@ -51,7 +51,7 @@ const TestimonialFive = () => {
         <div className='row gutter-30 align-items-center mb-60'>
           <div className='col-12 col-md-8 col-xl-7'>
             <div className='section__header mb-0'>
-              <span className='sub-title'>We are always open for children</span>
+              <span className='sub-title'>Kami selalu terbuka untuk generasi muda</span>
               <h2 className='title-animation_inner mt-0 fw-7 hb'>
                 Helping each other can make world better
               </h2>

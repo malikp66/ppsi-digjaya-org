@@ -11,9 +11,9 @@ const TeamFour = () => {
               data-aos='fade-up'
               data-aos-duration={1000}
             >
-              <span className='sub-title'>We are always open for children</span>
+              <span className='sub-title'>Kami selalu terbuka untuk generasi muda</span>
               <h2 className='title-animation_inner mt-0'>
-                Meet Our Volunteers
+                Temui Relawan Kami
               </h2>
             </div>
           </div>
@@ -62,9 +62,9 @@ const TeamFour = () => {
                 </div>
                 <div className='team__single-content'>
                   <h6>
-                    <Link href='/team-details'>Michel Fokluz</Link>
+                    <Link href='/team-details'>Adi Pranata</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Relawan</p>
                 </div>
               </div>
             </div>
@@ -113,9 +113,9 @@ const TeamFour = () => {
                 </div>
                 <div className='team__single-content'>
                   <h6>
-                    <Link href='/team-details'>Arian Drobloas</Link>
+                    <Link href='/team-details'>Siti Aulia</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Relawan</p>
                 </div>
               </div>
             </div>
@@ -164,9 +164,9 @@ const TeamFour = () => {
                 </div>
                 <div className='team__single-content'>
                   <h6>
-                    <Link href='/team-details'>Jara Klintof</Link>
+                    <Link href='/team-details'>Rizki Firmansyah</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Relawan</p>
                 </div>
               </div>
             </div>
@@ -182,17 +182,17 @@ const TeamFour = () => {
                 <div className='thumb'>
                   <i className='icon-support-hand' />
                 </div>
-                <h5 className='fw-7'>Become a Volunteer</h5>
+                <h5 className='fw-7'>Jadi Relawan PPSI</h5>
                 <p>
-                  Centuries but also the leap electtypesetting, remaining
-                  exchange the.
+                  Dukung program sosial, pelatihan, dan pelestarian pencak silat
+                  bersama komunitas kami.
                 </p>
                 <Link
                   href='/become-volunteer'
-                  aria-label='join us'
-                  title='join us'
+                  aria-label='bergabung dengan ppsi'
+                  title='Bergabung dengan PPSI'
                 >
-                  Join Us Today
+                  Bergabung Sekarang
                 </Link>
               </div>
             </div>
@@ -203,11 +203,11 @@ const TeamFour = () => {
             <div className='section__cta mt-60 text-center'>
               <Link
                 href='/our-team'
-                aria-label='our team'
-                title='our team'
+                aria-label='tim relawan ppsi'
+                title='Tim Relawan PPSI'
                 className='btn--primary'
               >
-                Become A Volunteer
+                Jadi Relawan
               </Link>
             </div>
           </div>

@@ -7,7 +7,7 @@ const BannerFour = () => {
         <div className='row justify-content-end'>
           <div className='col-12 col-md-8 col-lg-7 col-xl-6'>
             <div className='banner-four__content'>
-              <span className='sub-title'>We are always open for children</span>
+              <span className='sub-title'>Kami selalu terbuka untuk generasi muda</span>
               <h2 className='title-animation_inner mt-0'>
                 Give support <br />
                 to poverties &amp; Old non profit Care

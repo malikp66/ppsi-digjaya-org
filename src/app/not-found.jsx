@@ -10,8 +10,8 @@ export default function NotFound() {
         {/* Preloader */}
         <Preloader />
 
-        {/* CustomCursor  */}
-        <CustomCursor />
+         
+         
 
         {/* ErrorInner */}
         <ErrorInner />

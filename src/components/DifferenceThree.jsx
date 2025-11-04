@@ -50,67 +50,69 @@ const DifferenceThree = () => {
               <div className='section__content'>
                 <span className='sub-title'>
                   <i className='icon-donation' />
-                  Start donating poor people
+                  PPSI Digjaya Menguatkan Tradisi
                 </span>
                 <h2 className='title-animation_inner'>
-                  Donate <span>Support</span> to giving Make a Difference
+                  Dukung <span>PPSI</span> menjaga warisan dan prestasi
                 </h2>
                 <p>
-                  Lorem Ipsum is simply dummy a of the printing and type setting
-                  industry Loreaim Ipsum has been the industry's standard dummy
+                  Setiap kontribusi anggota dan mitra mendorong program
+                  pelestarian budaya, pembinaan atlet, serta inovasi pengajaran
+                  pencak silat yang relevan dengan generasi muda.
                 </p>
               </div>
               <div className='differnce-quote'>
                 <blockquote>
                   <q>
-                    <span>Lorem ipsum dolor</span> sit amet consectetur
-                    convallis ultrices sociis fermentum orci convallis
+                    <span>Tradisi silat</span> tumbuh ketika komunitas bergerak
+                    bersama menjaga nilai luhur dan solidaritas
                   </q>
                 </blockquote>
               </div>
               <div className='help__content-list'>
                 <ul>
                   <li>
-                    <i className='fa-regular fa-circle-check' /> Giving Hope,
-                    Changing Lives
+                    <i className='fa-regular fa-circle-check' /> Penguatan
+                    komunitas pesilat PPSI
                   </li>
                   <li>
-                    <i className='fa-regular fa-circle-check' /> Empower Through
-                    Charity
+                    <i className='fa-regular fa-circle-check' /> Pelatihan &
+                    sertifikasi pelatih
                   </li>
                   <li>
-                    <i className='fa-regular fa-circle-check' /> Together We Can
+                    <i className='fa-regular fa-circle-check' /> Dokumentasi
+                    warisan budaya silat
                   </li>
                   <li>
-                    <i className='fa-regular fa-circle-check' /> Healing
-                    Communities
+                    <i className='fa-regular fa-circle-check' /> Pendampingan
+                    atlet berprestasi
                   </li>
                   <li>
-                    <i className='fa-regular fa-circle-check' /> Every Act
-                    Counts
+                    <i className='fa-regular fa-circle-check' /> Kolaborasi
+                    dengan lembaga pendidikan
                   </li>
                   <li>
-                    <i className='fa-regular fa-circle-check' /> Compassion in
-                    Action
+                    <i className='fa-regular fa-circle-check' /> Program sosial
+                    berbasis kearifan lokal
                   </li>
                 </ul>
               </div>
               <div className='difference-three-cta'>
                 <Link
                   href='/about-us'
-                  aria-label='about us'
-                  title='about us'
+                  aria-label='tentang ppsi'
+                  title='Tentang PPSI'
                   className='btn--primary'
                 >
-                  About Us <i className='fa-solid fa-arrow-right' />
+                  Tentang Kami <i className='fa-solid fa-arrow-right' />
                 </Link>
                 <div className='author-info'>
                   <div className='author-thumb'>
                     <img src='assets/images/author-two.png' alt='Image_inner' />
                   </div>
                   <div className='author-content'>
-                    <span>Software Engineer</span>
-                    <h6>James Anderson</h6>
+                    <span>Ketua Bidang Pelatihan</span>
+                    <h6>Asep Kurniawan</h6>
                   </div>
                 </div>
               </div>

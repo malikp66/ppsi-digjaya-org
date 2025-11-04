@@ -13,10 +13,10 @@ const TeamInner = () => {
             >
               <span className='sub-title'>
                 <i className='icon-donation' />
-                Start donating poor people
+                Mulai berdonasi untuk masyarakat rentan
               </span>
               <h2 className='title-animation_inner'>
-                Meet Our Volunteer
+                Temui Relawan Kami
                 <span>Team</span> members
               </h2>
             </div>
@@ -68,7 +68,7 @@ const TeamInner = () => {
                   <h6>
                     <Link href='/team-details'>Michel Fokluz</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Relawan</p>
                 </div>
               </div>
             </div>
@@ -119,7 +119,7 @@ const TeamInner = () => {
                   <h6>
                     <Link href='/team-details'>Arian Drobloas</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Relawan</p>
                 </div>
               </div>
             </div>
@@ -170,7 +170,7 @@ const TeamInner = () => {
                   <h6>
                     <Link href='/team-details'>Jara Klintof</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Relawan</p>
                 </div>
               </div>
             </div>
@@ -221,7 +221,7 @@ const TeamInner = () => {
                   <h6>
                     <Link href='/team-details'>Aiden Markram</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Relawan</p>
                 </div>
               </div>
             </div>
@@ -271,7 +271,7 @@ const TeamInner = () => {
                   <h6>
                     <Link href='/team-details'>Michel Fokluz</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Relawan</p>
                 </div>
               </div>
             </div>
@@ -322,7 +322,7 @@ const TeamInner = () => {
                   <h6>
                     <Link href='/team-details'>Arian Drobloas</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Relawan</p>
                 </div>
               </div>
             </div>
@@ -373,7 +373,7 @@ const TeamInner = () => {
                   <h6>
                     <Link href='/team-details'>Jara Klintof</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Relawan</p>
                 </div>
               </div>
             </div>
@@ -427,7 +427,7 @@ const TeamInner = () => {
                   <h6>
                     <Link href='/team-details'>Aiden Markram</Link>
                   </h6>
-                  <p>Volunteer</p>
+                  <p>Relawan</p>
                 </div>
               </div>
             </div>

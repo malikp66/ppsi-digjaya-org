@@ -256,7 +256,7 @@ const DifferenceTwo = () => {
                         </div>
                         <div className='content'>
                           <h6>Program Aktif</h6>
-                          <p>$40,456</p>
+                          <p>Rp40.456.000</p>
                         </div>
                       </div>
                       <hr />
@@ -266,7 +266,7 @@ const DifferenceTwo = () => {
                         </div>
                         <div className='content'>
                           <h6>Dana Sosial Tersalur</h6>
-                          <p>$1,540,456</p>
+                          <p>Rp1.540.456.000</p>
                         </div>
                       </div>
                     </div>

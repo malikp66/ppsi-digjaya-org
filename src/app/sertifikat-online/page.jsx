@@ -18,7 +18,7 @@ const CertificatePage = () => {
     <AOSWrap>
       <section className='page-wrapper'>
         <Preloader />
-        <CustomCursor />
+         
         <TopBarThree />
         <HeaderFour />
 

@@ -22,14 +22,14 @@ const TeamDetailsInner = () => {
               data-aos-delay={100}
             >
               <div className='team-details__meta'>
-                <h4 className='title-animation_inner'>George Clooney</h4>
-                <p className='designation'>Volunteer</p>
+                <h4 className='title-animation_inner'>Raka Permana</h4>
+                <p className='designation'>Relawan PPSI</p>
                 <div className='social'>
                   <a
                     href='https://www.facebook.com/'
                     target='_blank'
-                    aria-label='share us on facebook'
-                    title='facebook'
+                    aria-label='bagikan di Facebook'
+                    title='Facebook'
                     rel='noreferrer'
                   >
                     <i className='fa-brands fa-facebook-f' />
@@ -37,8 +37,8 @@ const TeamDetailsInner = () => {
                   <a
                     href='https://vimeo.com/'
                     target='_blank'
-                    aria-label='share us on vimeo'
-                    title='vimeo'
+                    aria-label='bagikan di Vimeo'
+                    title='Vimeo'
                     rel='noreferrer'
                   >
                     <i className='fa-brands fa-vimeo-v' />
@@ -46,8 +46,8 @@ const TeamDetailsInner = () => {
                   <a
                     href='https://x.com/'
                     target='_blank'
-                    aria-label='share us on twitter'
-                    title='twitter'
+                    aria-label='bagikan di X'
+                    title='X'
                     rel='noreferrer'
                   >
                     <i className='fa-brands fa-twitter' />
@@ -55,26 +55,26 @@ const TeamDetailsInner = () => {
                   <a
                     href='https://www.linkedin.com/'
                     target='_blank'
-                    aria-label='share us on linkedin'
-                    title='linkedin'
+                    aria-label='bagikan di LinkedIn'
+                    title='LinkedIn'
                     rel='noreferrer'
                   >
                     <i className='fa-brands fa-linkedin-in' />
                   </a>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, con adipiscing elit tiam convallis
-                  elit id impedie. Quisq commodo simply free ornare tortor. If
-                  you are going to use a passage.
+                  Raka memimpin program sosial PPSI Digjaya wilayah Priangan,
+                  memadukan pelatihan pencak silat dengan pemberdayaan ekonomi
+                  dan literasi bagi anggota perguruan.
                 </p>
               </div>
               <div className='my-word'>
-                <h5>I Help my Clients Stand out And They Help me Grow.</h5>
+                <h5>Saya membantu perguruan bersinar, dan bersama kami bertumbuh.</h5>
               </div>
               <div className='progress-wrapper'>
                 <div className='cause__progress progress-bar-single'>
                   <div className='cause-progress__bar'>
-                    <p>Donation Collect</p>
+                    <p>Donasi Terkumpul</p>
                     <div className='progress-bar-wrapper' data-percent='70%'>
                       <div className='progress-bar'>
                         <div
@@ -89,7 +89,7 @@ const TeamDetailsInner = () => {
                 </div>
                 <div className='cause__progress progress-bar-single'>
                   <div className='cause-progress__bar'>
-                    <p>Successful Events</p>
+                    <p>Kegiatan Sukses</p>
                     <div className='progress-bar-wrapper' data-percent='85%'>
                       <div className='progress-bar'>
                         <div
@@ -107,31 +107,31 @@ const TeamDetailsInner = () => {
                 <ul>
                   <li>
                     <i className='icon-circle-check' />
-                    Best Quality Services
+                    Layanan pelatihan berkualitas
                   </li>
                   <li>
                     <i className='icon-circle-check' />
-                    Time Saving
+                    Efisien waktu dan sumber daya
                   </li>
                   <li>
                     <i className='icon-circle-check' />
-                    Meet the Deadlines
+                    Tepat waktu dalam setiap program
                   </li>
                   <li>
                     <i className='icon-circle-check' />
-                    24/7 Customer Support
+                    Pendampingan anggota 24/7
                   </li>
                 </ul>
               </div>
               <div className='team-details__cta cta'>
                 <Link
                   href='/donate-us'
-                  aria-label='make a donation'
-                  title='make a donation'
+                  aria-label='donasi bersama relawan'
+                  title='Donasi Bersama Relawan'
                   className='btn--primary'
                 >
                   {" "}
-                  Donate With Me <i className='fa-solid fa-arrow-right' />
+                  Donasi Bersama Saya <i className='fa-solid fa-arrow-right' />
                 </Link>
               </div>
             </div>
@@ -143,16 +143,13 @@ const TeamDetailsInner = () => {
               data-aos-duration={1000}
               data-aos-delay={100}
             >
-              <h4 className='title-animation_inner'>About Me</h4>
+              <h4 className='title-animation_inner'>Tentang Saya</h4>
               <p>
-                This category focuses on the design construction of buildings
-                and the This a category focuses on the design and construction
-                of buildings This category a focuses on the design construction
-                of buildings and the This a category of thfocuses on the design
-                This category focuses on the design construction of buildings
-                and the This a category focuses on the design and construction
-                of buildings This category a focuses on the design construction
-                of buildings and the This a category of thfocuses on the design
+                Sebagai koordinator relawan, Raka menjembatani kebutuhan sosial
+                perguruan dengan dukungan donatur dan mitra. Ia mengatur jadwal
+                bakti sosial, merancang modul pelatihan karakter, serta menjaga
+                kedisiplinan kegiatan lintas kota agar nilai luhur PPSI tetap
+                hidup di generasi muda.
               </p>
             </div>
           </div>

@@ -27,52 +27,50 @@ const CauseDetailsInner = () => {
               </div>
               <div className='cm-group cta'>
                 <h3 className='title-animation_inner'>
-                  Give african childrens a good education
+                  Program Pelestarian Silat Kampung Adat
                 </h3>
                 <p>
-                  Charity and Donation is a categorys that involves giving
-                  financial category that involves giving financial or material
-                  support various causes organizations. It allows individuals
-                  towards the a addressing social category that involves giving
-                  financial or material support various causes of organizations.
-                  It allows individuals towards addressing social
+                  PPSI Digjaya menghadirkan pelatihan rutin bersama guru adat,
+                  penyusunan kurikulum jurus, serta kegiatan regenerasi agar
+                  warisan pencak silat desa tetap terjaga. Kolaborasi dengan
+                  pemerintah daerah, tokoh masyarakat, dan perguruan anggota
+                  memastikan program berjalan relevan serta berdampak luas.
                 </p>
               </div>
               <div className='cm-group cta'>
                 <h3 className='title-animation_inner'>Summary</h3>
                 <p>
-                  Charity and Donation is a categorys that involves giving
-                  financial category that involves giving financial or material
-                  support various causes organizations. It allows individuals
-                  towards the a addressing social category that involves giving
-                  financial or material support various causes of organizations.
-                  It allows individuals towards addressing social
+                  Melalui riset, dokumentasi, dan festival jurus tradisi, PPSI
+                  membangun ekosistem pembelajaran yang menghargai akar budaya.
+                  Pendanaan dialokasikan untuk beasiswa pengkaderan, bantuan
+                  perlengkapan latihan, serta publikasi agar generasi muda
+                  semakin bangga bertumbuh sebagai pesilat PPSI.
                 </p>
                 <div className='cm-details__list'>
                   <ul>
                     <li>
                       <i className='icon-circle-check' />
-                      Empower Through Charity
+                      Pelatihan jurus tradisi PPSI
                     </li>
                     <li>
                       <i className='icon-circle-check' />
-                      Giving Hope, Changing Lives
+                      Festival dan pasanggiri kampung
                     </li>
                     <li>
                       <i className='icon-circle-check' />
-                      Healing Communities
+                      Pendampingan guru & pelatih lokal
                     </li>
                     <li>
                       <i className='icon-circle-check' />
-                      Together We Can
+                      Publikasi arsip budaya silat
                     </li>
                     <li>
                       <i className='icon-circle-check' />
-                      Compassion in Action
+                      Beasiswa pengkaderan pendekar muda
                     </li>
                     <li>
                       <i className='icon-circle-check' />
-                      Every Act Counts
+                      Kolaborasi komunitas dan lembaga adat
                     </li>
                   </ul>
                 </div>
