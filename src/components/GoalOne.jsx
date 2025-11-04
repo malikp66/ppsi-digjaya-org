@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const GoalOne = () => {
   return (
@@ -71,13 +72,13 @@ const GoalOne = () => {
                   Daftar Program <i className='icon-heart' />
                 </Link>
               </div>
-              <img src='assets/images/fc-three.png' alt='Image_inner' />
+              <OptimizedImage src='assets/images/fc-three.png' alt='Image_inner' />
             </div>
           </div>
         </div>
       </div>
       <div className='fc-one'>
-        <img src='assets/images/fc-four.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/fc-four.png' alt='Image_inner' />
       </div>
     </section>
   );

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Minus, Plus, Trash2 } from "lucide-react";
 import { useState } from "react";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const AddToCart = () => {
   const [count, setCount] = useState(1);
@@ -17,7 +18,7 @@ const AddToCart = () => {
         className='relative h-20 w-20 shrink-0 overflow-hidden rounded-xl border border-border/60 bg-muted'
         aria-label='Lihat detail produk'
       >
-        <img
+        <OptimizedImage
           src='/assets/images/cart.jpg'
           alt='Product thumbnail'
           className='h-full w-full object-cover'

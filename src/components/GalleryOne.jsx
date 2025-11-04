@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const galleryItems = [
   {
@@ -34,7 +35,7 @@ const GalleryOne = () => {
         <div className='gallery__slider'>
           {[...galleryItems, ...galleryItems].map((item, index) => (
             <div className='gallery__single' key={`${item.image}-${index}`}>
-              <img src={item.image} alt={item.alt} />
+              <OptimizedImage src={item.image} alt={item.alt} />
               <Link
                 href='/blog-grid'
                 aria-label='Lihat dokumentasi kegiatan pencak silat'

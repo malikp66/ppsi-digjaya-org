@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const CauseDetailsInner = () => {
   return (
@@ -13,7 +14,7 @@ const CauseDetailsInner = () => {
                 data-aos-duration={1000}
                 data-aos-delay={100}
               >
-                <img src='assets/images/event/poster.png' alt='Image_inner' />
+                <OptimizedImage src='assets/images/event/poster.png' alt='Image_inner' />
               </div>
               <div className='cm-details-meta'>
                 <p>
@@ -77,10 +78,10 @@ const CauseDetailsInner = () => {
               </div>
               <div className='cm-img-group cta'>
                 <div className='cm-img-single'>
-                  <img src='assets/images/event/pp-one.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/event/pp-one.png' alt='Image_inner' />
                 </div>
                 <div className='cm-img-single'>
-                  <img src='assets/images/event/pp-two.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/event/pp-two.png' alt='Image_inner' />
                 </div>
               </div>
               <div
@@ -94,7 +95,7 @@ const CauseDetailsInner = () => {
                 </div>
                 <div className='comment-single'>
                   <div className='thumb'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/author-four.png'
                       alt='Image_inner'
                     />
@@ -139,7 +140,7 @@ const CauseDetailsInner = () => {
                 </div>
                 <div className='comment-single comment-single-reply'>
                   <div className='thumb'>
-                    <img src='assets/images/team/one.png' alt='Image_inner' />
+                    <OptimizedImage src='assets/images/team/one.png' alt='Image_inner' />
                   </div>
                   <div className='comment-single__content'>
                     <h5>Jackie Dawson</h5>
@@ -181,7 +182,7 @@ const CauseDetailsInner = () => {
                 </div>
                 <div className='comment-single'>
                   <div className='thumb'>
-                    <img src='assets/images/author-two.png' alt='Image_inner' />
+                    <OptimizedImage src='assets/images/author-two.png' alt='Image_inner' />
                   </div>
                   <div className='comment-single__content'>
                     <h5>Hesia Lara</h5>
@@ -313,7 +314,7 @@ const CauseDetailsInner = () => {
                   <div className='single-item'>
                     <div className='thumb'>
                       <Link href='/blog-details'>
-                        <img
+                        <OptimizedImage
                           src='assets/images/blog/ph-one.png'
                           alt='Image_inner'
                         />
@@ -334,7 +335,7 @@ const CauseDetailsInner = () => {
                   <div className='single-item'>
                     <div className='thumb'>
                       <Link href='/blog-details'>
-                        <img
+                        <OptimizedImage
                           src='assets/images/blog/ph-two.png'
                           alt='Image_inner'
                         />
@@ -355,7 +356,7 @@ const CauseDetailsInner = () => {
                   <div className='single-item'>
                     <div className='thumb'>
                       <Link href='/blog-details'>
-                        <img
+                        <OptimizedImage
                           src='assets/images/blog/three.png'
                           alt='Image_inner'
                         />
@@ -400,7 +401,7 @@ const CauseDetailsInner = () => {
                 data-aos-delay={100}
               >
                 <div className='cm-logo'>
-                  <img src='assets/images/event/logo.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/event/logo.png' alt='Image_inner' />
                 </div>
                 <div className='cm-content'>
                   <p>Small Donations Bigger Impact</p>
@@ -422,7 +423,7 @@ const CauseDetailsInner = () => {
                   style={{ overflow: "hidden" }}
                 >
                   <div className='parallax-image-inner'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/event/overview.png'
                       alt='Image_inner'
                       className='parallax-image'

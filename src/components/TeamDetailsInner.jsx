@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const TeamDetailsInner = () => {
   return (
@@ -11,7 +12,7 @@ const TeamDetailsInner = () => {
               data-aos='zoom-in'
               data-aos-duration={1000}
             >
-              <img src='assets/images/team/thumb.png' alt='Image_inner' />
+              <OptimizedImage src='assets/images/team/thumb.png' alt='Image_inner' />
             </div>
           </div>
           <div className='col-12 col-lg-6 col-xl-7'>

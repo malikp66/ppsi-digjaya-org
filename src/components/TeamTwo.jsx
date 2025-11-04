@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { kepengurusanDPW } from "@/data/organization";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const TeamTwo = () => {
   const pengurusImages = [
@@ -48,7 +49,7 @@ const TeamTwo = () => {
                 <div className='team__single van-tilt'>
                   <div className='team__single-thumb'>
                     <Link href='/team-details'>
-                      <img src={pengurusImages[index % pengurusImages.length]} alt='Image_inner' />
+                      <OptimizedImage src={pengurusImages[index % pengurusImages.length]} alt='Image_inner' />
                     </Link>
                     <div className='team__icons'>
                       <div className='team__single-content__icon'>
@@ -108,7 +109,7 @@ const TeamTwo = () => {
         </div>
       </div>
       {/* <div className='spade'>
-        <img src='assets/images/sprade-green.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/sprade-green.png' alt='Image_inner' />
       </div> */}
     </section>
   );

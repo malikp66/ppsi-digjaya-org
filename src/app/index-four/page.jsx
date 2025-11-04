@@ -16,7 +16,7 @@ import TeamFour from "@/components/TeamFour";
 import TestimonialFour from "@/components/TestimonialFour";
 import TopBarThree from "@/components/TopBarThree";
 import AOSWrap from "@/helper/AOSWrap";
-import CustomCursor from "@/helper/CustomCursor";
+ 
 
 export const metadata = {
   title: "PPSI Digjaya | Kolaborasi Komunitas",

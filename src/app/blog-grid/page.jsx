@@ -5,7 +5,7 @@ import HeaderFour from "@/components/HeaderFour";
 import Preloader from "@/components/Preloader";
 import TopBarThree from "@/components/TopBarThree";
 import AOSWrap from "@/helper/AOSWrap";
-import CustomCursor from "@/helper/CustomCursor";
+ 
 
 export const metadata = {
   title: "PPSI Digjaya | Berita & Artikel",

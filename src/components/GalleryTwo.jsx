@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
+import OptimizedImage from "@/components/common/OptimizedImage";
 const GalleryTwo = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -26,7 +27,7 @@ const GalleryTwo = () => {
           <div className='row justify-content-center'>
             <div className='col-12 col-xl-6'>
               <div className='thumb-lg'>
-                <img
+                <OptimizedImage
                   src='assets/images/gallery-two/thumb.png'
                   alt='Image_inner'
                 />
@@ -44,7 +45,7 @@ const GalleryTwo = () => {
         </div>
         <div className='left-group'>
           <div className='m-one move-image'>
-            <img
+            <OptimizedImage
               src='assets/images/gallery-two/one.png'
               alt='Image_inner'
               data-aos='fade-right'
@@ -52,7 +53,7 @@ const GalleryTwo = () => {
             />
           </div>
           <div className='m-two move-image'>
-            <img
+            <OptimizedImage
               src='assets/images/gallery-two/two.png'
               alt='Image_inner'
               data-aos='fade-right'
@@ -60,7 +61,7 @@ const GalleryTwo = () => {
             />
           </div>
           <div className='m-three move-image'>
-            <img
+            <OptimizedImage
               src='assets/images/gallery-two/three.png'
               alt='Image_inner'
               data-aos='fade-right'
@@ -70,7 +71,7 @@ const GalleryTwo = () => {
         </div>
         <div className='right-group'>
           <div className='m-one move-image'>
-            <img
+            <OptimizedImage
               src='assets/images/gallery-two/one.png'
               alt='Image_inner'
               data-aos='fade-left'
@@ -78,7 +79,7 @@ const GalleryTwo = () => {
             />
           </div>
           <div className='m-two move-image'>
-            <img
+            <OptimizedImage
               src='assets/images/gallery-two/two.png'
               alt='Image_inner'
               data-aos='fade-left'
@@ -86,7 +87,7 @@ const GalleryTwo = () => {
             />
           </div>
           <div className='m-three move-image'>
-            <img
+            <OptimizedImage
               src='assets/images/gallery-two/four.png'
               alt='Image_inner'
               data-aos='fade-left'

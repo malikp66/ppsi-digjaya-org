@@ -1,5 +1,6 @@
 "use client";
 import Slider from "@/components/ClientSlider";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const PartnerThree = () => {
   const settings = {
@@ -48,7 +49,7 @@ const PartnerThree = () => {
               <Slider {...settings} className='swiper-wrapper'>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/one.png'
                       alt='Image_inner'
                     />
@@ -56,7 +57,7 @@ const PartnerThree = () => {
                 </div>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/two.png'
                       alt='Image_inner'
                     />
@@ -64,7 +65,7 @@ const PartnerThree = () => {
                 </div>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/three.png'
                       alt='Image_inner'
                     />
@@ -72,7 +73,7 @@ const PartnerThree = () => {
                 </div>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/four.png'
                       alt='Image_inner'
                     />
@@ -80,7 +81,7 @@ const PartnerThree = () => {
                 </div>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/five.png'
                       alt='Image_inner'
                     />
@@ -88,7 +89,7 @@ const PartnerThree = () => {
                 </div>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/one.png'
                       alt='Image_inner'
                     />
@@ -96,7 +97,7 @@ const PartnerThree = () => {
                 </div>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/two.png'
                       alt='Image_inner'
                     />
@@ -104,7 +105,7 @@ const PartnerThree = () => {
                 </div>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/three.png'
                       alt='Image_inner'
                     />
@@ -112,7 +113,7 @@ const PartnerThree = () => {
                 </div>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/four.png'
                       alt='Image_inner'
                     />
@@ -120,7 +121,7 @@ const PartnerThree = () => {
                 </div>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/five.png'
                       alt='Image_inner'
                     />

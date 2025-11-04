@@ -2,6 +2,7 @@
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
 import Slider from "@/components/ClientSlider";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const PartnerFive = () => {
   const settings = {
@@ -63,7 +64,7 @@ const PartnerFive = () => {
               <Slider {...settings} className='swiper-wrapper'>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/one.png'
                       alt='Image_inner'
                     />
@@ -71,7 +72,7 @@ const PartnerFive = () => {
                 </div>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/two.png'
                       alt='Image_inner'
                     />
@@ -79,7 +80,7 @@ const PartnerFive = () => {
                 </div>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/three.png'
                       alt='Image_inner'
                     />
@@ -87,7 +88,7 @@ const PartnerFive = () => {
                 </div>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/four.png'
                       alt='Image_inner'
                     />
@@ -95,7 +96,7 @@ const PartnerFive = () => {
                 </div>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/five.png'
                       alt='Image_inner'
                     />
@@ -103,7 +104,7 @@ const PartnerFive = () => {
                 </div>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/one.png'
                       alt='Image_inner'
                     />
@@ -111,7 +112,7 @@ const PartnerFive = () => {
                 </div>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/two.png'
                       alt='Image_inner'
                     />
@@ -119,7 +120,7 @@ const PartnerFive = () => {
                 </div>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/three.png'
                       alt='Image_inner'
                     />
@@ -127,7 +128,7 @@ const PartnerFive = () => {
                 </div>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/four.png'
                       alt='Image_inner'
                     />
@@ -135,7 +136,7 @@ const PartnerFive = () => {
                 </div>
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/sponsor/five.png'
                       alt='Image_inner'
                     />
@@ -147,7 +148,7 @@ const PartnerFive = () => {
         </div>
       </div>
       {/* <div className='th-t'>
-        <img src='assets/images/leaf.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/leaf.png' alt='Image_inner' />
       </div> */}
     </div>
   );

@@ -5,7 +5,7 @@ import Preloader from "@/components/Preloader";
 import ProductDetailsInner from "@/components/ProductDetailsInner";
  import TopBarThree from "@/components/TopBarThree";
 import AOSWrap from "@/helper/AOSWrap";
-import CustomCursor from "@/helper/CustomCursor";
+ 
 
 export const metadata = {
   title: "PPSI Digjaya | Detail Produk",

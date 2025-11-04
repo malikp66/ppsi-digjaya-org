@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const DonationFutureOne = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -92,12 +93,12 @@ const DonationFutureOne = () => {
           </div>
         </div>
         {/* <div className='donation-bg'>
-          <img
+          <OptimizedImage
             src='/assets/images/donation/bg.png'
             alt='Image_inner'
             className='parallax-image'
           />
-          <img
+          <OptimizedImage
             src='/assets/images/donation/shape.png'
             alt='Image_inner'
             className='shape'

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 function EventDetailsInner() {
   return (
@@ -13,7 +14,7 @@ function EventDetailsInner() {
                 data-aos-duration={1000}
                 data-aos-delay={100}
               >
-                <img src='assets/images/event/poster.png' alt='Image_inner' />
+                <OptimizedImage src='assets/images/event/poster.png' alt='Image_inner' />
               </div>
               <div className='cm-details-meta'>
                 <p>
@@ -76,10 +77,10 @@ function EventDetailsInner() {
               </div>
               <div className='cm-img-group cta'>
                 <div className='cm-img-single'>
-                  <img src='assets/images/event/pp-one.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/event/pp-one.png' alt='Image_inner' />
                 </div>
                 <div className='cm-img-single'>
-                  <img src='assets/images/event/pp-two.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/event/pp-two.png' alt='Image_inner' />
                 </div>
               </div>
               <div className='cm-event cta'>
@@ -87,35 +88,35 @@ function EventDetailsInner() {
                   <Link href='/'>
                     <i className='fa-brands fa-facebook-f' />
                     Facebook
-                    <img src='assets/images/shape-sc.png' alt='Image_inner' />
+                    <OptimizedImage src='assets/images/shape-sc.png' alt='Image_inner' />
                   </Link>
                 </div>
                 <div className='cm-event-single'>
                   <Link href='/'>
                     <i className='fa-brands fa-twitter' />
                     Twitter
-                    <img src='assets/images/shape-sc.png' alt='Image_inner' />
+                    <OptimizedImage src='assets/images/shape-sc.png' alt='Image_inner' />
                   </Link>
                 </div>
                 <div className='cm-event-single'>
                   <Link href='/'>
                     <i className='fa-brands fa-pinterest' />
                     Pinterest
-                    <img src='assets/images/shape-sc.png' alt='Image_inner' />
+                    <OptimizedImage src='assets/images/shape-sc.png' alt='Image_inner' />
                   </Link>
                 </div>
                 <div className='cm-event-single'>
                   <Link href='/'>
                     <i className='fa-brands fa-linkedin-in' />
                     Linkedin
-                    <img src='assets/images/shape-sc.png' alt='Image_inner' />
+                    <OptimizedImage src='assets/images/shape-sc.png' alt='Image_inner' />
                   </Link>
                 </div>
                 <div className='cm-event-single'>
                   <Link href='/'>
                     <i className='fa-brands fa-stumbleupon' />
                     Tumblr
-                    <img src='assets/images/shape-sc.png' alt='Image_inner' />
+                    <OptimizedImage src='assets/images/shape-sc.png' alt='Image_inner' />
                   </Link>
                 </div>
               </div>
@@ -140,7 +141,7 @@ function EventDetailsInner() {
                 </div>
                 <div className='comment-single'>
                   <div className='thumb'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/author-four.png'
                       alt='Image_inner'
                     />
@@ -185,7 +186,7 @@ function EventDetailsInner() {
                 </div>
                 <div className='comment-single comment-single-reply'>
                   <div className='thumb'>
-                    <img src='assets/images/team/one.png' alt='Image_inner' />
+                    <OptimizedImage src='assets/images/team/one.png' alt='Image_inner' />
                   </div>
                   <div className='comment-single__content'>
                     <h5>Jackie Dawson</h5>
@@ -227,7 +228,7 @@ function EventDetailsInner() {
                 </div>
                 <div className='comment-single'>
                   <div className='thumb'>
-                    <img src='assets/images/author-two.png' alt='Image_inner' />
+                    <OptimizedImage src='assets/images/author-two.png' alt='Image_inner' />
                   </div>
                   <div className='comment-single__content'>
                     <h5>Hesia Lara</h5>
@@ -359,7 +360,7 @@ function EventDetailsInner() {
                   <div className='single-item'>
                     <div className='thumb'>
                       <Link href='/blog-details'>
-                        <img
+                        <OptimizedImage
                           src='assets/images/blog/ph-one.png'
                           alt='Image_inner'
                         />
@@ -380,7 +381,7 @@ function EventDetailsInner() {
                   <div className='single-item'>
                     <div className='thumb'>
                       <Link href='/blog-details'>
-                        <img
+                        <OptimizedImage
                           src='assets/images/blog/ph-two.png'
                           alt='Image_inner'
                         />
@@ -401,7 +402,7 @@ function EventDetailsInner() {
                   <div className='single-item'>
                     <div className='thumb'>
                       <Link href='/blog-details'>
-                        <img
+                        <OptimizedImage
                           src='assets/images/blog/three.png'
                           alt='Image_inner'
                         />
@@ -446,7 +447,7 @@ function EventDetailsInner() {
                 data-aos-delay={100}
               >
                 <div className='cm-logo'>
-                  <img src='assets/images/event/logo.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/event/logo.png' alt='Image_inner' />
                 </div>
                 <div className='cm-content'>
                   <p>Small Donations Bigger Impact</p>
@@ -467,7 +468,7 @@ function EventDetailsInner() {
                   style={{ overflow: "hidden" }}
                 >
                   <div className='parallax-image-inner'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/event/overview.png'
                       alt='Image_inner'
                       className='parallax-image'

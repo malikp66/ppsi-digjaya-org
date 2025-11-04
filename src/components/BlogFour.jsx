@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useRef } from "react";
 import Slider from "@/components/ClientSlider";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const BlogFour = () => {
   const sliderRef = useRef(null);
@@ -69,7 +70,7 @@ const BlogFour = () => {
                     <div className='blog__single'>
                       <div className='blog__single-thumb'>
                         <Link href='/blog-details'>
-                          <img
+                          <OptimizedImage
                             src='assets/images/blog/one.png'
                             alt='Image_inner'
                           />
@@ -112,7 +113,7 @@ const BlogFour = () => {
                     <div className='blog__single'>
                       <div className='blog__single-thumb'>
                         <Link href='/blog-details'>
-                          <img
+                          <OptimizedImage
                             src='assets/images/blog/two.png'
                             alt='Image_inner'
                           />
@@ -155,7 +156,7 @@ const BlogFour = () => {
                     <div className='blog__single'>
                       <div className='blog__single-thumb'>
                         <Link href='/blog-details'>
-                          <img
+                          <OptimizedImage
                             src='assets/images/blog/three.png'
                             alt='Image_inner'
                           />
@@ -198,7 +199,7 @@ const BlogFour = () => {
                     <div className='blog__single'>
                       <div className='blog__single-thumb'>
                         <Link href='/blog-details'>
-                          <img
+                          <OptimizedImage
                             src='assets/images/blog/one.png'
                             alt='Image_inner'
                           />
@@ -241,7 +242,7 @@ const BlogFour = () => {
                     <div className='blog__single'>
                       <div className='blog__single-thumb'>
                         <Link href='/blog-details'>
-                          <img
+                          <OptimizedImage
                             src='assets/images/blog/two.png'
                             alt='Image_inner'
                           />
@@ -284,7 +285,7 @@ const BlogFour = () => {
                     <div className='blog__single'>
                       <div className='blog__single-thumb'>
                         <Link href='/blog-details'>
-                          <img
+                          <OptimizedImage
                             src='assets/images/blog/three.png'
                             alt='Image_inner'
                           />

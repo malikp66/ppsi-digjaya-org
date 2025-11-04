@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useRef } from "react";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const ComingSoonInner = () => {
   const hourMarkersRef = useRef(null);
@@ -98,7 +99,7 @@ const ComingSoonInner = () => {
             <div className='soon__inner'>
               <div className='soon__logo'>
                 <Link href='/'>
-                  <img src='assets/images/logo-light.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/logo-light.png' alt='Image_inner' />
                 </Link>
               </div>
 
@@ -170,7 +171,7 @@ const ComingSoonInner = () => {
         </div>
       </div>
       {/* <div className='soon-bg'>
-        <img
+        <OptimizedImage
           src='assets/images/banner/banner-one-bg.png'
           alt='Image_inner'
           className='parallax-image'

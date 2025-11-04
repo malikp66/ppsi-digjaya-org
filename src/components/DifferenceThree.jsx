@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const DifferenceThree = () => {
   return (
@@ -13,13 +14,13 @@ const DifferenceThree = () => {
                   data-aos='fade-right'
                   data-aos-duration={1000}
                 >
-                  <img
+                  <OptimizedImage
                     src='assets/images/difference/thumb-lg-two.png'
                     alt='Image_inner'
                   />
                 </div>
                 {/* <div className='spade'>
-                  <img
+                  <OptimizedImage
                     src='assets/images/difference/spade.png'
                     alt='Image_inner'
                     className='base-img'
@@ -31,13 +32,13 @@ const DifferenceThree = () => {
                   data-aos-duration={1000}
                   data-aos-delay={300}
                 >
-                  <img
+                  <OptimizedImage
                     src='assets/images/difference/thub-sm-two.png'
                     alt='Image_inner'
                   />
                 </div>
                 {/* <div className='line'>
-                  <img
+                  <OptimizedImage
                     src='assets/images/difference/line.png'
                     alt='Image_inner'
                   />
@@ -108,7 +109,7 @@ const DifferenceThree = () => {
                 </Link>
                 <div className='author-info'>
                   <div className='author-thumb'>
-                    <img src='assets/images/author-two.png' alt='Image_inner' />
+                    <OptimizedImage src='assets/images/author-two.png' alt='Image_inner' />
                   </div>
                   <div className='author-content'>
                     <span>Ketua Bidang Pelatihan</span>

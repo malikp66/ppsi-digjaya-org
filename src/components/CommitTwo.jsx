@@ -2,6 +2,7 @@
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 const CommitTwo = () => {
   return (
     <section className='commit help-two ff-commit pt-120 pb-120'>
@@ -10,10 +11,10 @@ const CommitTwo = () => {
           <div className='col-12 col-lg-5 col-xl-5'>
             <div className='commit__thumb'>
               <div className='thumb-lg'>
-                <img src='assets/images/commit-thumb.png' alt='Image_inner' />
+                <OptimizedImage src='assets/images/commit-thumb.png' alt='Image_inner' />
               </div>
               <div className='thumb-sm'>
-                <img src='assets/images/commit-shape.png' alt='Image_inner' />
+                <OptimizedImage src='assets/images/commit-shape.png' alt='Image_inner' />
               </div>
               <div className='commit-count'>
                 <h4>
@@ -93,7 +94,7 @@ const CommitTwo = () => {
                 <div className='help-two-card-wrapper'>
                   <div className='help-two__card van-tilt'>
                     <div className='help-card-thumb'>
-                      <img
+                      <OptimizedImage
                         src='assets/images/help/author.png'
                         alt='Image_inner'
                       />
@@ -112,7 +113,7 @@ const CommitTwo = () => {
         </div>
       </div>
       <div className='fc-two'>
-        <img src='assets/images/fc-nine.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/fc-nine.png' alt='Image_inner' />
       </div>
     </section>
   );

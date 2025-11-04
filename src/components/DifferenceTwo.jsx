@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
+import OptimizedImage from "@/components/common/OptimizedImage";
 const DifferenceTwo = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("visi");
@@ -17,12 +18,12 @@ const DifferenceTwo = () => {
                     data-aos='fade-right'
                     data-aos-duration={1000}
                   >
-                    <img
+                    <OptimizedImage
                       src='assets/images/difference/thumb-sm.png'
                       alt='Image_inner'
                     />
                     {/* <div className='grid-line'>
-                      <img
+                      <OptimizedImage
                         src='assets/images/help/grid.png'
                         alt='Image_inner'
                         className='base-img'
@@ -43,7 +44,7 @@ const DifferenceTwo = () => {
                     data-aos-duration={1000}
                     data-aos-delay={300}
                   >
-                    <img
+                    <OptimizedImage
                       src='assets/images/difference/thumb-lg.png'
                       alt='Image_inner'
                     />
@@ -277,7 +278,7 @@ const DifferenceTwo = () => {
           </div>
         </div>
         {/* <div className='spade'>
-          <img src='assets/images/spade-green-two.png' alt='Image_inner' />
+          <OptimizedImage src='assets/images/spade-green-two.png' alt='Image_inner' />
         </div> */}
       </section>
       <ModalVideo

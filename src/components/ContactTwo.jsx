@@ -1,3 +1,4 @@
+import OptimizedImage from "@/components/common/OptimizedImage";
 const ContactTwo = () => {
   return (
     <section className='contact fc-contact'>
@@ -79,7 +80,7 @@ const ContactTwo = () => {
         </div>
       </div>
       {/* <div className='contact-bg'>
-        <img
+        <OptimizedImage
           src='assets/images/contact/contact-bg.png'
           alt='Image_inner'
           className='parallax-image'
@@ -91,7 +92,7 @@ const ContactTwo = () => {
         data-aos-duration={1000}
         data-aos-delay={300}
       >
-        <img
+        <OptimizedImage
           src='assets/images/cta/shape-left.png'
           alt='Image_inner'
           className='base-img'

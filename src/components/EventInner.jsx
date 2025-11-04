@@ -2,6 +2,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { eventsData, eventFilters } from "@/data/events";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const EventInner = () => {
   const [selectedFilter, setSelectedFilter] = useState("Semua");
@@ -71,7 +72,7 @@ const EventInner = () => {
               >
                 <div className='event__single van-tilt'>
                   <div className='event__single-thumb'>
-                    <img src='assets/images/event/one.png' alt='Image_inner' />
+                    <OptimizedImage src='assets/images/event/one.png' alt='Image_inner' />
                   </div>
                   <div className='event__content'>
                     <span>{event.tanggal}</span>
@@ -157,7 +158,7 @@ const EventInner = () => {
         </div>
       </div>
       {/* <div className='spade'>
-        <img src='assets/images/blog/spade-base.png' alt='Image_inner' className='base-img' />
+        <OptimizedImage src='assets/images/blog/spade-base.png' alt='Image_inner' className='base-img' />
       </div> */}
     </section>
   );

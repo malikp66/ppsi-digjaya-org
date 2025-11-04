@@ -1,6 +1,7 @@
 "use client";
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
+import OptimizedImage from "@/components/common/OptimizedImage";
 const CounterOne = () => {
   return (
     <section className='counter'>
@@ -115,7 +116,7 @@ const CounterOne = () => {
         </div>
       </div>
       <div className='poor'>
-        <img
+        <OptimizedImage
           src='/assets/images/poor-two.png'
           alt='Image_inner'
           className='parallax-image'
@@ -127,7 +128,7 @@ const CounterOne = () => {
         data-aos-duration={1000}
         data-aos-delay={300}
       >
-        <img
+        <OptimizedImage
           src='/assets/images/cta/shape-left.png'
           alt='Image_inner'
           className='base-img'

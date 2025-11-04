@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
+import OptimizedImage from "@/components/common/OptimizedImage";
 const CtaSectionOne = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -37,7 +38,7 @@ const CtaSectionOne = () => {
                   </div>
                 </div>
                 <div className='cta-img'>
-                  <img src='assets/images/cta/one.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/cta/one.png' alt='Image_inner' />
                 </div>
               </div>
             </div>
@@ -53,7 +54,7 @@ const CtaSectionOne = () => {
                   </button>
                 </div>
                 <div className='cta-img'>
-                  <img
+                  <OptimizedImage
                     src='assets/images/cta/two.png'
                     alt='Image_inner'
                     className='parallax-image'
@@ -90,7 +91,7 @@ const CtaSectionOne = () => {
                   </div>
                 </div>
                 <div className='cta-img'>
-                  <img src='assets/images/cta/three.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/cta/three.png' alt='Image_inner' />
                 </div>
               </div>
             </div>

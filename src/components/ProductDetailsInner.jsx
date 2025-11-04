@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import Slider from "@/components/ClientSlider";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const ProductDetailsInner = () => {
   const [nav1, setNav1] = useState(null);
@@ -75,7 +76,7 @@ const ProductDetailsInner = () => {
                     <Slider {...mainSliderSettings} className='swiper-wrapper'>
                       <div className='swiper-slide'>
                         <div className='product-details-slider-single'>
-                          <img
+                          <OptimizedImage
                             src='assets/images/shop/product-details.png'
                             alt='Image_inner'
                           />
@@ -83,7 +84,7 @@ const ProductDetailsInner = () => {
                       </div>
                       <div className='swiper-slide'>
                         <div className='product-details-slider-single'>
-                          <img
+                          <OptimizedImage
                             src='assets/images/shop/product-details.png'
                             alt='Image_inner'
                           />
@@ -91,7 +92,7 @@ const ProductDetailsInner = () => {
                       </div>
                       <div className='swiper-slide'>
                         <div className='product-details-slider-single'>
-                          <img
+                          <OptimizedImage
                             src='assets/images/shop/product-details.png'
                             alt='Image_inner'
                           />
@@ -99,7 +100,7 @@ const ProductDetailsInner = () => {
                       </div>
                       <div className='swiper-slide'>
                         <div className='product-details-slider-single'>
-                          <img
+                          <OptimizedImage
                             src='assets/images/shop/product-details.png'
                             alt='Image_inner'
                           />
@@ -107,7 +108,7 @@ const ProductDetailsInner = () => {
                       </div>
                       <div className='swiper-slide'>
                         <div className='product-details-slider-single'>
-                          <img
+                          <OptimizedImage
                             src='assets/images/shop/product-details.png'
                             alt='Image_inner'
                           />
@@ -115,7 +116,7 @@ const ProductDetailsInner = () => {
                       </div>
                       <div className='swiper-slide'>
                         <div className='product-details-slider-single'>
-                          <img
+                          <OptimizedImage
                             src='assets/images/shop/product-details.png'
                             alt='Image_inner'
                           />
@@ -123,7 +124,7 @@ const ProductDetailsInner = () => {
                       </div>
                       <div className='swiper-slide'>
                         <div className='product-details-slider-single'>
-                          <img
+                          <OptimizedImage
                             src='assets/images/shop/product-details.png'
                             alt='Image_inner'
                           />
@@ -131,7 +132,7 @@ const ProductDetailsInner = () => {
                       </div>
                       <div className='swiper-slide'>
                         <div className='product-details-slider-single'>
-                          <img
+                          <OptimizedImage
                             src='assets/images/shop/product-details.png'
                             alt='Image_inner'
                           />
@@ -144,7 +145,7 @@ const ProductDetailsInner = () => {
                   <Slider {...gallerySettings} className='swiper-wrapper'>
                     <div className='swiper-slide px-1'>
                       <div className='sm-gallery'>
-                        <img
+                        <OptimizedImage
                           src='assets/images/shop/cart-one.png'
                           alt='Image_inner'
                         />
@@ -152,7 +153,7 @@ const ProductDetailsInner = () => {
                     </div>
                     <div className='swiper-slide px-1'>
                       <div className='sm-gallery'>
-                        <img
+                        <OptimizedImage
                           src='assets/images/shop/cart-two.png'
                           alt='Image_inner'
                         />
@@ -160,7 +161,7 @@ const ProductDetailsInner = () => {
                     </div>
                     <div className='swiper-slide px-1'>
                       <div className='sm-gallery'>
-                        <img
+                        <OptimizedImage
                           src='assets/images/shop/cart-three.png'
                           alt='Image_inner'
                         />
@@ -168,7 +169,7 @@ const ProductDetailsInner = () => {
                     </div>
                     <div className='swiper-slide px-1'>
                       <div className='sm-gallery'>
-                        <img
+                        <OptimizedImage
                           src='assets/images/shop/cart-four.png'
                           alt='Image_inner'
                         />
@@ -176,7 +177,7 @@ const ProductDetailsInner = () => {
                     </div>
                     <div className='swiper-slide px-1'>
                       <div className='sm-gallery'>
-                        <img
+                        <OptimizedImage
                           src='assets/images/shop/cart-one.png'
                           alt='Image_inner'
                         />
@@ -184,7 +185,7 @@ const ProductDetailsInner = () => {
                     </div>
                     <div className='swiper-slide px-1'>
                       <div className='sm-gallery'>
-                        <img
+                        <OptimizedImage
                           src='assets/images/shop/cart-two.png'
                           alt='Image_inner'
                         />
@@ -192,7 +193,7 @@ const ProductDetailsInner = () => {
                     </div>
                     <div className='swiper-slide px-1'>
                       <div className='sm-gallery'>
-                        <img
+                        <OptimizedImage
                           src='assets/images/shop/cart-three.png'
                           alt='Image_inner'
                         />
@@ -200,7 +201,7 @@ const ProductDetailsInner = () => {
                     </div>
                     <div className='swiper-slide px-1'>
                       <div className='sm-gallery'>
-                        <img
+                        <OptimizedImage
                           src='assets/images/shop/cart-four.png'
                           alt='Image_inner'
                         />
@@ -465,7 +466,7 @@ const ProductDetailsInner = () => {
                           </div>
                           <div className='comment-single'>
                             <div className='thumb'>
-                              <img
+                              <OptimizedImage
                                 alt='Image_inner'
                                 src='assets/images/author-four.png'
                               />
@@ -513,7 +514,7 @@ const ProductDetailsInner = () => {
                           </div>
                           <div className='comment-single comment-single-reply'>
                             <div className='thumb'>
-                              <img
+                              <OptimizedImage
                                 alt='Image_inner'
                                 src='assets/images/team/one.png'
                               />
@@ -561,7 +562,7 @@ const ProductDetailsInner = () => {
                           </div>
                           <div className='comment-single'>
                             <div className='thumb'>
-                              <img
+                              <OptimizedImage
                                 alt='Image_inner'
                                 src='assets/images/author-two.png'
                               />

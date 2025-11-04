@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const HelpOne = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,7 @@ const HelpOne = () => {
               <div className='help__thumb'>
                 <div className='help__thumb-inner'>
                   <div className='thumb-top thumb'>
-                    <img
+                    <OptimizedImage
                       src='/assets/images/help/thumb-top.png'
                       alt='Image_inner'
                     />
@@ -24,7 +25,7 @@ const HelpOne = () => {
                     data-aos='fade-left'
                     data-aos-duration={1000}
                   >
-                    <img
+                    <OptimizedImage
                       src='/assets/images/help/thumb-lg.png'
                       alt='Image_inner'
                     />
@@ -38,16 +39,16 @@ const HelpOne = () => {
                     </div>
                   </div>
                   <div className='thumb thumb-bottom'>
-                    <img
+                    <OptimizedImage
                       src='/assets/images/help/thumb-bottom.png'
                       alt='Image_inner'
                     />
                   </div>
                   {/* <div className='line'>
-                    <img src='/assets/images/help/line.png' alt='Image_inner' />
+                    <OptimizedImage src='/assets/images/help/line.png' alt='Image_inner' />
                   </div> */}
                   {/* <div className='grid-line'>
-                    <img
+                    <OptimizedImage
                       src='/assets/images/help/grid.png'
                       alt='Image_inner'
                       className='base-img'
@@ -136,13 +137,13 @@ const HelpOne = () => {
           </div>
         </div>
         {/* <div className='hand'>
-          <img src='/assets/images/help/hand.png' alt='Image_inner' />
+          <OptimizedImage src='/assets/images/help/hand.png' alt='Image_inner' />
         </div> */}
         {/* <div className='parasuit'>
-          <img src='/assets/images/parasuit.png' alt='Image_inner' />
+          <OptimizedImage src='/assets/images/parasuit.png' alt='Image_inner' />
         </div> */}
         {/* <div className='spade'>
-          <img src='/assets/images/help/spade.png' alt='Image_inner' />
+          <OptimizedImage src='/assets/images/help/spade.png' alt='Image_inner' />
         </div> */}
 
         <ModalVideo

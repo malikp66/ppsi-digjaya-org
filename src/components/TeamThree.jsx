@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const TeamThree = () => {
   return (
@@ -32,7 +33,7 @@ const TeamThree = () => {
               <div className='team__single van-tilt'>
                 <div className='team__single-thumb'>
                   <Link href='/team-details'>
-                    <img src='/assets/images/team/five.png' alt='Image_inner' />
+                    <OptimizedImage src='/assets/images/team/five.png' alt='Image_inner' />
                   </Link>
                 </div>
                 <div className='team__content-wrapper'>
@@ -85,7 +86,7 @@ const TeamThree = () => {
               <div className='team__single van-tilt'>
                 <div className='team__single-thumb'>
                   <Link href='/team-details'>
-                    <img src='/assets/images/team/six.png' alt='Image_inner' />
+                    <OptimizedImage src='/assets/images/team/six.png' alt='Image_inner' />
                   </Link>
                 </div>
                 <div className='team__content-wrapper'>
@@ -138,7 +139,7 @@ const TeamThree = () => {
               <div className='team__single van-tilt'>
                 <div className='team__single-thumb'>
                   <Link href='/team-details'>
-                    <img
+                    <OptimizedImage
                       src='/assets/images/team/seven.png'
                       alt='Image_inner'
                     />
@@ -202,7 +203,7 @@ const TeamThree = () => {
         </div>
       </div>
       {/* <div className='spade'>
-        <img src='/assets/images/sprade-green.png' alt='Image_inner' />
+        <OptimizedImage src='/assets/images/sprade-green.png' alt='Image_inner' />
       </div> */}
     </section>
   );

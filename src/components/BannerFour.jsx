@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const BannerFour = () => {
   return (
@@ -32,22 +33,22 @@ const BannerFour = () => {
         </div>
       </div>
       <div className='thumb d-none d-md-block'>
-        <img
+        <OptimizedImage
           src='assets/images/banner/banner-four-thumb.png'
           alt='Image_inner'
         />
       </div>
       <div className='fc-one'>
-        <img src='assets/images/fc-seven.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/fc-seven.png' alt='Image_inner' />
       </div>
       <div className='fc-two'>
-        <img src='assets/images/fc-eight.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/fc-eight.png' alt='Image_inner' />
       </div>
       <div className='fc-three'>
-        <img src='assets/images/fc-one.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/fc-one.png' alt='Image_inner' />
       </div>
       <div className='fc-four'>
-        <img src='assets/images/fc-thirteen.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/fc-thirteen.png' alt='Image_inner' />
       </div>
     </section>
   );

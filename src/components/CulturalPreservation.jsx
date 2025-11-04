@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import OptimizedImage from "@/components/common/OptimizedImage";
 import {
   sejarahTimeline,
   tokohSilat,
@@ -23,7 +24,7 @@ const CulturalPreservation = () => {
                   data-aos='fade-right'
                   data-aos-duration={1000}
                 >
-                  <img src='assets/images/gallery/thumb-one.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/gallery/thumb-one.png' alt='Image_inner' />
                 </div>
                 <div
                   className='thumb-sm'
@@ -31,7 +32,7 @@ const CulturalPreservation = () => {
                   data-aos-duration={1000}
                   data-aos-delay={300}
                 >
-                  <img src='assets/images/gallery/thumb-two.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/gallery/thumb-two.png' alt='Image_inner' />
                 </div>
               </div>
             </div>
@@ -120,7 +121,7 @@ const CulturalPreservation = () => {
                           <div className='difference-two__content-single culture-grid'>
                             {tokohSilat.map((tokoh) => (
                               <div className='culture-card' key={tokoh.nama}>
-                                <img src={tokoh.foto} alt={tokoh.nama} />
+                                <OptimizedImage src={tokoh.foto} alt={tokoh.nama} />
                                 <div className='content'>
                                   <h6>{tokoh.nama}</h6>
                                   <p>{tokoh.peran}</p>

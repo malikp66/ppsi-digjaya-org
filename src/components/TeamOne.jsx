@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const TeamOne = () => {
   return (
@@ -32,7 +33,7 @@ const TeamOne = () => {
                 <div className='team__single van-tilt'>
                   <div className='team__single-thumb'>
                     <Link href='/team-details'>
-                      <img src='assets/images/team/one.png' alt='Image_inner' />
+                      <OptimizedImage src='assets/images/team/one.png' alt='Image_inner' />
                     </Link>
                     <div className='team__icons'>
                       <div className='team__single-content__icon'>
@@ -83,7 +84,7 @@ const TeamOne = () => {
                 <div className='team__single van-tilt'>
                   <div className='team__single-thumb'>
                     <Link href='/team-details'>
-                      <img src='assets/images/team/two.png' alt='Image_inner' />
+                      <OptimizedImage src='assets/images/team/two.png' alt='Image_inner' />
                     </Link>
                     <div className='team__icons'>
                       <div className='team__single-content__icon'>
@@ -134,7 +135,7 @@ const TeamOne = () => {
                 <div className='team__single van-tilt'>
                   <div className='team__single-thumb'>
                     <Link href='/team-details'>
-                      <img
+                      <OptimizedImage
                         src='assets/images/team/three.png'
                         alt='Image_inner'
                       />
@@ -188,7 +189,7 @@ const TeamOne = () => {
                 <div className='team__single van-tilt'>
                   <div className='team__single-thumb'>
                     <Link href='/team-details'>
-                      <img
+                      <OptimizedImage
                         src='assets/images/team/four.png'
                         alt='Image_inner'
                       />
@@ -250,7 +251,7 @@ const TeamOne = () => {
           </div>
         </div>
         {/* <div className='spade'>
-          <img src='assets/images/sprade-green.png' alt='Image_inner' />
+          <OptimizedImage src='assets/images/sprade-green.png' alt='Image_inner' />
         </div> */}
       </section>
     </>

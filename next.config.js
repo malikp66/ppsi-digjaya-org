@@ -4,6 +4,9 @@ const nextConfig = {
   sassOptions: {
     silenceDeprecations: ["import", "legacy-js-api"],
   },
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
 };
 
 module.exports = nextConfig;

@@ -3,6 +3,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { products, marketplaceServices } from "@/data/marketplace";
 import { danaSosialPrograms } from "@/data/programs";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const getCategories = () => {
   const set = new Set(products.map((product) => product.category));
@@ -92,7 +93,7 @@ const ShopInner = () => {
                     >
                       <div className='shop__single-thumb'>
                         <Link href='/product-details'>
-                          <img src={product.image} alt={product.name} />
+                          <OptimizedImage src={product.image} alt={product.name} />
                         </Link>
                         <div className='shop-thumb'>
                           <Link href='/product-details'>

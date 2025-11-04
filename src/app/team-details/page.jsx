@@ -5,7 +5,7 @@ import Preloader from "@/components/Preloader";
 import TeamDetailsInner from "@/components/TeamDetailsInner";
  import TopBarThree from "@/components/TopBarThree";
 import AOSWrap from "@/helper/AOSWrap";
-import CustomCursor from "@/helper/CustomCursor";
+ 
 
 export const metadata = {
   title: "PPSI Digjaya | Profil Pengurus",

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const author = {
   name: "Galih Suryana",
@@ -62,7 +63,7 @@ const BlogDetailsInner = () => {
                 data-aos-duration={1000}
                 data-aos-delay={100}
               >
-                <img
+                <OptimizedImage
                   src='assets/images/event/poster.png'
                   alt='Poster Festival Pencak Silat Tradisional Priangan 2024'
                 />
@@ -163,13 +164,13 @@ const BlogDetailsInner = () => {
               </div>
               <div className='cm-img-group cta'>
                 <div className='cm-img-single'>
-                  <img
+                  <OptimizedImage
                     src='assets/images/event/pp-one.png'
                     alt='Pesilat menampilkan jurus Cimande di panggung utama'
                   />
                 </div>
                 <div className='cm-img-single'>
-                  <img
+                  <OptimizedImage
                     src='assets/images/event/pp-two.png'
                     alt='Sesepuh dan pesilat muda berfoto bersama usai festival'
                   />
@@ -240,7 +241,7 @@ const BlogDetailsInner = () => {
                 </div>
                 <div className='comment-single'>
                   <div className='thumb'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/author-four.png'
                       alt='Potret Rina Mulyani'
                     />
@@ -286,7 +287,7 @@ const BlogDetailsInner = () => {
                 </div>
                 <div className='comment-single'>
                   <div className='thumb'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/author-two.png'
                       alt='Potret Wahyu Sasmita'
                     />
@@ -332,7 +333,7 @@ const BlogDetailsInner = () => {
                 </div>
                 <div className='comment-single'>
                   <div className='thumb'>
-                    <img
+                    <OptimizedImage
                       src='assets/images/author-three.png'
                       alt='Potret Adi Prakoso'
                     />
@@ -442,7 +443,7 @@ const BlogDetailsInner = () => {
                 data-aos-delay={100}
               >
                 <div className='author-thumb'>
-                  <img src={author.photo} alt={author.alt} />
+                  <OptimizedImage src={author.photo} alt={author.alt} />
                 </div>
                 <div className='author-meta'>
                   <h6>{author.name}</h6>
@@ -525,7 +526,7 @@ const BlogDetailsInner = () => {
                       <div className='single-item' key={post.title}>
                         <div className='thumb'>
                           <Link href={post.href}>
-                            <img src={post.image} alt={post.alt} />
+                            <OptimizedImage src={post.image} alt={post.alt} />
                           </Link>
                         </div>
                         <div className='content'>

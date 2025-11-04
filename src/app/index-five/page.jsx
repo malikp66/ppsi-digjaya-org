@@ -18,7 +18,7 @@ import TopBarThree from "@/components/TopBarThree";
 import VolunteerOne from "@/components/VolunteerOne";
 import VolunteerTwo from "@/components/VolunteerTwo";
 import AOSWrap from "@/helper/AOSWrap";
-import CustomCursor from "@/helper/CustomCursor";
+ 
 
 export const metadata = {
   title: "PPSI Digjaya | Jaringan Relawan",

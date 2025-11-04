@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const BlogTwo = () => {
   return (
@@ -54,7 +55,7 @@ const BlogTwo = () => {
                   </div>
                   <div className='blog__single-thumb'>
                     <Link href='/blog-details'>
-                      <img src='assets/images/blog/one.png' alt='Image_inner' />
+                      <OptimizedImage src='assets/images/blog/one.png' alt='Image_inner' />
                     </Link>
                     <div className='tag'>
                       <Link href='/blog-list'>
@@ -74,7 +75,7 @@ const BlogTwo = () => {
                     </Link>
                   </div>
                 </div>
-                {/* <img
+                {/* <OptimizedImage
                   src='assets/images/blog/spade.png'
                   alt='Image_inner'
                   className='spade-two'
@@ -111,7 +112,7 @@ const BlogTwo = () => {
                   </div>
                   <div className='blog__single-thumb'>
                     <Link href='/blog-details'>
-                      <img src='assets/images/blog/two.png' alt='Image_inner' />
+                      <OptimizedImage src='assets/images/blog/two.png' alt='Image_inner' />
                     </Link>
                     <div className='tag'>
                       <Link href='/blog-list'>
@@ -131,7 +132,7 @@ const BlogTwo = () => {
                     </Link>
                   </div>
                 </div>
-                {/* <img
+                {/* <OptimizedImage
                   src='assets/images/blog/spade.png'
                   alt='Image_inner'
                   className='spade-two'
@@ -168,7 +169,7 @@ const BlogTwo = () => {
                   </div>
                   <div className='blog__single-thumb'>
                     <Link href='/blog-details'>
-                      <img
+                      <OptimizedImage
                         src='assets/images/blog/three.png'
                         alt='Image_inner'
                       />
@@ -191,7 +192,7 @@ const BlogTwo = () => {
                     </Link>
                   </div>
                 </div>
-                {/* <img
+                {/* <OptimizedImage
                   src='assets/images/blog/spade.png'
                   alt='Image_inner'
                   className='spade-two'
@@ -216,7 +217,7 @@ const BlogTwo = () => {
         </div>
       </div>
       {/* <div className='spade'>
-        <img
+        <OptimizedImage
           src='assets/images/blog/spade-base.png'
           alt='Image_inner'
           className='base-img'

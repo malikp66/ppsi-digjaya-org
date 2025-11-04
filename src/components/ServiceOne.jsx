@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const ServiceOne = () => {
   return (
@@ -150,10 +151,10 @@ const ServiceOne = () => {
         </div>
       </div>
       <div className='cgf'>
-        <img src='assets/images/cgf.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/cgf.png' alt='Image_inner' />
       </div>
       <div className='h-green'>
-        <img src='assets/images/h-green.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/h-green.png' alt='Image_inner' />
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const HelpThree = () => {
   return (
@@ -137,7 +138,7 @@ const HelpThree = () => {
                     </div>
                   </div>
                 </div>
-                <img
+                <OptimizedImage
                   src='assets/images/v-line.png'
                   alt='Image_inner'
                   className='v-line d-none d-xxl-block'
@@ -153,25 +154,25 @@ const HelpThree = () => {
         data-aos-duration={1000}
         data-aos-delay={300}
       >
-        <img
+        <OptimizedImage
           src='assets/images/bg-one.png'
           alt='Image_inner'
           className='bg-help'
         />
         <div className='poor-boy'>
-          <img
+          <OptimizedImage
             src='assets/images/poor-boy.png'
             alt='Image_inner'
             className='poor'
           />
-          {/* <img
+          {/* <OptimizedImage
             src='assets/images/shape-three.png'
             alt='Image_inner'
             className='shape'
           /> */}
         </div>
         {/* <div className='parasuit'>
-          <img src='assets/images/parasuit.png' alt='Image_inner' />
+          <OptimizedImage src='assets/images/parasuit.png' alt='Image_inner' />
         </div> */}
       </div>
     </section>

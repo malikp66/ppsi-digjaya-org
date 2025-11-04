@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Slider from "@/components/ClientSlider";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const testimonials = [
   {
@@ -127,7 +128,7 @@ const TestimonialOne = () => {
                           </div>
                           <div className='author-info'>
                             <div className='author-thumb'>
-                              <img
+                              <OptimizedImage
                                 src={testimonial.avatar}
                                 alt='Image_inner'
                               />
@@ -138,7 +139,7 @@ const TestimonialOne = () => {
                             </div>
                           </div>
                           <div className='quote'>
-                            <img
+                            <OptimizedImage
                               src='assets/images/quote.png'
                               alt='Image_inner'
                             />
@@ -178,7 +179,7 @@ const TestimonialOne = () => {
           data-aos-duration={1000}
           data-aos-delay={200}
         >
-          <img
+          <OptimizedImage
             src='assets/images/community/shape.png'
             alt='Image_inner'
             className='base-img'

@@ -1,6 +1,7 @@
 "use client";
 import { useRef } from "react";
 import Slider from "@/components/ClientSlider";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const TestimonialTwo = () => {
   const sliderRef = useRef(null);
@@ -51,7 +52,7 @@ const TestimonialTwo = () => {
             <div className='row align-items-center'>
               <div className='col-12 col-lg-5 d-none d-lg-block'>
                 <div className='testimonial-two__thumb'>
-                  <img
+                  <OptimizedImage
                     src='/assets/images/testimonial-thumb.png'
                     alt='Image_inner'
                   />
@@ -72,7 +73,7 @@ const TestimonialTwo = () => {
                         <div className='testimonial-two__single'>
                           <div className='author-info'>
                             <div className='author-thumb'>
-                              <img
+                              <OptimizedImage
                                 src='/assets/images/author-two.png'
                                 alt='Image_inner'
                               />
@@ -104,7 +105,7 @@ const TestimonialTwo = () => {
                         <div className='testimonial-two__single'>
                           <div className='author-info'>
                             <div className='author-thumb'>
-                              <img
+                              <OptimizedImage
                                 src='/assets/images/author-two.png'
                                 alt='Image_inner'
                               />
@@ -136,7 +137,7 @@ const TestimonialTwo = () => {
                         <div className='testimonial-two__single'>
                           <div className='author-info'>
                             <div className='author-thumb'>
-                              <img
+                              <OptimizedImage
                                 src='/assets/images/author-two.png'
                                 alt='Image_inner'
                               />
@@ -187,7 +188,7 @@ const TestimonialTwo = () => {
                     </button>
                   </div>
                   <div className='quote'>
-                    <img src='/assets/images/quote-two.png' alt='Image_inner' />
+                    <OptimizedImage src='/assets/images/quote-two.png' alt='Image_inner' />
                   </div>
                 </div>
               </div>
@@ -196,10 +197,10 @@ const TestimonialTwo = () => {
         </div>
       </div>
       {/* <div className='blog-bg'>
-        <img src='/assets/images/blog/blog-bg.png' alt='Image_inner' />
+        <OptimizedImage src='/assets/images/blog/blog-bg.png' alt='Image_inner' />
       </div> */}
       {/* <div className='spade'>
-        <img
+        <OptimizedImage
           src='/assets/images/community/spade.png'
           alt='Image_inner'
           className='base-img'

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const ServiceTwo = () => {
   return (
@@ -238,7 +239,7 @@ const ServiceTwo = () => {
         </div>
       </div>
       {/* <div className='th-t'>
-        <img src='assets/images/hand-light.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/hand-light.png' alt='Image_inner' />
       </div> */}
     </section>
   );

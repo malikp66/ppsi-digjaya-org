@@ -5,7 +5,7 @@ import OrganizationManagement from "@/components/OrganizationManagement";
 import Preloader from "@/components/Preloader";
 import TopBarThree from "@/components/TopBarThree";
 import AOSWrap from "@/helper/AOSWrap";
-import CustomCursor from "@/helper/CustomCursor";
+ 
 
 export const metadata = {
   title: "Manajemen Organisasi & Perguruan | PPSI Digjaya",

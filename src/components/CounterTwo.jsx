@@ -2,6 +2,7 @@
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 const CounterTwo = () => {
   return (
     <section className='counter-four pt-120 pb-120'>
@@ -54,16 +55,16 @@ const CounterTwo = () => {
         </div>
       </div>
       <div className='fc-one'>
-        <img src='assets/images/fc-five.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/fc-five.png' alt='Image_inner' />
       </div>
       <div className='fc-two'>
-        <img src='assets/images/fc-nine.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/fc-nine.png' alt='Image_inner' />
       </div>
       <div className='fc-three'>
-        <img src='assets/images/fc-ten.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/fc-ten.png' alt='Image_inner' />
       </div>
       <div className='fc-four'>
-        <img src='assets/images/fc-two.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/fc-two.png' alt='Image_inner' />
       </div>
     </section>
   );

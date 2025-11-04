@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const BreadcrumbOne = ({ title, ctaLabel, ctaHref }) => {
   return (
@@ -23,10 +24,10 @@ const BreadcrumbOne = ({ title, ctaLabel, ctaHref }) => {
         </div>
       </div>
       {/* <div className='banner-bg'>
-        <img src='assets/images/banner/banner-bg.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/banner/banner-bg.png' alt='Image_inner' />
       </div> */}
       {/* <div className='sprade' data-aos='zoom-in' data-aos-duration={1000}>
-        <img
+        <OptimizedImage
           src='assets/images/sprade-base.png'
           alt='Image_inner'
           className='base-img'

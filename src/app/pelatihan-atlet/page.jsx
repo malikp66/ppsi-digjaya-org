@@ -5,7 +5,7 @@ import Preloader from "@/components/Preloader";
 import TopBarThree from "@/components/TopBarThree";
 import TrainingDashboard from "@/components/TrainingDashboard";
 import AOSWrap from "@/helper/AOSWrap";
-import CustomCursor from "@/helper/CustomCursor";
+ 
 
 export const metadata = {
   title: "Pelatihan & Atlet PPSI Digjaya",

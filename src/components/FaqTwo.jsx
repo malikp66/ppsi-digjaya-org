@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const faqItems = [
   {
@@ -122,7 +123,7 @@ const FaqTwo = () => {
                   data-aos-duration={1000}
                   data-aos-delay={100}
                 >
-                  <img src='assets/images/faq/thumb-lg.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/faq/thumb-lg.png' alt='Image_inner' />
                 </div>
                 <div
                   className='thumb-sm'
@@ -130,7 +131,7 @@ const FaqTwo = () => {
                   data-aos-duration={1000}
                   data-aos-delay={300}
                 >
-                  <img src='assets/images/faq/thumb-sm.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/faq/thumb-sm.png' alt='Image_inner' />
                 </div>
               </div>
             </div>
@@ -138,7 +139,7 @@ const FaqTwo = () => {
         </div>
       </div>
       {/* <div className='shape d-none d-lg-block'>
-        <img src='assets/images/faq/shape.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/faq/shape.png' alt='Image_inner' />
       </div> */}
     </section>
   );

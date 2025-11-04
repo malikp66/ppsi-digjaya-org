@@ -2,6 +2,7 @@
 import { useState } from "react";
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
+import OptimizedImage from "@/components/common/OptimizedImage";
 const CommitOne = () => {
   let [active, setActive] = useState(1);
 
@@ -12,10 +13,10 @@ const CommitOne = () => {
           <div className='col-12 col-lg-5 col-xl-5'>
             <div className='commit__thumb'>
               <div className='thumb-lg'>
-                <img src='assets/images/commit-thumb.png' alt='Image_inner' />
+                <OptimizedImage src='assets/images/commit-thumb.png' alt='Image_inner' />
               </div>
               <div className='thumb-sm'>
-                <img src='assets/images/commit-shape.png' alt='Image_inner' />
+                <OptimizedImage src='assets/images/commit-shape.png' alt='Image_inner' />
               </div>
               <div className='commit-count'>
                 <h4>

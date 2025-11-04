@@ -1,6 +1,7 @@
 "use client";
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const HelpTwo = () => {
   return (
@@ -15,7 +16,7 @@ const HelpTwo = () => {
                   data-aos='fade-up'
                   data-aos-duration={1000}
                 >
-                  <img src='assets/images/help/three.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/help/three.png' alt='Image_inner' />
                 </div>
                 <div
                   className='thumb-sm'
@@ -23,7 +24,7 @@ const HelpTwo = () => {
                   data-aos-duration={1000}
                   data-aos-delay={100}
                 >
-                  <img src='assets/images/help/two.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/help/two.png' alt='Image_inner' />
                 </div>
                 <div
                   className='thumb-md'
@@ -31,7 +32,7 @@ const HelpTwo = () => {
                   data-aos-duration={1000}
                   data-aos-delay={200}
                 >
-                  <img src='assets/images/help/one.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/help/one.png' alt='Image_inner' />
                 </div>
                 <div className='help-two__thumb-content'>
                   <div className='thumb'>
@@ -117,7 +118,7 @@ const HelpTwo = () => {
                 <div className='help-two-card-wrapper'>
                   <div className='help-two__card van-tilt'>
                     <div className='help-card-thumb'>
-                      <img
+                      <OptimizedImage
                         src='assets/images/help/author.png'
                         alt='Image_inner'
                       />

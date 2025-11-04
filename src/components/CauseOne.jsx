@@ -3,6 +3,7 @@ import { useRef } from "react";
 import Slider from "@/components/ClientSlider";
 import ProgressBar from "../helper/ProgressBar";
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const programs = [
   {
@@ -169,7 +170,7 @@ const CauseOne = () => {
                         <div className='cause__slider-single'>
                           <div className='thumb'>
                             <Link href={program.href}>
-                              <img src={program.image} alt='Image_inner' />
+                              <OptimizedImage src={program.image} alt='Image_inner' />
                             </Link>
                             <div className='tag'>
                               <Link href='/our-causes'>{program.tag}</Link>
@@ -219,7 +220,7 @@ const CauseOne = () => {
         </div>
       </div>
       {/* <div className='spade'>
-        <img src='/assets/images/help/spade.png' alt='Image_inner' />
+        <OptimizedImage src='/assets/images/help/spade.png' alt='Image_inner' />
       </div> */}
     </section>
   );

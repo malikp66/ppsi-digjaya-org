@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Slider from "@/components/ClientSlider";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const CauseThree = () => {
   const settings = {
@@ -76,7 +77,7 @@ const CauseThree = () => {
             <div className='cause__slider-single'>
               <div className='thumb'>
                 <Link href='/cause-details'>
-                  <img src='assets/images/cause/eight.png' alt='dana sosial anggota ppsi' />
+                  <OptimizedImage src='assets/images/cause/eight.png' alt='dana sosial anggota ppsi' />
                 </Link>
                 <div className='tag'>
                   <Link href='/our-causes'>Dana Sosial</Link>
@@ -132,7 +133,7 @@ const CauseThree = () => {
             <div className='cause__slider-single'>
               <div className='thumb'>
                 <Link href='/cause-details'>
-                  <img src='assets/images/cause/nine.png' alt='pembinaan atlet ppsi' />
+                  <OptimizedImage src='assets/images/cause/nine.png' alt='pembinaan atlet ppsi' />
                 </Link>
                 <div className='tag'>
                   <Link href='/our-causes'>Pembinaan</Link>
@@ -188,7 +189,7 @@ const CauseThree = () => {
             <div className='cause__slider-single'>
               <div className='thumb'>
                 <Link href='/cause-details'>
-                  <img src='assets/images/cause/ten.png' alt='digitalisasi sertifikat ppsi' />
+                  <OptimizedImage src='assets/images/cause/ten.png' alt='digitalisasi sertifikat ppsi' />
                 </Link>
                 <div className='tag'>
                   <Link href='/our-causes'>Administrasi</Link>
@@ -244,7 +245,7 @@ const CauseThree = () => {
             <div className='cause__slider-single'>
               <div className='thumb'>
                 <Link href='/cause-details'>
-                  <img src='assets/images/cause/eight.png' alt='pasanggiri ppsijabar' />
+                  <OptimizedImage src='assets/images/cause/eight.png' alt='pasanggiri ppsijabar' />
                 </Link>
                 <div className='tag'>
                   <Link href='/our-causes'>Pasanggiri</Link>
@@ -300,7 +301,7 @@ const CauseThree = () => {
             <div className='cause__slider-single'>
               <div className='thumb'>
                 <Link href='/cause-details'>
-                  <img src='assets/images/cause/nine.png' alt='penguatan perguruan ppsi' />
+                  <OptimizedImage src='assets/images/cause/nine.png' alt='penguatan perguruan ppsi' />
                 </Link>
                 <div className='tag'>
                   <Link href='/our-causes'>Perguruan</Link>
@@ -356,7 +357,7 @@ const CauseThree = () => {
             <div className='cause__slider-single'>
               <div className='thumb'>
                 <Link href='/cause-details'>
-                  <img src='assets/images/cause/ten.png' alt='arsip gerak tradisi ppsi' />
+                  <OptimizedImage src='assets/images/cause/ten.png' alt='arsip gerak tradisi ppsi' />
                 </Link>
                 <div className='tag'>
                   <Link href='/our-causes'>Pelestarian</Link>
@@ -412,7 +413,7 @@ const CauseThree = () => {
             <div className='cause__slider-single'>
               <div className='thumb'>
                 <Link href='/cause-details'>
-                  <img src='assets/images/cause/eight.png' alt='toko atribut ppsi' />
+                  <OptimizedImage src='assets/images/cause/eight.png' alt='toko atribut ppsi' />
                 </Link>
                 <div className='tag'>
                   <Link href='/our-causes'>Atribut</Link>
@@ -468,7 +469,7 @@ const CauseThree = () => {
             <div className='cause__slider-single'>
               <div className='thumb'>
                 <Link href='/cause-details'>
-                  <img src='assets/images/cause/nine.png' alt='kalender budaya ppsi' />
+                  <OptimizedImage src='assets/images/cause/nine.png' alt='kalender budaya ppsi' />
                 </Link>
                 <div className='tag'>
                   <Link href='/our-causes'>Kalender</Link>
@@ -524,7 +525,7 @@ const CauseThree = () => {
             <div className='cause__slider-single'>
               <div className='thumb'>
                 <Link href='/cause-details'>
-                  <img src='assets/images/cause/ten.png' alt='sistem keanggotaan ppsi' />
+                  <OptimizedImage src='assets/images/cause/ten.png' alt='sistem keanggotaan ppsi' />
                 </Link>
                 <div className='tag'>
                   <Link href='/our-causes'>Keanggotaan</Link>

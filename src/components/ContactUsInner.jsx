@@ -1,3 +1,4 @@
+import OptimizedImage from "@/components/common/OptimizedImage";
 const ContactUsInner = () => {
   return (
     <section className='contact-main volunteer'>
@@ -111,7 +112,7 @@ const ContactUsInner = () => {
                 </div>
               </div>
               <div className='contact-main__thumb cta'>
-                <img src='assets/images/contact-thumb.png' alt='Image_inner' />
+                <OptimizedImage src='assets/images/contact-thumb.png' alt='Image_inner' />
               </div>
             </div>
           </div>

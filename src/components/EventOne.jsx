@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const EventOne = () => {
   return (
@@ -30,7 +31,7 @@ const EventOne = () => {
             >
               <div className='event__single van-tilt'>
                 <div className='event__single-thumb'>
-                  <img src='assets/images/event/one.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/event/one.png' alt='Image_inner' />
                 </div>
                 <div className='event__content'>
                   <span>October 19, 2025</span>
@@ -55,7 +56,7 @@ const EventOne = () => {
             >
               <div className='event__single event-single-alt van-tilt'>
                 <div className='event__single-thumb'>
-                  <img src='assets/images/event/two.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/event/two.png' alt='Image_inner' />
                 </div>
                 <div className='event__content'>
                   <span>October 19, 2025</span>
@@ -79,7 +80,7 @@ const EventOne = () => {
             >
               <div className='event__single  event-single-alt van-tilt'>
                 <div className='event__single-thumb'>
-                  <img src='assets/images/event/three.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/event/three.png' alt='Image_inner' />
                 </div>
                 <div className='event__content'>
                   <span>October 19, 2025</span>
@@ -113,7 +114,7 @@ const EventOne = () => {
         </div>
       </div>
       {/* <div className='spade'>
-        <img
+        <OptimizedImage
           src='assets/images/blog/spade-base.png'
           alt='Image_inner'
           className='base-img'

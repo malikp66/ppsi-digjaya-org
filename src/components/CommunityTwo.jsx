@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const CommunityTwo = () => {
   return (
@@ -76,7 +77,7 @@ const CommunityTwo = () => {
                   </div>
                 </div>
                 <div className='unity'>
-                  <img src='assets/images/unit.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/unit.png' alt='Image_inner' />
                 </div>
               </div>
             </div>
@@ -84,10 +85,10 @@ const CommunityTwo = () => {
         </div>
       </div>
       {/* <div className='parasuit'>
-        <img src='assets/images/parasuit.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/parasuit.png' alt='Image_inner' />
       </div> */}
       {/* <div className='spade'>
-        <img src='assets/images/fc-twelve.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/fc-twelve.png' alt='Image_inner' />
       </div> */}
       <span className='dn-now'>Donasi Sekarang</span>
     </section>

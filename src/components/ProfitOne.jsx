@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
+import OptimizedImage from "@/components/common/OptimizedImage";
 const ProfitOne = () => {
   let [active, setActive] = useState(1);
   const [isOpen, setIsOpen] = useState(false);
@@ -170,7 +171,7 @@ const ProfitOne = () => {
                   >
                     More Services
                   </Link>
-                  <img src='assets/images/arrow.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/arrow.png' alt='Image_inner' />
                 </div>
               </div>
             </div>
@@ -178,7 +179,7 @@ const ProfitOne = () => {
               <div className='fc-profit__content'>
                 <div className='fc-profit-single' id='profit-one'>
                   <div className='thumb thumb-lg'>
-                    <img src='assets/images/porfit-lg.png' alt='Image_inner' />
+                    <OptimizedImage src='assets/images/porfit-lg.png' alt='Image_inner' />
                     <div className='video-btn-wrapper'>
                       <button
                         onClick={() => setIsOpen(true)}
@@ -187,7 +188,7 @@ const ProfitOne = () => {
                         <i className='icon-play' />
                       </button>
                     </div>
-                    <img
+                    <OptimizedImage
                       src='assets/images/profit-shape.png'
                       alt='Image_inner'
                       className='base-img'
@@ -195,7 +196,7 @@ const ProfitOne = () => {
                   </div>
                   <div className='fc-profit-group'>
                     <div className='thumb thumb-sm'>
-                      <img
+                      <OptimizedImage
                         src='assets/images/profit-sm.jpg'
                         alt='Image_inner'
                       />
@@ -234,7 +235,7 @@ const ProfitOne = () => {
           data-aos-duration={1000}
           data-aos-delay={300}
         >
-          <img
+          <OptimizedImage
             src='assets/images/profit-vector.png'
             alt='Image_inner'
             className='base-img'
@@ -246,7 +247,7 @@ const ProfitOne = () => {
           data-aos-duration={1000}
           data-aos-delay={300}
         >
-          <img src='assets/images/fc-eleven.png' alt='Image_inner' />
+          <OptimizedImage src='assets/images/fc-eleven.png' alt='Image_inner' />
         </div> */}
       </section>
       <ModalVideo

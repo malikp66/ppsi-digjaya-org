@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const ErrorInner = () => {
   return (
@@ -13,7 +14,7 @@ const ErrorInner = () => {
               data-aos-delay={300}
             >
               <div className='thumb'>
-                <img src='assets/images/error.png' alt='Image_inner' />
+                <OptimizedImage src='assets/images/error.png' alt='Image_inner' />
               </div>
               <h3 className='title-animation_inner'>Page Not Found</h3>
               <p>
@@ -35,14 +36,14 @@ const ErrorInner = () => {
         </div>
       </div>
       {/* <div className='spade'>
-        <img
+        <OptimizedImage
           src='assets/images/blog/spade-base.png'
           alt='Image_inner'
           className='base-img'
         />
       </div> */}
       {/* <div className='spade-green'>
-        <img src='assets/images/sprade-green.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/sprade-green.png' alt='Image_inner' />
       </div> */}
     </section>
   );

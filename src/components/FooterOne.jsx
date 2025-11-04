@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const FooterOne = () => {
   return (
@@ -51,7 +52,7 @@ const FooterOne = () => {
               >
                 <div className='footer-two__widget-logo'>
                   <Link href='/'>
-                    <img src="/assets/images/logo-light.png" style={{ maxWidth: "100px" }} alt="Image_inner" />
+                    <OptimizedImage src="/assets/images/logo-light.png" style={{ maxWidth: "100px" }} alt="Image_inner" />
                   </Link>
                 </div>
                 <div className='footer-two__widget-content'>
@@ -278,7 +279,7 @@ const FooterOne = () => {
           </div>
         </div>
         {/* <div className='sprade' data-aos='zoom-in' data-aos-duration={1000}>
-          <img
+          <OptimizedImage
             src='assets/images/sprade.png'
             alt='Image_inner'
             className='base-img'
@@ -289,7 +290,7 @@ const FooterOne = () => {
           data-aos='zoom-in'
           data-aos-duration={1000}
         >
-          <img src='assets/images/sprade-light.png' alt='Image_inner' />
+          <OptimizedImage src='assets/images/sprade-light.png' alt='Image_inner' />
         </div> */}
       </footer>
     </>

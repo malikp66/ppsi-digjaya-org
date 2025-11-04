@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const CtaSectionTwo = () => {
   return (
@@ -43,7 +44,7 @@ const CtaSectionTwo = () => {
         </div>
       </div>
       {/* <div className='cta-bg'>
-        <img
+        <OptimizedImage
           src='assets/images/cta/cta-bg.png'
           alt='Image_inner'
           className='parallax-image'
@@ -55,10 +56,10 @@ const CtaSectionTwo = () => {
         data-aos-duration={1000}
         data-aos-delay={300}
       >
-        <img src='assets/images/cta/shape-left.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/cta/shape-left.png' alt='Image_inner' />
       </div> */}
       {/* <div className='shape'>
-        <img src='assets/images/shape-two.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/shape-two.png' alt='Image_inner' />
       </div> */}
     </section>
   );

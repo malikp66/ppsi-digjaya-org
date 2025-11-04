@@ -5,7 +5,7 @@ import MembershipForm from "@/components/MembershipForm";
 import Preloader from "@/components/Preloader";
 import TopBarThree from "@/components/TopBarThree";
 import AOSWrap from "@/helper/AOSWrap";
-import CustomCursor from "@/helper/CustomCursor";
+ 
 
 export const metadata = {
   title: "Keanggotaan PPSI Digjaya | Formulir Anggota & Iuran",

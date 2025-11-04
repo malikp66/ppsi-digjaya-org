@@ -1,6 +1,7 @@
 "use client";
 import { useRef } from "react";
 import Slider from "@/components/ClientSlider";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const TestimonialThree = () => {
   const sliderRef = useRef(null);
@@ -68,7 +69,7 @@ const TestimonialThree = () => {
                   <div className='swiper-slide'>
                     <div className='testimonial-three__single'>
                       <div className='thumb'>
-                        <img
+                        <OptimizedImage
                           src='/assets/images/author-three.png'
                           alt='Image_inner'
                         />
@@ -103,7 +104,7 @@ const TestimonialThree = () => {
                   <div className='swiper-slide'>
                     <div className='testimonial-three__single'>
                       <div className='thumb'>
-                        <img
+                        <OptimizedImage
                           src='/assets/images/author-four.png'
                           alt='Image_inner'
                         />
@@ -138,7 +139,7 @@ const TestimonialThree = () => {
                   <div className='swiper-slide'>
                     <div className='testimonial-three__single'>
                       <div className='thumb'>
-                        <img
+                        <OptimizedImage
                           src='/assets/images/author-three.png'
                           alt='Image_inner'
                         />
@@ -173,7 +174,7 @@ const TestimonialThree = () => {
                   <div className='swiper-slide'>
                     <div className='testimonial-three__single'>
                       <div className='thumb'>
-                        <img
+                        <OptimizedImage
                           src='/assets/images/author-four.png'
                           alt='Image_inner'
                         />
@@ -236,14 +237,14 @@ const TestimonialThree = () => {
         </div>
       </div>
       {/* <div className='spade'>
-        <img
+        <OptimizedImage
           src='/assets/images/community/spade.png'
           alt='Image_inner'
           className='base-img'
         />
       </div> */}
       {/* <div className='spade-green'>
-        <img src='/assets/images/sprade-green.png' alt='Image_inner' />
+        <OptimizedImage src='/assets/images/sprade-green.png' alt='Image_inner' />
       </div> */}
     </section>
   );

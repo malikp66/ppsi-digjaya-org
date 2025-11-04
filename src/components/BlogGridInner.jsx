@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const gridPosts = [
   {
@@ -152,7 +153,7 @@ const BlogGridInner = () => {
                       <div className='blog__single van-tilt'>
                         <div className='blog__single-thumb'>
                           <Link href={post.href}>
-                            <img src={post.image} alt={post.alt} />
+                            <OptimizedImage src={post.image} alt={post.alt} />
                           </Link>
                           <div className='tag'>
                             <Link href='/blog-grid'>
@@ -191,7 +192,7 @@ const BlogGridInner = () => {
                             </Link>
                           </div>
                         </div>
-                        <img
+                        <OptimizedImage
                           src='assets/images/blog/spade.png'
                           alt='Ornamen batik pencak silat'
                           className='spade-two'
@@ -242,7 +243,7 @@ const BlogGridInner = () => {
                 data-aos-delay={100}
               >
                 <div className='author-thumb'>
-                  <img src={author.photo} alt={author.alt} />
+                  <OptimizedImage src={author.photo} alt={author.alt} />
                 </div>
                 <div className='author-meta'>
                   <h6>{author.name}</h6>
@@ -325,7 +326,7 @@ const BlogGridInner = () => {
                       <div className='single-item' key={post.title}>
                         <div className='thumb'>
                           <Link href={post.href}>
-                            <img src={post.image} alt={post.alt} />
+                            <OptimizedImage src={post.image} alt={post.alt} />
                           </Link>
                         </div>
                         <div className='content'>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const BannerFive = () => {
   return (
@@ -56,7 +57,7 @@ const BannerFive = () => {
         </div>
       </div>
       {/* <div className='spade'>
-        <img src='assets/images/spade-green-two.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/spade-green-two.png' alt='Image_inner' />
       </div> */}
     </section>
   );

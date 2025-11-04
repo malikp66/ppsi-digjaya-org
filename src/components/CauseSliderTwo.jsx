@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useRef, useState, useEffect } from "react";
 import Slider from "@/components/ClientSlider";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const programs = [
   {
@@ -97,7 +98,7 @@ const CauseSliderTwo = () => {
               {programs.map((program, index) => (
                 <div key={program.id} className='cause-two__slider-single'>
                   <div className='cause-thumb'>
-                    <img src={program.image} alt={program.title} />
+                    <OptimizedImage src={program.image} alt={program.title} />
                     <Link href={program.href} aria-label={program.title}>
                       <i className='fa-solid fa-arrow-right'></i>
                     </Link>

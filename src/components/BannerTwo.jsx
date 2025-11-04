@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useRef } from "react";
 import Slider from "@/components/ClientSlider";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const BannerTwo = () => {
   const sliderRef = useRef(null);
@@ -137,14 +138,14 @@ const BannerTwo = () => {
         </div>
       </div>
       {/* <div className='banner-bg'>
-        <img
+        <OptimizedImage
           src='/assets/images/banner/banner-one-bg.png'
           alt='Image_inner'
           className='parallax-image'
         />
       </div> */}
       {/* <div className='bottom-shape'>
-        <img
+        <OptimizedImage
           src='/assets/images/banner/banner-one-shape.png'
           alt='Image_inner'
         />

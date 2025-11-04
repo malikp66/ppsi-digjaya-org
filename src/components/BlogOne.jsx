@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const agendaPosts = [
   {
@@ -66,7 +67,7 @@ const BlogOne = () => {
                 <div className='blog__single van-tilt'>
                   <div className='blog__single-thumb'>
                     <Link href={post.href}>
-                      <img src={post.image} alt='Image_inner' />
+                      <OptimizedImage src={post.image} alt='Image_inner' />
                     </Link>
                     <div className='tag'>
                       <Link href='/blog-list'>
@@ -102,7 +103,7 @@ const BlogOne = () => {
                       </Link>
                     </div>
                   </div>
-                  <img
+                  <OptimizedImage
                     src='assets/images/blog/spade.png'
                     alt='Image_inner'
                     className='spade-two'
@@ -128,10 +129,10 @@ const BlogOne = () => {
         </div>
       </div>
       {/* <div className='blog-bg'>
-        <img src='assets/images/blog/blog-bg.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/blog/blog-bg.png' alt='Image_inner' />
       </div> */}
       {/* <div className='spade'>
-        <img
+        <OptimizedImage
           src='assets/images/blog/spade-base.png'
           alt='Image_inner'
           className='base-img'

@@ -15,7 +15,7 @@ import TestimonialOne from "@/components/TestimonialOne";
  import TopBarThree from "@/components/TopBarThree";
 import AOSWrap from "@/helper/AOSWrap";
 import Preloader from "@/components/Preloader";
-import CustomCursor from "@/helper/CustomCursor";
+ 
 
 export const metadata = {
   title: "PPSI Digjaya | Pelestari Pencak Silat Tradisi Jawa Barat",

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const listPosts = [
   {
@@ -107,7 +108,7 @@ const BlogListInner = () => {
               >
                 <div className='blog__single-thumb'>
                   <Link href={post.href}>
-                    <img src={post.image} alt={post.alt} />
+                    <OptimizedImage src={post.image} alt={post.alt} />
                   </Link>
                   <div className='tag'>
                     <Link href='/blog-grid'>
@@ -186,7 +187,7 @@ const BlogListInner = () => {
                 data-aos-delay={100}
               >
                 <div className='author-thumb'>
-                  <img src={author.photo} alt={author.alt} />
+                  <OptimizedImage src={author.photo} alt={author.alt} />
                 </div>
                 <div className='author-meta'>
                   <h6>{author.name}</h6>
@@ -269,7 +270,7 @@ const BlogListInner = () => {
                       <div className='single-item' key={post.title}>
                         <div className='thumb'>
                           <Link href={post.href}>
-                            <img src={post.image} alt={post.alt} />
+                            <OptimizedImage src={post.image} alt={post.alt} />
                           </Link>
                         </div>
                         <div className='content'>

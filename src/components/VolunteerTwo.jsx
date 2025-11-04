@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const VolunteerTwo = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,7 +56,7 @@ const VolunteerTwo = () => {
                   </div>
                 </div>
                 {/* <div className='th-right'>
-                  <img
+                  <OptimizedImage
                     src='assets/images/ff-testimonial.png'
                     alt='Image_inner'
                   />
@@ -65,7 +66,7 @@ const VolunteerTwo = () => {
           </div>
         </div>
         {/* <div className='th-top'>
-          <img
+          <OptimizedImage
             src='assets/images/heart.png'
             alt='Image_inner'
             className='base-img'

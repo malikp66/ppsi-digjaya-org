@@ -5,7 +5,7 @@ import Preloader from "@/components/Preloader";
  import TopBarThree from "@/components/TopBarThree";
 import VolunteerInner from "@/components/VolunteerInner";
 import AOSWrap from "@/helper/AOSWrap";
-import CustomCursor from "@/helper/CustomCursor";
+ 
 
 export const metadata = {
   title: "Forum Kolaborasi | PPSI Digjaya",

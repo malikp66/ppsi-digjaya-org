@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const FooterTwo = () => {
   return (
@@ -181,7 +182,7 @@ const FooterTwo = () => {
                       <div className='col-12 col-xl-3'>
                         <div className='footer__copyright-logo text-center text-xl-start'>
                           <Link href='/'>
-                            <img
+                            <OptimizedImage
                               src='assets/images/logo-light.png'
                               alt='Image_inner'
                             />

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const CauseTwo = () => {
   return (
@@ -23,7 +24,7 @@ const CauseTwo = () => {
             <div className='cause__slider-single'>
               <div className='thumb'>
                 <Link href='/cause-details'>
-                  <img src='assets/images/cause/eight.png' alt='dana sosial anggota ppsi' />
+                  <OptimizedImage src='assets/images/cause/eight.png' alt='dana sosial anggota ppsi' />
                 </Link>
                 <div className='tag'>
                   <Link href='/cause-details'>Dana Sosial</Link>
@@ -79,7 +80,7 @@ const CauseTwo = () => {
             <div className='cause__slider-single'>
               <div className='thumb'>
                 <Link href='/cause-details'>
-                  <img src='assets/images/cause/nine.png' alt='pembinaan atlet ppsi' />
+                  <OptimizedImage src='assets/images/cause/nine.png' alt='pembinaan atlet ppsi' />
                 </Link>
                 <div className='tag'>
                   <Link href='/cause-details'>Pembinaan</Link>
@@ -135,7 +136,7 @@ const CauseTwo = () => {
             <div className='cause__slider-single'>
               <div className='thumb'>
                 <Link href='/cause-details'>
-                  <img src='assets/images/cause/ten.png' alt='digitalisasi sertifikat ppsi' />
+                  <OptimizedImage src='assets/images/cause/ten.png' alt='digitalisasi sertifikat ppsi' />
                 </Link>
                 <div className='tag'>
                   <Link href='/cause-details'>Administrasi</Link>

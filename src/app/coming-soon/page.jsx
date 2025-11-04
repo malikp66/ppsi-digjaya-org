@@ -1,7 +1,7 @@
 import ComingSoonInner from "@/components/ComingSoonInner";
 import Preloader from "@/components/Preloader";
 import AOSWrap from "@/helper/AOSWrap";
-import CustomCursor from "@/helper/CustomCursor";
+ 
 
 export const metadata = {
   title: "PPSI Digjaya | Segera Hadir",

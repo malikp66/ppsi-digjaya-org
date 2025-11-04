@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const AwardOne = () => {
   return (
@@ -31,7 +32,7 @@ const AwardOne = () => {
             >
               <div className='thumb'>
                 <Link href='/event-details'>
-                  <img src='/assets/images/award/one.png' alt='Image_inner' />
+                  <OptimizedImage src='/assets/images/award/one.png' alt='Image_inner' />
                 </Link>
               </div>
               <div className='content'>
@@ -58,7 +59,7 @@ const AwardOne = () => {
             >
               <div className='thumb'>
                 <Link href='/event-details'>
-                  <img src='/assets/images/award/four.png' alt='Image_inner' />
+                  <OptimizedImage src='/assets/images/award/four.png' alt='Image_inner' />
                 </Link>
               </div>
               <div className='content'>
@@ -85,7 +86,7 @@ const AwardOne = () => {
             >
               <div className='thumb'>
                 <Link href='/event-details'>
-                  <img src='/assets/images/award/two.png' alt='Image_inner' />
+                  <OptimizedImage src='/assets/images/award/two.png' alt='Image_inner' />
                 </Link>
               </div>
               <div className='content'>
@@ -112,7 +113,7 @@ const AwardOne = () => {
             >
               <div className='thumb'>
                 <Link href='/event-details'>
-                  <img src='/assets/images/award/three.png' alt='Image_inner' />
+                  <OptimizedImage src='/assets/images/award/three.png' alt='Image_inner' />
                 </Link>
               </div>
               <div className='content'>
@@ -147,7 +148,7 @@ const AwardOne = () => {
         </div>
       </div>
       {/* <div className='spade'>
-        <img
+        <OptimizedImage
           src='/assets/images/community/spade.png'
           alt='Image_inner'
           className='base-img'

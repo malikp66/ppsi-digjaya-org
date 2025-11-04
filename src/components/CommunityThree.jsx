@@ -2,6 +2,7 @@
 
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
+import OptimizedImage from "@/components/common/OptimizedImage";
 const CommunityThree = () => {
   return (
     <section className='ff-community counter-four commit pb-120'>
@@ -87,10 +88,10 @@ const CommunityThree = () => {
                   <p className='mt-10'>
                     Relawan PPSI membina kelas silat, wirausaha, dan bakti sosial lintas daerah.
                   </p>
-                  <img src='assets/images/line.png' alt='Image_inner' />
+                  <OptimizedImage src='assets/images/line.png' alt='Image_inner' />
                 </div>
               </div>
-              <img src='assets/images/dot.png' alt='Image_inner' />
+              <OptimizedImage src='assets/images/dot.png' alt='Image_inner' />
             </div>
           </div>
         </div>

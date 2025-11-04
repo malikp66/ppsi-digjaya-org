@@ -6,6 +6,7 @@ import { useMemo, useRef, useState } from "react";
 import styles from "./DonateInner.module.css";
 import { contactInfo } from "@/data/contact";
 import { danaSosialPrograms } from "@/data/programs";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const donationPresets = [200_000, 500_000, 1_000_000, 2_000_000];
 
@@ -49,7 +50,7 @@ function DonateHero({ stats, formAnchorId }) {
   return (
     <div className={styles.hero} data-aos="fade-up" data-aos-duration={800}>
       <div className={styles.heroMedia} aria-hidden="true">
-        <img src="/images/ppsi-donation-hero.jpg" alt="" />
+        <OptimizedImage src="/images/ppsi-donation-hero.jpg" alt="" />
       </div>
 
       <div className={styles.heroContent}>

@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import AddToCart from "../helper/AddToCart";
+import OptimizedImage from "@/components/common/OptimizedImage";
 const HeaderFour = () => {
   const countryRef = useRef(null);
   const userMenuRef = useRef(null);
@@ -155,7 +156,7 @@ const HeaderFour = () => {
 
   const pengurusLinks = [
     {
-      href: "/manajemen-organisasi",
+      href: "/dashboard-pengurus",
       label: "Dashboard Pengurus",
       icon: "fa-solid fa-gauge-high",
     },
@@ -187,7 +188,7 @@ const HeaderFour = () => {
                 <nav className='navbar p-0'>
                   <div className='navbar-logo'>
                     <Link href='/'>
-                      <img src='/assets/images/logo.png' alt='Image_inner' />
+                      <OptimizedImage src='/assets/images/logo.png' alt='Image_inner' />
                     </Link>
                     <h3 className='font-normal'>PPSI</h3>
                   </div>
@@ -569,7 +570,7 @@ const HeaderFour = () => {
           <div className='mobile-menu__header nav-fade'>
             <div className='logo'>
               <Link href='/' aria-label='home page' title='logo'>
-                <img src='/assets/images/logo.png' alt='Image_inner' />
+                <OptimizedImage src='/assets/images/logo.png' alt='Image_inner' />
               </Link>
             </div>
             <button

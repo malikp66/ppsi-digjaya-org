@@ -16,7 +16,7 @@ import TeamThree from "@/components/TeamThree";
 import TestimonialThree from "@/components/TestimonialThree";
 import TopBarThree from "@/components/TopBarThree";
 import AOSWrap from "@/helper/AOSWrap";
-import CustomCursor from "@/helper/CustomCursor";
+ 
 
 export const metadata = {
   title: "PPSI Digjaya | Agenda & Program",

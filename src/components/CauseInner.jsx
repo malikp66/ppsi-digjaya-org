@@ -2,6 +2,7 @@
 import Link from "next/link";
 import ProgressBar from "../helper/ProgressBar";
 import { programBudaya, danaSosialPrograms } from "@/data/programs";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const CauseInner = () => {
   return (
@@ -33,7 +34,7 @@ const CauseInner = () => {
                 <div className='cause__slider-single van-tilt'>
                   <div className='thumb'>
                     <Link href='/cause-details'>
-                      <img src={`/assets/images/cause/${index + 1}.png`} alt='Image_inner' />
+                      <OptimizedImage src={`/assets/images/cause/${index + 1}.png`} alt='Image_inner' />
                     </Link>
                     <div className='tag'>
                       <Link href='/our-causes'>{program.kategori[0]}</Link>
@@ -90,7 +91,7 @@ const CauseInner = () => {
                 <div className='cause__slider-single van-tilt'>
                   <div className='thumb'>
                     <Link href='/donate-us'>
-                      <img src={`/assets/images/cause/${index + 1}.png`} alt='Image_inner' />
+                      <OptimizedImage src={`/assets/images/cause/${index + 1}.png`} alt='Image_inner' />
                     </Link>
                     <div className='tag'>
                       <Link href='/donate-us'>Dana Sosial</Link>

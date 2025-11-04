@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const OverviewTwo = () => {
   return (
@@ -8,7 +9,7 @@ const OverviewTwo = () => {
           <div className='col-12'>
             <div className='ff-overview-inner'>
               <div className='thumb'>
-                <img src='assets/images/f-overview.png' alt='Image_inner' />
+                <OptimizedImage src='assets/images/f-overview.png' alt='Image_inner' />
                 <div className='icon'>
                   <i className='icon-support-heart' />
                 </div>

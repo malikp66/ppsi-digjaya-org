@@ -3,6 +3,7 @@ import { useRef } from "react";
 import Slider from "@/components/ClientSlider";
 import ProgressBar from "../helper/ProgressBar";
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const CauseSliderOne = () => {
   const sliderRef = useRef(null);
@@ -193,7 +194,7 @@ const CauseSliderOne = () => {
                           <div className='cause__slider-single'>
                             <div className='thumb'>
                               <Link href='/cause-details'>
-                                <img
+                                <OptimizedImage
                                   src={cause.image}
                                   alt='Program sosial PPSI Digjaya'
                                 />
@@ -265,7 +266,7 @@ const CauseSliderOne = () => {
         </div>
       </div>
       {/* <div className='spade'>
-        <img src='assets/images/help/spade.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/help/spade.png' alt='Image_inner' />
       </div> */}
     </section>
   );

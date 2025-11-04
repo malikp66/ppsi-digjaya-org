@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useRef, useState } from "react";
 import Slider from "@/components/ClientSlider";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const BannerOne = () => {
   const sliderRef = useRef(null);
@@ -185,13 +186,13 @@ const BannerOne = () => {
           data-aos-duration={1000}
           data-aos-delay={300}
         >
-          <img
+          <OptimizedImage
             src='/assets/images/banner/banner-two-shape.png'
             alt='Image_inner'
           />
         </div> */}
         {/* <div className='sprade-shape'>
-          <img
+          <OptimizedImage
             src='assets/images/sprade-base.png'
             alt='Image_inner'
             className='base-img'
@@ -200,7 +201,7 @@ const BannerOne = () => {
           />
         </div> */}
         {/* <div className='unity'>
-          <img src='/assets/images/unity.png' alt='Image_inner' />
+          <OptimizedImage src='/assets/images/unity.png' alt='Image_inner' />
         </div> */}
       </section>
     </>

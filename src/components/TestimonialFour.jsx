@@ -1,6 +1,7 @@
 "use client";
 import { useRef } from "react";
 import Slider from "@/components/ClientSlider";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const TestimonialFour = () => {
   const sliderRef = useRef(null);
@@ -30,7 +31,7 @@ const TestimonialFour = () => {
         <div className='row align-items-center'>
           <div className='col-12 col-xl-4'>
             <div className='fc-test__thumb d-none d-xl-block'>
-              <img src='assets/images/test-thumb.png' alt='Image_inner' />
+              <OptimizedImage src='assets/images/test-thumb.png' alt='Image_inner' />
             </div>
           </div>
           <div className='col-12 col-xl-7 offset-xl-1'>
@@ -53,7 +54,7 @@ const TestimonialFour = () => {
                       </div>
                       <div className='author-info'>
                         <div className='author-thumb'>
-                          <img
+                          <OptimizedImage
                             src='assets/images/author-two.png'
                             alt='Image_inner'
                           />
@@ -79,7 +80,7 @@ const TestimonialFour = () => {
                       </div>
                       <div className='author-info'>
                         <div className='author-thumb'>
-                          <img
+                          <OptimizedImage
                             src='assets/images/author-two.png'
                             alt='Image_inner'
                           />
@@ -105,7 +106,7 @@ const TestimonialFour = () => {
                       </div>
                       <div className='author-info'>
                         <div className='author-thumb'>
-                          <img
+                          <OptimizedImage
                             src='assets/images/author-two.png'
                             alt='Image_inner'
                           />

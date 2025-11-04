@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const CartInner = () => {
   return (
@@ -27,7 +28,7 @@ const CartInner = () => {
                         <div className='cart-product-wrapper'>
                           <div className='thumb'>
                             <Link href='/product-details'>
-                              <img
+                              <OptimizedImage
                                 src='assets/images/shop/cart-three.png'
                                 alt='Image_inner'
                               />
@@ -61,7 +62,7 @@ const CartInner = () => {
                         <div className='cart-product-wrapper'>
                           <div className='thumb'>
                             <Link href='/product-details'>
-                              <img
+                              <OptimizedImage
                                 src='assets/images/shop/cart-four.png'
                                 alt='Image_inner'
                               />
@@ -97,7 +98,7 @@ const CartInner = () => {
                         <div className='cart-product-wrapper'>
                           <div className='thumb'>
                             <Link href='/product-details'>
-                              <img
+                              <OptimizedImage
                                 src='assets/images/shop/cart-two.png'
                                 alt='Image_inner'
                               />
@@ -133,7 +134,7 @@ const CartInner = () => {
                         <div className='cart-product-wrapper'>
                           <div className='thumb'>
                             <Link href='/product-details'>
-                              <img
+                              <OptimizedImage
                                 src='assets/images/shop/cart-one.png'
                                 alt='Image_inner'
                               />

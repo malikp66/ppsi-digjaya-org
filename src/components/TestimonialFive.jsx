@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useRef } from "react";
 import Slider from "@/components/ClientSlider";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const TestimonialFive = () => {
   const sliderRef = useRef(null);
@@ -86,7 +87,7 @@ const TestimonialFive = () => {
                 <span className='text-xl fw-7'>Robert J. Hare /</span> Graphics
                 Designer
               </p>
-              <img src='assets/images/ff-testimonial.png' alt='Image_inner' />
+              <OptimizedImage src='assets/images/ff-testimonial.png' alt='Image_inner' />
             </div>
           </div>
           <div className='swiper-slide'>
@@ -102,7 +103,7 @@ const TestimonialFive = () => {
                 <span className='text-xl fw-7'>Robert J. Hare /</span> Graphics
                 Designer
               </p>
-              <img src='assets/images/ff-testimonial.png' alt='Image_inner' />
+              <OptimizedImage src='assets/images/ff-testimonial.png' alt='Image_inner' />
             </div>
           </div>
           <div className='swiper-slide'>
@@ -118,7 +119,7 @@ const TestimonialFive = () => {
                 <span className='text-xl fw-7'>Robert J. Hare /</span> Graphics
                 Designer
               </p>
-              <img src='assets/images/ff-testimonial.png' alt='Image_inner' />
+              <OptimizedImage src='assets/images/ff-testimonial.png' alt='Image_inner' />
             </div>
           </div>
           <div className='swiper-slide'>
@@ -134,23 +135,23 @@ const TestimonialFive = () => {
                 <span className='text-xl fw-7'>Robert J. Hare /</span> Graphics
                 Designer
               </p>
-              <img src='assets/images/ff-testimonial.png' alt='Image_inner' />
+              <OptimizedImage src='assets/images/ff-testimonial.png' alt='Image_inner' />
             </div>
           </div>
         </Slider>
       </div>
       <div className='ff-test-pagination pagination-one mt-40' />
       {/* <div className='th-right'>
-        <img src='assets/images/community/gift.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/community/gift.png' alt='Image_inner' />
       </div> */}
       {/* <div className='th-left'>
-        <img src='assets/images/fc-nine.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/fc-nine.png' alt='Image_inner' />
       </div> */}
       {/* <div className='th-top'>
-        <img src='assets/images/hand.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/hand.png' alt='Image_inner' />
       </div> */}
       {/* <div className='th-top-r'>
-        <img src='assets/images/fc-eleven.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/fc-eleven.png' alt='Image_inner' />
       </div> */}
     </section>
   );

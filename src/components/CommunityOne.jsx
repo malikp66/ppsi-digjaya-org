@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const CommunityOne = () => {
   let [amount, setAmount] = useState(500000);
@@ -155,7 +156,7 @@ const CommunityOne = () => {
                   data-aos='fade-left'
                   data-aos-duration={1000}
                 >
-                  <img
+                  <OptimizedImage
                     src='/assets/images/community/thumb.png'
                     alt='Image_inner'
                   />
@@ -165,7 +166,7 @@ const CommunityOne = () => {
           </div>
         </div>
         <div className='community-bg'>
-          <img
+          <OptimizedImage
             src='/assets/images/community/community-bg.png'
             alt='Image_inner'
           />
@@ -176,10 +177,10 @@ const CommunityOne = () => {
           data-aos-duration={1000}
           data-aos-delay={200}
         >
-          <img src='/assets/images/community/gift.png' alt='Image_inner' />
+          <OptimizedImage src='/assets/images/community/gift.png' alt='Image_inner' />
         </div> */}
         {/* <div className='spade'>
-          <img
+          <OptimizedImage
             src='/assets/images/community/spade.png'
             alt='Image_inner'
             className='base-img'

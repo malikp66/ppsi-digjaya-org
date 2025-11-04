@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OptimizedImage from "@/components/common/OptimizedImage";
 
 const VolunteerOne = () => {
   return (
@@ -20,7 +21,7 @@ const VolunteerOne = () => {
                 </h2>
               </div>
               <div className='thumb'>
-                <img src='assets/images/ff-two.png' alt='Image_inner' />
+                <OptimizedImage src='assets/images/ff-two.png' alt='Image_inner' />
               </div>
               <div className='cd-f'>
                 <div className='commmit-tab-single'>
@@ -134,10 +135,10 @@ const VolunteerOne = () => {
         </div>
       </div>
       {/* <div className='parasuit'>
-        <img src='assets/images/parasuit.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/parasuit.png' alt='Image_inner' />
       </div> */}
       {/* <div className='th-b'>
-        <img src='assets/images/fc-four.png' alt='Image_inner' />
+        <OptimizedImage src='assets/images/fc-four.png' alt='Image_inner' />
       </div> */}
     </section>
   );
