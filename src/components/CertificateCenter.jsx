@@ -1,7 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
 import { certificateArchive, certificatePricing, expiringCertificates } from "@/data/certificates";
-import "./certificate-center.module.css";
 
 const MONTH_MAP = {
   Januari: 0,
@@ -236,7 +235,7 @@ const CertificateCenter = () => {
                     <p className='certificate__pricing-eyebrow'>Biaya Sertifikat Digital</p>
                     <h4>{certificatePricing.range} / sertifikat</h4>
                   </div>
-                  <span className='certificate__pricing-badge'>Termasuk hosting & dukungan</span>
+                  {/* <span className='certificate__pricing-badge'>Termasuk hosting & dukungan</span> */}
                 </div>
                 <p className='certificate__pricing-description'>{certificatePricing.description}</p>
                 <ul className='certificate__pricing-list'>
