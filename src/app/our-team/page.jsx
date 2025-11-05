@@ -19,10 +19,6 @@ const page = () => {
       <section className='page-wrapper'>
         {/* Preloader */}
         <Preloader />
-
-         
-         
-
          
         <TopBarThree />
 

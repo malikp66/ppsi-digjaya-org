@@ -35,7 +35,7 @@ const CommunityOne = () => {
               >
                 <div className='community-donation__inner'>
                   <h4>Dukungan Dana Sosial PPSI Digjaya</h4>
-                  <div className='warning'>
+                  {/* <div className='warning'>
                     <div className='line'>
                       <i className='fa-solid fa-triangle-exclamation' />
                     </div>
@@ -43,13 +43,12 @@ const CommunityOne = () => {
                       <strong>Informasi:</strong> Form ini simulasi frontend.
                       Transaksi riil dilakukan melalui sekretariat PPSI Digjaya.
                     </p>
-                  </div>
+                  </div> */}
                   <div className='donation-form'>
                     <div className='donation-form__single'>
-                      <h5>Nominal Kontribusi (Rp)</h5>
                       <div className='input-group-icon'>
-                        <div className='thumb'>
-                          <i className='fa-solid fa-dollar-sign' />
+                        <div className='thumb !text-white'>
+                           Rp
                         </div>
                         <input
                           type='number'
@@ -165,27 +164,13 @@ const CommunityOne = () => {
             </div>
           </div>
         </div>
-        <div className='community-bg'>
+        <div className='community-bg max-h-[620px]'>
           <OptimizedImage
             src='/assets/images/community/community-bg.png'
+            className='max-h-[620px]'
             alt='Image_inner'
           />
         </div>
-        {/* <div
-          className='gift'
-          data-aos='fade-up'
-          data-aos-duration={1000}
-          data-aos-delay={200}
-        >
-          <OptimizedImage src='/assets/images/community/gift.png' alt='Image_inner' />
-        </div> */}
-        {/* <div className='spade'>
-          <OptimizedImage
-            src='/assets/images/community/spade.png'
-            alt='Image_inner'
-            className='base-img'
-          />
-        </div> */}
       </section>
     </>
   );

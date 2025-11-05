@@ -22,7 +22,7 @@ const CtaSectionOne = () => {
                   </div>
                   <div className='content'>
                     <span>Anggota aktif berjejaring dan dibina terstruktur</span>
-                    <h3 className='title-animation_inner'>
+                    <h3 className='title-animation_inner !text-white'>
                       Daftar Anggota PPSI Digjaya
                     </h3>
                   </div>
@@ -46,7 +46,7 @@ const CtaSectionOne = () => {
               <div className='cta-section__center cta-section__single'>
                 <div className='video-btn-wrapper'>
                   <button
-                    onClick={() => setIsOpen(true)}
+                    onClick={() => setIsOpen(false)}
                     title='video Player'
                     className='open-video-popup'
                   >
@@ -75,7 +75,7 @@ const CtaSectionOne = () => {
                   </div>
                   <div className='content'>
                     <span>Dana sosial &amp; dukungan atlet dan pelatih</span>
-                    <h3 className='title-animation_inner'>
+                    <h3 className='title-animation_inner !text-white'>
                       Salurkan dukungan terbaik
                     </h3>
                   </div>

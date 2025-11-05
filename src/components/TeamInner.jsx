@@ -56,11 +56,6 @@ const TeamInner = () => {
                             <i className='fa-brands fa-instagram' />
                           </Link>
                         </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-behance' />
-                          </Link>
-                        </li>
                       </ul>
                     </div>
                   </div>
@@ -105,11 +100,6 @@ const TeamInner = () => {
                         <li>
                           <Link href='/'>
                             <i className='fa-brands fa-instagram' />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-behance' />
                           </Link>
                         </li>
                       </ul>
@@ -158,11 +148,6 @@ const TeamInner = () => {
                             <i className='fa-brands fa-instagram' />
                           </Link>
                         </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-behance' />
-                          </Link>
-                        </li>
                       </ul>
                     </div>
                   </div>
@@ -209,11 +194,6 @@ const TeamInner = () => {
                             <i className='fa-brands fa-instagram' />
                           </Link>
                         </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-behance' />
-                          </Link>
-                        </li>
                       </ul>
                     </div>
                   </div>
@@ -257,11 +237,6 @@ const TeamInner = () => {
                         <li>
                           <Link href='/'>
                             <i className='fa-brands fa-instagram' />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-behance' />
                           </Link>
                         </li>
                       </ul>
@@ -310,11 +285,6 @@ const TeamInner = () => {
                             <i className='fa-brands fa-instagram' />
                           </Link>
                         </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-behance' />
-                          </Link>
-                        </li>
                       </ul>
                     </div>
                   </div>
@@ -359,11 +329,6 @@ const TeamInner = () => {
                         <li>
                           <Link href='/'>
                             <i className='fa-brands fa-instagram' />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-behance' />
                           </Link>
                         </li>
                       </ul>
@@ -413,11 +378,6 @@ const TeamInner = () => {
                         <li>
                           <Link href='/'>
                             <i className='fa-brands fa-instagram' />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href='/'>
-                            <i className='fa-brands fa-behance' />
                           </Link>
                         </li>
                       </ul>
