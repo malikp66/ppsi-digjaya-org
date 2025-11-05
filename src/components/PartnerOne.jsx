@@ -3,6 +3,7 @@ import Slider from "@/components/ClientSlider";
 import OptimizedImage from "@/components/common/OptimizedImage";
 
 const PartnerOne = () => {
+  // Slider settings (DISIMPAN, tapi sementara tidak dipakai)
   const settings = {
     infinite: true,
     speed: 1000,
@@ -47,9 +48,13 @@ const PartnerOne = () => {
         <div className="row">
           <div className="col-12">
             <div className="partner__slider swiper">
+              {/* 
+                SLIDER DIMATIKAN SEMENTARA
+                Jika mau diaktifkan lagi, tinggal uncomment blok Slider di bawah
+              */}
+
+              {/*
               <Slider {...settings} className="swiper-wrapper">
-
-                {/* TWO -> xapiens.id */}
                 <div className="swiper-slide">
                   <div className="partner__slider-single">
                     <a
@@ -65,7 +70,6 @@ const PartnerOne = () => {
                   </div>
                 </div>
 
-                {/* ONE -> asix.id */}
                 <div className="swiper-slide">
                   <div className="partner__slider-single">
                     <a
@@ -81,7 +85,6 @@ const PartnerOne = () => {
                   </div>
                 </div>
 
-                {/* THREE -> vnt.co.id */}
                 <div className="swiper-slide">
                   <div className="partner__slider-single">
                     <a
@@ -97,7 +100,6 @@ const PartnerOne = () => {
                   </div>
                 </div>
 
-                {/* FOUR (tanpa link, tetap seperti semula) */}
                 <div className="swiper-slide">
                   <div className="partner__slider-single">
                     <OptimizedImage
@@ -106,85 +108,55 @@ const PartnerOne = () => {
                     />
                   </div>
                 </div>
-
-                {/* FIVE (tanpa link, tetap seperti semula) */}
-                {/* <div className="swiper-slide">
-                  <div className="partner__slider-single">
-                    <OptimizedImage
-                      src="/assets/images/sponsor/five.png"
-                      alt="Image_inner"
-                    />
-                  </div>
-                </div> */}
-
-                {/* Duplikat TWO */}
-                <div className="swiper-slide">
-                  <div className="partner__slider-single">
-                    <a
-                      href="https://xapiens.id/id"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <OptimizedImage
-                        src="/assets/images/sponsor/xapiens.svg"
-                        alt="Image_inner"
-                      />
-                    </a>
-                  </div>
-                </div>
-
-                {/* Duplikat ONE */}
-                <div className="swiper-slide">
-                  <div className="partner__slider-single">
-                    <a
-                      href="https://asix.id"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <OptimizedImage
-                        src="/assets/images/sponsor/one.png"
-                        alt="Image_inner"
-                      />
-                    </a>
-                  </div>
-                </div>
-
-                {/* Duplikat THREE */}
-                <div className="swiper-slide">
-                  <div className="partner__slider-single">
-                    <a
-                      href="https://www.vnt.co.id/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <OptimizedImage
-                        src="/assets/images/sponsor/three.png"
-                        alt="Image_inner"
-                      />
-                    </a>
-                  </div>
-                </div>
-
-                {/* Duplikat FOUR */}
-                <div className="swiper-slide">
-                  <div className="partner__slider-single">
-                    <OptimizedImage
-                      src="/assets/images/sponsor/four.png"
-                      alt="Image_inner"
-                    />
-                  </div>
-                </div>
-
-                {/* Duplikat FIVE */}
-                {/* <div className="swiper-slide">
-                  <div className="partner__slider-single">
-                    <OptimizedImage
-                      src="/assets/images/sponsor/five.png"
-                      alt="Image_inner"
-                    />
-                  </div>
-                </div> */}
               </Slider>
+              */}
+
+              {/* STATIC LIST – TANPA SLIDESHOW & TANPA DUPLIKAT IMAGE */}
+              <div className="partner__slider-static d-flex flex-wrap justify-content-center gap-4 md:gap-12">
+                {/* xapiens.id */}
+                <div className="partner__slider-single">
+                  <a
+                    href="https://xapiens.id/id"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <OptimizedImage
+                      src="/assets/images/sponsor/xapiens.svg"
+                      alt="Image_inner"
+                    />
+                  </a>
+                </div>
+
+                {/* asix.id */}
+                <div className="partner__slider-single">
+                  <a
+                    href="https://asix.id"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <OptimizedImage
+                      src="/assets/images/sponsor/one.jpeg"
+                      alt="Image_inner"
+                    />
+                  </a>
+                </div>
+
+                {/* vnt.co.id */}
+                <div className="partner__slider-single">
+                  <a
+                    href="https://www.vnt.co.id/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <OptimizedImage
+                      src="/assets/images/sponsor/vnt.jpeg"
+                      alt="Image_inner"
+                    />
+                  </a>
+                </div>
+
+              </div>
+              {/* END STATIC LIST */}
             </div>
           </div>
         </div>

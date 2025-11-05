@@ -31,7 +31,8 @@ const HelpOne = () => {
                     />
                     <div className='video-btn-wrapper'>
                       <span
-                        onClick={() => setIsOpen(true)}
+                        onClick={() => setIsOpen(false)} 
+                        // set false dlu biar ga error di server side rendering
                         className='open-video-popup'
                       >
                         <i className='icon-play' />

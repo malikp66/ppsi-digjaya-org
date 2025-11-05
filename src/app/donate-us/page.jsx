@@ -19,9 +19,6 @@ const page = () => {
         {/* Preloader */}
         <Preloader />
 
-         
-         
-
         <TopBarThree />
 
         <HeaderFour />

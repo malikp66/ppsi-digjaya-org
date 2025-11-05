@@ -82,7 +82,7 @@ const DifferenceThree = () => {
                   Coba Aplikasinya <i className='fa-solid fa-arrow-right' />
                 </Link>
 
-                <div className='author-info'>
+                {/* <div className='author-info'>
                   <div className='author-thumb'>
                     <OptimizedImage
                       src='assets/images/author-two.png'
@@ -93,7 +93,7 @@ const DifferenceThree = () => {
                     <span>Product Lead PPSI Digjaya</span>
                     <h6>Asep Kurniawan</h6>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
