@@ -72,11 +72,6 @@ const TeamTwo = () => {
                               <i className='fa-brands fa-instagram' />
                             </Link>
                           </li>
-                          <li>
-                            <Link href='/'>
-                              <i className='fa-brands fa-behance' />
-                            </Link>
-                          </li>
                         </ul>
                       </div>
                     </div>

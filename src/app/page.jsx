@@ -10,11 +10,11 @@ import FooterOne from "@/components/FooterOne";
  import HeaderFour from "@/components/HeaderFour";
 import HelpOne from "@/components/HelpOne";
 import PartnerOne from "@/components/PartnerOne";
-import TeamOne from "@/components/TeamOne";
 import TestimonialOne from "@/components/TestimonialOne";
  import TopBarThree from "@/components/TopBarThree";
 import AOSWrap from "@/helper/AOSWrap";
 import Preloader from "@/components/Preloader";
+import TeamTwo from "@/components/TeamTwo";
  
 
 export const metadata = {
@@ -52,8 +52,7 @@ const page = () => {
         {/* CtaSectionOne */}
         <CtaSectionOne />
 
-        {/* TeamOne */}
-        <TeamOne />
+        <TeamTwo />
 
         {/* CommunityOne */}
         <CommunityOne />
