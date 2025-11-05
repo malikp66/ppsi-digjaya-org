@@ -43,11 +43,6 @@ export default function RootLayout({ children }) {
         <RouteScrollToTop />
 
         {children}
-
-        <Script
-          src="/assets/js/bootstrap.bundle.min.js"
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );

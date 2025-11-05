@@ -1,6 +1,7 @@
 "use client";
 import { useMemo, useState } from "react";
 import { certificateArchive, certificatePricing, expiringCertificates } from "@/data/certificates";
+import "./certificate-center.module.css";
 
 const MONTH_MAP = {
   Januari: 0,
