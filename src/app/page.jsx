@@ -40,11 +40,11 @@ const page = () => {
         {/* PartnerOne */}
         <PartnerOne />
 
+        {/* DifferenceTwo */}
+        <DifferenceTwo />
+
         {/* DifferenceThree */}
         <DifferenceThree />
-
-        {/* HelpOne */}
-        <HelpOne />
 
         {/* CauseOne */}
         <CauseOne />
@@ -64,8 +64,8 @@ const page = () => {
         {/* CauseSliderTwo */}
         <CauseSliderTwo />
 
-        {/* DifferenceTwo */}
-        <DifferenceTwo />
+        {/* HelpOne */}
+        <HelpOne />
 
         {/* BlogOne */}
         <BlogOne />

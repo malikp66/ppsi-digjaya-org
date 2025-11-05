@@ -31,7 +31,7 @@ const DifferenceTwo = () => {
                     </div> */}
                     <div className='video-btn-wrapper'>
                       <button
-                        onClick={() => setIsOpen(true)}
+                        onClick={() => setIsOpen(false)}
                         className='open-video-popup'
                       >
                         <i className='icon-play' />
