@@ -1,8 +1,31 @@
 .wrapper {
+  --primary-color: hsl(var(--primary));
+  --primary-contrast: hsl(var(--primary-foreground));
+  --secondary-color: hsl(var(--secondary-foreground));
+  --secondary-surface: hsl(var(--secondary));
+  --muted-surface: hsl(var(--muted));
+  --muted-text: hsl(var(--muted-foreground));
+  --accent-color: #f7b733;
+  --glass-surface: rgba(9, 25, 22, 0.72);
+  --card-surface: rgba(255, 255, 255, 0.97);
+  --card-border: rgba(18, 47, 42, 0.12);
   position: relative;
   padding-block: 80px 120px;
   background: linear-gradient(180deg, #0f2621 0%, #0b1714 100%);
   overflow: hidden;
+  color: var(--secondary-color);
+  isolation: isolate;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  inset: -30% -15% -45%;
+  background:
+    radial-gradient(60% 60% at 12% 12%, rgba(247, 183, 51, 0.22) 0%, rgba(9, 23, 20, 0) 60%),
+    radial-gradient(50% 50% at 86% 8%, rgba(4, 106, 88, 0.32) 0%, rgba(9, 23, 20, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 .hero {
@@ -14,6 +37,10 @@
   background: radial-gradient(105% 125% at 20% 15%, rgba(4, 106, 88, 0.35) 0%, rgba(13, 30, 27, 0.92) 55%, rgba(9, 23, 20, 1) 100%);
   padding: 64px clamp(24px, 5vw, 72px);
   overflow: hidden;
+  border: 1px solid rgba(247, 183, 51, 0.18);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(6px);
+  z-index: 1;
 }
 
 .heroMedia {
@@ -45,6 +72,7 @@
   color: var(--white, #ffffff);
   display: grid;
   gap: 24px;
+  z-index: 1;
 }
 
 .heroKicker {
@@ -135,6 +163,8 @@
   overflow-x: auto;
   padding-bottom: 4px;
   scroll-snap-type: x mandatory;
+  position: relative;
+  z-index: 1;
 }
 
 .heroStats::-webkit-scrollbar {
@@ -147,8 +177,8 @@
 }
 
 .statPill {
-  background: rgba(12, 33, 29, 0.75);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--glass-surface);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(6px);
   padding: 16px 24px;
   border-radius: 18px;
@@ -156,6 +186,13 @@
   display: grid;
   gap: 4px;
   scroll-snap-align: center;
+  transition: transform 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.statPill:hover {
+  background: rgba(12, 33, 29, 0.85);
+  border-color: rgba(247, 183, 51, 0.45);
+  transform: translateY(-2px);
 }
 
 .statValue {
@@ -174,7 +211,9 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 32px;
-  color: #1a1f1c;
+  color: var(--secondary-color);
+  position: relative;
+  z-index: 1;
 }
 
 .mainColumn {
@@ -189,14 +228,37 @@
 }
 
 .highlightCard {
-  background: #f5f7f9;
+  position: relative;
+  background: var(--card-surface);
   border-radius: var(--radius-lg);
   padding: 24px;
   display: grid;
   gap: 12px;
   align-content: start;
   box-shadow: var(--shadow-card);
-  border: 1px solid rgba(18, 47, 42, 0.08);
+  border: 1px solid var(--card-border);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+}
+
+.highlightCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(247, 183, 51, 0.08) 0%, rgba(4, 106, 88, 0.08) 100%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.highlightCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--card-shadow-hover, 0 24px 52px rgba(8, 32, 28, 0.18));
+}
+
+.highlightCard:hover::after {
+  opacity: 1;
 }
 
 .highlightIcon {
@@ -228,12 +290,15 @@
 }
 
 .formCard {
-  background: #ffffff;
+  position: relative;
+  background: var(--card-surface);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
   padding: clamp(24px, 4vw, 40px);
   display: grid;
   gap: 32px;
+  border: 1px solid var(--card-border);
+  overflow: hidden;
 }
 
 .formHeader {
@@ -352,8 +417,8 @@
 
 .select {
   appearance: none;
-  background: #f5f7f9;
-  border: 1px solid rgba(12, 33, 29, 0.12);
+  background: var(--muted-surface);
+  border: 1px solid var(--card-border);
   border-radius: 16px;
   padding: 16px 20px;
   font-size: 1rem;
@@ -370,7 +435,7 @@
 
 .progressBarWrapper {
   padding: 8px;
-  background: #f5f7f9;
+  background: var(--muted-surface);
   border-radius: 16px;
 }
 
@@ -400,15 +465,29 @@
   font-size: 0.75rem;
 }
 
+.progressCaption {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 4px 0;
+  font-size: 0.92rem;
+  color: rgba(26, 31, 28, 0.7);
+}
+
+.progressCaption i {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
 .inputGroupIcon {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 12px;
-  border: 1px solid rgba(12, 33, 29, 0.12);
+  border: 1px solid var(--card-border);
   border-radius: 18px;
   padding: 8px 16px;
-  background: #ffffff;
+  background: var(--card-surface);
 }
 
 .inputIcon {
@@ -457,23 +536,26 @@
 .presetChipActive {
   border-radius: 18px;
   padding: 12px 20px;
-  border: 1px solid rgba(12, 33, 29, 0.12);
-  background: #ffffff;
+  border: 1px solid var(--card-border);
+  background: var(--card-surface);
   font-weight: 600;
   color: var(--secondary-color);
   cursor: pointer;
   scroll-snap-align: center;
-  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .presetChip:focus-visible,
 .presetChip:hover {
   border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: var(--card-shadow-hover, 0 16px 32px rgba(8, 32, 28, 0.14));
 }
 
 .presetChipActive {
   background: rgba(247, 183, 51, 0.18);
   border-color: rgba(247, 183, 51, 0.4);
+  box-shadow: var(--card-shadow-hover, 0 18px 36px rgba(8, 32, 28, 0.16));
 }
 
 .radioWrapper {
@@ -487,10 +569,10 @@
   gap: 6px;
   padding: 16px;
   border-radius: 18px;
-  border: 1px solid rgba(12, 33, 29, 0.12);
-  background: #f5f7f9;
+  border: 1px solid var(--card-border);
+  background: var(--muted-surface);
   cursor: pointer;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
+  transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .radioOption input {
@@ -505,6 +587,15 @@
 .radioOptionActive {
   border-color: rgba(4, 106, 88, 0.4);
   background: rgba(4, 106, 88, 0.12);
+  box-shadow: var(--card-shadow-hover, 0 18px 36px rgba(8, 32, 28, 0.16));
+  transform: translateY(-2px);
+}
+
+.radioOption:hover {
+  border-color: rgba(4, 106, 88, 0.35);
+  background: rgba(4, 106, 88, 0.08);
+  box-shadow: var(--card-shadow-hover, 0 16px 32px rgba(8, 32, 28, 0.14));
+  transform: translateY(-2px);
 }
 
 .radioLabel {
@@ -532,11 +623,13 @@
   width: 100%;
   min-height: 140px;
   border-radius: 18px;
-  border: 1px solid rgba(12, 33, 29, 0.12);
+  border: 1px solid var(--card-border);
   padding: 16px 20px;
   resize: vertical;
   font-size: 1rem;
   line-height: 1.6;
+  background: var(--card-surface);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .textarea:focus-visible {
@@ -550,19 +643,55 @@
   justify-content: flex-start;
 }
 
+.formDisclaimer {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: -12px 0 0;
+  font-size: 0.88rem;
+  color: rgba(26, 31, 28, 0.66);
+}
+
+.formDisclaimer i {
+  color: var(--primary-color);
+}
+
 .aside {
   display: grid;
   gap: 24px;
 }
 
 .asideCard {
-  background: #ffffff;
+  position: relative;
+  background: var(--card-surface);
   border-radius: var(--radius-lg);
   padding: clamp(24px, 3vw, 32px);
   box-shadow: var(--shadow-card);
-  border: 1px solid rgba(18, 47, 42, 0.12);
+  border: 1px solid var(--card-border);
   display: grid;
   gap: 16px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+}
+
+.asideCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(247, 183, 51, 0.08) 0%, rgba(4, 106, 88, 0.08) 100%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.asideCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--card-shadow-hover, 0 24px 52px rgba(8, 32, 28, 0.18));
+}
+
+.asideCard:hover::after {
+  opacity: 1;
 }
 
 .asideHeader {

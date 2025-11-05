@@ -197,6 +197,13 @@ function DonationFormCard({
     []
   );
 
+  const cappedProgress = Number.isFinite(progressValue) ? Math.min(Math.max(progressValue, 0), 100) : 0;
+  const remainingProgress = Math.max(0, Math.round(100 - cappedProgress));
+  const progressSummary =
+    cappedProgress >= 100
+      ? "Target program telah terpenuhi. Dukungan baru akan dialokasikan ke kegiatan lanjutan."
+      : `Sudah tercapai ${Math.round(cappedProgress)}% target; kekurangan ${remainingProgress}% lagi untuk kebutuhan penuh.`;
+
   return (
     <section className={styles.formSection} id={formId} data-aos="fade-up" data-aos-duration={900}>
       <div className={styles.formCard}>
@@ -262,15 +269,19 @@ function DonationFormCard({
               <div
                 className={styles.progressBar}
                 role="progressbar"
-                aria-valuenow={progressValue}
+                aria-valuenow={Math.round(cappedProgress)}
                 aria-valuemin={0}
                 aria-valuemax={100}
               >
-                <span className={styles.progressIndicator} style={{ width: `${Math.min(progressValue, 100)}%` }}>
-                  <span className={styles.progressValue}>{progressValue}%</span>
+                <span className={styles.progressIndicator} style={{ width: `${cappedProgress}%` }}>
+                  <span className={styles.progressValue}>{Math.round(cappedProgress)}%</span>
                 </span>
               </div>
             </div>
+            <p className={styles.progressCaption}>
+              <i className="fa-solid fa-circle-info" aria-hidden="true" />
+              <span>{progressSummary}</span>
+            </p>
           </fieldset>
 
           <fieldset
@@ -358,6 +369,10 @@ function DonationFormCard({
               Kirim Dukungan <i className="fa-solid fa-arrow-right" aria-hidden="true" />
             </button>
           </div>
+          <p className={styles.formDisclaimer}>
+            <i className="fa-solid fa-shield-halved" aria-hidden="true" />
+            <span>Data donatur tersimpan aman dan hanya digunakan untuk konfirmasi resmi PPSI.</span>
+          </p>
         </form>
       </div>
     </section>
@@ -459,19 +474,24 @@ export default function DonateInner() {
   const highlightItems = useMemo(
     () => [
       {
-        title: "Rencana Penyaluran",
-        description: "Dialokasikan untuk beasiswa pelatih, persiapan atlet pasanggiri, dan santunan kesehatan anggota.",
+        title: "Prioritas Penyaluran 2025",
+        description: "Fokus utama: beasiswa pelatih, dukungan atlet pasanggiri, dan santunan kesehatan darurat anggota.",
         icon: "fa-solid fa-diagram-project",
       },
       {
-        title: "Saluran Transparansi",
-        description: "Laporan triwulan, dashboard perguruan, dan kontak sekretariat siap membantu pelaporan.",
-        icon: "fa-solid fa-shield-heart",
+        title: "Monitoring & Transparansi",
+        description: "Perkembangan target selalu diperbarui melalui progress bar, laporan triwulan, dan dashboard perguruan.",
+        icon: "fa-solid fa-chart-line",
       },
       {
-        title: "Cara Kontribusi Cepat",
-        description: "Pilih program, tentukan nominal, dan konfirmasi metode dalam satu formulir responsif.",
+        title: "Pendampingan Donatur",
+        description: "Tim sekretariat siap membantu proposal CSR, kolektif perguruan, hingga konfirmasi bukti transfer.",
         icon: "fa-solid fa-bolt",
+      },
+      {
+        title: "Update Dampak Langsung",
+        description: "Statistik perguruan aktif dan testimoni penerima manfaat dibagikan berkala melalui kanal resmi PPSI.",
+        icon: "fa-solid fa-people-group",
       },
     ],
     []
