@@ -2,6 +2,7 @@ import BreadcrumbOne from "@/components/BreadcrumbOne";
 import DonateInner from "@/components/DonateInner";
 import FooterOne from "@/components/FooterOne";
 import HeaderFour from "@/components/HeaderFour";
+import OverviewOne from "@/components/OverviewOne";
 import Preloader from "@/components/Preloader";
 import TopBarThree from "@/components/TopBarThree";
 import AOSWrap from "@/helper/AOSWrap";
@@ -25,6 +26,9 @@ const page = () => {
 
         {/* BreadcrumbOne */}
         <BreadcrumbOne title='Dana Sosial & Dukungan Atlet' />
+
+        {/* OverviewOne */}
+        <OverviewOne />
 
         {/* DonateInner */}
         <DonateInner />
