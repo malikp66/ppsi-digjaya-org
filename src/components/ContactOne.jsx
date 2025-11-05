@@ -80,13 +80,13 @@ const ContactOne = () => {
           </div>
         </div>
       </div>
-      {/* <div className='contact-bg'>
+      <div className='contact-bg'>
         <OptimizedImage
           src='assets/images/contact/contact-bg.png'
           alt='Image_inner'
           className='parallax-image'
         />
-      </div> */}
+      </div>
       {/* <div
         className='shape-left'
         data-aos='fade-down'

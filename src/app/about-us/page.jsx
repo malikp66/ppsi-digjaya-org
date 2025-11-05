@@ -61,8 +61,8 @@ const page = () => {
         <DifferenceTwo />
 
         {/* GalleryOne */}
-        <GalleryOne />
-
+        {/* <GalleryOne /> */}
+{/* nanti */}
         {/* FooterOne */}
         <FooterOne />
       </section>

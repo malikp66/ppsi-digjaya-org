@@ -29,8 +29,12 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Redis Caching
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Remote asset requests (e.g. external images) can now be routed through `/api/cache-image`, which stores the payload in Redis and serves subsequent requests from the cache. Review `.env.example` and copy it to `.env.local`, then fill in your Redis credentials and desired cache rules.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Set connection details either via `REDIS_URL` or `REDIS_HOST`/`REDIS_PORT`, along with optional authentication.
+- Toggle the proxy behaviour on the client with `NEXT_PUBLIC_ENABLE_IMAGE_CACHE`, and optionally restrict allowed upstream hosts in `NEXT_PUBLIC_IMAGE_CACHE_ALLOW_HOSTS`.
+- Adjust `REDIS_IMAGE_*` variables to control TTL, maximum payload size, and request timeout.
+
+After configuring the environment variables, restart the dev server so that the new values are picked up.
