@@ -1,6 +1,11 @@
 "use client";
 import { useMemo, useState } from "react";
-import { certificateArchive, certificatePricing, expiringCertificates } from "@/data/certificates";
+import {
+  certificateArchive,
+  certificatePricing,
+  expiringCertificates,
+} from "@/data/certificates";
+import styles from "./certificate-center.module.css";
 
 const MONTH_MAP = {
   Januari: 0,
@@ -51,7 +56,11 @@ const formatDateIndonesian = (value) => {
   if (!value) return "-";
   const parsed = value instanceof Date ? value : parseDateIndonesian(value);
   if (!parsed) return value;
-  return parsed.toLocaleDateString("id-ID", { day: "2-digit", month: "long", year: "numeric" });
+  return parsed.toLocaleDateString("id-ID", {
+    day: "2-digit",
+    month: "long",
+    year: "numeric",
+  });
 };
 
 const certificateStatus = (expiryValue) => {
@@ -66,7 +75,11 @@ const certificateStatus = (expiryValue) => {
   }
 
   const today = new Date();
-  const startOfToday = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  const startOfToday = new Date(
+    today.getFullYear(),
+    today.getMonth(),
+    today.getDate()
+  );
   const diffMs = expiryDate.getTime() - startOfToday.getTime();
   const diffDays = Math.round(diffMs / (1000 * 60 * 60 * 24));
 
@@ -117,7 +130,11 @@ const CertificateCenter = () => {
     const found = certificateArchive.find((item) => {
       const nomorLower = item.nomor.toLowerCase();
       const namaLower = item.nama.toLowerCase();
-      return nomorLower === keyword || nomorLower.includes(keyword) || namaLower.includes(keyword);
+      return (
+        nomorLower === keyword ||
+        nomorLower.includes(keyword) ||
+        namaLower.includes(keyword)
+      );
     });
 
     setHasil(found ?? { notFound: true });
@@ -132,12 +149,16 @@ const CertificateCenter = () => {
 
   const ownerCertificates = useMemo(() => {
     if (!activeCertificate) return [];
-    return certificateArchive.filter((item) => item.nama === activeCertificate.nama);
+    return certificateArchive.filter(
+      (item) => item.nama === activeCertificate.nama
+    );
   }, [activeCertificate]);
 
   const archiveToRender = hasil && !hasil.notFound ? ownerCertificates : certificateArchive;
 
-  const activeStatus = activeCertificate ? certificateStatus(activeCertificate.berlaku) : null;
+  const activeStatus = activeCertificate
+    ? certificateStatus(activeCertificate.berlaku)
+    : null;
 
   const archiveStats = useMemo(() => {
     const total = certificateArchive.length;
@@ -153,59 +174,79 @@ const CertificateCenter = () => {
   }, [ownerCertificates]);
 
   return (
-    <section className='certificate'>
-      <div className='container'>
-        <div className='row gutter-40'>
-          <div className='col-12 col-xl-4'>
-            <div className='certificate__panel membership-card' data-aos='fade-up' data-aos-duration={1000}>
-              <span className='sub-title'>
-                <i className='icon-donation' />
+    <section className={styles.certificate}>
+      <div className={`container ${styles.container}`}>
+        <div className={`row gutter-40 ${styles.row}`}>
+          {/* LEFT PANEL */}
+          <div
+            className={`col-12 col-xl-4 ${styles["col-12"]} ${styles["col-xl-4"]}`}
+          >
+            <div
+              className={`${styles.certificate__panel} ${styles["membership-card"]}`}
+              data-aos="fade-up"
+              data-aos-duration={1000}
+            >
+              <span className={styles["sub-title"]}>
+                <i className="icon-donation" />
                 Pusat Sertifikat PPSI Digjaya
               </span>
-              <h3 className='title-animation_inner'>Verifikasi milik siswa</h3>
+              <h3>Verifikasi milik siswa</h3>
               <p>
-                Temukan dan pastikan keaslian sertifikat siswa, pelatih, atau atlet dengan memasukkan nomor
-                sertifikat atau nama pemegang.
+                Temukan dan pastikan keaslian sertifikat siswa, pelatih, atau
+                atlet dengan memasukkan nomor sertifikat atau nama pemegang.
               </p>
-              <form className='certificate__form checkout__form' onSubmit={handleSubmit}>
-                <div className='input-single'>
+
+              <form
+                className={`${styles.certificate__form} checkout__form`}
+                onSubmit={handleSubmit}
+              >
+                <div className={styles["input-single"]}>
                   <input
-                    type='text'
+                    type="text"
                     value={nomor}
                     onChange={(event) => setNomor(event.target.value)}
-                    placeholder='Cari nomor atau nama pemegang'
+                    placeholder="Cari nomor atau nama pemegang"
                     required
                   />
-                  <i className='fa-solid fa-magnifying-glass' />
+                  <i className="fa-solid fa-magnifying-glass" />
                 </div>
-                <button type='submit' className='btn--primary'>
-                  Cek Sertifikat <i className='fa-solid fa-arrow-right' />
+                <button
+                  type="submit"
+                  className={`btn--primary ${styles["btn--primary"]}`}
+                >
+                  Cek Sertifikat <i className="fa-solid fa-arrow-right" />
                 </button>
               </form>
 
               {hasil && (
                 <div
-                  className={`certificate__result ${
-                    hasil.notFound ? "certificate__result--empty" : "certificate__result--success"
+                  className={`${styles.certificate__result} ${
+                    hasil.notFound
+                      ? styles["certificate__result--empty"]
+                      : styles["certificate__result--success"]
                   }`}
                 >
                   {hasil.notFound ? (
                     <>
-                      <i className='fa-solid fa-circle-exclamation' />
+                      <i className="fa-solid fa-circle-exclamation" />
                       <div>
-                        <p className='result-title'>Sertifikat tidak ditemukan</p>
-                        <p className='result-text'>
-                          Pastikan nomor sudah benar atau hubungi sekretariat untuk verifikasi manual.
+                        <p className={styles["result-title"]}>
+                          Sertifikat tidak ditemukan
+                        </p>
+                        <p className={styles["result-text"]}>
+                          Pastikan nomor sudah benar atau hubungi sekretariat
+                          untuk verifikasi manual.
                         </p>
                       </div>
                     </>
                   ) : (
                     <>
-                      <i className='fa-solid fa-circle-check' />
+                      <i className="fa-solid fa-circle-check" />
                       <div>
-                        <p className='result-title'>Data terverifikasi</p>
-                        <p className='result-text'>
-                          {hasil.nama} tercatat dengan sertifikat {hasil.jenis.toLowerCase()} bernomor{" "}
+                        <p className={styles["result-title"]}>Data terverifikasi</p>
+                        <p className={styles["result-text"]}>
+                          {hasil.nama} tercatat dengan sertifikat{" "}
+                          {hasil.jenis.toLowerCase()} bernomor{" "}
                           <strong>{hasil.nomor}</strong>.
                         </p>
                       </div>
@@ -214,106 +255,144 @@ const CertificateCenter = () => {
                 </div>
               )}
 
-              <div className='certificate__legend'>
-                <span className='status-badge status-badge--success'>
-                  <i className='fa-solid fa-circle' />
+              <div className={styles.certificate__legend}>
+                <span
+                  className={`${styles["status-badge"]} ${
+                    styles["status-badge--success"]
+                  }`}
+                >
+                  <i className="fa-solid fa-circle" />
                   Aktif
                 </span>
-                <span className='status-badge status-badge--warning'>
-                  <i className='fa-solid fa-circle' />
+                <span
+                  className={`${styles["status-badge"]} ${
+                    styles["status-badge--warning"]
+                  }`}
+                >
+                  <i className="fa-solid fa-circle" />
                   Segera diperbarui
                 </span>
-                <span className='status-badge status-badge--danger'>
-                  <i className='fa-solid fa-circle' />
+                <span
+                  className={`${styles["status-badge"]} ${
+                    styles["status-badge--danger"]
+                  }`}
+                >
+                  <i className="fa-solid fa-circle" />
                   Kedaluwarsa
                 </span>
               </div>
 
-              <div className='certificate__pricing'>
-                <div className='certificate__pricing-header'>
+              <div className={styles.certificate__pricing}>
+                <div className={styles["certificate__pricing-header"]}>
                   <div>
-                    <p className='certificate__pricing-eyebrow'>Biaya Sertifikat Digital</p>
+                    <p className={styles["certificate__pricing-eyebrow"]}>
+                      Biaya Sertifikat Digital
+                    </p>
                     <h4>{certificatePricing.range} / sertifikat</h4>
                   </div>
-                  {/* <span className='certificate__pricing-badge'>Termasuk hosting & dukungan</span> */}
+                  {/* <span className={styles["certificate__pricing-badge"]}>
+                    Termasuk hosting & dukungan
+                  </span> */}
                 </div>
-                <p className='certificate__pricing-description'>{certificatePricing.description}</p>
-                <ul className='certificate__pricing-list'>
+                <p className={styles["certificate__pricing-description"]}>
+                  {certificatePricing.description}
+                </p>
+                <ul className={styles["certificate__pricing-list"]}>
                   {certificatePricing.features.map((feature) => (
                     <li key={feature.id}>
-                      <i className='fa-solid fa-circle-check' />
+                      <i className="fa-solid fa-circle-check" />
                       <div>
-                        <p className='certificate__pricing-title'>{feature.title}</p>
+                        <p className={styles["certificate__pricing-title"]}>
+                          {feature.title}
+                        </p>
                         <p>{feature.detail}</p>
                       </div>
                     </li>
                   ))}
                 </ul>
-                <div className='certificate__pricing-notes'>
+                <div className={styles["certificate__pricing-notes"]}>
                   {certificatePricing.notes.map((note, index) => (
                     <p key={index}>
-                      <i className='fa-solid fa-circle-dot' />
+                      <i className="fa-solid fa-circle-dot" />
                       {note}
                     </p>
                   ))}
                 </div>
               </div>
 
-              <p className='info'>
-                Perlu bantuan administrasi atau penawaran paket? Kirimkan permintaan ke{" "}
-                <a href='mailto:dpdppsikotabandungofficial@gmail.com'>dpdppsikotabandungofficial@gmail.com</a>{" "}
+              <p className={styles.info}>
+                Perlu bantuan administrasi atau penawaran paket? Kirimkan
+                permintaan ke{" "}
+                <a href="mailto:dpdppsikotabandungofficial@gmail.com">
+                  dpdppsikotabandungofficial@gmail.com
+                </a>{" "}
                 untuk validasi cepat.
               </p>
             </div>
           </div>
 
-          <div className='col-12 col-xl-8'>
-            {activeCertificate && (
+          {/* RIGHT SIDE */}
+          <div
+            className={`col-12 col-xl-8 ${styles["col-12"]} ${styles["col-xl-8"]}`}
+          >
+            {activeCertificate && activeStatus && (
               <div
-                className='certificate__highlight membership-card'
-                data-aos='fade-up'
+                className={`${styles.certificate__highlight} ${styles["membership-card"]}`}
+                data-aos="fade-up"
                 data-aos-duration={1000}
                 data-aos-delay={150}
               >
-                <div className='certificate__highlight-header'>
-                  <span className={`status-badge status-badge--${activeStatus.intent}`}>
-                    <i className='fa-solid fa-shield-halved' />
+                <div className={styles["certificate__highlight-header"]}>
+                  <span
+                    className={`${styles["status-badge"]} ${
+                      styles[`status-badge--${activeStatus.intent}`]
+                    }`}
+                  >
+                    <i className="fa-solid fa-shield-halved" />
                     {activeStatus.label}
                   </span>
-                  <span className='certificate__number'>
-                    <i className='fa-solid fa-hashtag' />
+                  <span className={styles.certificate__number}>
+                    <i className="fa-solid fa-hashtag" />
                     {activeCertificate.nomor}
                   </span>
                 </div>
                 <h4>{activeCertificate.nama}</h4>
-                <p className='certificate__subtitle'>{activeCertificate.jenis}</p>
+                <p className={styles.certificate__subtitle}>
+                  {activeCertificate.jenis}
+                </p>
 
-                <div className='certificate__meta-grid'>
-                  <div className='certificate__meta-item'>
+                <div className={styles["certificate__meta-grid"]}>
+                  <div className={styles["certificate__meta-item"]}>
                     <span>Terbit</span>
-                    <strong>{formatDateIndonesian(activeCertificate.terbit)}</strong>
+                    <strong>
+                      {formatDateIndonesian(activeCertificate.terbit)}
+                    </strong>
                   </div>
-                  <div className='certificate__meta-item'>
+                  <div className={styles["certificate__meta-item"]}>
                     <span>Berlaku hingga</span>
-                    <strong>{formatDateIndonesian(activeCertificate.berlaku)}</strong>
+                    <strong>
+                      {formatDateIndonesian(activeCertificate.berlaku)}
+                    </strong>
                   </div>
                   {activeCertificate.sabuk && (
-                    <div className='certificate__meta-item'>
+                    <div className={styles["certificate__meta-item"]}>
                       <span>Pencapaian</span>
                       <strong>Sabuk {activeCertificate.sabuk}</strong>
                     </div>
                   )}
-                  <div className='certificate__meta-item certificate__meta-item--status'>
+                  <div
+                    className={`${styles["certificate__meta-item"]} ${styles["certificate__meta-item--status"]}`}
+                  >
                     <span>Status digital</span>
                     <strong>{activeStatus.label}</strong>
                     <small>{activeStatus.helper}</small>
                   </div>
                 </div>
 
-                <div className='certificate__actions'>
+                <div className={styles.certificate__actions}>
                   <button
-                    type='button'
-                    className='certificate__action'
+                    type="button"
+                    className={styles.certificate__action}
                     onClick={() => {
                       if (!activeCertificate) return;
                       setNomor(activeCertificate.nomor);
@@ -321,13 +400,15 @@ const CertificateCenter = () => {
                     }}
                   >
                     Lihat sertifikat siswa
-                    <i className='fa-solid fa-arrow-up-right-from-square' />
+                    <i className="fa-solid fa-arrow-up-right-from-square" />
                   </button>
-                  <div className='certificate__qr'>
-                    <i className='fa-solid fa-qrcode' />
+                  <div className={styles.certificate__qr}>
+                    <i className="fa-solid fa-qrcode" />
                     <div>
                       <p>Scan QR fisik</p>
-                      <span>Kode unik tercetak pada pojok kanan dokumen.</span>
+                      <span>
+                        Kode unik tercetak pada pojok kanan dokumen.
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -335,12 +416,12 @@ const CertificateCenter = () => {
             )}
 
             <div
-              className='certificate__archive membership-card'
-              data-aos='fade-up'
+              className={`${styles.certificate__archive} ${styles["membership-card"]}`}
+              data-aos="fade-up"
               data-aos-duration={1000}
               data-aos-delay={220}
             >
-              <div className='certificate__archive-header'>
+              <div className={styles["certificate__archive-header"]}>
                 <div>
                   <h4>
                     {hasil && !hasil.notFound
@@ -353,17 +434,17 @@ const CertificateCenter = () => {
                       : "Daftar sertifikat terbit dan status keaktifannya dalam arsip PPSI Digjaya."}
                   </p>
                 </div>
-                <div className='certificate__stats'>
-                  <div className='certificate__stat'>
+                <div className={styles.certificate__stats}>
+                  <div className={styles.certificate__stat}>
                     <span>Total arsip</span>
                     <strong>{archiveStats.total}</strong>
                   </div>
-                  <div className='certificate__stat'>
+                  <div className={styles.certificate__stat}>
                     <span>Masih aktif</span>
                     <strong>{archiveStats.active}</strong>
                   </div>
                   {hasil && !hasil.notFound && (
-                    <div className='certificate__stat'>
+                    <div className={styles.certificate__stat}>
                       <span>Miliki siswa ini</span>
                       <strong>{archiveStats.ownerTotal}</strong>
                     </div>
@@ -371,33 +452,45 @@ const CertificateCenter = () => {
                 </div>
               </div>
 
-              <div className='certificate__cards'>
+              <div className={styles.certificate__cards}>
                 {archiveToRender.map((item) => {
                   const status = certificateStatus(item.berlaku);
                   return (
-                    <article key={item.nomor} className='certificate-card'>
+                    <article
+                      key={item.nomor}
+                      className={styles["certificate-card"]}
+                    >
                       <header>
-                        <span className={`status-badge status-badge--${status.intent}`}>
-                          <i className='fa-solid fa-circle-check' />
+                        <span
+                          className={`${styles["status-badge"]} ${
+                            styles[`status-badge--${status.intent}`]
+                          }`}
+                        >
+                          <i className="fa-solid fa-circle-check" />
                           {status.label}
                         </span>
-                        <span className='certificate-card__number'>{item.nomor}</span>
+                        <span
+                          className={styles["certificate-card__number"]}
+                        >
+                          {item.nomor}
+                        </span>
                       </header>
-                      <div className='certificate-card__body'>
+                      <div className={styles["certificate-card__body"]}>
                         <h6>{item.nama}</h6>
                         <p>{item.jenis}</p>
                         <ul>
                           <li>
-                            <i className='fa-solid fa-calendar-days' />
+                            <i className="fa-solid fa-calendar-days" />
                             Terbit {formatDateIndonesian(item.terbit)}
                           </li>
                           <li>
-                            <i className='fa-solid fa-hourglass-half' />
-                            Berlaku hingga {formatDateIndonesian(item.berlaku)}
+                            <i className="fa-solid fa-hourglass-half" />
+                            Berlaku hingga{" "}
+                            {formatDateIndonesian(item.berlaku)}
                           </li>
                           {item.sabuk && (
                             <li>
-                              <i className='fa-solid fa-medal' />
+                              <i className="fa-solid fa-medal" />
                               Sabuk {item.sabuk}
                             </li>
                           )}
@@ -405,13 +498,13 @@ const CertificateCenter = () => {
                       </div>
                       <footer>
                         <button
-                          type='button'
+                          type="button"
                           onClick={() => {
                             setNomor(item.nomor);
                             setHasil(item);
                           }}
                         >
-                          Lihat detail <i className='fa-solid fa-arrow-right' />
+                          Lihat detail <i className="fa-solid fa-arrow-right" />
                         </button>
                       </footer>
                     </article>
@@ -421,39 +514,47 @@ const CertificateCenter = () => {
             </div>
 
             <div
-              className='certificate__reminder membership-card'
-              data-aos='fade-up'
+              className={`${styles.certificate__reminder} ${styles["membership-card"]}`}
+              data-aos="fade-up"
               data-aos-duration={1000}
               data-aos-delay={260}
             >
-              <div className='certificate__reminder-header'>
+              <div className={styles["certificate__reminder-header"]}>
                 <h4>Pengingat Kedaluwarsa</h4>
-                <span className='badge-count'>{expiringCertificates.length} sertifikat</span>
+                <span className={styles["badge-count"]}>
+                  {expiringCertificates.length} sertifikat
+                </span>
               </div>
-              <ul className='certificate__reminder-list'>
+              <ul className={styles["certificate__reminder-list"]}>
                 {expiringCertificates.map((item) => {
                   const status = certificateStatus(item.berlaku);
                   return (
                     <li key={item.nomor}>
-                      <div className='reminder__identity'>
+                      <div className={styles["reminder__identity"]}>
                         <h6>{item.nama}</h6>
                         <span>{item.nomor}</span>
                       </div>
-                      <div className='reminder__details'>
-                        <span className='reminder__date'>
-                          <i className='fa-solid fa-calendar-check' />
+                      <div className={styles["reminder__details"]}>
+                        <span className={styles["reminder__date"]}>
+                          <i className="fa-solid fa-calendar-check" />
                           {formatDateIndonesian(item.berlaku)}
                         </span>
                         <p>{item.catatan}</p>
                       </div>
-                      <span className={`status-badge status-badge--${status.intent}`}>{status.label}</span>
+                      <span
+                        className={`${styles["status-badge"]} ${
+                          styles[`status-badge--${status.intent}`]
+                        }`}
+                      >
+                        {status.label}
+                      </span>
                     </li>
                   );
                 })}
               </ul>
-              <p className='info'>
-                Ingatkan siswa untuk memperbarui dokumen sebelum kedaluwarsa dan perbarui QR code apabila
-                terjadi kerusakan.
+              <p className={styles.info}>
+                Ingatkan siswa untuk memperbarui dokumen sebelum kedaluwarsa dan
+                perbarui QR code apabila terjadi kerusakan.
               </p>
             </div>
           </div>
