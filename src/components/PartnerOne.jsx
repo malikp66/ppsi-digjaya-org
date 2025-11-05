@@ -48,21 +48,6 @@ const PartnerOne = () => {
           <div className="col-12">
             <div className="partner__slider swiper">
               <Slider {...settings} className="swiper-wrapper">
-                {/* ONE -> asix.id */}
-                <div className="swiper-slide">
-                  <div className="partner__slider-single">
-                    <a
-                      href="https://asix.id"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <OptimizedImage
-                        src="/assets/images/sponsor/one.png"
-                        alt="Image_inner"
-                      />
-                    </a>
-                  </div>
-                </div>
 
                 {/* TWO -> xapiens.id */}
                 <div className="swiper-slide">
@@ -73,7 +58,23 @@ const PartnerOne = () => {
                       rel="noopener noreferrer"
                     >
                       <OptimizedImage
-                        src="/assets/images/sponsor/two.png"
+                        src="/assets/images/sponsor/xapiens.svg"
+                        alt="Image_inner"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                {/* ONE -> asix.id */}
+                <div className="swiper-slide">
+                  <div className="partner__slider-single">
+                    <a
+                      href="https://asix.id"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <OptimizedImage
+                        src="/assets/images/sponsor/one.png"
                         alt="Image_inner"
                       />
                     </a>
@@ -107,12 +108,28 @@ const PartnerOne = () => {
                 </div>
 
                 {/* FIVE (tanpa link, tetap seperti semula) */}
-                <div className="swiper-slide">
+                {/* <div className="swiper-slide">
                   <div className="partner__slider-single">
                     <OptimizedImage
                       src="/assets/images/sponsor/five.png"
                       alt="Image_inner"
                     />
+                  </div>
+                </div> */}
+
+                {/* Duplikat TWO */}
+                <div className="swiper-slide">
+                  <div className="partner__slider-single">
+                    <a
+                      href="https://xapiens.id/id"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <OptimizedImage
+                        src="/assets/images/sponsor/xapiens.svg"
+                        alt="Image_inner"
+                      />
+                    </a>
                   </div>
                 </div>
 
@@ -126,22 +143,6 @@ const PartnerOne = () => {
                     >
                       <OptimizedImage
                         src="/assets/images/sponsor/one.png"
-                        alt="Image_inner"
-                      />
-                    </a>
-                  </div>
-                </div>
-
-                {/* Duplikat TWO */}
-                <div className="swiper-slide">
-                  <div className="partner__slider-single">
-                    <a
-                      href="https://xapiens.id/id"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <OptimizedImage
-                        src="/assets/images/sponsor/two.png"
                         alt="Image_inner"
                       />
                     </a>
@@ -175,14 +176,14 @@ const PartnerOne = () => {
                 </div>
 
                 {/* Duplikat FIVE */}
-                <div className="swiper-slide">
+                {/* <div className="swiper-slide">
                   <div className="partner__slider-single">
                     <OptimizedImage
                       src="/assets/images/sponsor/five.png"
                       alt="Image_inner"
                     />
                   </div>
-                </div>
+                </div> */}
               </Slider>
             </div>
           </div>

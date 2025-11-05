@@ -44,43 +44,68 @@
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
+/* ===== Silat-themed remap (nama class tetap) ===== */
 
-.icon-share:before { content: '\e800'; } /* '' */
-.icon-arrow-long:before { content: '\e801'; } /* '' */
-.icon-reply:before { content: '\e802'; } /* '' */
-.icon-clock:before { content: '\e803'; } /* '' */
-.icon-quotation:before { content: '\e804'; } /* '' */
-.icon-circle-check:before { content: '\e805'; } /* '' */
-.icon-calendar:before { content: '\e806'; } /* '' */
-.icon-quotation-two:before { content: '\e807'; } /* '' */
-.icon-award:before { content: '\e808'; } /* '' */
-.icon-documents:before { content: '\e809'; } /* '' */
-.icon-review:before { content: '\e80a'; } /* '' */
-.icon-support-hand:before { content: '\e80b'; } /* '' */
-.icon-truck:before { content: '\e80d'; } /* '' */
-.icon-ship:before { content: '\e80e'; } /* '' */
-.icon-credit-card:before { content: '\e80f'; } /* '' */
-.icon-pack:before { content: '\e810'; } /* '' */
-.icon-heart:before { content: '\e811'; } /* '' */
-.icon-calendar-two:before { content: '\e812'; } /* '' */
-.icon-location:before { content: '\e813'; } /* '' */
-.icon-email:before { content: '\e814'; } /* '' */
-.icon-phone:before { content: '\e815'; } /* '' */
-.icon-message:before { content: '\e816'; } /* '' */
-.icon-star:before { content: '\e817'; } /* '' */
-.icon-make-donation:before { content: '\e819'; } /* '' */
-.icon-heart-hand:before { content: '\e81b'; } /* '' */
-.icon-support:before { content: '\e81c'; } /* '' */
-.icon-play:before { content: '\e81d'; } /* '' */
-.icon-user:before { content: '\e81e'; } /* '' */
-.icon-fund:before { content: '\e81f'; } /* '' */
-.icon-donation-card:before { content: '\e820'; } /* '' */
-.icon-donation:before { content: '\e821'; } /* '' */
-.icon-spread-love:before { content: '\e822'; } /* '' */
-.icon-support-heart:before { content: '\e824'; } /* '' */
-.icon-education:before { content: '\e829'; } /* '' */
-.icon-food:before { content: '\e82a'; } /* '' */
-.icon-health:before { content: '\e82b'; } /* '' */
-.icon-circle-arrow:before { content: '\e82c'; } /* '' */
-.icon-message-two:before { content: '\e82d'; } /* '' */
-.icon-user-two:before { content: '\e82e'; } /* '' */
+/* Media & teknik */
+.icon-play:before        { content: '\e81d'; } /* Video teknik silat */
+.icon-quotation:before   { content: '\e804'; } /* Kutipan guru/pesilat */
+.icon-quotation-two:before{ content: '\e807'; } /* Testimoni murid */
+
+/* Jadwal & acara */
+.icon-calendar:before    { content: '\e812'; } /* Jadwal latihan */
+.icon-calendar-two:before{ content: '\e812'; } /* konsisten: jadwal */
+.icon-clock:before       { content: '\e803'; } /* Waktu latihan */
+.icon-location:before    { content: '\e813'; } /* Sasana/gelanggang */
+
+/* Teknik & pembinaan */
+.icon-support-hand:before{ content: '\e80b'; } /* Teknik tangan / tangkapan */
+.icon-heart-hand:before  { content: '\e81b'; } /* Bela diri beretika */
+.icon-education:before   { content: '\e829'; } /* Kelas/pelatihan */
+.icon-health:before      { content: '\e82b'; } /* Kesehatan & pemulihan */
+
+/* Komunitas & komunikasi */
+.icon-user:before        { content: '\e81e'; } /* Pelatih/instruktur */
+.icon-user-two:before    { content: '\e82e'; } /* Sparring/partner */
+.icon-message:before     { content: '\e816'; } /* Tanya pelatih */
+.icon-message-two:before { content: '\e82d'; } /* Grup diskusi */
+.icon-phone:before       { content: '\e815'; } /* Kontak sasana */
+.icon-email:before       { content: '\e814'; } /* Email sasana */
+
+/* Prestasi & event */
+.icon-award:before       { content: '\e808'; } /* Kejuaraan/sertifikat */
+.icon-star:before        { content: '\e817'; } /* Peringkat/tingkat sabuk */
+
+/* Perlengkapan & administrasi */
+.icon-pack:before        { content: '\e810'; } /* Tas/perlengkapan */
+.icon-documents:before   { content: '\e809'; } /* Kurikulum / form pendaftaran */
+.icon-review:before      { content: '\e80a'; } /* Evaluasi kemajuan */
+.icon-credit-card:before { content: '\e80f'; } /* Iuran/biaya latihan */
+
+/* Aksi umum */
+.icon-share:before       { content: '\e81d'; } /* Share = bagikan video/teknik */
+.icon-arrow-long:before  { content: '\e82c'; } /* Navigasi/lanjut (lingkar panah) */
+.icon-reply:before       { content: '\e82d'; } /* Balas pesan (forum/grup) */
+.icon-circle-check:before{ content: '\e805'; } /* Lulus ujian teknik */
+.icon-circle-arrow:before{ content: '\e82c'; } /* Kembali/refresh */
+
+/* Opsional: kampanye & sponsor (kalau diperlukan di situs) */
+.icon-fund:before        { content: '\e81f'; } /* Sponsor tim silat */
+.icon-donation:before {
+  content: "";
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.4em;
+  background-image: url("/assets/images/fc-one.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  line-height: 1.5em;
+  vertical-align: middle;
+} /* Donasi event */
+.icon-donation-card:before{content: '\e820'; } /* Tiket/pendaftaran event */
+.icon-support:before     { content: '\e824'; } /* Dukung komunitas */
+.icon-spread-love:before { content: '\e822'; } /* Kegiatan sosial klub */
+
+/* Hapus yang tak relevan dengan silat (biar nggak kepakai):
+   .icon-truck, .icon-ship, .icon-make-donation, .icon-food
+   — tapi kalau masih dipakai di halaman lain, biarkan saja. */

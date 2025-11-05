@@ -19,106 +19,85 @@ const DifferenceThree = () => {
                     alt='Image_inner'
                   />
                 </div>
-                {/* <div className='spade'>
-                  <OptimizedImage
-                    src='assets/images/difference/spade.png'
-                    alt='Image_inner'
-                    className='base-img'
-                  />
-                </div> */}
-                <div
-                  className='thumb-sm'
-                  data-aos='fade-up'
-                  data-aos-duration={1000}
-                  data-aos-delay={300}
-                >
-                  <OptimizedImage
-                    src='assets/images/difference/thub-sm-two.png'
-                    alt='Image_inner'
-                  />
-                </div>
-                {/* <div className='line'>
-                  <OptimizedImage
-                    src='assets/images/difference/line.png'
-                    alt='Image_inner'
-                  />
-                </div> */}
+                {/* elemen dekorasi opsional disembunyikan */}
               </div>
             </div>
           </div>
+
           <div className='col-12 col-lg-7'>
             <div className='difference-three__content'>
               <div className='section__content'>
                 <span className='sub-title'>
                   <i className='icon-donation' />
-                  PPSI Digjaya Menguatkan Tradisi
+                  Aplikasi PPSI Digjaya
                 </span>
                 <h2 className='title-animation_inner'>
-                  Dukung <span>PPSI</span> menjaga warisan dan prestasi
+                  Organisasi <span>PPSI</span> dalam genggaman
                 </h2>
                 <p>
-                  Setiap kontribusi anggota dan mitra mendorong program
-                  pelestarian budaya, pembinaan atlet, serta inovasi pengajaran
-                  pencak silat yang relevan dengan generasi muda.
+                  Dengan <strong>PPSI Digjaya Mobile</strong>, perguruan,
+                  pelatih, dan pesilat dapat registrasi, mengelola anggota,
+                  melihat serta mendaftar jadwal kejuaraan, hingga menerbitkan
+                  e-sertifikat—semua cepat, aman, dan terintegrasi.
                 </p>
               </div>
+
               <div className='differnce-quote'>
                 <blockquote>
                   <q>
-                    <span>Tradisi silat</span> tumbuh ketika komunitas bergerak
-                    bersama menjaga nilai luhur dan solidaritas
+                    <span>Teknologi</span> mendekatkan tradisi dengan generasi—
+                    aplikasi memudahkan kita menjaga, berlatih, dan berprestasi.
                   </q>
                 </blockquote>
               </div>
+
               <div className='help__content-list'>
                 <ul>
                   <li>
-                    <i className='fa-regular fa-circle-check' /> Penguatan
-                    komunitas pesilat PPSI
+                    <i className='fa-regular fa-circle-check' /> Registrasi &
+                    verifikasi anggota digital
                   </li>
                   <li>
-                    <i className='fa-regular fa-circle-check' /> Pelatihan &
-                    sertifikasi pelatih
+                    <i className='fa-regular fa-circle-check' /> Manajemen
+                    event: pendaftaran, jadwal, hasil pertandingan
                   </li>
                   <li>
-                    <i className='fa-regular fa-circle-check' /> Dokumentasi
-                    warisan budaya silat
+                    <i className='fa-regular fa-circle-check' /> Database
+                    perguruan & kurikulum jurus (foto/video)
                   </li>
                   <li>
-                    <i className='fa-regular fa-circle-check' /> Pendampingan
-                    atlet berprestasi
-                  </li>
-                  <li>
-                    <i className='fa-regular fa-circle-check' /> Kolaborasi
-                    dengan lembaga pendidikan
-                  </li>
-                  <li>
-                    <i className='fa-regular fa-circle-check' /> Program sosial
-                    berbasis kearifan lokal
+                    <i className='fa-regular fa-circle-check' /> E-sertifikat,
+                    ranking, dan notifikasi real-time
                   </li>
                 </ul>
               </div>
+
               <div className='difference-three-cta'>
                 <Link
-                  href='/about-us'
-                  aria-label='tentang ppsi'
-                  title='Tentang PPSI'
+                  href='/app'
+                  aria-label='aplikasi ppsi'
+                  title='PPSI Digjaya App'
                   className='btn--primary'
                 >
-                  Tentang Kami <i className='fa-solid fa-arrow-right' />
+                  Coba Aplikasinya <i className='fa-solid fa-arrow-right' />
                 </Link>
+
                 <div className='author-info'>
                   <div className='author-thumb'>
-                    <OptimizedImage src='assets/images/author-two.png' alt='Image_inner' />
+                    <OptimizedImage
+                      src='assets/images/author-two.png'
+                      alt='Image_inner'
+                    />
                   </div>
                   <div className='author-content'>
-                    <span>Ketua Bidang Pelatihan</span>
+                    <span>Product Lead PPSI Digjaya</span>
                     <h6>Asep Kurniawan</h6>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
