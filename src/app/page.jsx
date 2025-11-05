@@ -14,7 +14,7 @@ import TestimonialOne from "@/components/TestimonialOne";
  import TopBarThree from "@/components/TopBarThree";
 import AOSWrap from "@/helper/AOSWrap";
 import Preloader from "@/components/Preloader";
-import TeamTwo from "@/components/TeamTwo";
+import TeamOne from "@/components/TeamOne";
  
 
 export const metadata = {
@@ -52,7 +52,7 @@ const page = () => {
         {/* CtaSectionOne */}
         <CtaSectionOne />
 
-        <TeamTwo />
+        <TeamOne />
 
         {/* CommunityOne */}
         <CommunityOne />

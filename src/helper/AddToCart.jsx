@@ -38,7 +38,7 @@ const AddToCart = () => {
             </p>
           </div>
           <p className='text-base font-semibold text-primary'>
-            $<span className='item-price'>34.99</span>
+            Rp<span className='item-price'>349.900</span>
           </p>
         </div>
         <div className='flex items-center justify-between gap-3'>

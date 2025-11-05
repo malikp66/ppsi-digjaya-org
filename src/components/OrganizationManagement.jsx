@@ -50,209 +50,217 @@ const OrganizationManagement = () => {
   const latestAnnouncementDate = announcements[0]?.id ?? "";
 
   return (
-    <section className='organization'>
-      <div className='container'>
-        <div className='row gutter-40'>
-          <div className='col-12'>
-            <div className='section__header text-center'>
-              <span className='sub-title'>
-                <i className='icon-donation' />
-                Manajemen Organisasi &amp; Perguruan
-              </span>
-              <h2 className='title-animation_inner'>
-                Menguatkan <span>struktur</span> PPSI Digjaya
-              </h2>
-              <p className='organization__lead'>
-                Rekap data perguruan anggota, struktur kepengurusan, serta aktivitas koordinasi internal PPSI Digjaya.
-                Seluruh pembaruan dilakukan secara berkala untuk memastikan kolaborasi berjalan efektif.
-              </p>
-            </div>
+    <section className='organization' aria-labelledby='organization-title'>
+      <div className='organization__top'>
+        <div className='container organization__top-inner'>
+          <div className='organization__intro' data-aos='fade-up' data-aos-duration={900}>
+            <span className='organization__badge'>
+              <i className='icon-donation' aria-hidden='true' />
+              Manajemen Organisasi &amp; Perguruan
+            </span>
+            <h1 className='organization__title' id='organization-title'>
+              Menguatkan <span>Struktur</span> PPSI Digjaya
+            </h1>
+            <p className='organization__description'>
+              Rekap data perguruan anggota, struktur kepengurusan, serta aktivitas koordinasi internal PPSI Digjaya.
+              Seluruh pembaruan dilakukan secara berkala untuk memastikan kolaborasi berjalan efektif.
+            </p>
+          </div>
+
+          <div className='organization__metrics-grid'>
+            {highlightCards.map((card, index) => (
+              <article
+                key={card.label}
+                className={`organization__metric organization__metric--${card.accent}`}
+                data-aos='fade-up'
+                data-aos-duration={900}
+                data-aos-delay={index * 90}
+              >
+                <div className='organization__metric-icon'>
+                  <i className={card.icon} aria-hidden='true' />
+                </div>
+                <div className='organization__metric-content'>
+                  <span className='organization__metric-label'>{card.label}</span>
+                  <strong className='organization__metric-value'>{card.value}</strong>
+                  <p className='organization__metric-helper'>{card.helper}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
+      </div>
 
-        <div className='row gutter-30 organization__highlights'>
-          {highlightCards.map((card, index) => (
-            <div className='col-12 col-sm-6 col-lg-3' key={card.label}>
-              <div
-                className={`organization__highlight organization__highlight--${card.accent}`}
-                data-aos='fade-up'
-                data-aos-duration={1000}
-                data-aos-delay={index * 80}
-              >
-                <span className='organization__highlight-icon'>
-                  <i className={card.icon} />
-                </span>
-                <div className='organization__highlight-copy'>
-                  <span className='organization__highlight-label'>{card.label}</span>
-                  <strong className='organization__highlight-value'>{card.value}</strong>
-                  <p className='organization__highlight-helper'>{card.helper}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className='row gutter-30 organization__main'>
-          <div className='col-12 col-xl-8'>
-            <div className='organization__card organization__card--table' data-aos='fade-up' data-aos-duration={1000}>
-              <div className='organization__card-header'>
-                <div>
-                  <h5>Data Perguruan Terdaftar</h5>
-                  <p className='organization__card-subtitle'>
-                    Rekap perguruan anggota DPW PPSI Digjaya berikut profil lokasi, jumlah anggota, dan kontak
-                    koordinasi untuk agenda pembinaan ataupun event.
-                  </p>
-                </div>
-                {latestAnnouncementDate && (
-                  <span className='organization__meta organization__meta--soft'>
-                    Pembaruan {formatDate(latestAnnouncementDate)}
-                  </span>
-                )}
-              </div>
-
-              <div className='organization__table'>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Perguruan</th>
-                      <th>Alamat</th>
-                      <th>Anggota</th>
-                      <th>Status</th>
-                      <th>Kontak</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {perguruanList.map((perguruan) => {
-                      const normalizedStatus = (perguruan.status || "").toLowerCase().replace(/\s+/g, "-");
-                      const sanitizedContact = perguruan.kontak.replace(/\D/g, "");
-                      const contactHref = sanitizedContact ? `https://wa.me/${sanitizedContact}` : `tel:${perguruan.kontak}`;
-
-                      return (
-                        <tr key={perguruan.id}>
-                          <td>
-                            <span className='organization__entity-name'>{perguruan.nama}</span>
-                          </td>
-                          <td>
-                            <span className='organization__entity-text'>{perguruan.alamat}</span>
-                          </td>
-                          <td>
-                            <strong className='organization__entity-number'>
-                              {perguruan.anggota.toLocaleString("id-ID")}
-                            </strong>
-                          </td>
-                          <td>
-                            <span className={`organization__status organization__status--${normalizedStatus}`}>
-                              {perguruan.status}
-                            </span>
-                          </td>
-                          <td>
-                            <a
-                              className='organization__contact-link'
-                              href={contactHref}
-                              target='_blank'
-                              rel='noreferrer'
-                            >
-                              {perguruan.kontak}
-                            </a>
-                          </td>
-                        </tr>
-                      );
-                    })}
-                  </tbody>
-                </table>
-              </div>
-
-              <div className='organization__table-footer'>
-                <p>
-                  {activePerguruan} dari {totalPerguruan} perguruan tercatat aktif dengan total{" "}
-                  {totalAnggota.toLocaleString("id-ID")} anggota. Data monitoring diperbarui setiap kali laporan Triwulan
-                  diterima oleh sekretariat DPW.
+      <div className='container'>
+        <div className='organization__layout'>
+          <article
+            className='organization__panel organization__panel--primary'
+            data-aos='fade-up'
+            data-aos-duration={900}
+          >
+            <header className='organization__panel-header'>
+              <div>
+                <h2>Data Perguruan Terdaftar</h2>
+                <p className='organization__panel-subtitle'>
+                  Rekap perguruan anggota DPW PPSI Digjaya berikut profil lokasi, jumlah anggota, dan kontak koordinasi
+                  untuk agenda pembinaan ataupun event.
                 </p>
               </div>
-            </div>
-          </div>
+              {latestAnnouncementDate && (
+                <span className='organization__chip'>Pembaruan {formatDate(latestAnnouncementDate)}</span>
+              )}
+            </header>
 
-          <div className='col-12 col-xl-4'>
-            <div className='organization__sidebar'>
-              <div
-                className='organization__card organization__card--stack'
-                data-aos='fade-up'
-                data-aos-duration={1000}
-                data-aos-delay={120}
-              >
-                <h5>Struktur Kepengurusan DPW</h5>
-                <ul className='organization__team'>
-                  {kepengurusanDPW.map((item) => (
+            <div className='organization__table' role='region' aria-live='polite'>
+              <table>
+                <thead>
+                  <tr>
+                    <th scope='col'>Perguruan</th>
+                    <th scope='col'>Alamat</th>
+                    <th scope='col'>Anggota</th>
+                    <th scope='col'>Status</th>
+                    <th scope='col'>Kontak</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {perguruanList.map((perguruan) => {
+                    const normalizedStatus = (perguruan.status || "Tidak Ditentukan")
+                      .toLowerCase()
+                      .replace(/\s+/g, "-");
+                    const sanitizedContact = perguruan.kontak.replace(/\D/g, "");
+                    const contactHref = sanitizedContact ? `https://wa.me/${sanitizedContact}` : `tel:${perguruan.kontak}`;
+
+                    return (
+                      <tr key={perguruan.id}>
+                        <td data-title='Perguruan'>
+                          <span className='organization__entity-name'>{perguruan.nama}</span>
+                        </td>
+                        <td data-title='Alamat'>
+                          <span className='organization__entity-text'>{perguruan.alamat}</span>
+                        </td>
+                        <td data-title='Anggota'>
+                          <strong className='organization__entity-number'>
+                            {perguruan.anggota.toLocaleString("id-ID")}
+                          </strong>
+                        </td>
+                        <td data-title='Status'>
+                          <span className={`organization__status organization__status--${normalizedStatus}`}>
+                            {perguruan.status}
+                          </span>
+                        </td>
+                        <td data-title='Kontak'>
+                          <a className='organization__contact-link' href={contactHref} target='_blank' rel='noreferrer'>
+                            {perguruan.kontak}
+                          </a>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+
+            <footer className='organization__panel-footer'>
+              <p>
+                {activePerguruan} dari {totalPerguruan} perguruan tercatat aktif dengan total{" "}
+                {totalAnggota.toLocaleString("id-ID")} anggota. Data monitoring diperbarui setiap kali laporan triwulan
+                diterima oleh sekretariat DPW.
+              </p>
+            </footer>
+          </article>
+
+          <aside className='organization__sidebar'>
+            <section
+              className='organization__panel organization__panel--stacked'
+              data-aos='fade-up'
+              data-aos-duration={900}
+              data-aos-delay={120}
+            >
+              <header className='organization__panel-header organization__panel-header--compact'>
+                <h3>Struktur Kepengurusan DPW</h3>
+              </header>
+              <ul className='organization__team'>
+                {kepengurusanDPW.map((item) => {
+                  const initial = item.nama?.trim().charAt(0)?.toUpperCase() ?? "?";
+
+                  return (
                     <li key={item.jabatan}>
+                      <div className='organization__team-avatar' aria-hidden='true'>
+                        <span>{initial}</span>
+                      </div>
                       <div className='organization__team-meta'>
-                        <h6>{item.nama}</h6>
+                        <h4>{item.nama}</h4>
                         <span>{item.jabatan}</span>
                       </div>
                     </li>
-                  ))}
-                </ul>
-              </div>
+                  );
+                })}
+              </ul>
+            </section>
 
-              <div
-                className='organization__card organization__card--stack'
-                data-aos='fade-up'
-                data-aos-duration={1000}
-                data-aos-delay={180}
-              >
-                <h5>Pengumuman Terkini</h5>
-                <ul className='organization__timeline'>
-                  {announcements.map((item) => (
-                    <li key={item.id}>
-                      <span className='organization__timeline-date'>{formatDate(item.id)}</span>
-                      <div className='organization__timeline-content'>
-                        <h6>{item.judul}</h6>
-                        <p>{item.isi}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div
-                className='organization__card organization__card--cta'
-                data-aos='fade-up'
-                data-aos-duration={1000}
-                data-aos-delay={240}
-              >
-                <h5>Ringkasan Koordinasi</h5>
-                <ul className='organization__summary'>
-                  <li>
-                    <span>Perguruan aktif</span>
-                    <strong>{activePerguruan}</strong>
+            <section
+              className='organization__panel organization__panel--stacked'
+              data-aos='fade-up'
+              data-aos-duration={900}
+              data-aos-delay={200}
+            >
+              <header className='organization__panel-header organization__panel-header--compact'>
+                <h3>Pengumuman Terkini</h3>
+              </header>
+              <ul className='organization__timeline'>
+                {announcements.map((item, index) => (
+                  <li key={item.id} data-aos='fade-up' data-aos-delay={index * 40}>
+                    <div className='organization__timeline-marker' aria-hidden='true' />
+                    <span className='organization__timeline-date'>{formatDate(item.id)}</span>
+                    <div className='organization__timeline-content'>
+                      <h4>{item.judul}</h4>
+                      <p>{item.isi}</p>
+                    </div>
                   </li>
-                  <li>
-                    <span>Total anggota terlapor</span>
-                    <strong>{totalAnggota.toLocaleString("id-ID")}</strong>
+                ))}
+              </ul>
+            </section>
+
+            <section
+              className='organization__panel organization__panel--cta'
+              data-aos='fade-up'
+              data-aos-duration={900}
+              data-aos-delay={260}
+            >
+              <header className='organization__panel-header organization__panel-header--compact'>
+                <h3>Ringkasan Koordinasi</h3>
+              </header>
+              <ul className='organization__summary'>
+                <li>
+                  <span>Perguruan aktif</span>
+                  <strong>{activePerguruan}</strong>
+                </li>
+                <li>
+                  <span>Total anggota terlapor</span>
+                  <strong>{totalAnggota.toLocaleString("id-ID")}</strong>
+                </li>
+                {otherStatuses.map(([status, value]) => (
+                  <li key={status}>
+                    <span>Status {status.toLowerCase()}</span>
+                    <strong>{value}</strong>
                   </li>
-                  {otherStatuses.map(([status, value]) => (
-                    <li key={status}>
-                      <span>Status {status.toLowerCase()}</span>
-                      <strong>{value}</strong>
-                    </li>
-                  ))}
-                </ul>
+                ))}
+              </ul>
 
-                {defaultContact && formattedContactLink && (
-                  <div className='organization__cta-contact'>
-                    <span>Kontak Sekretariat</span>
-                    <a href={`https://wa.me/${formattedContactLink}`} target='_blank' rel='noreferrer'>
-                      {defaultContact}
-                    </a>
-                  </div>
-                )}
+              {defaultContact && formattedContactLink && (
+                <div className='organization__cta-contact'>
+                  <span>Kontak Sekretariat</span>
+                  <a href={`https://wa.me/${formattedContactLink}`} target='_blank' rel='noreferrer'>
+                    {defaultContact}
+                  </a>
+                </div>
+              )}
 
-                <p className='organization__cta-note'>
-                  Koordinasikan pemutakhiran data dan distribusi surat keputusan melalui sekretariat sebelum batas
-                  waktu pelaporan berikutnya.
-                </p>
-              </div>
-            </div>
-          </div>
+              <p className='organization__cta-note'>
+                Koordinasikan pemutakhiran data dan distribusi surat keputusan melalui sekretariat sebelum batas waktu
+                pelaporan berikutnya.
+              </p>
+            </section>
+          </aside>
         </div>
       </div>
     </section>

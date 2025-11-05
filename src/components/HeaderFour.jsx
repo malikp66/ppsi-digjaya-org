@@ -725,7 +725,7 @@ const HeaderFour = () => {
                 Subtotal
               </span>
               <span className='text-lg font-semibold text-foreground'>
-                $<span className='total-price'>0.00</span>
+                Rp<span className='total-price'>0.00</span>
               </span>
             </div>
             <div className='mt-4 grid gap-3 sm:grid-cols-2'>
