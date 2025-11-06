@@ -2,7 +2,6 @@
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import NiceSelect from "nice-select2";
 import { ArrowRight, X } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -131,9 +130,30 @@ const HeaderFour = () => {
   };
 
   useEffect(() => {
-    if (countryRef.current) {
-      new NiceSelect(countryRef.current);
-    }
+    let isMounted = true;
+    let instance;
+
+    const initializeNiceSelect = async () => {
+      if (!countryRef.current) return;
+
+      try {
+        const { default: NiceSelect } = await import("nice-select2");
+        if (!isMounted || !countryRef.current) return;
+
+        instance = new NiceSelect(countryRef.current);
+      } catch (error) {
+        console.error("Failed to load nice-select2", error);
+      }
+    };
+
+    initializeNiceSelect();
+
+    return () => {
+      isMounted = false;
+      if (instance && typeof instance.destroy === "function") {
+        instance.destroy();
+      }
+    };
   }, []);
 
   const memberLinks = [
